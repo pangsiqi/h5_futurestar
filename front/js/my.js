@@ -1,15 +1,26 @@
 (function($) {
 	$(document).ready(function() {
 		var clicked = false;
-		$(".login").on('click', overlay);
+		$(".login").one('click', modal);
+		$(".register").one('click', modal);
+		console.log($(".JS-selectTeacher-main"));
 		$("#index_login_username").on('blur', judgeNull);
 		$("#index_login_password").on('blur', judgeNull);
 		$(".icon-6").on('click', learnOneself);
-		// 模态框
-		function overlay() {
-			var e1 = document.getElementById('modal-overlay');
-			e1.style.visibility = (e1.style.visibility == "visible") ? "hidden" : "visible";
+		//首页点击登录和学生注册
+		function modal() {
+			var _htmlId = 'modal-' + $(this).attr('class');
+			var _html = document.getElementById(_htmlId).innerHTML;
+			$("#modal-overlay").append(_html);
+			$("#modal-overlay").css("visibility", 'visible');
 		}
+		// 模态框
+		// function overlay() {
+		// 	var _href = $(this).children().attr('href').substr(1);
+		// 	var e1 = document.getElementById(_href);
+		// 	e1.style.visibility = (e1.style.visibility == "visible") ? "hidden" : "visible";
+		// }
+
 		//判断用户名和密码是否为空
 		function judgeNull() {
 			var oText = $(this).val();

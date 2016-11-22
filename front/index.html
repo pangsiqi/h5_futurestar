@@ -6,6 +6,7 @@
     <title>未来之星-我们与你一起成长</title>
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/inline.css">
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
@@ -22,7 +23,7 @@
             verticalCentered: true,
             anchors: ['page1', 'page2', 'page3', 'page4'],
             navigation: true,
-            navigationTooltips: ['首页', '视觉', '交互', '皮肤']
+            navigationTooltips: ['首页', '各界声音', '关于我们', '加入我们']
         });
         $('#loginform').submit(function(e) {
             return false;
@@ -35,6 +36,147 @@
         });
     });
     </script>
+    <script type="text/html" id="modal-login">
+        <div class="loginPop-box loginBg">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="lop-inner">
+                <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
+                <h1>登录</h1>
+                <form id="FormSubmitInit" class="JS-formSubmit" method="post" action="">
+                    <input name="returnURL" type="hidden" value="">
+                    <div class="lop-content">
+                        <div class="c-text">
+                            <span class="login-icon icon-5"></span>
+                            <input type="text" value="" name="username" tabindex="1" class="JS-inputEvent" id="index_login_username" placeholder="手机号/学号">
+                            <div class="errorTips">请输入学号/手机号</div>
+                        </div>
+                        <div class="c-text">
+                            <span class="login-icon icon-4"></span>
+                            <input type="password" id="index_login_password" name="j_password" class="JS-inputEvent" tabindex="2" placeholder="输入密码">
+                            <div class="errorTips">请输入密码</div>
+                        </div>
+                        <div class="c-text">
+                            <a href="javascript:void(0);" class="info active JS-rememberMe-btn">
+                                <input name="_spring_security_remember_me" type="checkbox" checked="checked" style="display: none;">
+                                <span class="login-icon icon-6"></span>记住我
+                            </a>
+                            <a href="/ucenter/resetnavigation.vpage?ref=fixed" target="_blank" class="info">忘记密码 ?</a><span class="line"> | </span><a href="javascript:void(0);" class="info JS-register-main">注册</a>
+                        </div>
+                    </div>
+                    <div class="loginPop-footer">
+                        <input type="submit" value="登录" class="login-btn" id="_a_loginForm" name="_a_loginForm" tabindex="3">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="modal-register">
+        <div class="loginPop-box loginBg">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="lop-inner">
+                <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
+                <h1 style="font-size: 18px">注册学生账号</h1>
+                <div class="lop-content contentMar">
+                    <div class="lop-right">
+                        <div class="c-text">
+                            <span class="login-icon icon-1"></span>
+                            <input type="text" placeholder="请输入老师手机号或ID号" class="txt1 JS-inputEvent JS-classInput" maxlength="11">
+                            <div class="errorTips">老师账号错误</div>
+                        </div>
+                        <a href="javascript:void(0);" class="login-btn login-orange JS-getClassLIst" style="margin-top:30px;padding: 3px 0">注册学生账号</a>
+                    </div>
+                    <div class="lop-tab tabLeft" style="width: 64px;position: absolute;top:0px;">
+                        <ul>
+                            <li class="JS-selectStudent-main stu active">
+                                <div class="image"></div>
+                                <div class="side">我是学生</div>
+                            </li>
+                            <li class="JS-selectTeacher-main">
+                                <div class="image image-tea"></div>
+                                <div class="side">我是老师</div>
+                            </li>
+                        </ul>
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(".JS-selectTeacher-main").on('click', modalTea)
+
+                            function modalTea() {
+                                console.log("a");
+                                $("#modal-overlay").empty();
+                                var _html = document.getElementById("modal-register-teacher").innerHTML;
+                                $("#modal-overlay").append(_html);
+                                $("#modal-overlay").css("visibility", 'visible');
+                            }
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="modal-register-teacher">
+        <div class="loginPop-box loginBg">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="lop-inner">
+                <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
+                <h1 style="font-size: 18px">注册老师账号</h1>
+                <div class="lop-content">
+                    <div class="clearfloat"></div>
+                    <div class="JS-defaultMode">
+                        <div class="c-text">
+                            <span class="login-icon icon-1"></span>
+                            <input type="text" placeholder="请输入您的手机号" class="txt1 JS-teacherMobile JS-inputEvent" maxlength="11">
+                            <div class="errorTips"></div>
+                        </div>
+                        <div class="c-text">
+                            <span class="login-icon icon-3"></span>
+                            <input type="text" placeholder="请输入短信验证码" class="txt2 JS-teacherSmsCode JS-inputEvent" maxlength="6">
+                            <span class="code codeBg login-blue JS-getCheckCode" style="cursor: pointer;">获取验证码</span>
+                            <div class="errorTips"></div>
+                        </div>
+                        <div class="c-text">
+                            <span class="login-icon icon-2"></span>
+                            <input type="text" placeholder="请输入右侧数字" class="txt2 JS-teacherCaptcha JS-inputEvent" maxlength="4" id="captchaInputLogin">
+                            <span id="captchaImageLogin" class="code" style="cursor: pointer;">1234</span>
+                            <div class="errorTips"></div>
+                        </div>
+                        <a href="javascript:void(0);" class="login-btn login-blue JS-teacherVerMobile" style="margin-top:30px;padding: 3px 0">注册老师账号</a>
+                    </div>
+                    <div class="lop-tab tabLeft" style="width: 64px;position: absolute;top:0px;">
+                        <ul>
+                            <li class="JS-selectStudent-main">
+                                <div class="image"></div>
+                                <div class="side">我是学生</div>
+                            </li>
+                            <li class="JS-selectTeacher-main tea active">
+                                <div class="image image-tea"></div>
+                                <div class="side">我是老师</div>
+                            </li>
+                        </ul>
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(".JS-selectStudent-main").on('click', modalStu)
+
+                            function modalStu() {
+                                console.log("a");
+                                $("#modal-overlay").empty();
+                                var _html = document.getElementById("modal-register").innerHTML;
+                                $("#modal-overlay").append(_html);
+                                $("#modal-overlay").css("visibility", 'visible');
+                            }
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
 </head>
 
 <body>
@@ -42,67 +184,34 @@
         <div class="bg"><img src="img/banner1.jpg" alt="banner1"></div>
         <div class="banner1group">
             <p class="banner1-title">未来之星-我们与你一起成长</p>
-            <p class="login"><a href="#modal-overlay">登录</a></p>
-            <p class="register"><a href="#registermodel">注册</a></p>
+            <p class="login"><a href="javascript:;">登录</a></p>
+            <p class="register"><a href="javascript:;">注册</a></p>
         </div>
-        <div id="modal-overlay">
-            <div class="modal-data">
-                <div class="lop-inner">
-                    <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
-                    <h1>登录</h1>
-                    <form id="FormSubmitInit" class="JS-formSubmit" method="post" action="">
-                        <input name="returnURL" type="hidden" value="">
-                        <div class="lop-content">
-                            <div class="c-text">
-                                <span class="login-icon icon-5"></span>
-                                <input type="text" value="" name="username" tabindex="1" class="JS-inputEvent" id="index_login_username" placeholder="手机号/学号">
-                                <div class="errorTips">请输入学号/手机号</div>
-                            </div>
-                            <div class="c-text">
-                                <span class="login-icon icon-4"></span>
-                                <input type="password" id="index_login_password" name="j_password" class="JS-inputEvent" tabindex="2" placeholder="输入密码">
-                                <div class="errorTips">请输入密码</div>
-                            </div>
-                            <div class="c-text">
-                                <a href="javascript:void(0);" class="info active JS-rememberMe-btn">
-                                    <input name="_spring_security_remember_me" type="checkbox" checked="checked" style="display: none;">
-                                    <span class="login-icon icon-6"></span>记住我
-                                </a>
-                                <a href="/ucenter/resetnavigation.vpage?ref=fixed" target="_blank" class="info">忘记密码 ?</a><span class="line"> | </span><a href="javascript:void(0);" class="info JS-register-main">注册</a>
-                            </div>
-                        </div>
-                        <div class="loginPop-footer">
-                            <input type="submit" value="登录" class="login-btn" id="_a_loginForm" name="_a_loginForm" tabindex="3">
-                        </div>
-                    </form>
-                </div>
-                <p><a onclick="overlay()" href="" class="index-close"></a></p>
-            </div>
-        </div>
+        <div id="modal-overlay"></div>
     </div>
     <div class="section section2">
         <div class="bg"><img src="img/banner2.jpg" alt="banner2"></div>
         <div class="bg21"></div>
         <div class="bg22"></div>
-        <strong>[ 视觉·简 ]</strong>
-        <h3>华丽蜕变，尽享愉悦之美</h3>
-        <p class="p1">秉承网易邮箱经典的清新简洁的设计风格，邮箱 6.0 版带来全新一代的设计理念，更追求极致唯美的视觉设计、传承更多人文和艺术底蕴，华丽蜕变，带来更舒服更爽心悦目的视觉享受。</p>
+        <strong>[ 各界声音 ]</strong>
+        <h3>开创快乐教育的新模式！</h3>
+        <!-- <p class="p1">秉承网易邮箱经典的清新简洁的设计风格，邮箱 6.0 版带来全新一代的设计理念，更追求极致唯美的视觉设计、传承更多人文和艺术底蕴，华丽蜕变，带来更舒服更爽心悦目的视觉享受。</p> -->
     </div>
     <div class="section section3">
         <div class="bg"><img src="img/banner3.jpg" alt=""></div>
         <div class="bg31"></div>
         <div class="bg32"></div>
-        <strong>[ 视觉化交互设计 ]</strong>
-        <h3>心随眼动，感官直接体验</h3>
-        <p class="p3">邮箱 6.0 版采用了全新的视觉化交互设计，通过对界面的整体风格设计、重要信息的视觉化处理以及元素本身的视觉传达优化，来实现产品流程设计和交互行为塑造。从视觉的角度出发，让用户无需多想，直接通过感官与产品进行交互。</p>
+        <strong>[ 关于我们 ]</strong>
+        <h3>醉心于寓教于乐的一群人!</h3>
+        <!-- <p class="p3">邮箱 6.0 版采用了全新的视觉化交互设计，通过对界面的整体风格设计、重要信息的视觉化处理以及元素本身的视觉传达优化，来实现产品流程设计和交互行为塑造。从视觉的角度出发，让用户无需多想，直接通过感官与产品进行交互。</p> -->
     </div>
     <div class="section section4">
         <div class="bg"><img src="img/banner4.jpg" alt=""></div>
         <div class="bg41"></div>
         <div class="bg43"></div>
-        <strong>[ 动态情景皮肤 ]</strong>
-        <h3>美轮美奂，百变尽随你心</h3>
-        <p class="p1">国内首创动态情景皮肤，可以随着早晚时光，季节主题的变幻而自动切换，实现了在邮箱里也能感受天气和心情的变化，带来完全不同的页面体验并且呈现最佳视觉感受，还特别针对原有邮箱皮肤的对比度和色彩进行了微调，减少视觉疲劳感。</p>
+        <strong>[ 加入我们 ]</strong>
+        <h3>让教育变成一件快乐的事！</h3>
+        <!-- <p class="p1">国内首创动态情景皮肤，可以随着早晚时光，季节主题的变幻而自动切换，实现了在邮箱里也能感受天气和心情的变化，带来完全不同的页面体验并且呈现最佳视觉感受，还特别针对原有邮箱皮肤的对比度和色彩进行了微调，减少视觉疲劳感。</p> -->
     </div>
 </body>
 

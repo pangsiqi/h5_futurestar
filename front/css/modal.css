@@ -1,0 +1,270 @@
+/* 定义模态对话框外面的覆盖层样式 */
+
+#modal-overlay {
+    visibility: hidden;
+    position: absolute;
+    /* 使用绝对定位或固定定位  */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.9;
+    /* 背景半透明 */
+}
+
+
+/* 模态框样式 */
+
+.loginPop-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lop-inner {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 660px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    background: 0 0;
+}
+
+.lop-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.c-text {
+    position: relative;
+    margin: 10px 0;
+}
+
+.c-text input {
+    padding: 8px 0 8px 40px;
+    width: 320px;
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #999;
+    outline: 0;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 60px;
+}
+
+.login-icon {
+    position: absolute;
+    top: 7px;
+    left: 160px;
+    width: 22px;
+    height: 22px;
+}
+
+.c-text .icon-5 {
+    background: url(../img/login-icon-05.png) no-repeat;
+}
+
+.c-text .icon-4 {
+    background: url(../img/login-icon-04.png) no-repeat;
+}
+
+.errorTips {
+    color: red;
+    display: none;
+    font-size: 16px;
+    left: 520px;
+    position: absolute;
+    top: 3px;
+    height: 21px;
+    text-align: center;
+}
+
+.c-text .icon-6 {
+    background: url(../img/login-icon-06.png) no-repeat;
+}
+
+.c-text .icon-7 {
+    background: url(../img/login-icon-07.png) no-repeat;
+}
+
+.c-text .info {
+    color: #666;
+}
+
+.c-text .info:hover {
+    color: #000;
+}
+
+.c-text .info:first-child {
+    margin: 0 130px 0 25px;
+}
+
+.loginPop-footer {
+    margin-top: 50px;
+}
+
+.login-btn {
+    border: none;
+    outline: 0;
+    padding: 8px 0;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 60px!important;
+    opacity: 1;
+}
+
+.login-btn:hover {
+    background-color: #222;
+}
+
+.index-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+}
+
+//注册界面
+.tabLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+}
+
+.loginBg .lop-inner .lop-content .tabLeft:after {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    content: "";
+    width: 1px;
+    height: 300px;
+    background-color: #ccc;
+}
+
+.loginBg .lop-inner .lop-content .tabLeft li {
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.loginBg .lop-inner .lop-content .lop-tab li.stu.active .image {
+    width: 60px;
+    height: 60px;
+    background: url(../img/stuci.png) no-repeat;
+}
+
+.loginBg .lop-inner .lop-content .lop-tab li.tea.active .image {
+    width: 60px;
+    height: 60px;
+    background: url(../img/teacherci.png) no-repeat;
+}
+
+.JS-selectStudent-main .image {
+    width: 60px;
+    height: 60px;
+    background: url(../img/stu.png) center center no-repeat;
+}
+
+.lop-tab li .image-tea {
+    width: 60px;
+    height: 60px;
+    background: url(../img/teacher.png) center center no-repeat;
+}
+
+.loginBg .lop-inner .lop-content .lop-tab li.stu.active .side {
+    color: #ff7b0a;
+}
+.loginBg .lop-inner .lop-content .lop-tab li.tea.active .side {
+    color: #15a6ee;
+}
+
+.loginBg .lop-inner .lop-content .lop-tab li .side {
+    line-height: 35px;
+}
+
+.lop-tab li .side {
+    font-size: 16px;
+    color: #333;
+    line-height: 55px;
+}
+
+.loginBg .lop-inner .contentMar .lop-right {
+    padding: 55px 0 0;
+}
+
+.loginBg .lop-inner .lop-content .lop-right {
+    margin: 0 0 40px;
+    font-size: 16px;
+    color: #333;
+}
+
+.loginBg .lop-inner .lop-content .login-btn {
+    margin: 0 5px;
+}
+
+.icon-1 {
+    background: url(../img/login-icon-01.png) no-repeat;
+}
+
+.icon-2 {
+    background: url(../img/login-icon-02.png) no-repeat;
+}
+
+.icon-3 {
+    background: url(../img/login-icon-03.png) no-repeat;
+}
+
+.login-orange,
+.login-orange:active,
+.login-orange:hover,
+.login-orange:visited {
+    background-color: #ff7b0a!important;
+}
+
+.login-blue,
+.login-blue:active,
+.login-blue:hover,
+.login-blue:visited {
+    background-color: #15a6ee!important;
+}
+.lop-content .c-text .code{
+    font-size: 14px;
+    color: #fff;
+    padding: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 60px;
+}
+.lop-content .c-text .JS-teacherSmsCode{
+    width: 210px;
+    margin-left: -30px;
+}
+.lop-content .c-text .JS-teacherCaptcha {
+    width: 210px;
+    margin-left: -35px;
+}
+#captchaImageLogin{
+    color: #000;
+    background: #ccc;
+    padding: 4px 20px;
+    display: inline;
+}
