@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0;}
+body { font: 16px/1.8 "Microsoft Yahei",verdana;}
+ul,li {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+img {
+    max-width: 100%;
+    border: 0px;
+}
+
+// 给浮动元素的父级元素添加class="clearfloat"
+.clearfloat{
+	zoom: 1;
+}
+.clearfloat:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.fl-l{
+	float: left;
+}
+.fl-r{
+	float: right;
+}
