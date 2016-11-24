@@ -19,7 +19,9 @@ img {
     max-width: 100%;
     border: 0px;
 }
-
+select:focus,select:active,select:hover{
+  outline:none;
+}
 // 给浮动元素的父级元素添加class="clearfloat"
 .clearfloat{
 	zoom: 1;

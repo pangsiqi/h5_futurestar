@@ -1,16 +1,22 @@
 (function($) {
 	$(document).ready(function() {
 		var clicked = false;
-		$(".login").one('click', modal);
-		$(".register").one('click', modal);
-		console.log($(".JS-selectTeacher-main"));
+		$(".login").one('click', modalLogin);
+		$(".register").one('click', modalResStu);
 		$("#index_login_username").on('blur', judgeNull);
 		$("#index_login_password").on('blur', judgeNull);
 		$(".icon-6").on('click', learnOneself);
 		//首页点击登录和学生注册
-		function modal() {
-			var _htmlId = 'modal-' + $(this).attr('class');
-			var _html = document.getElementById(_htmlId).innerHTML;
+		function modalLogin() {
+			$("#modal-overlay").empty();
+			var _html = document.getElementById("modal-login").innerHTML;
+			$("#modal-overlay").append(_html);
+			$("#modal-overlay").css("visibility", 'visible');
+		}
+
+		function modalResStu() {
+			$("#modal-overlay").empty();
+			var _html = document.getElementById("modal-register-student").innerHTML;
 			$("#modal-overlay").append(_html);
 			$("#modal-overlay").css("visibility", 'visible');
 		}

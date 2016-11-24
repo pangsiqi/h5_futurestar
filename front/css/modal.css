@@ -193,6 +193,7 @@
 .loginBg .lop-inner .lop-content .lop-tab li.stu.active .side {
     color: #ff7b0a;
 }
+
 .loginBg .lop-inner .lop-content .lop-tab li.tea.active .side {
     color: #15a6ee;
 }
@@ -246,7 +247,8 @@
 .login-blue:visited {
     background-color: #15a6ee!important;
 }
-.lop-content .c-text .code{
+
+.lop-content .c-text .code {
     font-size: 14px;
     color: #fff;
     padding: 4px;
@@ -254,17 +256,284 @@
     display: inline-block;
     border-radius: 60px;
 }
-.lop-content .c-text .JS-teacherSmsCode{
+
+.lop-content .c-text .JS-teacherSmsCode {
     width: 210px;
     margin-left: -30px;
 }
+
 .lop-content .c-text .JS-teacherCaptcha {
     width: 210px;
     margin-left: -35px;
 }
-#captchaImageLogin{
+
+#captchaImageLogin {
     color: #000;
     background: #ccc;
     padding: 4px 20px;
     display: inline;
 }
+
+//教师注册页面设置密码
+.zy-header {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.zy-header .rightIn {
+    float: right;
+    padding: 8px 0;
+    margin-right: 20px;
+    font-size: 0;
+}
+
+.pr-main {
+    width: 322px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.pr-main-teacher .hd {
+    padding: 90px 0 0;
+    text-align: center;
+    color: #4b4b50;
+    font-size: 24px;
+    line-height: 36px;
+    background: url(../img/setPassword-ico-tea.png) 50% 0 no-repeat;
+}
+
+.pr-main .main-box {
+    padding-top: 40px;
+}
+
+.pr-main .main-list,
+li,
+ol,
+ul {
+    list-style-type: none;
+}
+
+.pr-main .main-list li {
+    position: relative;
+    zoom: 1;
+    margin: 10px 0 0;
+    border: 1px solid #999;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #383a4c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pr-main .main-list li input {
+    display: block;
+    border: 0;
+    background: 0 0;
+    outline: 0;
+    width: 292px;
+    padding: 10px 14px;
+    border-radius: 40px;
+}
+
+.pr-main-teacher .main-list .i-error-info {
+    position: absolute;
+    top: 50%;
+    left: 330px;
+    margin: -14px 0 0;
+    padding: 4px 10px;
+    width: auto;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    line-height: 17px;
+    background-color: #fa652d;
+    border-radius: 40px;
+    display: none;
+    z-index: 4;
+}
+
+.pr-main .submit {
+    padding: 10px 0 0;
+}
+
+.pr-main-teacher .submit a {
+    background-color: #15a6ee;
+}
+
+.pr-main-teacher .submit a {
+    display: block;
+    padding: 13px 0;
+    background-color: #15a6ee;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+//教师选择学校
+// .register-tea {
+//     position: relative;
+//     top: 100px;
+// }
+.select-hd {
+    font-size: 20px;
+    color: #15a6ee;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.select-group .select-title {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.select-group {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.select-group .item {
+    float: left;
+    width: 190px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.select-group .item select{
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.select-result .item{
+    display: none;
+    width: 100px;
+    padding: 10px;
+    margin: 0 12px;
+    font-size: 20px;
+    color: #fff;
+    background: #15a6ee;
+    border-radius: 40px;
+}
+.select-drop{
+    display: inline-block;
+    width: 27px;
+    height: 16px;
+    background: url(../img/drop.png) no-repeat;
+    margin-left: -32px;
+}
+.select-city-drop{
+    display: inline-block;
+    width: 27px;
+    height: 16px;
+    background: url(../img/drop.png) no-repeat;
+    position: absolute;
+    left: 60px;
+    top: 42px;
+}
+.select-township-drop{
+    display: inline-block;
+    width: 27px;
+    height: 16px;
+    background: url(../img/drop.png) no-repeat;
+    position: absolute;
+    top: 42px;
+    left: 160px;
+}
+
+.select-group .item select::-ms-expand {
+    display: none;
+}
+.city{
+    float: left;
+    width: 90px!important;
+}
+.township{
+    float: right;
+    width: 90px!important;
+}
+
+/* 学生注册密码页面 */
+.pr-main-child .hd {
+    padding: 90px 0 0;
+    text-align: center;
+    color: #4b4b50;
+    font-size: 24px;
+    line-height: 36px;
+    background: url(../img/setPassword-ico.png) 50% 0 no-repeat;
+}
+.main-title,.select-sex{
+    font-size: 16px;
+}
+.pr-main-child .main-list li input {
+    display: block;
+    border: 0;
+    background: 0 0;
+    outline: 0;
+    width: 292px;
+    padding: 10px 14px;
+    border-radius: 40px;
+}
+.pr-main-child .main-class span {
+    float: left;
+    _display: inline;
+    margin: 0 8px 5px 0;
+    padding: 0 0 0 16px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    background: url(../img/pr-main-radio.png) no-repeat;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pr-main-child .select-sex{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.pr-main-child .select-sex-item{
+    margin-left: -125px;
+    display: inline-block;
+    padding-top: 4px;
+}
+.pr-main-child .main-class span.active {
+    background-position: 0 -25px;
+    color: #ff7b0a;
+}
+.pr-main-child .main-list li .info-text .code-btn {
+    display: inline-block;
+    padding: 0 14px;
+    background-color: #323232;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+.pr-main-child .submit a {
+    display: block;
+    padding: 13px 0;
+    background-color: #ff7b0a;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+// transform: translateY(-50%) rotate(180deg);

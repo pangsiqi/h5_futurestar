@@ -65,7 +65,7 @@
             </div>
         </div>
     </script>
-    <script type="text/html" id="modal-register">
+    <script type="text/html" id="modal-register-student">
         <div class="loginPop-box loginBg">
             <p>
                 <a onclick="overlay()" href="" class="index-close"></a>
@@ -77,7 +77,7 @@
                     <div class="lop-right">
                         <div class="c-text">
                             <span class="login-icon icon-1"></span>
-                            <input type="text" placeholder="请输入老师手机号或ID号" class="txt1 JS-inputEvent JS-classInput" maxlength="11">
+                            <input type="text" placeholder="请输入老师手机号或ID号" class="txt1 JS-inputEvent JS-classInput">
                             <div class="errorTips">老师账号错误</div>
                         </div>
                         <a href="javascript:void(0);" class="login-btn login-orange JS-getClassLIst" style="margin-top:30px;padding: 3px 0">注册学生账号</a>
@@ -96,11 +96,18 @@
                         <script type="text/javascript">
                         $(document).ready(function() {
                             $(".JS-selectTeacher-main").on('click', modalTea)
+                            $(".JS-getClassLIst").on('click', modalResStuPwd)
 
                             function modalTea() {
-                                console.log("a");
                                 $("#modal-overlay").empty();
                                 var _html = document.getElementById("modal-register-teacher").innerHTML;
+                                $("#modal-overlay").append(_html);
+                                $("#modal-overlay").css("visibility", 'visible');
+                            }
+
+                            function modalResStuPwd() {
+                                $("#modal-overlay").empty();
+                                var _html = document.getElementById("modal-reg-pwd-stu").innerHTML;
                                 $("#modal-overlay").append(_html);
                                 $("#modal-overlay").css("visibility", 'visible');
                             }
@@ -124,18 +131,18 @@
                     <div class="JS-defaultMode">
                         <div class="c-text">
                             <span class="login-icon icon-1"></span>
-                            <input type="text" placeholder="请输入您的手机号" class="txt1 JS-teacherMobile JS-inputEvent" maxlength="11">
+                            <input type="text" placeholder="请输入您的手机号" class="txt1 JS-teacherMobile JS-inputEvent">
                             <div class="errorTips"></div>
                         </div>
                         <div class="c-text">
                             <span class="login-icon icon-3"></span>
-                            <input type="text" placeholder="请输入短信验证码" class="txt2 JS-teacherSmsCode JS-inputEvent" maxlength="6">
+                            <input type="text" placeholder="请输入短信验证码" class="txt2 JS-teacherSmsCode JS-inputEvent">
                             <span class="code codeBg login-blue JS-getCheckCode" style="cursor: pointer;">获取验证码</span>
                             <div class="errorTips"></div>
                         </div>
                         <div class="c-text">
                             <span class="login-icon icon-2"></span>
-                            <input type="text" placeholder="请输入右侧数字" class="txt2 JS-teacherCaptcha JS-inputEvent" maxlength="4" id="captchaInputLogin">
+                            <input type="text" placeholder="请输入右侧数字" class="txt2 JS-teacherCaptcha JS-inputEvent" id="captchaInputLogin">
                             <span id="captchaImageLogin" class="code" style="cursor: pointer;">1234</span>
                             <div class="errorTips"></div>
                         </div>
@@ -154,12 +161,19 @@
                         </ul>
                         <script type="text/javascript">
                         $(document).ready(function() {
-                            $(".JS-selectStudent-main").on('click', modalStu)
+                            $(".JS-selectStudent-main").on('click', modalStu);
+                            $(".JS-teacherVerMobile").on('click', modalResTeaPwd);
 
                             function modalStu() {
-                                console.log("a");
                                 $("#modal-overlay").empty();
-                                var _html = document.getElementById("modal-register").innerHTML;
+                                var _html = document.getElementById("modal-register-student").innerHTML;
+                                $("#modal-overlay").append(_html);
+                                $("#modal-overlay").css("visibility", 'visible');
+                            }
+
+                            function modalResTeaPwd() {
+                                $("#modal-overlay").empty();
+                                var _html = document.getElementById("modal-reg-pwd-tea").innerHTML;
                                 $("#modal-overlay").append(_html);
                                 $("#modal-overlay").css("visibility", 'visible');
                             }
@@ -168,6 +182,267 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </script>
+    <script type="text/html" id="modal-reg-pwd-stu">
+        <div class="pr-main pr-main-child js-registerTemplateType" data-type="student">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="hd">请设置你的密码！</div>
+            <div class="main-box">
+                <div class="main-inner">
+                    <div class="main-class clearfloat">
+                        <div class="main-title">请选择你所在的班级 : </div>
+                        <span class="click-select-code" data-type="clazzList" data-clazzid="1" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
+                        <span class="click-select-code" data-type="clazzList" data-clazzid="2" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
+                        <div style="clear:both; padding:15px 0 10px;">
+                            <p class="select-sex">请选择性别 : </p>
+                            <div class="select-sex-item">
+                                <span class="click-select-code sex-M" data-gender="M">男生</span>
+                                <span class="click-select-code sex-F" data-gender="F">女生</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="main-list">
+                        <li class="r-username">
+                            <input type="text" value="" maxlength="20" name="username" data-label="真实姓名" class="require" placeholder="请输入真实姓名">
+                            <span class="i-error-info"></span>
+                        </li>
+                        <li class="r-password">
+                            <input type="password" value="" maxlength="16" name="password" data-label="密码" class="require" placeholder="请设置密码">
+                            <span class="i-error-info"></span>
+                        </li>
+                        <li>
+                            <input type="password" value="" maxlength="16" name="verify_password" data-label="确认密码" class="require" placeholder="请再次输入设置的密码">
+                            <span class="i-error-info"></span>
+                        </li>
+                        <li class="">
+                            <input type="text" value="" maxlength="11" name="mobile" class="require" data-label="手机号" placeholder="请输入家长手机号">
+                            <span class="info-text"><a href="javascript:void(0);" class="code-btn" id="studentGetCheckCodeBtn"><span>免费获取验证码</span></a>
+                            </span>
+                            <span class="i-error-info"></span>
+                        </li>
+                        <li>
+                            <input type="text" value="" maxlength="6" class="require" name="ver_code" data-label="验证码" placeholder="请输入手机收到的短信验证码">
+                            <span class="i-error-info"></span>
+                        </li>
+                    </ul>
+                    <div class="submit"><a href="javascript:void(0);" class="v-submit-register v-submit-register-student" data-type="student">完成注册</a></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var oSpan = $(".main-class>span");
+                for (var i = 0; i < oSpan.length; i++) {
+                    oSpan[i].onclick = function() {
+                        $(this).addClass("active");
+                    }
+                }
+
+                activeOrange();
+
+                function activeOrange() {
+                    $(".sex-M").on('click', function() {
+                        if ($(".sex-F").hasClass("active")) {
+                            $(".sex-F").removeClass('active')
+                        } else {
+                            $(this).addClass("active");
+                        }
+                    });
+                    $(".sex-F").on('click', function() {
+                        if ($(".sex-M").hasClass("active")) {
+                            $(".sex-M").removeClass('active')
+                        } else {
+                            $(this).addClass("active");
+                        }
+                    });
+
+                }
+            })
+            </script>
+        </div>
+    </script>
+    <script type="text/html" id="modal-reg-pwd-tea">
+        <div class="js-scrollMainIdBox" id="register_template" style="min-height: 100%;">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="pr-main pr-main-teacher js-registerTemplateType" data-type="teacher">
+                <div class="hd">请设置你的密码！</div>
+                <div class="main-box">
+                    <div class="main-inner">
+                        <ul class="main-list">
+                            <li class="r-username">
+                                <input type="text" value="" class="require r-tea-username" name="username" data-role="teacher" data-label="真实姓名" placeholder="请输入真实姓名">
+                                <span class="i-error-info">真实姓名不可以为空</span>
+                            </li>
+                            <li class="r-password">
+                                <input type="password" value="" name="password" class="require r-tea-password" data-label="密码" placeholder="请设置密码">
+                                <span class="i-error-info">密码不可以为空</span>
+                            </li>
+                            <li class="last">
+                                <input type="password" value="" name="verify_password" data-label="确认密码" class="require r-tea-last" placeholder="请再次输入设置的密码">
+                                <span class="i-error-info">确认密码不可以为空</span>
+                            </li>
+                        </ul>
+                        <div class="submit"><a href="javascript:void(0);" class="v-submit-register v-submit-register-tea" data-type="teacher">下一步</a></div>
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(".v-submit-register-tea").on('click', modalRegTeaSelect);
+                            $(".r-tea-username").on('blur', judgeNull);
+                            $(".r-tea-password").on('blur', judgeNull);
+                            $(".r-tea-last").on('blur', judgeConfirmPwd);
+
+                            function modalRegTeaSelect() {
+                                $("#modal-overlay").empty();
+                                var _html = document.getElementById("modal-reg-tea-select").innerHTML;
+                                $("#modal-overlay").append(_html);
+                                $("#modal-overlay").css("visibility", 'visible');
+                            }
+
+                            function judgeNull() {
+                                console.log("aaa");
+                                var oText = $(this).val();
+                                if (oText == '') {
+                                    $(this).next().css('display', 'block');
+                                } else {
+                                    $(this).next().css('display', 'none');
+                                }
+                            }
+
+                            function judgeConfirmPwd() {
+                                var pwdText = $(".r-tea-password").val();
+                                var confirmText = $(".r-tea-last").val();
+                                if (confirmText == '') {
+                                    $(this).next().css('display', 'block');
+                                } else {
+                                    $(this).next().css('display', 'none');
+                                }
+                                if (pwdText != confirmText) {
+                                    $(".r-tea-last").next(".i-error-info").html("确认密码与密码不一致！");
+                                } else {
+                                    $(".r-tea-last").next(".i-error-info").css('display', 'none');
+                                }
+
+                            }
+                        })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="modal-reg-tea-select">
+        <div class="loginPop-box loginBg" style="min-height:100%;">
+            <p>
+                <a onclick="overlay()" href="" class="index-close"></a>
+            </p>
+            <div class="register-tea" style="position: relative;top: 100px;width: 1100px;margin:0 auto">
+                <div class="select-hd">按照下面的步骤来选择你的学校</div>
+                <div class="select-group clearfloat">
+                    <form enctype="multipart/form-data" class="form-register-tea" role="form">
+                        <div class="section-item item">
+                            <h2 class="select-title">学段</h2>
+                            <select name="section">
+                                <option value="">选择学段</option>
+                                <option value="小班">小班</option>
+                                <option value="中班">中班</option>
+                                <option value="大班">大班</option>
+                            </select><span class="select-drop"></span>
+                        </div>
+                        <div class="subject-item item">
+                            <h2 class="select-title">学科</h2>
+                            <select name="subject">
+                                <option value="选择学科">选择学科</option>
+                                <option value="语文">语文</option>
+                                <option value="英语">英语</option>
+                                <option value="数学">数学</option>
+                                <option value="科学">科学</option>
+                            </select><span class="select-drop"></span>
+                        </div>
+                        <div class="city-township-item item">
+                            <h2 class="select-title">市区</h2>
+                            <select name="city" class="city">
+                                <option value="选择市">选择市</option>
+                                <option value="石家庄">石家庄</option>
+                                <option value="唐山">唐山</option>
+                                <option value="秦皇岛">秦皇岛</option>
+                            </select><span class="select-city-drop"></span>
+                            <select name="township" class="township">
+                                <option value="选择区">选择区</option>
+                                <option value="裕华区">裕华区</option>
+                                <option value="桥西区">桥西区</option>
+                                <option value="长安区">长安区</option>
+                            </select><span class="select-township-drop"></span>
+                        </div>
+                        <div class="school-item item">
+                            <h2 class="select-title">学校</h2>
+                            <select name="school">
+                                <option value="选择学校">选择学校</option>
+                                <option value="双语幼儿园">双语幼儿园</option>
+                                <option value="第一幼儿园">第一幼儿园</option>
+                                <option value="第二幼儿园">第二幼儿园</option>
+                            </select><span class="select-drop"></span>
+                        </div>
+                        <div class="grade-item item">
+                            <h2 class="select-title">班次</h2>
+                            <select name="grade">
+                                <option value="选择班次">选择班次</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select><span class="select-drop"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="select-result">
+                    <span class="section-res item">小班</span>
+                    <span class="subject-res item"></span>
+                    <span class="city-res item"></span>
+                    <span class="township-res item"></span>
+                    <span class="school-res item"></span>
+                    <span class="grade-res item"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                addSection();
+                function addSection() {
+                    $(".section-item>select").on('change', function() {
+                        var sectionValue = $(".section-item>select").val();
+                        $(".section-res").text(sectionValue);
+                        $(".section-res").css('display', "inline-block");
+                    });
+                    $(".subject-item>select").on('change', function() {
+                        var subjectValue = $(".subject-item>select").val();
+                        $(".subject-res").text(subjectValue);
+                        $(".subject-res").css('display', "inline-block");
+                    });
+                    $(".city").on('change', function() {
+                        var cityValue = $(".city").val();
+                        $(".city-res").text(cityValue);
+                        $(".city-res").css('display', "inline-block");
+                    });
+                    $(".township").on('change', function() {
+                        var townshipValue = $(".township").val();
+                        $(".township-res").text(townshipValue);
+                        $(".township-res").css('display', "inline-block");
+                    });
+                    $(".school-item>select").on('change', function() {
+                        var schoolValue = $(".school-item>select").val();
+                        $(".school-res").text(schoolValue);
+                        $(".school-res").css('display', "inline-block");
+                    });
+                    $(".grade-item>select").on('change', function() {
+                        var gradeValue = $(".grade-item>select").val();
+                        $(".grade-res").text(gradeValue);
+                        $(".grade-res").css('display', "inline-block");
+                    });
+
+                }
+            });
+            </script>
         </div>
     </script>
 </head>
