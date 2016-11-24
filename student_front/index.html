@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>学生部分首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <style>
+        body{
+            width: 100%;
+            background:url(images/bg.png) no-repeat;
+        }
+        a{
+            font-family: "幼圆";
+        }
+        li{
+            list-style-type:none;
+            color:white;
+        }
+        #nav ul{
+            margin-top:12px;
+            margin-left:25px;
+        }
+        #nav ul li{
+            float:left;
+            list-style-type:none;
+            padding-left:31px;
+    `
+            color:white;
+        }
+        #nav ul li a{
+            color:white;
+            font-weight:bold;
+            font-size:24px;
+            text-decoration: none;
+            '
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="row clearfix">
+                <div class="col-md-2 column">
+
+                </div>
+                <!--导航栏部分-->
+                <div class="col-md-10 column" id="nav">
+                  <ul>
+                      <li><a href="#">首页</a></li>
+                      <li><a href="studycenter.html">学习中心</a></li>
+                      <li><a href="pk.html">竞技场</a></li>
+                      <li><a href="classspace.html">班级天地</a></li>
+                      <li><a href="parentspace.html">家长空间</a></li>
+                      <li><a href="gift.html">奖品</a></li>
+                      <li><a href="parentspace.html"><img src="images/email.png" /></a></li>
+                      <a><a href="personcenter.html"/> <img src="images/headpic.jpg" class="img-circle" /></a>
+                           <!-- <ul>
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">上传</a></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>-->
+                      </li>
+                  </ul>
+
+                </div>
+            </div>
+            <div class="row clearfix">
+                <!--左侧榜单-->
+                <div class="col-md-4 column">
+                    <li id="bangdan">榜单</li>
+                    <HR width="70%" color=#987cb9 SIZE=8 />
+
+                    <ul id="name">
+                        <li><img src="images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李小明</li>
+                        <li><img src="images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王华</li>
+                        <li><img src="images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张丽丽</li>
+                    </ul>
+                    <style>
+                        #name li{
+                            padding-top:30px;
+                            padding-left:60px;
+                        }
+                    </style>
+                    <HR width="70%" color=#987cb9 SIZE=8 />
+                    <ul id="owner">
+
+                        <li>我的学号：<a href="#">123456</a></li>
+                        <li>我的星星：<a href="#">0</a></li>
+                    </ul>
+                    <style>
+                        #owner li{
+                            padding-top:8px;
+                            padding-left:60px;
+                        }
+                    </style>
+                    <style>
+                        #bangdan{
+                            font-weight:bold;
+                            color:white;
+                            font-size:22px;
+                            margin-top:113px;
+                            margin-left:153px;
+                        }
+                    </style>
+                </div>
+                <style>
+                    #right_course{
+                        margin-left:78px;
+                        text-align:center;
+                    }
+                    #right_course ul{
+                        margin-top:115px;
+
+                        margin-left:10px;
+                        float: left;
+                    }
+                    #right_course ul li{
+                        padding-left:0px;
+                    }
+                </style>
+                <!--右侧课程-->
+                <div class="col-md-8 column">
+                    <div class="row clearfix" id="right_course">
+                        <div >
+                            <ul>
+                                <li><img src="images/course.jpg" /></li>
+                                <li><a href="#"><img src="images/start_study.png" /></a></li>
+                            </ul>
+
+                        </div>
+                        <div >
+                            <ul>
+                                <li><img src="images/course.jpg" /></li>
+                                <li><a href="#"><img src="images/start_study.png" /></a></li>
+                            </ul>
+                        </div>
+                        <div >
+                            <ul>
+                                <li><img src="images/course.jpg" /></li>
+                                <li><a href="#"><img src="images/start_study.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--我最棒部分-->
+                    <div class="row clearfix" >
+                        <div >
+                            <ul style="margin-top:160px;margin-left:85px">
+                                <li><img src="images/1.jpg" style="float: left; padding-right:18px" class="img-rounded" /></li>
+                                <li><img src="images/2.jpg" class="img-rounded"style="float: left; padding-right:18px"/></li>
+                                <li><img src="images/3.jpg" class="img-rounded"/></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div id="classsky"><a href="classspace.html"><img src="images/classsky.png" /></a> </div>
+                    <div id="parentspace"><a href="parentspace.html"><img src="images/parentspace.png" /></a> </div>
+                    <div id="pk"><a href="pk.html"><img src="images/pk.png" /></a> </div>
+                    <div id="studycenter"><a href="studycenter.html"><img src="images/studycenter.png" /></a> </div>
+                    <div id="gift"><a href="gift.html"><img src="images/gift.png" /></a> </div>
+                    <style>
+                        #classsky{
+                            position:absolute;
+                            right:18px;
+                            top:1600px;
+                        }
+                        #gift{
+                            position:absolute;
+                            top:1640px;
+                            right:780px;
+                        }
+                        #pk{
+                            position:absolute;
+                            top:1120px;
+                            right:800px;
+                        }
+                        #parentspace{
+                            position: absolute;
+                            top:1395px;
+                            right:700px;
+                        }
+                        #studycenter{
+                            position: absolute;
+                            top:1200px;
+                            right:170px;
+                        }
+                    </style>
+                </div>
+
+            </div>
+            <!--页脚-->
+                <div class="footer">
+                    <ul>
+                        <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
+                        <li id="footerli">
+                            <a href="#">后台管理</a>
+                            <a href="#">关于我们</a>
+                            <a href="#">各界声音</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                    </ul>
+                    <style>
+                        .footer ul{
+                            margin-top:1150px;
+                            margin-left:330px;
+                            margin-bottom: 20px;
+                        }
+                        .footer ul li{
+                            list-style-type:none;
+                            margin-top:17px;
+                            color:#7d7a7d;
+
+                        }
+                        #footerli a{
+                            padding-left:30px;
+                            margin-left:5px;
+                            color:#7d7a7d;
+                        }
+                    </style>
+                </div>
+
+        </div></div>
+        <div class="qiqiu1 qiqiu">
+            <img src="images/201101asdsaf22135412367.png"/>
+            <div class="text"><a href="studycenter.html">学习中心</a></div>
+        </div>
+        <div class="qiqiu2 qiqiu">
+            <img src="images/201101ddd22135412367.png"/>
+            <div class="text"><a href="pk.html">竞技场</a></div>
+        </div>
+        <div class="qiqiu3 qiqiu">
+            <img src="images/20110122135aaaaa412367.png"/>
+            <div class="text"><a href="classspace.html">班级天地</a></div>
+        </div>
+        <div class="qiqiu4 qiqiu">
+            <img src="images/20110122135s412367.png"/>
+            <div class="text"><a href="parentspace.html">家长空间</a></div>
+        </div>
+        <div class="qiqiu5 qiqiu">
+            <img src="images/20110122135412367.png"/>
+            <div class="text"><a href="gift.html">奖品</a></div>
+        </div>
+
+        <div class="yun1 yun"> </div>
+        <!--<div class="yun2 yun"> </div>-->
+        <div class="yun3 yun"> </div>
+        <div class="yun4 yun"> </div>
+</div>
+</body>
+
+
+</html>
