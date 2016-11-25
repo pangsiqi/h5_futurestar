@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>老师主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        a:link {
+            color: black;
+        }
+        #header{
+            background-color: white;
+            border:solid 1px RGB(234,234,234);
+        }
+        #content{
+            border:solid 1px RGB(234,234,234);
+        }
+        #homework{
+            background-color:RGB(214,214,214);
+            border-radius:20px;
+            border:solid 1px gray;
+            width:160px;
+            height:450px;
+            padding-right:50px;
+            margin:50px 30px 0 15px;
+        }
+        .bs-example-popover .popover {
+            background-color:RGB(141,250,105);
+            display: block;
+            float: right;
+            width: 240px;
+            margin-left:105px;
+            margin-top:20px;
+            font-size:10px;
+        }
+        /*手风琴*/
+        .list-group li{
+            list-style-type:none;
+            width:143px;
+            font-size:16px;
+        }
+        .list-group li a:link{
+            color:white;
+        }
+        .list-group .panel-heading{
+            background-color:RGB(156,204,101);
+        }
+        .panel-heading{
+            list-style-type: none;
+            outline:RGB(124,179,66) dotted thick;
+            font-size:17px;
+            color:red;
+            text-align:center;
+            width:143px;
+            height:30px;
+            padding-top:3px;
+        }
+        .homeworkList_e li{
+            list-style-type: none;
+            background-color:RGB(43,175,43);
+            outline:RGB(124,179,66) dotted thick;
+            margin:0;
+            text-align: center;
+        }
+        #nav li{
+            float:left;
+            list-style-type:none;
+            padding-top:10px;
+        }
+        #footer{
+            background-color:white;
+            border:solid 1px RGB(234,234,234);
+            color:gray;
+            font-size:12px;
+            text-align:center;
+            height:70px;
+        }
+        .footer_nav li{
+            list-style-type:none;
+            float:left;
+            padding-left:20px;
+        }
+</style>
+</head>
+
+<body>
+<div class="container" style="background-color:RGB(177,232,114);">
+    <!--导航栏-->
+    <div class="row clearfix" id="header">
+        <div class="col-md-4 column">
+            <img alt="35x35" src="images/logo.png" />
+            <h3 style=" display:inline">未来之星</h3>
+        </div>
+        <div class="col-md-5 column">
+        </div>
+        <div class="col-md-3 column">
+            <ul id="nav"  style="padding:0;margin:0">
+                <li><a href="#"><img src="images/email.png" /></a></li>
+                <li style="padding-left:5px"><a href="#">消息</a></li>
+                <li style="padding-left:3px;padding-top:2px"><img src="images/circle.png" class="img-circle" /></li>
+                <li style="padding:0 0 0 3px;margin:0 ">
+                <li class="dropdown" >
+                    <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187); border-radius:4px;color:black;float:left;"><span style="padding:0 15px;">1</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="min-width:0px;">
+                        <li><a href="#one" >1</a></li>
+                        <li><a href="#two" >2</a></li>
+                        <li><a href="#three" >3</a></li>
+                    </ul>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="row clearfix" id="content">
+        <div class="col-md-4 column" style="padding-left: 145px;margin-top:2px">
+            <div class="row clearfix" style="background-color: white; width:150px; height:110px;">
+                <div class="col-md-6 column" style="margin-top:2px; padding-top:15px">
+                <img src="images/1-2.png" class="img-rounded" />
+                </div>
+                <div class="col-md-6 column" style="font-size:12px; margin-top:2px">
+                    <p style="padding:15px 0 0 0;margin:0;float:left">孙老师</p>
+                    <div class="progress" style="height:10px; width:20px; float:right;padding:0;margin:0">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                            <span class="sr-only">50%</span>
+                        </div>
+                    </div>
+                    <p style="padding:0;margin:0">LVO</p>
+                    <p style="padding:0;margin:0;float:left">鲜花:0</p>
+                    <input type="button" style="background-color:white; border:solid 1px gray; border-radius:8px" value="证">
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12 column" style="padding:0">
+                    <div class="panel-group" id="panel-493390">
+                        <ul class="list-group">
+                            <li>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792">首页</a>
+                                </div>
+                            </div>
+                            </li>
+                            <li >
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-749900">英语作业<span class="glyphicon glyphicon-chevron-down" style="color:white;padding-top:4px;padding-left:16px"></span></a>
+                                </div>
+                                <div id="panel-element-749900" class="panel-collapse collapse">
+                                    <div class="panel-body" style="padding:0">
+                                        <ul class="homeworkList_e" style="padding:0">
+                                            <li class="list-group-item" style="margin-left:0"><a href="#">布置作业</a></li>
+                                            <li class="list-group-item" style="margin-left:0"><a href="#">作业情况</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792">我的班级</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792">资源箱</a>
+                                    </div>
+                                </div></li><li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792">留言板</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--今日任务-->
+        <div class="col-md-5 column" style="height:1200px;padding-left:0">
+            <h4 style="padding-top: 20px; font-weight:bold;">今日任务</h4>
+            <div class="row clearfix">
+                <div class="col-md-12 column" style="background-color: white; height:200px; border:solid 5px RGB(43,175,43); border-radius:20px">
+                    <h4 style="padding-left:15px">
+                       任务一 &nbsp;&nbsp;给学生布置作业
+                    </h4>
+                    <div class="col-md-4 column">
+                        <ul style="list-style-type:none;padding-left:0">
+                            <li><a href="#"><p>李小明</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 column">
+                        <ul style="list-style-type:none;padding-left:25px">
+                            <li><a href="#"><p style="padding-left:20px">数学1</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 column">
+                      <input type="button" style="background:RGB(156,204,101); color:white;margin-left:30px; padding:4px 20px 4px 20px; font-size:10px; border-radius:8px; border:solid 1px gray" value="查看" >
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12 column" style="background-color: white; height:200px; border:solid 5px RGB(43,175,43); border-radius:20px; margin-top:5px">
+                    <h4 style="padding-left:15px">
+                       任务二 &nbsp;&nbsp;让小朋友来到这里吧
+                    </h4>
+                    <img style="padding-left:30px" alt="160x100" src="images/1-4.png" />
+                </div>
+            </div>
+            <div class="row clearfix">
+                <h4 style="color:red; margin-top:10px">我的动态</h4>
+                <div class="col-md-12 column" style="background-color: white; height:200px; border:solid 3px RGB(187,187,187); border-radius:20px">
+                    <div class="bs-example bs-example-popover">
+                    <div class="popover right">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p>快告诉你的学生你的手机号</p>
+                            <p>吧，让他们来加入班级中</p>
+                        </div>
+                    </div>
+                    </div>
+                    <img style="padding-top:10px" alt="70x70" src="images/1-3.png" />
+                </div>
+            </div>
+            <div class="row clearfix">
+                <h4 style="color:#46b8da; margin-top:10px">认证</h4>
+                <div class="col-md-12 column" style="background-color: white; height:200px; border:solid 3px RGB(187,187,187); border-radius:20px">
+                    <h4 style="color:#46b8da; font-size:15px; padding:20px 0 20px 5px">请上传你的相关证件经工作人员审核即可通过认证</h4>
+                    <button type="button" class="btn btn-lg" style="background-color:RGB(43,175,43); color:white; float:right; margin-right:25px">点击上传</button>
+                    <ol>
+                        <li style="color:red">教师证</li>
+                        <li style="color:orange">职业证</li>
+
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+        <!--完成作业-->
+        <div class="col-md-3 column" id="homework">
+            <p style="padding:35px 0 0 15px">完成作业</p>
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+                <div class="col-md-6 column">
+                    <img alt="45x45" src="images/1-1.png" />
+                    <p>名字</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="row clearfix" id="footer">
+        <div class="col-md-12 column" style="padding-top:15px">
+            <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-12 column">
+            <div class="col-md-3 column">
+            </div>
+            <div class="col-md-5 column">
+                <ul class="footer_nav">
+                    <li style="padding-left:45px">后台管理</li>
+                    <li>关于我们</li>
+                    <li>各界声音</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

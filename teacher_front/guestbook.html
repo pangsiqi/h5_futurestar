@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>老师主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        a:link {
+            color: black;
+        }
+        ul li{
+            list-style-type:none;
+            float:left;
+        }
+        #header{
+            background-color: white;
+            border:solid 1px RGB(234,234,234);
+        }
+        #content{
+            background-color:RGB(177,232,114);
+            height:1000px;
+        }
+        #message{
+            height:180px;
+            width:750px;
+            background-color:white;
+            border:solid 5px RGB(43,175,43);
+            border-radius:20px;
+            margin-left:120px;
+        }
+        /*footer*/
+        #nav li{
+            float:left;
+            list-style-type:none;
+            padding-top:10px;
+        }
+        #footer{
+            background-color:white;
+            border:solid 1px RGB(234,234,234);
+            color:gray;
+            font-size:12px;
+            text-align:center;
+            height:70px;
+        }
+        .footer_nav li{
+            list-style-type:none;
+            float:left;
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--导航栏-->
+    <div class="row clearfix" id="header">
+        <div class="col-md-4 column">
+            <img alt="35x35" src="images/logo.png" />
+            <h3 style=" display:inline">未来之星</h3>
+        </div>
+        <div class="col-md-5 column">
+        </div>
+        <div class="col-md-3 column">
+            <ul id="nav"  style="padding:0;margin:0">
+                <li><a href="#"><img src="images/email.png" /></a></li>
+                <li style="padding-left:5px"><a href="#">消息</a></li>
+                <li style="padding-left:3px;padding-top:2px"><img src="images/circle.png" class="img-circle" /></li>
+                <li style="padding:0 0 0 3px;margin:0 ">
+                <li class="dropdown" >
+                    <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187); border-radius:4px;color:black;float:left;"><span style="padding:0 15px;">1</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="min-width:0px;">
+                        <li><a href="#one" >1</a></li>
+                        <li><a href="#two" >2</a></li>
+                        <li><a href="#three" >3</a></li>
+                    </ul>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row clearfix" id="content">
+        <div class="col-md-12 column">
+            <div class="row clearfix">
+                <div class="col-md-3 column" style="padding-top:20px;padding-left:115px;">
+                    <img alt="90x90"  src="images/title.png" class="img-circle" />
+                </div>
+                <div class="col-md-9 column">
+                    <h3 style="font-weight:bold;padding-top:24px;">孙老师</h3>
+                    <ul style="padding:0;padding-top:10px;">
+                        <li style="padding-left:12px;padding:0"><a href="#">教工号：12345678</a></li>
+                        <li style="padding-left:70px"><a href="#">班级：中班1班</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h4 style="color:white;font-weight:bold;padding-left:120px;padding-top:25px">有什么心里话要告诉他们呢？</h4>
+                    <div class="row clearfix">
+                        <div class="col-md-12 column" id="message">
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-4 column">
+                        </div>
+                        <div class="col-md-3 column">
+                        </div>
+                        <div class="col-md-5 column">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="row clearfix" id="footer">
+        <div class="col-md-12 column" style="padding-top:15px">
+            <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-12 column">
+            <div class="col-md-3 column">
+            </div>
+            <div class="col-md-5 column">
+                <ul class="footer_nav">
+                    <li style="padding-left:45px">后台管理</li>
+                    <li>关于我们</li>
+                    <li>各界声音</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
