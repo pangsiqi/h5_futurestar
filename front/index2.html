@@ -4,21 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>未来之星-我们与你一起成长</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" type="text/css" href="css/bgstretcher.css">
+    <link rel="stylesheet" type="text/css" href="css/inline.css">
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
-    <script type="text/javascript" src="js/bgstretcher.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('#body').bgStretcher({
-            images: ['img/banner1.jpg', 'img/banner2.jpg', 'img/banner3.jpg', 'img/banner4.jpg'],
-            imageWidth: 1024,
-            imageHeight: 500,
-            transitionEffect: 'fade',
-            sequenceMode: 'normal',
+    $(function() {
+        $(document).ready(function() {
+            if ($.browser.msie && $.browser.version < 10) {
+                $('body').addClass('ltie10');
+            }
+            $.fn.fullpage({
+                verticalCentered: false,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                navigation: false,
+                navigationTooltips: ['首页', '各界声音', '关于我们', '加入我们'],
+                autoScrolling: true,
+                scrollingSpeed: 700,
+                slideTime: 800,
+                continuousVertical: true,
+                afterRender: function() {
+                    idInterval = setInterval(function() {
+                        $.fn.fullpage.moveSectionDown();
+                    }, 3000);
+                },
+                afterLoad: function(anchorLink, index) {
+                    if (index == 4) {
+                        $('.section1').addClass('active');
+                    }
+                    // $('#infoMenu').toggleClass('whiteLinks', index == 4);
 
+                    // if (index == 1 && slideIndex == 1) {
+                    //     clearInterval(idInterval);
+                    // }
+                }
+            });
         });
     });
     </script>
@@ -460,40 +484,50 @@
 </head>
 
 <body>
-    <!-- <div class="body-header"> -->
-    <div class="global-nav-inner">
-        <div class="global-nav-container clearfloat">
-            <ul class="nav js-global-actions" role="navigation" id="global-actions">
-                <li id="global-nav-home" class="home" data-global-action="home">
-                    <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
-                        <span class="img"><img src="img/logo.png" width="25px" height="25px"></span>
-                        <span class="text">未来之星</span>
-                    </a>
-                </li>
-                <li id="global-nav-about" class="about" data-global-action="about">
-                    <a class="js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/about" target="_blank" data-component-context="about_nav" data-nav="about">
-                        <span class="text">关于我们</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- </div> -->
-    <div id="body"></div>
     <div id="modal-overlay"></div>
-    <div class="login-register">
+    <div class="login-register" style="position: fixed;left: 65%;top: 150px;width: 370px;height:350px;display: block;background: #fff;opacity: 0.9; border-radius: 20px;z-index: 1">
         <p class="banner1-title">未来之星-我们与你一起成长</p>
         <p class="login"><a href="javascript:;">登录</a></p>
         <p class="register"><a href="javascript:;">注册</a></p>
     </div>
-    <div class="body-footer">
-        <ul class="clearfloat">
-            <li class="footerli"><a href="#">后台管理</a></li>
-            <li class="footerli"><a href="#">关于我们</a></li>
-            <li class="footerli"><a href="#">各界声音</a></li>
-            <li class="footerli"><a href="#">加入我们</a></li>
-        </ul>
-        <p>Copyright &copy; 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    <div class="body">
+        <div class="section section1">
+            <div class="bg"><img src="img/banner1.jpg" alt="banner1"></div>
+        </div>
+        <div class="section section2">
+            <div class="bg"><img src="img/banner2.jpg" alt="banner2"></div>
+            <div class="bg21"></div>
+            <div class="bg22"></div>
+        </div>
+        <div class="section section3">
+            <div class="bg"><img src="img/banner3.jpg" alt=""></div>
+            <div class="bg31"></div>
+            <div class="bg32"></div>
+        </div>
+        <div class="section section4">
+            <div class="bg"><img src="img/banner4.jpg" alt=""></div>
+            <div class="bg41"></div>
+            <div class="bg43"></div>
+        </div>
+    </div>
+    <div class="body-header">
+        <div class="global-nav-inner">
+            <div class="global-nav-container">
+                <ul class="nav js-global-actions" role="navigation" id="global-actions">
+                    <li id="global-nav-home" class="home" data-global-action="home">
+                        <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
+                            <img src="img/logo.png" width="40px" height="40px">
+                            <span class="text">未来之星</span>
+                        </a>
+                    </li>
+                    <li id="global-nav-about" class="about" data-global-action="about">
+                        <a class="js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/about" target="_blank" data-component-context="about_nav" data-nav="about">
+                            <span class="text">关于</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 

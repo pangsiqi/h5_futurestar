@@ -1,36 +1,57 @@
 /* 导航栏 */
-.global-nav-inner {
-    background: #fff;
-    height: 46px;
+
+#body {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    opacity: 0.8;
 }
+
+.global-nav-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
 .global-nav-container {
     margin-left: 90px;
 }
-.global-nav [role=navigation], .nav, .nav>li {
+
+.global-nav [role=navigation],
+.nav,
+.nav>li {
     float: left;
 }
+
 .nav {
     margin-right: 12px;
     text-align: left;
 }
+
 #global-actions>li {
-    height: 46px;
+    height: 40px;
     overflow: hidden;
-}
-.nav>li {
     color: #66757f;
 }
-.nav li {
-    position: relative;
+// .nav li {
+//     position: relative;
+// }
+
+.global-nav--newLoggedOut #global-actions li a {
+    border-bottom-color: #ff7b0a;
 }
-.global-nav--newLoggedOut #global-actions>li>a {
-    border-bottom-color: #1da1f2;
+
+#global-actions li:hover{
+    border-bottom: 5px solid #ff7b0a;
+    transition: all .20s ease-in;
+    color: #ff7b0a;
 }
-#global-actions>li>a {
-    border-bottom: 5px solid #1b95e0;
-    transition: all .15s ease-in-out;
-}
-.nav>li>a, .nav>li>button {
+
+.nav>li>a {
     color: inherit;
     display: block;
     font-size: 13px;
@@ -39,12 +60,69 @@
     line-height: 1;
     padding: 0 14px 0 4px;
 }
+
+.nav>li>a .img {
+    float: left;
+    margin-top: 8px;
+    display: inline-block;
+}
 .nav>li>a .text {
     float: right;
     margin-left: 3px;
-    margin-top: 17px;
-    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
 }
+
+
+/* 登录框 */
+
+.login-register {
+    position: fixed;
+    left: 65%;
+    top: 150px;
+    width: 370px;
+    height: 350px;
+    display: block;
+    background: #fff;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.banner1-title {
+    font-size: 25px;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    text-align: center;
+    color: #575757;
+}
+
+.login,
+.register {
+    margin-bottom: 40px;
+    position: relative;
+    left: 15%;
+}
+
+.login-register a {
+    padding: 10px 100px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    -webkit-transition: background-color .5s ease-in;
+    -moz-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
+}
+
+.login-register a:hover {
+    background: #15a6ee;
+    cursor: pointer;
+    color: #fff;
+}
+
 
 /* 定义模态对话框外面的覆盖层样式 */
 
@@ -457,7 +535,7 @@ a {
     position: relative;
 }
 
-.select-group .item select{
+.select-group .item select {
     width: 150px;
     padding: 10px;
     font-size: 16px;
@@ -467,7 +545,8 @@ a {
     -moz-appearance: none;
     -webkit-appearance: none;
 }
-.select-result .item{
+
+.select-result .item {
     display: none;
     width: 100px;
     padding: 10px;
@@ -477,14 +556,16 @@ a {
     background: #15a6ee;
     border-radius: 40px;
 }
-.select-drop{
+
+.select-drop {
     display: inline-block;
     width: 27px;
     height: 16px;
     background: url(../img/drop.png) no-repeat;
     margin-left: -32px;
 }
-.select-city-drop{
+
+.select-city-drop {
     display: inline-block;
     width: 27px;
     height: 16px;
@@ -493,7 +574,8 @@ a {
     left: 60px;
     top: 42px;
 }
-.select-township-drop{
+
+.select-township-drop {
     display: inline-block;
     width: 27px;
     height: 16px;
@@ -506,16 +588,20 @@ a {
 .select-group .item select::-ms-expand {
     display: none;
 }
-.city{
+
+.city {
     float: left;
     width: 90px!important;
 }
-.township{
+
+.township {
     float: right;
     width: 90px!important;
 }
 
+
 /* 学生注册密码页面 */
+
 .pr-main-child .hd {
     padding: 90px 0 0;
     text-align: center;
@@ -524,9 +610,12 @@ a {
     line-height: 36px;
     background: url(../img/setPassword-ico.png) 50% 0 no-repeat;
 }
-.main-title,.select-sex{
+
+.main-title,
+.select-sex {
     font-size: 16px;
 }
+
 .pr-main-child .main-list li input {
     display: block;
     border: 0;
@@ -536,6 +625,7 @@ a {
     padding: 10px 14px;
     border-radius: 40px;
 }
+
 .pr-main-child .main-class span {
     float: left;
     _display: inline;
@@ -550,20 +640,24 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.pr-main-child .select-sex{
+
+.pr-main-child .select-sex {
     display: block;
     float: left;
     margin-right: 10px;
 }
-.pr-main-child .select-sex-item{
+
+.pr-main-child .select-sex-item {
     margin-left: -125px;
     display: inline-block;
     padding-top: 4px;
 }
+
 .pr-main-child .main-class span.active {
     background-position: 0 -25px;
     color: #ff7b0a;
 }
+
 .pr-main-child .main-list li .info-text .code-btn {
     display: inline-block;
     padding: 0 14px;
@@ -575,6 +669,7 @@ a {
     top: 2px;
     right: 2px;
 }
+
 .pr-main-child .submit a {
     display: block;
     padding: 13px 0;
@@ -585,4 +680,6 @@ a {
     width: 100%;
     text-align: center;
 }
+
 // transform: translateY(-50%) rotate(180deg);
+

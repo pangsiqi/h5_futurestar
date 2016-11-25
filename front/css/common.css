@@ -22,6 +22,8 @@ img {
 select:focus,select:active,select:hover{
   outline:none;
 }
+
+
 // 给浮动元素的父级元素添加class="clearfloat"
 .clearfloat{
 	zoom: 1;
@@ -38,4 +40,28 @@ select:focus,select:active,select:hover{
 }
 .fl-r{
 	float: right;
+}
+/* 页脚 */
+.body-footer {
+	position: fixed;
+    bottom: 10px;
+    left: 64.5%;
+}
+.body-footer ul{
+	width: 212px;
+	overflow: hidden; 
+	margin: 0 auto;
+}
+.footerli{
+	float: left;
+}
+.footerli a {
+    margin-right: 5px;
+    color: #000;
+    font-size: 12px;
+}
+.body-footer p {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
 }

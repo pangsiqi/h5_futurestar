@@ -1,11 +1,11 @@
 (function($) {
 	$(document).ready(function() {
-		var clicked = false;
+
 		$(".login").one('click', modalLogin);
 		$(".register").one('click', modalResStu);
 		$("#index_login_username").on('blur', judgeNull);
 		$("#index_login_password").on('blur', judgeNull);
-		$(".icon-6").on('click', learnOneself);
+
 		//首页点击登录和学生注册
 		function modalLogin() {
 			$("#modal-overlay").empty();
@@ -44,17 +44,7 @@
 			console.log(tel);
 			console.log(pwd);
 		}
-		// 记住我图片变化
-		function learnOneself() {
-			console.log("a");
-			if (clicked == false) {
-				$(this).attr('class', 'login-icon icon-7');
-				clicked = true;
-			} else {
-				$(this).attr('class', 'login-icon icon-6');
-				clicked = false;
-			}
-		}
+
 	});
 
 })(jQuery);

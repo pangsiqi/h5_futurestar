@@ -10,12 +10,8 @@
 .section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .section .bg img { display: block; width: 100%; height: 100%;}
 // banner1 开始
-.banner1group{position: fixed;left: 65%;top: 150px;width: 370px;height:350px;display: block;border: 1px solid #ece9e9;background: #fff; border-radius: 20px;}
-.banner1-title{font-size: 25px;padding-bottom: 40px;padding-top:40px;text-align: center; color: #575757;}
-.login,.register{ margin-bottom: 30px;position: relative;left: 15%;}
-.banner1group a{padding:10px 100px;  border: 1px solid #cdcdcd; border-radius: 10px;font-size: 1.7rem; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); -webkit-transition:background-color .5s ease-in;	-moz-transition:background-color .5s ease-in;transition:background-color .5s ease-in;}
-.banner1group a:hover{background: #666;cursor: pointer;color: #fff;}
 
+// style="position: fixed;left: 65%;top: 150px;width: 370px;height:350px;display: block;background: #fff;opacity: 0.9; border-radius: 20px;"
 .bg21 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 250px; margin-left: -608px; margin-bottom: 40px; background: url(../img/bg21.png) 0 0 no-repeat; transition: all 1s;  opacity: 0; margin-left: -1108px;}
 .bg22 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 299px; margin-left: -280px; margin-bottom: 70px; background: url(../img/bg22.png) right 0 no-repeat; transition: all 1s; opacity: 0; margin-left: 320px;}
 .section strong { position: absolute; left: 85%; top: 15%; z-index: 10; width: 512px; height: 45px; margin-left: -256px; font-size: 24px; font-weight: 500; color: #748A9E; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
@@ -37,7 +33,7 @@
 .active strong, .active h3 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s;}
 .active .p1 { opacity: 1; transition-delay: 1.7s;}
 
-// .active .banner1group{opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s; }
+// .active .login-register{opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s; }
 .active .banner1-title{font-size: 25px;padding-bottom: 40px;padding-top:40px;text-align: center; color: #575757; }
 
 .active .bg21 { opacity: 1; margin-left: -608px; transition-delay: 0.7s;}
