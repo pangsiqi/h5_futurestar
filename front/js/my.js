@@ -46,6 +46,7 @@
 		}
 		// 记住我图片变化
 		function learnOneself() {
+			console.log("a");
 			if (clicked == false) {
 				$(this).attr('class', 'login-icon icon-7');
 				clicked = true;

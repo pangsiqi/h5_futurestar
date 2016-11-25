@@ -1,17 +1,65 @@
+/* 导航栏 */
+.global-nav-inner {
+    background: #fff;
+    height: 46px;
+}
+.global-nav-container {
+    margin-left: 90px;
+}
+.global-nav [role=navigation], .nav, .nav>li {
+    float: left;
+}
+.nav {
+    margin-right: 12px;
+    text-align: left;
+}
+#global-actions>li {
+    height: 46px;
+    overflow: hidden;
+}
+.nav>li {
+    color: #66757f;
+}
+.nav li {
+    position: relative;
+}
+.global-nav--newLoggedOut #global-actions>li>a {
+    border-bottom-color: #1da1f2;
+}
+#global-actions>li>a {
+    border-bottom: 5px solid #1b95e0;
+    transition: all .15s ease-in-out;
+}
+.nav>li>a, .nav>li>button {
+    color: inherit;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 1;
+    padding: 0 14px 0 4px;
+}
+.nav>li>a .text {
+    float: right;
+    margin-left: 3px;
+    margin-top: 17px;
+    padding: 0;
+}
+
 /* 定义模态对话框外面的覆盖层样式 */
 
 #modal-overlay {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     /* 使用绝对定位或固定定位  */
     left: 0px;
-    top: 0px;
+    top: 46px;
     width: 100%;
     height: 100%;
     text-align: center;
     background-color: #fff;
     opacity: 0.9;
-    /* 背景半透明 */
+    z-index: 100;
 }
 
 
@@ -138,6 +186,7 @@
     height: 50px;
     background: url(../img/close.png) no-repeat;
     cursor: pointer;
+    z-index: 200;
 }
 
 //注册界面
@@ -306,7 +355,7 @@
 }
 
 .pr-main .main-box {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .pr-main .main-list,

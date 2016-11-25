@@ -12,21 +12,40 @@
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script>
+    <script type="text/javascript">
     $(function() {
-        if ($.browser.msie && $.browser.version < 10) {
-            $('body').addClass('ltie10');
-        }
-        $.fn.fullpage({
-            resize: true,
-            verticalCentered: true,
-            anchors: ['page1', 'page2', 'page3', 'page4'],
-            navigation: true,
-            navigationTooltips: ['首页', '各界声音', '关于我们', '加入我们']
+        $(document).ready(function() {
+            if ($.browser.msie && $.browser.version < 10) {
+                $('body').addClass('ltie10');
+            }
+            $.fn.fullpage({
+                verticalCentered: false,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                navigation: false,
+                navigationTooltips: ['首页', '各界声音', '关于我们', '加入我们'],
+                autoScrolling: true,
+                scrollingSpeed: 700,
+                slideTime: 800,
+                continuousVertical: true,
+                afterRender: function() {
+                    idInterval = setInterval(function() {
+                        $.fn.fullpage.moveSectionDown();
+                    }, 3000);
+                },
+                afterLoad: function(anchorLink, index) {
+                    if (index == 4) {
+                        $('.section').addClass('active');
+                        console.log("aa");
+                    }
+                    // $('#infoMenu').toggleClass('whiteLinks', index == 4);
+
+                    // if (index == 1 && slideIndex == 1) {
+                    //     clearInterval(idInterval);
+                    // }
+                }
+            });
         });
-        $('#loginform').submit(function(e) {
-            return false;
-        });
+
     });
     </script>
     <script type="text/html" id="modal-login">
@@ -63,6 +82,24 @@
                     </div>
                 </form>
             </div>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var clicked = false;
+                $(".icon-6").on('click', learnOneself);
+                // 记住我图片变化
+                function learnOneself() {
+                    console.log("a");
+                    if (clicked == false) {
+                        $(this).attr('class', 'login-icon icon-7');
+                        clicked = true;
+                    } else {
+                        $(this).attr('class', 'login-icon icon-6');
+                        clicked = false;
+                    }
+                }
+
+            });
+            </script>>
         </div>
     </script>
     <script type="text/html" id="modal-register-student">
@@ -408,6 +445,7 @@
             <script type="text/javascript">
             $(document).ready(function() {
                 addSection();
+
                 function addSection() {
                     $(".section-item>select").on('change', function() {
                         var sectionValue = $(".section-item>select").val();
@@ -448,38 +486,56 @@
 </head>
 
 <body>
-    <div class="section section1">
-        <div class="bg"><img src="img/banner1.jpg" alt="banner1"></div>
-        <div class="banner1group">
-            <p class="banner1-title">未来之星-我们与你一起成长</p>
-            <p class="login"><a href="javascript:;">登录</a></p>
-            <p class="register"><a href="javascript:;">注册</a></p>
+    <div class="body">
+        <div class="section section1">
+            <div class="bg"><img src="img/banner1.jpg" alt="banner1"></div>
+            <div id="modal-overlay"></div>
         </div>
-        <div id="modal-overlay"></div>
+        <div class="section section2">
+            <div class="bg"><img src="img/banner2.jpg" alt="banner2"></div>
+            <div class="bg21"></div>
+            <div class="bg22"></div>
+            <!-- <strong>[ 各界声音 ]</strong>
+            <h3>开创快乐教育的新模式！</h3> -->
+        </div>
+        <div class="section section3">
+            <div class="bg"><img src="img/banner3.jpg" alt=""></div>
+            <div class="bg31"></div>
+            <div class="bg32"></div>
+            <!-- <strong>[ 关于我们 ]</strong>
+            <h3>醉心于寓教于乐的一群人!</h3> -->
+        </div>
+        <div class="section section4">
+            <div class="bg"><img src="img/banner4.jpg" alt=""></div>
+            <div class="bg41"></div>
+            <div class="bg43"></div>
+            <!-- <strong>[ 加入我们 ]</strong>
+            <h3>让教育变成一件快乐的事！</h3> -->
+        </div>
     </div>
-    <div class="section section2">
-        <div class="bg"><img src="img/banner2.jpg" alt="banner2"></div>
-        <div class="bg21"></div>
-        <div class="bg22"></div>
-        <strong>[ 各界声音 ]</strong>
-        <h3>开创快乐教育的新模式！</h3>
-        <!-- <p class="p1">秉承网易邮箱经典的清新简洁的设计风格，邮箱 6.0 版带来全新一代的设计理念，更追求极致唯美的视觉设计、传承更多人文和艺术底蕴，华丽蜕变，带来更舒服更爽心悦目的视觉享受。</p> -->
+    <div class="body-header" style="position: fixed;top: 0;left: 0;width: 100%; ">
+        <div class="global-nav-inner">
+            <div class="global-nav-container">
+                <ul class="nav js-global-actions" role="navigation" id="global-actions">
+                    <li id="global-nav-home" class="home" data-global-action="home">
+                        <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
+                            <img src="img/logo.png" width="40px" height="40px">
+                            <span class="text">未来之星</span>
+                        </a>
+                    </li>
+                    <li id="global-nav-about" class="about" data-global-action="about">
+                        <a class="js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/about" target="_blank" data-component-context="about_nav" data-nav="about">
+                            <span class="text">关于</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="section section3">
-        <div class="bg"><img src="img/banner3.jpg" alt=""></div>
-        <div class="bg31"></div>
-        <div class="bg32"></div>
-        <strong>[ 关于我们 ]</strong>
-        <h3>醉心于寓教于乐的一群人!</h3>
-        <!-- <p class="p3">邮箱 6.0 版采用了全新的视觉化交互设计，通过对界面的整体风格设计、重要信息的视觉化处理以及元素本身的视觉传达优化，来实现产品流程设计和交互行为塑造。从视觉的角度出发，让用户无需多想，直接通过感官与产品进行交互。</p> -->
-    </div>
-    <div class="section section4">
-        <div class="bg"><img src="img/banner4.jpg" alt=""></div>
-        <div class="bg41"></div>
-        <div class="bg43"></div>
-        <strong>[ 加入我们 ]</strong>
-        <h3>让教育变成一件快乐的事！</h3>
-        <!-- <p class="p1">国内首创动态情景皮肤，可以随着早晚时光，季节主题的变幻而自动切换，实现了在邮箱里也能感受天气和心情的变化，带来完全不同的页面体验并且呈现最佳视觉感受，还特别针对原有邮箱皮肤的对比度和色彩进行了微调，减少视觉疲劳感。</p> -->
+    <div class="banner1group" style="position: fixed;left: 65%;top: 150px;width: 370px;height:350px;display: block;background: #fff;opacity: 0.9; border-radius: 20px;">
+        <p class="banner1-title" style="font-size: 25px;padding-bottom: 40px;padding-top:40px;text-align: center; color: #575757;">未来之星-我们与你一起成长</p>
+        <p class="login"><a href="javascript:;">登录</a></p>
+        <p class="register"><a href="javascript:;">注册</a></p>
     </div>
 </body>
 
