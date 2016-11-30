@@ -5,8 +5,8 @@
     top: 45px;
     left: 0;
     width: 100%;
-    height: 700px;
-    opacity: 0.8;
+    height: 100%;
+    opacity: 0.9;
 }
 
 .global-nav-inner {
@@ -37,15 +37,12 @@
     overflow: hidden;
     color: #66757f;
 }
-// .nav li {
-//     position: relative;
-// }
 
 .global-nav--newLoggedOut #global-actions li a {
     border-bottom-color: #ff7b0a;
 }
 
-#global-actions li:hover{
+#global-actions li:hover {
     border-bottom: 5px solid #ff7b0a;
     transition: all .20s ease-in;
     color: #ff7b0a;
@@ -66,6 +63,7 @@
     margin-top: 8px;
     display: inline-block;
 }
+
 .nav>li>a .text {
     float: right;
     margin-left: 3px;
@@ -74,19 +72,44 @@
     display: inline-block;
 }
 
+.webInfo {
+    position: fixed;
+    top: 150px;
+    left: 15%;
+    color: #fff;
+    width: 400px;
+}
+
+.webInfo-title-en{
+    font-size: 19px;
+}
+.webInfo .webInfo-title{
+    color: #fff;
+    font-size: 38px;
+    line-height: 44px;
+    padding-bottom: 60px;
+    text-shadow: none;
+}
+
+
+.webInfo .webInfo-info {
+    font-size: 21px;
+    line-height: 40px;
+}
+
 
 /* 登录框 */
 
 .login-register {
     position: fixed;
-    left: 65%;
+    right: 100px;
     top: 150px;
-    width: 370px;
-    height: 350px;
+    width: 350px;
+    height: 50%;
     display: block;
     background: #fff;
     border-radius: 20px;
-    opacity: 0.8;
+    // opacity: 1;
 }
 
 .banner1-title {
@@ -101,7 +124,7 @@
 .register {
     margin-bottom: 40px;
     position: relative;
-    left: 15%;
+    text-align: center;
 }
 
 .login-register a {
@@ -110,6 +133,7 @@
     border-radius: 10px;
     font-size: 20px;
     color: #000;
+    background: #15a6ee;
     -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
     -webkit-transition: background-color .5s ease-in;
@@ -136,12 +160,22 @@
     height: 100%;
     text-align: center;
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 1;
     z-index: 100;
 }
 
 
 /* 模态框样式 */
+
+h1 {
+    font-size: 20px;
+}
+
+.tabLeft {
+    width: 64px;
+    position: absolute;
+    top: 0px;
+}
 
 .loginPop-box {
     position: fixed;
@@ -155,7 +189,7 @@
 
 .lop-inner {
     position: absolute;
-    top: 10%;
+    top: 100px;
     left: 25%;
     width: 660px;
     height: 400px;
@@ -205,8 +239,7 @@
 
 .errorTips {
     color: red;
-    display: none;
-    font-size: 16px;
+    font-size: 13px;
     left: 520px;
     position: absolute;
     top: 3px;
@@ -256,9 +289,31 @@
     background-color: #222;
 }
 
+.pwd-stu-p .index-close {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.pwd-tea-p .index-close {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+    z-index: 200;
+}
+
 .index-close {
     position: absolute;
-    top: 20px;
+    top: 46px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -507,10 +562,13 @@ a {
 }
 
 //教师选择学校
-// .register-tea {
-//     position: relative;
-//     top: 100px;
-// }
+.register-tea {
+    position: absolute;
+    top: 100px;
+    width: 1100px;
+    margin: 0 auto
+}
+
 .select-hd {
     font-size: 20px;
     color: #15a6ee;
@@ -682,4 +740,3 @@ a {
 }
 
 // transform: translateY(-50%) rotate(180deg);
-

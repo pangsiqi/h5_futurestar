@@ -43,13 +43,13 @@ select:focus,select:active,select:hover{
 }
 /* 页脚 */
 .body-footer {
-	position: fixed;
+	position: absolute;
     bottom: 10px;
-    left: 64.5%;
+    right: 88px;
+    width: 409px;
 }
 .body-footer ul{
-	width: 212px;
-	overflow: hidden; 
+	width: 216px;
 	margin: 0 auto;
 }
 .footerli{
@@ -57,11 +57,11 @@ select:focus,select:active,select:hover{
 }
 .footerli a {
     margin-right: 5px;
-    color: #000;
+    color: #fff;
     font-size: 12px;
 }
 .body-footer p {
-    color: #000;
+    color: #fff;
     text-align: center;
     font-size: 12px;
 }

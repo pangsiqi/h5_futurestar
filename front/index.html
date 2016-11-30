@@ -10,16 +10,20 @@
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
     <script type="text/javascript" src="js/bgstretcher.js"></script>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $('#body').bgStretcher({
-            images: ['img/banner1.jpg', 'img/banner2.jpg', 'img/banner3.jpg', 'img/banner4.jpg'],
+            images: ['img/banner6.jpg', 'img/banner9.jpg', 'img/banner11.jpg', 'img/banner7.jpg'],
             imageWidth: 1024,
             imageHeight: 500,
             transitionEffect: 'fade',
-            sequenceMode: 'normal',
-
+            // sequenceMode: 'normal',
+            slideShowSpeed: '1000'
         });
+        var modalCss = $("#modal-overlay").css('visibility');
+        console.log(modalCss)
     });
     </script>
     <script type="text/html" id="modal-login">
@@ -36,19 +40,19 @@
                         <div class="c-text">
                             <span class="login-icon icon-5"></span>
                             <input type="text" value="" name="username" tabindex="1" class="JS-inputEvent" id="index_login_username" placeholder="手机号/学号">
-                            <div class="errorTips">请输入学号/手机号</div>
+                            <div class="errorTips" style="display: none">请输入学号/手机号</div>
                         </div>
                         <div class="c-text">
                             <span class="login-icon icon-4"></span>
                             <input type="password" id="index_login_password" name="j_password" class="JS-inputEvent" tabindex="2" placeholder="输入密码">
-                            <div class="errorTips">请输入密码</div>
+                            <div class="errorTips" style="display: none">请输入密码</div>
                         </div>
                         <div class="c-text">
                             <a href="javascript:void(0);" class="info active JS-rememberMe-btn">
-                                <input name="_spring_security_remember_me" type="checkbox" checked="checked" style="display: none;">
+                                <!-- <input name="_spring_security_remember_me" type="checkbox" checked="checked" style="display: none;"> -->
                                 <span class="login-icon icon-6"></span>记住我
                             </a>
-                            <a href="/ucenter/resetnavigation.vpage?ref=fixed" target="_blank" class="info">忘记密码 ?</a><span class="line"> | </span><a href="javascript:void(0);" class="info JS-register-main">注册</a>
+                            <a href="javascript:void(0)" target="_blank" class="info">忘记密码 ?</a><span class="line"> | </span><a href="javascript:void(0);" class="info JS-register-main">注册</a>
                         </div>
                     </div>
                     <div class="loginPop-footer">
@@ -60,6 +64,9 @@
             $(document).ready(function() {
                 var clicked = false;
                 $(".icon-6").on('click', learnOneself);
+                $('.JS-register-main').on('click', modalRegister);
+
+                function checkPhone() {}
                 // 记住我图片变化
                 function learnOneself() {
                     console.log("a");
@@ -72,8 +79,14 @@
                     }
                 }
 
+                function modalRegister() {
+                    $("#modal-overlay").empty();
+                    var _html = document.getElementById("modal-register-student").innerHTML;
+                    $("#modal-overlay").append(_html);
+                    $("#modal-overlay").css("visibility", 'visible');
+                }
             });
-            </script>>
+            </script>
         </div>
     </script>
     <script type="text/html" id="modal-register-student">
@@ -83,17 +96,17 @@
             </p>
             <div class="lop-inner">
                 <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
-                <h1 style="font-size: 18px">注册学生账号</h1>
+                <h1>注册学生账号</h1>
                 <div class="lop-content contentMar">
                     <div class="lop-right">
                         <div class="c-text">
                             <span class="login-icon icon-1"></span>
-                            <input type="text" placeholder="请输入老师手机号或ID号" class="txt1 JS-inputEvent JS-classInput">
-                            <div class="errorTips">老师账号错误</div>
+                            <input type="tel" placeholder="请输入老师手机号或ID号" class="txt1 JS-inputEvent JS-classInput">
+                            <div class="errorTips"></div>
                         </div>
-                        <a href="javascript:void(0);" class="login-btn login-orange JS-getClassLIst" style="margin-top:30px;padding: 3px 0">注册学生账号</a>
+                        <a href="javascript:void(0);" class="login-btn login-orange JS-getClassLIst">注册学生账号</a>
                     </div>
-                    <div class="lop-tab tabLeft" style="width: 64px;position: absolute;top:0px;">
+                    <div class="lop-tab tabLeft">
                         <ul>
                             <li class="JS-selectStudent-main stu active">
                                 <div class="image"></div>
@@ -107,7 +120,13 @@
                         <script type="text/javascript">
                         $(document).ready(function() {
                             $(".JS-selectTeacher-main").on('click', modalTea)
-                            $(".JS-getClassLIst").on('click', modalResStuPwd)
+                            $(".JS-getClassLIst").on('click', function() {
+                                if (checkPhone() == false) {
+                                    $(".errorTips").text("手机号码有误，请重填");
+                                } else {
+                                    modalResStuPwd();
+                                }
+                            })
 
                             function modalTea() {
                                 $("#modal-overlay").empty();
@@ -121,6 +140,13 @@
                                 var _html = document.getElementById("modal-reg-pwd-stu").innerHTML;
                                 $("#modal-overlay").append(_html);
                                 $("#modal-overlay").css("visibility", 'visible');
+                            }
+
+                            function checkPhone() {
+                                var phone = $('.JS-classInput').val();
+                                if (!(/^1[34578]\d{9}$/.test(phone))) {
+                                    return false;
+                                }
                             }
                         });
                         </script>
@@ -136,7 +162,7 @@
             </p>
             <div class="lop-inner">
                 <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
-                <h1 style="font-size: 18px">注册老师账号</h1>
+                <h1>注册老师账号</h1>
                 <div class="lop-content">
                     <div class="clearfloat"></div>
                     <div class="JS-defaultMode">
@@ -157,9 +183,9 @@
                             <span id="captchaImageLogin" class="code" style="cursor: pointer;">1234</span>
                             <div class="errorTips"></div>
                         </div>
-                        <a href="javascript:void(0);" class="login-btn login-blue JS-teacherVerMobile" style="margin-top:30px;padding: 3px 0">注册老师账号</a>
+                        <a href="javascript:void(0);" class="login-btn login-blue JS-teacherVerMobile">注册老师账号</a>
                     </div>
-                    <div class="lop-tab tabLeft" style="width: 64px;position: absolute;top:0px;">
+                    <div class="lop-tab tabLeft">
                         <ul>
                             <li class="JS-selectStudent-main">
                                 <div class="image"></div>
@@ -197,7 +223,7 @@
     </script>
     <script type="text/html" id="modal-reg-pwd-stu">
         <div class="pr-main pr-main-child js-registerTemplateType" data-type="student">
-            <p>
+            <p class="pwd-stu-p">
                 <a onclick="overlay()" href="" class="index-close"></a>
             </p>
             <div class="hd">请设置你的密码！</div>
@@ -205,13 +231,13 @@
                 <div class="main-inner">
                     <div class="main-class clearfloat">
                         <div class="main-title">请选择你所在的班级 : </div>
-                        <span class="click-select-code" data-type="clazzList" data-clazzid="1" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
-                        <span class="click-select-code" data-type="clazzList" data-clazzid="2" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
+                        <span class="click-select-code select-grade" data-type="clazzList" data-clazzid="1" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
+                        <span class="click-select-code select-grade" data-type="clazzList" data-clazzid="2" data-clazzname="一年级20班" title="一年级20班">一年级20班</span>
                         <div style="clear:both; padding:15px 0 10px;">
                             <p class="select-sex">请选择性别 : </p>
                             <div class="select-sex-item">
-                                <span class="click-select-code sex-M" data-gender="M">男生</span>
-                                <span class="click-select-code sex-F" data-gender="F">女生</span>
+                                <span class="click-select-code select-sex-item" data-gender="M">男生</span>
+                                <span class="click-select-code select-sex-item" data-gender="F">女生</span>
                             </div>
                         </div>
                     </div>
@@ -254,20 +280,39 @@
                 activeOrange();
 
                 function activeOrange() {
-                    $(".sex-M").on('click', function() {
-                        if ($(".sex-F").hasClass("active")) {
-                            $(".sex-F").removeClass('active')
-                        } else {
-                            $(this).addClass("active");
-                        }
-                    });
-                    $(".sex-F").on('click', function() {
-                        if ($(".sex-M").hasClass("active")) {
-                            $(".sex-M").removeClass('active')
-                        } else {
-                            $(this).addClass("active");
-                        }
-                    });
+                    var oGrade = $(".select-grade");
+                    for (var i = 0; i < oGrade.length; i++) {
+                        var a;
+                        retrun a = function(oGrade) {
+                            oGrade[i].click(function() {
+                                    $(this).toggleClass("active");
+                                }
+                            })(i)
+                    }
+                    var oSex = $(".select-sex-item");
+                    for (var i = 0; i < oSex.length; i++) {
+                        oSex[i].click(function() {
+                            $(this).toggleClass("active");
+                        })
+                    }
+                    // $(".click-select-code").on('click', function() {
+                    //     // if ($(".sex-F").hasClass("active")) {
+                    //     //     $(".sex-F").removeClass('active')
+                    //     // } else {
+                    //     //     $(this).toggle("active");
+                    //     // }
+                    //     $(this).toggleClass("active");
+                    //     // $(".sex-M").toggleClass("active");
+                    // });
+                    // $(".sex-F").on('click', function() {
+                    //     // if ($(".sex-M").hasClass("active")) {
+                    //     //     $(".sex-M").removeClass('active')
+                    //     // } else {
+                    //     //     $(this).addClass("active");
+                    //     // }
+                    //     $(this).toggleClass("active")
+                    //     // $(".sex-F").toggleClass("active");
+                    // });
 
                 }
             })
@@ -276,7 +321,7 @@
     </script>
     <script type="text/html" id="modal-reg-pwd-tea">
         <div class="js-scrollMainIdBox" id="register_template" style="min-height: 100%;">
-            <p>
+            <p class="pwd-tea-p">
                 <a onclick="overlay()" href="" class="index-close"></a>
             </p>
             <div class="pr-main pr-main-teacher js-registerTemplateType" data-type="teacher">
@@ -349,7 +394,7 @@
             <p>
                 <a onclick="overlay()" href="" class="index-close"></a>
             </p>
-            <div class="register-tea" style="position: relative;top: 100px;width: 1100px;margin:0 auto">
+            <div class="register-tea" style=" position: relative;top: 100px; width: 1100px; margin: 0 auto">
                 <div class="select-hd">按照下面的步骤来选择你的学校</div>
                 <div class="select-group clearfloat">
                     <form enctype="multipart/form-data" class="form-register-tea" role="form">
@@ -460,14 +505,14 @@
 </head>
 
 <body>
-    <!-- <div class="body-header"> -->
     <div class="global-nav-inner">
         <div class="global-nav-container clearfloat">
             <ul class="nav js-global-actions" role="navigation" id="global-actions">
                 <li id="global-nav-home" class="home" data-global-action="home">
-                    <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
+                    <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="index.html" data-component-context="home_nav" data-nav="home">
                         <span class="img"><img src="img/logo.png" width="25px" height="25px"></span>
                         <span class="text">未来之星</span>
+                        <!-- <img src="img/header.png" height="25px"> -->
                     </a>
                 </li>
                 <li id="global-nav-about" class="about" data-global-action="about">
@@ -478,22 +523,27 @@
             </ul>
         </div>
     </div>
-    <!-- </div> -->
     <div id="body"></div>
     <div id="modal-overlay"></div>
+    <div class="webInfo">
+        <h1 class="webInfo-title">欢迎使用未来之星<p class="webInfo-title-en">Welcome To FutureStar</p></h1>
+
+        <p class="webInfo-info">为学前儿童打造的在线学习平台</p>
+        <p class="webInfo-info">串联老师、学生、家长三方的教与学关系</p>
+    </div>
     <div class="login-register">
-        <p class="banner1-title">未来之星-我们与你一起成长</p>
+        <p class="banner1-title">未来之星-教育助你成长</p>
         <p class="login"><a href="javascript:;">登录</a></p>
         <p class="register"><a href="javascript:;">注册</a></p>
     </div>
     <div class="body-footer">
-        <ul class="clearfloat">
-            <li class="footerli"><a href="#">后台管理</a></li>
-            <li class="footerli"><a href="#">关于我们</a></li>
-            <li class="footerli"><a href="#">各界声音</a></li>
-            <li class="footerli"><a href="#">加入我们</a></li>
-        </ul>
-        <p>Copyright &copy; 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+            <ul class="clearfloat">
+                <li class="footerli"><a href="#">后台管理</a></li>
+                <li class="footerli"><a href="#">关于我们</a></li>
+                <li class="footerli"><a href="#">各界声音</a></li>
+                <li class="footerli"><a href="#">加入我们</a></li>
+            </ul>
+        <p>Copyright &copy; 2016 futurestar Corporation. All Rights Reserved.</p>
     </div>
 </body>
 
