@@ -1,0 +1,64 @@
+[ 2016-11-28T14:16:04+08:00 ] 127.0.0.1 /FS/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014759s ]
+
+[ 2016-11-28T14:16:07+08:00 ] 127.0.0.1 /FS/index.php/Admin/A/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017183s ]
+
+[ 2016-11-28T14:16:14+08:00 ] 127.0.0.1 /FS/index.php/Admin/A/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+ERR: SQLSTATE[42000] [1049] Unknown database 'teenedu'
+
+[ 2016-11-28T14:16:20+08:00 ] 127.0.0.1 /FS/index.php/Admin/A/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+ERR: SQLSTATE[42000] [1049] Unknown database 'teenedu'
+
+[ 2016-11-28T14:17:18+08:00 ] 127.0.0.1 /FS/index.php/Admin/A/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+ERR: SQLSTATE[42000] [1049] Unknown database 'teenedu'
+
