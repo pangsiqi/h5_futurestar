@@ -1,0 +1,58 @@
+
+        <div class="col-md-10 col-md-offset-2 ">
+            <ol class="breadcrumb">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="#">教师管理</a></li>
+                <li class="active">修改教师信息</li>
+            </ol>
+            <h3 class="down">修改教师信息 <small>Teacher Edit</small></h3>
+            <div class="list-group form">
+                <form enctype="multipart/form-data" method="post" class="form-horizontal" role="form" >
+                <input type="hidden" name="id" value="{$user[0].teacher_id}" />
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="name" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].name}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">教师号</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="teacher_id" class="form-control" id="inputEmail3" value="{$user[0].teacher_id}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">班级</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="grade" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].grade}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">学科</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="subject" class="form-control" id="inputEmail3" placeholder="" value="{$user[0]['teacher']['subject']}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">地区</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="location" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].location}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <div class="row">
+                                <div class=" col-sm-5">
+                                    <button type="submit" class="btn btn-primary">修 改 教 师</button>
+                                </div>
+                                <div class=" col-sm-5">
+                                    <button type="submit" class="btn btn-warning">重 置 内 容</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
