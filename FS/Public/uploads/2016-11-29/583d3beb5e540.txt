@@ -1,0 +1,72 @@
+Thinkphp框架
+====================
+一、 框架的搭建
+	1. 将ThinkPHP解压到
+	2. 创建主入口文件index.php
+		//开启错误提示
+		define("APP_DEBUG",true);
+
+	    //指定当前项目（应用）的目录名称
+	   define("APP_PATH","./App/");
+
+		//导入框架的主入口
+	   required("./Thinkphp/Thinkphp.php");
+
+	3.URL访问
+
+二、 框架介绍
+	1. 框架目录ThinkPHP的结构
+	2. 项目应用的目录结构介绍
+	3. 开发规范 
+	4. 框架中的配置: 数组形式
+
+三、用法
+  1.控制器
+		1. 前置与后置
+		   public function _before_test(){
+		      echo "test方法前置"
+		   }
+		   public function test(){
+		   	  echo "test方法"
+		   }
+		   public function _after_test(){
+		      echo "test方法后置"
+		   }
+		2. ajaxReturn(); //结束之后不执行后边的内容
+
+		3. 定义一个空方法（当请求一个不存在的方法时，自动调用此方法）
+		public function _empty($name){
+			die("请求的方法{$name}不存在!");
+		}
+
+		4. 定义一个空控制器，中再定义一个空方法
+		class EmptyController extends Controller{
+			public function _empty($name){
+
+			}
+		}
+
+	2. 模型
+	    1. tableName ://指定当前model表名
+	    2. trueTableName ://指定包含表前缀的真实表名
+	    3. dbName ://执行真实表名
+	    4. tablePrefix ://指定表前缀
+	    使用上述4中操作：
+	    protected $tableName = "";
+
+	    5.(字段定义)避免IO加载的效率开销
+	    protected $fields = array(数据库中的字段名(列名));
+
+	    6. where
+	    $map['age'] = array("between","2,20");
+	    $map['name'] = array("like","%u%");
+	    $lists = $model->where($map)->select();
+
+	    7. 添加
+	    $data['username'] = 'lisi'.rand(1000,9999);
+	    $data['userpass'] = md5("123");
+
+	    8. 视图模型（ViewModel将表联系起来）
+	    
+	      
+

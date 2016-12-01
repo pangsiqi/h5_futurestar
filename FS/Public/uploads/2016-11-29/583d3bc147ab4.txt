@@ -1,0 +1,143 @@
+﻿----当前浏览器最新版本-----
+IE：11  edge
+Chrome: 52
+FireFox: 49
+Safari: 5.34
+Opera: 
+----php----
+404：路径错误
+----html----
+cellspacing是改变单元格与单元格的距离，
+cellpadding是改变内容与单元格之间的距离。
+----css----
+旋转：transition: transform 0.3s ease-in-out 0s;
+清除浮动：
+.clearfloat{
+	zoom: 1;
+}
+.clearfloat:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+img {
+box-sizing: border-box;
+height: auto;
+vertical-align: middle;
+border: 0;
+}
+CSS3 ：
+多栏布局:column-width:列宽
+	 column-count:列数
+	 column-gap:将 div 元素中的文本分为三列，并列间 30 像素的间隔。
+	 column-rule:规定列之间的宽度、样式和颜色。
+
+//单行文本溢出
+.inaline{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+//多行文本溢出
+.intwoline{
+    display: -webkit-box !important;
+    overflow:hidden;
+    
+    text-overflow:ellipsis;
+    word-break:break-all;
+ 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+
+线条一般用li标签设置宽度，不设置高度，设置border-top，然后用margin-top调整想要的高度位置
+行内元素inline-block有默认的4px的间距，清除办法是设置font-size：0；
+当图片作为背景时，不能够自适应，自适应只能img标签。
+opacity:0.8; 不透明度;
+border-radius:5px;边框加小圆角;
+{background-color: #aaa;background:no-repeat;}=={background: #aaa;}
+a 不继承父级元素的颜色
+span 继承父级元素
+
+1.自动居中：
+margin: 0 auto;与float和position同时使用时，将不居中
+2.当盒子增加了position之后，盒子的宽度将根据盒子内的内容决定
+3.对于绝对定位，
+    当父元素没有position定位时，则以html为基准；
+    当父元素有position时，则以最近的含有position的盒子为基准
+
+h1~h6: 通常会将margin和padding设置为0;
+将h1~h6的父级标签设置为display:none;
+之后通过行高line-height;
+并且line-height=height可以垂直居中;
+overflow:hidden;防止内容溢出;
+font-weight:normal; 消去粗体效果;
+
+浏览器的渲染原理。
+
+关于适应屏幕：
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+关于兼容性：
+IE浏览器不认识通配符 *
+-moz代表firefox浏览器私有属性
+-ms代表IE浏览器私有属性e
+-webkit代表chrome、safari私有属性
+-o-表示opera
+这些都是css3里面的
+样式有兼容的,wenkit是指google的内核支持的样式!如果你想让其他的浏览器兼容,那你需要些上其他浏览器内核的样式,比如火狐!所有你看别人的样式代码会发现一个样式写了好几遍,目的就是兼容!
+------网页收集：https://www.91ri.org/11893.html-------
+使用Meta标签让xx极速浏览器使用IE内核
+在head标签中添加一行代码：
+<meta name="renderer" content="webkit|ie-comp|ie-stand" /> 
+
+content的取值为webkit,ie-comp,ie-stand之一，区分大小写，分别代表用webkit内核，IE兼容内核，IE标准内核。
+
+若页面需默认用极速核，增加标签：<meta name="renderer" content="webkit" />
+若页面需默认用ie兼容内核，增加标签：<meta name="renderer" content="ie-comp" />
+若页面需默认用ie标准内核，增加标签：<meta name="renderer" content="ie-stand" />
+
+目前使用双核浏览器的挺多的，可以最大限度利用ie oday。
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta xmlns="http://www.w3.org/1999/xhtml">
+
+关于覆盖：
+z-index 属性设置元素的堆叠顺序
+z-index:负值;相当于z轴坐标等于-1;显示效果就是在内侧
+
+关于head下的meta
+设置选项卡图标：<meta name="msapplication-task" content="name=导航;action-uri=http://cn.bing.com/123/?ocid=IEUp9pin;icon-uri=http://stimgcn4.s-msn.com/msnportal/hp/2012/11/07/4793e887-f637-4ed0-a696-de4ab5e7338a.ico" />
+
+
+--------JavaScript---------
+typeof：适合基本类型及function检测，遇到null失效
+[[Class]]：通过{}.toString拿到，适合内置对象和基本类型，遇到nul和undefined失效(IE678等返回[object Object])
+判断对象(object)的方法：
+obj instanceOf object; ：适合自定义对象，也可以用来检测原生对象,在不同iframe和window间检测时失效。
+Object.prototype.toString.apply();
+constructor
+duck type
+
+在IE9以上使用defineProperty来限制该对象是否可以删除
+var obj = {};
+Object.defineProperty(obj,'x',{
+	configurable : false,
+	value : 1
+});
+delete obj.x;  // false
+obj.x;  // 1
+
+function Foo();
+Foo.prototype.x=1;
+var obj = new Foo();
+obj.x; // 1
+obj.hasOwnProperty('x'); // false :判断x是否为obj上的直接对象
+obj.__proto__.hasOwnProperty('x');  // true :判断x是否为obj上的原生对象，通过__proto__拿到对象的原型。
+
+
+
+
+
