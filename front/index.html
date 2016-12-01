@@ -18,8 +18,8 @@
             images: ['img/banner6.jpg', 'img/banner9.jpg', 'img/banner11.jpg', 'img/banner7.jpg'],
             imageWidth: 1024,
             imageHeight: 500,
-            // transitionEffect: 'fade',
-            nextSlideDelay:'10000'
+            transitionEffect: 'fade',
+            nextSlideDelay:'8000'
         });
     });
     </script>
@@ -118,11 +118,12 @@
                         $(document).ready(function() {
                             $(".JS-selectTeacher-main").on('click', modalTea)
                             $(".JS-getClassLIst").on('click', function() {
-                                if (checkPhone() == false) {
-                                    $(".errorTips").text("手机号码有误，请重填");
-                                } else {
-                                    modalResStuPwd();
-                                }
+                                // if (checkPhone() == false) {
+                                //     $(".errorTips").text("手机号码有误，请重填");
+                                // } else {
+                                //     modalResStuPwd();
+                                // }
+                                modalResStuPwd();
                             })
 
                             function modalTea() {
@@ -507,9 +508,9 @@
             <ul class="nav js-global-actions" role="navigation" id="global-actions">
                 <li id="global-nav-home" class="home" data-global-action="home">
                     <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="index.html" data-component-context="home_nav" data-nav="home">
-                        <span class="img"><img src="img/logo.png" width="25px" height="25px"></span>
-                        <span class="text">未来之星</span>
-                        <!-- <img src="img/header.png" height="25px"> -->
+                        <!-- <span class="img"><img src="img/logo.png" width="25px" height="25px"></span>
+                        <span class="text">未来之星</span> -->
+                        <span><img src="img/logo.png" height="25px" style="margin-top: 7px"></span>
                     </a>
                 </li>
                 <li id="global-nav-about" class="about" data-global-action="about">
@@ -525,7 +526,7 @@
     <div class="webInfo">
         <h1 class="webInfo-title">欢迎使用未来之星<p class="webInfo-title-en">Welcome To FutureStar</p></h1>
         <p class="webInfo-info">为学前儿童打造的在线学习平台</p>
-        <p class="webInfo-info">串联老师、学生、家长三方的教与学关系</p>
+        <p class="webInfo-info">串联教师、学生、家长三方的教与学关系</p>
     </div>
     <div class="login-register">
         <p class="banner1-title">未来之星-教育助你成长</p>
