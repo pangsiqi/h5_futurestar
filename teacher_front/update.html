@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>作业报告</title>
+    <title>保存资料</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.fr.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
     <style type="text/css">
         a:link{
             color:black;
@@ -59,41 +62,18 @@
             list-style-type:none;
             padding-top:10px;
         }
-        #content_h1{
+        #content_h{
             background-color:white;
-            border:solid 1px RGB(187,187,187);
+            border:solid 3px RGB(187,187,187);
             border-radius:10px;
-
-            margin-top:25px;
+            margin-top:35px;
+            margin-left:35px;
         }
-        #content_h2{
-            background-color:white;
-            border:solid 1px RGB(187,187,187);
-            border-radius:10px;
-
-            margin-top:25px;
-        }
-        #check li{
-            list-style-type:none;
-            float:left;
-            padding-top:15px;
-        }
-        #check li a{
-            padding-right:40px;
-        }
-        .star li{
-            list-style-type:none;
-            float:left;
-            border:solid 1px RGB(187,187,187);
-            height:80px;
-            width:130px;
-            text-align:center;
-            padding-top:20px;
-            margin-top:10px;
-        }
-        .study li{
-            list-style-type:none;
-            float:left;
+        #content_h li {
+            list-style-type: none;
+            font-size: 14px;
+            padding-top: 35px;
+            padding-left: 180px;
         }
         #footer{
             background-color:white;
@@ -135,7 +115,7 @@
         </ul>
     </div>
 </div>
-<div class="row clearfix" id="content" style="height:600px">
+<div class="row clearfix" id="content" style="height:850px">
     <div class="col-md-3 column" style="padding-left: 145px">
         <div class="row clearfix" style="background-color: white; width:146px; height:110px;">
             <div class="col-md-6 column" style="margin-top:2px; padding-top:15px">
@@ -191,7 +171,7 @@
                                     <div class="panel-body" style="padding:0">
                                         <ul class="homeworkList_e" style="padding:0">
                                             <li class="list-group-item" style="margin-left:0"><a href="assignment.html">布置作业</a></li>
-                                            <li class="list-group-item" style="margin-left:0"><a href="#">作业情况</a></li>
+                                            <li class="list-group-item" style="margin-left:0"><a href="workpaper.html">作业情况</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -221,59 +201,57 @@
             </div>
         </div>
     </div>
-    <div class="col-md-7 column" style="padding-left:20px">
-            <div class="col-md-12 column" id="content_h1">
-            <div class="row clearfix" >
-                <div class="col-md-12 column" style="background-color:RGB(156,204,101);height:45px;padding:0;margin:0">
-                    <h3 style="font-size:20px; padding-top:12px;padding-left:28px;margin:0">作业报告</h3>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-md-12 column"  style="padding-left:0;margin-bottom:30px">
-                    <h3 style="font-size:14px; padding-top:14px;padding-left:28px;margin:0">班级：中班1班</h3>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-12 column" id="content_h2">
-                <div class="row clearfix" >
-                    <div class="col-md-12 column" style="background-color:RGB(156,204,101);height:45px;padding:0;margin:0">
-                        <h3 style="font-size:20px; padding-top:12px;padding-left:28px;margin:0">待检查</h3>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-md-12 column"  style="padding-left:0;margin-bottom:30px">
-                       <ul id="check">
-                           <li>内容：</li>
-                           <li><a href="#">第一课</a></li>
-                           <li>截止时间：</li>
-                           <li><a href="#">2016年11月17日</a></li>
-                           <li><a href="#">0/3</a></li>
-                           <a href="checkhomework.html"><input class="check" name="check" style="background-color:RGB(43,175,43); color:white; float:right;border-radius:8px;margin-top:12px; width:100px;height:30px;text-align:center" value="检查作业" /></a>
-                       </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="col-md-2 column"></div>
- </div>
-<div class="row clearfix" id="footer">
-        <div class="col-md-12 column" style="padding-top:15px">
-            <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
-        </div>
-        <div class="col-md-12 column">
-            <div class="col-md-3 column">
-            </div>
-            <div class="col-md-5 column">
-                <ul class="footer_nav">
-                    <li style="padding-left:45px">后台管理</li>
-                    <li>关于我们</li>
-                    <li>各界声音</li>
-                    <li>加入我们</li>
-                </ul>
-            </div>
-            <div class="col-md-4 column">
-            </div>
+    <div class="col-md-7 column" style="padding-left:0">
+        <div class="col-md-12 column" id="content_h">
+            <ol>
+                <li>
+                    <img style="padding-left:20px" src="images/title.png" />
+                </li>
+                <li style="padding-left:220px"><a href="#">孙老师</a></li>
+                <li>教工号：<a href="#">123456</a></li>
+                <li>金币：<a href="#">0</a></li>
+                <li>姓名：&nbsp;<a href="#"><input style="border-radius:5px;border:solid 1px RGB(187,187,187)" type="text"/></a></li>
+                <li class="dropdown" >性别:
+                    <a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187);width:100px;background-color:white; border-radius:4px;color:black;float:right;margin-right:205px"><span style="padding:0 15px;">1</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="min-width:0px;">
+                        <li><a href="#one" >1</a></li>
+                        <li><a href="#two" >2</a></li>
+                        <li><a href="#three" >3</a></li>
+                    </ul>
+                </li>
+                <li>出生日期：
+                    <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime" style="text-align:center;border-radius:5px;border:solid 1px RGB(187,187,187)">
+
+                    <script type="text/javascript">
+                        $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+                    </script>
+                </li>
+                <li>学校：<a href="#">光明幼儿园</a></li>
+                <li>年级：<a href="#">小班</a></li>
+                <li style="padding-left:180px;margin-bottom:45px;"><a href="#"><input style="background-color:RGB(41,182,246);border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px" value="保存资料" /></a></li>
+            </ol>
         </div>
     </div>
+    <div class="col-md-2 column"></div>
+</div>
+<div class="row clearfix" id="footer">
+    <div class="col-md-12 column" style="padding-top:15px">
+        <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-12 column">
+        <div class="col-md-3 column">
+        </div>
+        <div class="col-md-5 column">
+            <ul class="footer_nav">
+                <li style="padding-left:45px">后台管理</li>
+                <li>关于我们</li>
+                <li>各界声音</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="col-md-4 column">
+        </div>
+    </div>
+</div>
 </body>
 </html>
