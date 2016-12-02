@@ -6,40 +6,32 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>家长空间</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css"/>
+    <link href="css/parentspace.css" rel="stylesheet" type="text/css"/>
 
-    <style>
-        body{
-            width: 100%;
-            background:url(images/parent_ground.png) no-repeat;
-        }
-        a{
-            font-family: "幼圆";
-        }
-        li{
-            list-style-type:none;
-            float:right;
-            color:white;
-        }
-        #nav ul{
-            margin-top:12px;
-            margin-left:25px;
-        }
-        #nav ul li{
-            float:left;
-            list-style-type:none;
-            padding-left:31px;
-            color:white;
-        }
-        #nav ul li a{
-            color:white;
-            font-weight:bold;
-            font-size:24px;
-        }
-    </style>
 </head>
 <body>
+<!--导航栏部分-->
+<div class="col-md-12 col-lg-8" id="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="chinese.html">学习中心</a></li>
+        <li><a href="pk.html">竞技场</a></li>
+        <li><a href="classspace.html">班级天地</a></li>
+        <li><a href="parentspace.html">家长空间</a></li>
+        <li><a href="gift.html">奖品</a></li>
+        <li><a href="#"><img src="images/email.png" /></a></li>
+        <li><img src="images/headpic.jpg" class="img-circle" />
+            <!-- <ul>
+                 <li><a href="#">个人信息</a></li>
+                 <li><a href="#">上传</a></li>
+                 <li><a href="#">退出</a></li>
+             </ul>-->
+        </li>
+    </ul>
 
-<div>
+</div>
+
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
@@ -47,121 +39,54 @@
                 <div class="col-md-2 column">
 
                 </div>
-                <!--导航栏部分-->
-                <div class="col-md-10 column" id="nav">
-                    <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">学习中心</a></li>
-                        <li><a href="#">竞技场</a></li>
-                        <li><a href="#">班级天地</a></li>
-                        <li><a href="#">家长空间</a></li>
-                        <li><a href="#">奖品</a></li>
-                        <!--<ul >-->
 
-                            <li class="nav nav-pills">
-                                <a href="#"> <span class="badge pull-right">16</span> <img src="images/email.png" /></a>
-                            </li>
-                            <li><img src="images/headpic.jpg" class="img-circle" />
-
-                            <!-- <ul>
-                                 <li><a href="#">个人信息</a></li>
-                                 <li><a href="#">上传</a></li>
-                                 <li><a href="#">退出</a></li>
-                             </ul>-->
-                        </li>
-                        <!--</ul>-->
-
-                    </ul>
-
-                </div>
             </div>
             <!--内容部分-->
             <div class="container">
                 <div class="row clearfix">
                         <div id="parenthead"><img src="images/parenthead.png" class="img-circle"/></div>
-                    <style>
-                        #parenthead{
-                            float: left;
-                            position:absolute;
-                            left:70px;
-                            top:190px;
-                        }
-                        #name{
-                            position:absolute;
-                            left:230px;
-                            top:200px;
-                            font-size:16px;
-                        }
-                        h1{
-                            font-size:23px;
-                            font-weight:bold;
-                        }
 
-                    </style>
                         <div id="name">
                         <h1>李晓</h1>
-                        学号：<a href="#">12345678</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>学校：<a href="#">某某某幼儿园</a></span>
+                        学号：12345678&nbsp;&nbsp;&nbsp;&nbsp;<span>学校：某某某幼儿园</span>
                         </div>
                     <p>有什么心里话要告诉老师呢</p>
-                    <div id="chat">
+                    <!--<div id="chat">-->
 
-                    </div>
+                    <!--</div>-->
                     <div id="send">
+                        <div id="seriesline">
+                            <textarea type="text" style="width:1020px;height:230px"></textarea>
+                        </div>
                         <div id="left">
-                            <i class="fa fa-smile-o"></i>表情<span><img src="" />图片</span>
+                            <img src="images/face.jpg" />&nbsp;&nbsp;表情<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pic.jpg" />&nbsp;&nbsp;图片</span>
+                        </div>
+                        <div id="mid">
+                            <div id="sendfor"><li class="dropdown" >发送给：<a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187);width:70px;background-color:white; border-radius:4px;color:black;float:right;margin-right:356px"><span style="padding:0 15px;">&nbsp;</span><span class="caret"></span></a>
+                                    <ul class="dropdown-menu" style="min-width:0px;">
+                                        <li><a href="#one" > </a></li>
+                                        <li><a href="#two" >男</a></li>
+                                        <li><a href="#three" >女</a></li>
+                                    </ul>
+                                <!--按钮-->
 
-                            <span id="sendfor">发送给<!--下拉菜单--><!--按钮--><button type="button" class="btn btn-warning">发送</button>
-                            </span>
+                            </div>
+
+                        </div>
+                        <div id="right">
+                            <button type="button" class="btn btn-warning">发送</button>
                         </div>
 
 
                     </div>
                     <div id="p2"><p>和老师的聊天记录全在这里啦</p></div>
-                    <style>
-                        #sendfor{
-                            position:absolute;
-                            right:-955px;
-                            top:-5px;
-                        }
-                        p{
-                            font-size:22px;
-                            color:white;
-                            font-weight:bold;
-                            position:absolute;
-                            left:70px;
-                            top:350px;
-                        }
-                        #p2 p{
-                            position:absolute;
-                            left:70px;
-                            top:710px;
-                        }
-                        #chat{
-                            background:white;
-                            position:absolute;
-                            left:70px;
-                            top:390px;
-                            width:1020px;
-                            height:230px;
-                        }
-                        #send{
-                            position:absolute;
-                            left:70px;
-                            top:660px;
-                            font-size:16px;
-                        }
-                        #left{
 
-                        }
-                        #right{
-                            float:right;
-                        }
-                    </style>
     ·
 
                     <div id="message">
-                        <img src="images/parenthead.png" class="img-circle"/>
-                        <div id="chatwindow"><ul><li>聊天气泡</li></ul></div>
+                        <!--<img src="images/parenthead.png" class="img-circle"/>-->
+                        <!--<div id="chatwindow"><ul><li>聊天气泡</li></ul></div>-->
+                        <img src="images/chatcontent.png" />
 
                         <div id="page">
 
@@ -192,120 +117,41 @@
                     </div>
                     <!--家长任务模块-->
                     <div id="spect">
-                        <p>家长完成任务宝宝拿奖励啦</p>
-                        <button type="button" class="btn btn-warning">
+                        <p>&nbsp;家长完成任务宝宝拿奖励啦~~~</p>
+                        <p><img src="images/heartspect.png" /></p>
+
                     </div>
+
                     <!--二维码模块-->
                     <div id="write">
                         <p>详情扫描下方二维码填写心愿~~</p>
                         <img src="images/code.jpg" />
                     </div>
-                    <style>
-                        #write p{
-                            position:absolute;
-                            left:700px;
-                            top:1320px;
-                            color:black;
-                        }
-                        #write img{
-                            position:absolute;
-                            left:700px;
-                            top:1380px;
-                        }
-                        #chatwindow{
-                            background:#8dfa69;
-                            width:500px;
-                            height:100px;
-                            position:absolute;
-                            left:200px;
-                            top:30px;
-                           border-radius:20px;
-                        }
-                        #message{
-                            width:1020px;
-                            height:534px;
-                            background:white;
-                            position:absolute;
-                            left:70px;
-                            top:750px;
-                            border-radius: 20px;
-                        }
-                        #page{
-                            position:absolute;
-                            right:0px;
-                            bottom:0px;
-                        }
-                        #spect p{
-                            color:white;
-                            position:absolute;
-                            left:70px;
-                            top:1320px;
-                        }
-                    </style>
-                        <!--<button type="button" class="btn btn-success btn-lg">按钮</button>
-
-
-                        <div class="btn-group">
-                            <button class="btn btn-default">Action</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">操作</a>
-                                </li>
-                                <li class="disabled">
-                                    <a href="#">另一操作</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">其它</a>
-                                </li>
-                            </ul>
-                        </div>-->
 
                 </div>
             </div>
             <!--chatwindow的css样式-->
-            <style>
 
-            </style>
-            <!--页脚-->
-            <div class="footer">
-                <ul>
-                    <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
-                    <div>
-                        <li id="footerli">
-                            <a href="#">后台管理</a>
-                            <a href="#">关于我们</a>
-                            <a href="#">各界声音</a>
-                            <a href="#">加入我们</a>
-                        </li></div>
-                </ul>
-                <style>
 
-                    .footer{
-                        position:absolute;
-                        top:1890px;
-                        right:360px;
-                        buttom:30px;
-
-                    }
-                    .footer ul li{
-                        list-style-type:none;
-                        margin-top:17px;
-
-                        color:#7d7a7d;
-
-                    }
-                    #footerli a{
-                        padding-left:30px;
-                        margin-right:5px;
-                        color:#7d7a7d;
-                    }
-                </style>
-            </div>
 
         </div>
     </div>
-</div></div><script type="text/javascript" src="js/snow.js"></script>
+</div>
+<!--页脚-->
+
+<div class="footer">
+    <ul>
+        <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
+        <div>
+            <li id="footerli">
+                <a href="#">后台管理</a>
+                <a href="#">关于我们</a>
+                <a href="#">各界声音</a>
+                <a href="#">加入我们</a>
+            </li></div>
+    </ul>
+
+</div>
+
 </body>
 </html>

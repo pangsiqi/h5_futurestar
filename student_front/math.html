@@ -3,35 +3,33 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>学生部分首页</title>
+    <title>数学印象</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body{
-            width: 100%;
-            background:url(images/studycenter_ground.png) no-repeat;
-        }
-        a{
-            font-family: "幼圆";
-        }
-        #nav ul{
-            margin-top:12px;
-            margin-left:25px;
-        }
-        #nav ul li{
-            float:left;
-            list-style-type:none;
-            padding-left:31px;
-            color:white;
-        }
-        #nav ul li a{
-            color:white;
-            font-weight:bold;
-            font-size:24px;
-        }
-    </style>
+    <link href="css/nav.css" rel="stylesheet" type="text/css"/>
+    <link href="css/chinese.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
+<!--导航栏部分-->
+<div class="col-md-12 col-lg-8" id="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="chinese.html">学习中心</a></li>
+        <li><a href="pk.html">竞技场</a></li>
+        <li><a href="classspace.html">班级天地</a></li>
+        <li><a href="parentspace.html">家长空间</a></li>
+        <li><a href="gift.html">奖品</a></li>
+        <li><a href="#"><img src="images/email.png" /></a></li>
+        <li><img src="images/headpic.jpg" class="img-circle" />
+            <!-- <ul>
+                 <li><a href="#">个人信息</a></li>
+                 <li><a href="#">上传</a></li>
+                 <li><a href="#">退出</a></li>
+             </ul>-->
+        </li>
+    </ul>
 
+</div>
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
@@ -39,165 +37,107 @@
                 <div class="col-md-2 column">
 
                 </div>
-                <!--导航栏部分-->
-                <div class="col-md-10 column" id="nav">
-                    <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">学习中心</a></li>
-                        <li><a href="#">竞技场</a></li>
-                        <li><a href="#">班级天地</a></li>
-                        <li><a href="#">家长空间</a></li>
-                        <li><a href="#">奖品</a></li>
-                        <li><a href="#"><img src="images/email.png" /></a></li>
-                        <li><img src="images/headpic.jpg" class="img-circle" />
-                            <!-- <ul>
-                                 <li><a href="#">个人信息</a></li>
-                                 <li><a href="#">上传</a></li>
-                                 <li><a href="#">退出</a></li>
-                             </ul>-->
-                        </li>
-                    </ul>
 
-                </div>
             </div>
             <!--左侧内容-->
-            <div id="leftcontent">
-                <ul>
-                    <li><a href="#">作业印象</a></li>
-                    <li><a href="#">语文印象</a></li>
-                    <li><a href="#">数学印象</a></li>
-                    <li><a href="#">英语印象</a></li>
-                    <li><a href="#">随身听听</a></li>
-                    <li><a href="#">课外乐园</a></li>
-                </ul>
+            <div id="nav2">
+
+
+                <div id="chinese"><a href="chinese.html">语文印象</a></div>
+                <div  id="math"><a href="math.html">数学印象</a></div >
+                <div  id="english"><a href="english.html">英语印象</a></div >
+                <div  id="walk"><a href="walktolisten.html">随身听</a></div >
+                <div  id="garden"><a href="classgarden.html">课外乐园</a></div >
+
             </div>
             <!--右侧内容-->
             <div class="row clearfix">
                 <div id="rightcontent">
-                    <div id="title"><a href="#">数学印象</a> </div>
-                    <p>2016年11月4日</p>
-                    <div id="studycontent">
+                    <div id="title">
                         <ul>
-                            <li>内容<a href="#">第一单元&nbsp;xxxxxx</a></li>
-                            <li><button type="button" class="btn btn-info">开始作业</button></li>
-                            <li><span class="glyphicon glyphicon-chevron-down"></span>&nbsp;&nbsp;&nbsp;已完成</li>
+                            <a href="index.html">首页</a> / <a href="chinese.html">学习中心</a> / <a href="#">数学印象</a>
                         </ul>
                     </div>
+
+                    <div id="studycontent">
+                        <div id="1">
+                            <div class="col-md-2 column">
+                                <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="images/list_book.jpg" style="border-radius: 10px;" /></div>
+                            </div>
+                            <div class="col-md-8 column" style="margin-left: 100px;">
+                                <ul>
+                                    <li>课程内容：<a href="#">第一单元&nbsp;看图识字</a></li>
+
+                                    <li>课程描述：这门课程主要讲的是幼儿园语文的第一单元的课程课程，课程的内容是内容内容内容内容</li>
+                                    <li>开始时间：2016年11月4日</li>
+                                    <li>截止时间：2016年11月4日</li><li>完成情况：未完成</li>
+                                    <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始作业</button></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <HR width="100%" color=#987cb9 SIZE=8 />
+                        <div id="2">
+                            <div class="col-md-2 column">
+                                <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="images/list_book.jpg" style="border-radius: 10px;" /></div>
+                            </div>
+                            <div class="col-md-8 column" style="margin-left: 100px;">
+                                <ul>
+                                    <li>课程内容：<a href="#">第二单元&nbsp;看图识字</a></li>
+
+
+                                    <li>课程描述：这门课程主要讲的是幼儿园语文的第一单元的课程课程，课程的内容是内容内容内容内容</li>
+                                    <li>开始时间：2016年11月4日</li>
+                                    <li>截止时间：2016年11月4日</li><li>完成情况：未完成</li>
+                                    <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始作业</button></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <HR width="100%" color=#987cb9 SIZE=8 />
+                        <div id="3">
+                            <div class="col-md-2 column">
+                                <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="images/list_book.jpg" style="border-radius: 10px;" /></div>
+                            </div>
+                            <div class="col-md-8 column" style="margin-left: 100px;">
+                                <ul>
+                                    <li>课程内容：<a href="#">第三单元&nbsp;看图识字</a></li>
+
+
+                                    <li>课程描述：这门课程主要讲的是幼儿园语文的第一单元的课程课程，课程的内容是内容内容内容内容</li>
+                                    <li>开始时间：2016年11月4日</li>
+                                    <li>截止时间：2016年11月4日</li><li>完成情况：未完成</li>
+                                    <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始作业</button></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
                 </div>
-                <style>
-                    #studycontent{
-                        position:absolute;
-                        left:570px;
-                        top:30px;
-                    }
-                    #studycontent li{
-                        list-style-type: none;
 
-                    }
-                    #studycontent button{
-                        float: right;
-                        position:absolute;
-                        left:570px;
-                        top:20px;
-                    }
-                    #leftcontent{
-                        margin-top: 150px;
-                        margin-left:71px;
-                    }
-
-                    #leftcontent ul li{
-                        list-style-type: none;
-                        padding-top: 26px;
-
-                    }
-
-                    #leftcontent ul li a{
-                        color:black;
-                        font-size:20px;
-                        text-align: center;
-                    }
-                    #rightcontent{
-                        background: white;
-                        border-radius: 20px;
-                        width:770px;
-                        height:445px;
-                        position: absolute;
-                        right:100px;
-                        top:85px;
-                    }
-                    #title{
-                        background:rgb(217,117,54);
-                        position:absolute;
-                        left:0px;
-                        top:30px;
-                        width:680px;
-                        height:60px;
-                    }
-                    #title a{
-                        color: white;
-                        font-size:18px;
-                        position: absolute;
-                        left: 30px;
-                        top: 18px;
-                        font-family:"幼圆";
-                    }
-                    #rightcontent p{
-                        position:absolute;
-                        left:45px;
-                        top: 115px;;
-                        font-size: 16px;
-                    }
-                    #studycontent{
-                        border:1px solid #bbbbbb;
-                        width:674px;
-                        height:120px;
-                        position:absolute;
-                        left:45px;
-                        top:165px;
-                        border-radius:20px;
-
-
-                    }
-                </style>
             </div>
-            <!--页脚-->
-            <div class="footer">
-                <ul>
-                    <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
-                    <div>
-                        <li id="footerli">
-                            <a href="#">后台管理</a>
-                            <a href="#">关于我们</a>
-                            <a href="#">各界声音</a>
-                            <a href="#">加入我们</a>
-                        </li></div>
-                </ul>
-                <style>
 
-                    .footer{
 
-                        margin-top:620px;
-                        margin-right:360px;
-                        buttom:80px;
-
-                    }
-                    .footer ul li{
-                        list-style-type:none;
-                        margin-top:17px;
-                        color:#7d7a7d;
-                        text-align: center;
-
-                    }
-                    #footerli a{
-                        padding-left:30px;
-                        margin-right:5px;
-                        color:#7d7a7d;
-                    }
-                </style>
-            </div>
 
         </div>
     </div>
+</div>
+<!--页脚-->
+<div class="footer">
+    <ul>
+        <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
+        <div>
+            <li id="footerli">
+                <a href="#">后台管理</a>
+                <a href="#">关于我们</a>
+                <a href="#">各界声音</a>
+                <a href="#">加入我们</a>
+            </li></div>
+    </ul>
+
 </div>
 </body>
 </html>
