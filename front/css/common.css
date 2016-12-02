@@ -22,8 +22,8 @@ img {
 select:focus,select:active,select:hover{
   outline:none;
 }
-
-
+// 清除点击input框时出现的蓝色边框
+input｛outline:none;｝
 // 给浮动元素的父级元素添加class="clearfloat"
 .clearfloat{
 	zoom: 1;
