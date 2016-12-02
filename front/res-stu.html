@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>未来之星-学生注册</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/bgstretcher.css">
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/bgstretcher.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#body').bgStretcher({
+            images: ['img/banner6.jpg', 'img/banner9.jpg', 'img/banner11.jpg', 'img/banner7.jpg'],
+            imageWidth: 1024,
+            imageHeight: 500,
+            transitionEffect: 'fade',
+            nextSlideDelay: '8000'
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="global-nav-inner">
+        <div class="global-nav-container clearfloat">
+            <ul class="nav js-global-actions" role="navigation" id="global-actions">
+                <li id="global-nav-home" class="home">
+                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="index.html">
+                        <span><img src="img/header-logo.png"></span>
+                    </a>
+                </li>
+                <li id="global-nav-about" class="about">
+                    <a class="js-tooltip js-dynamic-tooltip" href="/about" target="_blank">
+                        <span class="text">关于我们</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="body"></div>
+    <div id="modal-overlay" style="visibility: visible;">
+        <div class="loginPop-box loginBg">
+            <p>
+                <a href="index.html" class="index-close"></a>
+            </p>
+            <div class="lop-inner">
+                <div class="loginPop-logo"><img src="img/logo.png" width="88px" height="88px"></div>
+                <h1>注册学生账号</h1>
+                <div class="lop-content contentMar">
+                    <div class="lop-right lop-right-res-stu">
+                        <form method="post" action="a.php">
+                            <div class="pr-main pr-main-child js-registerTemplateType" data-type="student">
+                                <div class="main-inner">
+                                    <div class="main-title">请选择你所在的班级 : </div>
+                                    <div class="main-class clearfloat">
+                                        <span class="click-select-code select-grade" data-type="clazzList" data-clazzid="1" data-clazzname="一年级1班" title="一年级20班">一年级1班<input type="hidden" name="grade" value="" class="grade-item"></span>
+                                        <span class="click-select-code select-grade" data-type="clazzList" data-clazzid="2" data-clazzname="一年级2班" title="一年级20班">一年级2班<input type="hidden" name="grade" value="" class="grade-item"></span>
+                                        <div style="clear:both; padding:15px 0 10px;">
+                                            <p class="select-sex">请选择性别 : </p>
+                                            <div class="select-sex">
+                                                <span class="click-select-code select-sex-item" data-gender="M">男<input type="hidden" name="sex" value="" class="sex-item"></span>
+                                                <span class="click-select-code select-sex-item" data-gender="F">女<input type="hidden" name="sex" value="" class="sex-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-text c-text-res-stu">
+                                    <span class="login-icon-res-stu icon-1"></span>
+                                    <input type="tel" placeholder="请输入家长手机号" class="txt1 JS-inputEvent JS-classInput" name="tel">
+                                </div>
+                                <div class="c-text c-text-res-stu">
+                                    <span class="login-icon-res-stu icon-4"></span>
+                                    <input type="tel" placeholder="请输入密码" class="txt1 JS-inputEvent JS-classInput" name="password">
+                                </div>
+                                <input type="submit" name="sub" value="完成注册" class="login-btn login-btn-res-stu login-orange JS-getClassLIst">
+                            </div>
+                        </form>
+                        <div class="lop-tab tabLeft">
+                            <ul>
+                                <li class="JS-selectStudent-main stu active">
+                                    <div class="image"></div>
+                                    <div class="side">我是学生</div>
+                                </li>
+                                <li class="JS-selectTeacher-main" onclick="location.href='res-teacher.html'">
+                                    <div class="image image-tea"></div>
+                                    <div class="side">我是老师</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                            gradeSwitch();
+                            sexSwitch();
+
+                            function gradeSwitch() {
+                                var gradeItem = $(".select-grade");
+                                for (var i = 0; i < gradeItem.length; i++) {
+                                    gradeItem[i].onclick = function() {
+                                        for (var j = 0; j < gradeItem.length; j++) {
+                                            $(gradeItem[j]).find(".grade-item").attr('value', '');
+                                            gradeItem[j].className = '';
+                                        }
+                                        $(this).addClass('active');
+                                        var val = $(this).text();
+                                        $(this).find(".grade-item").attr('value', val);
+                                    }
+                                }
+                            }
+
+                            function sexSwitch() {
+                                var sexItem = $(".select-sex-item");
+                                for (var i = 0; i < sexItem.length; i++) {
+                                    sexItem[i].onclick = function() {
+                                        for (var j = 0; j < sexItem.length; j++) {
+                                            $(sexItem[j]).find(".sex-item").attr('value', '');
+                                            sexItem[j].className = '';
+                                        }
+                                        $(this).addClass('active');
+                                        var val = $(this).text();
+                                        $(this).find(".sex-item").attr('value', val);
+                                    }
+                                }
+                            }
+
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
