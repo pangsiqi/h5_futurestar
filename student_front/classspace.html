@@ -3,127 +3,235 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>学生部分首页</title>
+    <title>班级天地</title>
+    <link href="css/classspace.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body{
-            width: 100%;
-            background:url(images/class_ground.png) no-repeat;
-        }
-        a{
-            font-family: "幼圆";
-        }
-        li{
-            list-style-type:none;
-            float:right;
-            color:white;
-        }
-        #nav ul{
-            margin-top:12px;
-            margin-left:25px;
-        }
-        #nav ul li{
-            float:left;
-            list-style-type:none;
-            padding-left:31px;
-            color:white;
-        }
-        #nav ul li a{
-            color:white;
-            font-weight:bold;
-            font-size:24px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link href="css/nav.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!--导航栏部分-->
+<div class="col-md-12 col-lg-8" id="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="chinese.html">学习中心</a></li>
+        <li><a href="pk.html">竞技场</a></li>
+        <li><a href="classspace.html">班级天地</a></li>
+        <li><a href="parentspace.html">家长空间</a></li>
+        <li><a href="gift.html">奖品</a></li>
+        <li><a href="#"><img src="images/email.png" /></a></li>
+        <li><img src="images/headpic.jpg" class="img-circle" />
+            <!-- <ul>
+                 <li><a href="#">个人信息</a></li>
+                 <li><a href="#">上传</a></li>
+                 <li><a href="#">退出</a></li>
+             </ul>-->
+        </li>
+    </ul>
 
+</div>
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
             <div class="row clearfix">
-                <div class="col-md-2 column">
+                <div class="col-md-2 colufmn">
 
                 </div>
-                <!--导航栏部分-->
-                <div class="col-md-10 column" id="nav">
-                    <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">学习中心</a></li>
-                        <li><a href="#">竞技场</a></li>
-                        <li><a href="#">班级天地</a></li>
-                        <li><a href="#">家长空间</a></li>
-                        <li><a href="#">奖品</a></li>
-                        <li><a href="#"><img src="images/email.png" /></a></li>
-                        <li><img src="images/headpic.jpg" class="img-circle" />
-                            <!-- <ul>
-                                 <li><a href="#">个人信息</a></li>
-                                 <li><a href="#">上传</a></li>
-                                 <li><a href="#">退出</a></li>
-                             </ul>-->
-                        </li>
-                    </ul>
 
-                </div>
             </div>
             <!--内容部分-->
             <div class="container">
                 <div class="row clearfix">
-                    <div class="col-md-4 column">
+                    <div class="col-md-4 column" id="left">
+                        <h1 style="font-weight: bold">中班</h1>
+                        <div id="top">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="images/home.png" width="140px" height="140px"/></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="clearfix">
+                                    <li><p><a href="#">李晓</a></p></li>
+                                    <li><p><img src="images/yellowstar.png" /><span><a href="#">0</a></span></p></li>
+                                    <!--<br/>
+                                    <li><img src="images/graystar.png" /><span><a href="#">0</a></span></li>-->
+                                    <li><button class="btn btn-success" id="writebtn">签到</button></li>
+                                </ul>
+                            </div>
+
+                            <HR width="100%" color=#fff SIZE=8 />
+                            <HR width="100%" color=#bbbbbb SIZE=8 />
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收到礼物</p>
+                            <HR width="100%" color=#bbbbbb SIZE=8 />
+                            <div>
+                            <div class="col-md-4 column">
+                                <img src="images/smallgift.png" />
+                                <a href="#" style="padding-left: 45px">0</a>
+
+                            </div>
+                            <div class="col-md-4 column">
+                                <img src="images/redflower.png" />
+                                <a href="#" style="padding-left: 45px">0</a>
+                            </div>
+                            <div class="col-md-4 column"></div>
+                            </div>
+                        </div>
+                        <div id="buttom">
+                            <p>同班同学</p>
+                            <HR width="100%" color=#bbbbbb SIZE=8 />
+                            <div style="text-align: center">
+                                <div class="col-md-4 column">
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+
+
+                                </div>
+                                <div class="col-md-4 column">
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                </div>
+                                <div class="col-md-4 column">
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                    <img src="images/headpicbig.jpg">
+                                    <a href="#" style="padding-left: 45px">0</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-2 column">
+                    <div class="col-md-1 column">
                     </div>
-                    <div class="col-md-6 column">
-                        <button type="button" class="btn btn-success btn-lg">按钮</button>
-                        <ul class="nav nav-pills">
-                            <li class="active">
-                                <a href="#"> <span class="badge pull-right">42</span> Home</a>
-                            </li>
-                            <li>
-                                <a href="#"> <span class="badge pull-right">16</span> More</a>
-                            </li>
-                        </ul>
-                        <ul class="pagination">
-                            <li>
-                                <a href="#">Prev</a>
-                            </li>
-                            <li>
-                                <a href="#">1</a>
-                            </li>
-                            <li>
-                                <a href="#">2</a>
-                            </li>
-                            <li>
-                                <a href="#">3</a>
-                            </li>
-                            <li>
-                                <a href="#">4</a>
-                            </li>
-                            <li>
-                                <a href="#">5</a>
-                            </li>
-                            <li>
-                                <a href="#">Next</a>
-                            </li>
-                        </ul>
-                        <div class="btn-group">
-                            <button class="btn btn-default">Action</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">操作</a>
-                                </li>
-                                <li class="disabled">
-                                    <a href="#">另一操作</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">其它</a>
-                                </li>
+                    <div class="col-md-7 column" id="right">
+                        <div class="tabable">
+                            <ul class="nav nav-tabs" id="nav-tab" >
+                                <li id="a1" class="nav-active"><a href="#tab1" data-toggle="tab">班级空间</a></li>
+                                <li id="a2"> <a href="#tab2"  data-toggle="tab" >我的空间</a></li>
+                                <li id="a3"><a href="#tab3" data-toggle="tab">我的人气</button></a></li>
                             </ul>
+                            <script>
+                                $(document).ready(function () {
+//                                    $("#a1").css("nav-active");
+                                    var card = $("#nav-tab li");
+                                    for (var i=0; i<card.length;i++){
+                                        card[i].onclick=function () {
+                                            for(var j=0; j<card.length;j++){
+                                                card[j].className='';
+//                                                console.log(card[j])
+                                            }
+                                            console.log($(this))
+                                            $(this).removeClass("active");
+                                            $(this).addClass("nav-active");
+                                        }
+                                    }
+//                                    $("#nav-tab a").on("click",function () {
+//                                        $(this).addClass("nav-active");
+//                                    })
+                                })
+//                                $(document).ready(function () {
+//                                    $('#nav-tab a').on("change", function() {
+//                                        $(this).parent().addClass('nav-active').siblings().removeClass('nav-active');
+//                                    });
+//                                });
+                            </script>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">
+
+                                    <div class="comment">
+                                        <div class="comment-header clearfix row">
+                                            <div class="comment-face col-md-2 col-lg-2"><img src="images/headpicbig.jpg" class="img-responsive"></div>
+                                            <div class="comment-detail col-md-10  col-lg-10 " >
+                                                <div class="detail-header">
+                                                    <div class="detail-info"><span>王小明</span></div>
+                                                    <div class="detail-from">
+                                                        <span class="from-time">10:30</span> 来自
+                                                        <span class="from-text">fs.com</span>
+                                                    </div>
+                                                </div>
+                                                <div class="detail-text">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-footer">
+                                            <ul class="clearfix comment-footer-ul">
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="comment-header clearfix row">
+                                            <div class="comment-face  col-md-2 col-lg-2"><img src="images/headpicbig.jpg"  class="img-responsive"></div>
+                                            <div class="comment-detail col-md-10 col-sm-10 col-lg-10 col-xs-10">
+                                                <div class="detail-info"><span>王小明</span></div>
+                                                <div class="detail-from">
+                                                    <span class="from-time">10:30</span> 来自
+                                                    <span class="from-text">www.baidu.com</span>
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-footer">
+                                            <ul class="clearfix comment-footer-ul">
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                    <p>
+                                        Howdy, I'm in Section 2.
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="tab3">
+                                    <p>
+                                        Howdy, I'm in Section 3.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!--页脚-->
             <div class="footer">
                 <ul>
@@ -136,28 +244,7 @@
                             <a href="#">加入我们</a>
                         </li></div>
                 </ul>
-                <style>
 
-                    .footer{
-                        position:absolute;
-                        top:1430px;
-                        right:360px;
-                        buttom:30px;
-
-                    }
-                    .footer ul li{
-                        list-style-type:none;
-                        margin-top:17px;
-
-                        color:#7d7a7d;
-
-                    }
-                    #footerli a{
-                        padding-left:30px;
-                        margin-right:5px;
-                        color:#7d7a7d;
-                    }
-                </style>
             </div>
 
         </div>
