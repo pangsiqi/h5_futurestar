@@ -88,7 +88,8 @@
                         </th>
                         <th width="10%">资源名称</th>
                         <th width="8%">发布人</th>
-                        <th width="15%">简述</th>
+                        <th width="13%">简述</th>
+                        <th width="8%">发布时间</th>
                         <th width="11%">操作</th>
                     </tr>
                     <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?><tr>
@@ -97,9 +98,10 @@
                             </td>
                             <td><?php echo ($r["title"]); ?></td>
                             <td><?php echo ($r["author"]); ?></td>
-                            <td class="resource-brief"><?php echo ($r["summary"]); ?></td>
-                            <td><a href="/FS/index.php/Admin/R/edit/id/<?php echo ($r["resource_id"]); ?>">修改</a>
-                                <a href="#"></a> <a href="/FS/index.php/Admin/R/del/id/<?php echo ($r["resource_id"]); ?>">删除</a></td>
+                            <td><?php echo ($r["summary"]); ?></td>
+                            <td><?php echo ($r["publishtime"]); ?></td>
+                            <td><a href="/FS/index.php/Admin/R/edit/id/<?php echo ($r["id"]); ?>">修改</a>
+                                <a href="#"></a> <a href="/FS/index.php/Admin/R/del/id/<?php echo ($r["id"]); ?>">删除</a></td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                 </table>
             </div>

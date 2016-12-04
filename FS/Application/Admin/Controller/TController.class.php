@@ -10,34 +10,23 @@ class TController extends Controller {
     }
     
     public function lists(){
-  		$userModel = D("user");
-  		// dump($userModel->select());exit;
+  		$teacherModel = D("teacher");
 		//页码
-		$count  = $userModel->count();    //计算总数
-		$Page   = new \Think\Page($count, 3);
-		$users   = $userModel->limit($Page->firstRow. ',' . $Page->listRows)->order('teacher_id desc')->relation(true)->select();
-		// dump($users);exit;
+		$count  = $teacherModel->count();    //计算总数
+		$Page   = new \Think\Page($count, 2);
+		$teachers   = $teacherModel->limit($Page->firstRow. ',' . $Page->listRows)->order('id asc')->select();
 		$page = $Page->show();
 		$this->assign("page",$page);
-		$this->assign("user",$users);
+		$this->assign("teacher",$teachers);
     	
         $this->show();
     }
     
     public function edit($id=''){
-    	// dump(I("post.subject"));exit;
 		if (IS_POST) {
-    		$model = D("User");
+    		$model = D("teacher");
     		if($model->create()){
-				$data['name'] = I("post.name");
-    			$data['teacher_id'] = I("post.teacher_id");
-				$data['grade'] = I("post.grade");
-				$data['location'] = I("post.location");
-				$data['teacher'] = array(
-						'subject' => I("post.subject")
-					);
-    			$result = $model->relation(true)->where(array('teacher_id'=>$id))->save($data);
-    		// dump($result);exit;
+    			$result = $model->filter('strip_tags')->save($data);
 				if($result !== false){
 					$this->success("修改成功", U("T/lists"));
 				}else{
@@ -49,9 +38,8 @@ class TController extends Controller {
     		if ($id == '') {
     			exit("bad param!");
     		}
-    		$userInfo = D("user")->relation(true)->where("teacher_id=%d",$id)->select();
-    		// dump($userInfo);exit;
-    		$this->assign("user", $userInfo);
+    		$teacherInfo = D("teacher")->find($id);
+    		$this->assign("teacher", $teacherInfo);
     		$this->display();
     	}
 	}
@@ -61,7 +49,7 @@ class TController extends Controller {
 		if ($id == '') {
 			exit("bad param!");
 		}
-		if(M("user")->delete($id)){
+		if(M("teacher")->delete($id)){
 			$this->success("删除成功！");
 		}
     }

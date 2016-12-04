@@ -82,7 +82,7 @@
             <h3 class="down">修改资源信息<small>Resource Edit</small></h3>
             <div class="list-group form">
                 <form enctype="multipart/form-data" class="form-horizontal" role="form" method="post">
-                <input type="hidden" name="resource_id" value="<?php echo ($resource["resource_id"]); ?>" />
+                <input type="hidden" name="id" value="<?php echo ($resource["id"]); ?>" />
                     <div class="list-group-item">
                         <label for="inputEmail3" class="col-sm-2 control-label">资源名称</label>
                         <div class="col-sm-10">
@@ -104,7 +104,7 @@
                     <div class="list-group-item">
                         <label for="inputEmail3" class="col-sm-2 control-label">添加时间</label>
                         <div class="col-sm-10">
-                            <input type="input" name="publishTime" class="form-control" id="inputEmail3" value="<?php echo date('Y-m-d  H:i');?>">
+                            <input type="input" name="publishtime" class="form-control" id="inputEmail3" value="<?php echo date('Y-m-d  H:i');?>">
                         </div>
                     </div>
                     <div class="list-group-item">
@@ -118,10 +118,10 @@
                         <div class="col-sm-offset-2 col-sm-5">
                             <div class="row">
                                 <div class=" col-sm-5">
-                                    <button type="submit" class="btn btn-primary">添 加 资 源</button>
+                                    <input type="submit" class="btn btn-primary" value="修 改 资 源">
                                 </div>
                                 <div class=" col-sm-5">
-                                    <button type="submit" class="btn btn-warning">重 置 内 容</button>
+                                    <!-- <input type="reset" class="btn btn-warning" value="重 置 内 容"> -->
                                 </div>
                             </div>
                         </div>

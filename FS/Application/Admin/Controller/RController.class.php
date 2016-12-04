@@ -21,11 +21,11 @@ class RController extends Controller {
                 if(!$uploadPic) {// 上传错误提示错误信息
                     $this->error($upload->getError());
                 }else{                  
-                    $data['resource_id'] = I("post.resource_id");
+                    $data['id'] = I("post.id");
                     $data['title'] = I("post.title");
                     $data['path'] = __ROOT__.'/Public'.$uploadPic['path']['savepath'].$uploadPic['path']['savename'];
                     $data['author'] = I("post.author");
-                    $data['publishTime'] = I("post.publishTime");
+                    $data['publishTime'] = I("post.publishtime");
                     $data['summary'] = I("post.summary");
                     
                     $result = $model->filter('strip_tags')->save($data);
@@ -51,9 +51,8 @@ class RController extends Controller {
         //页码
         $count  = $resourceModel->count();    //计算总数
         $Page   = new \Think\Page($count, 1);
-        $resources   = $resourceModel->limit($Page->firstRow. ',' . $Page->listRows)->order('resource_id desc')->select();
+        $resources   = $resourceModel->limit($Page->firstRow. ',' . $Page->listRows)->order('id asc')->select();
         $page = $Page->show();
-        // dump($resources);exit;
         $this->assign("page",$page);
         $this->assign("resource",$resources);
         

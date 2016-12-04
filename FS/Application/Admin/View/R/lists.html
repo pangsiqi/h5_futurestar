@@ -14,7 +14,8 @@
                         </th>
                         <th width="10%">资源名称</th>
                         <th width="8%">发布人</th>
-                        <th width="15%">简述</th>
+                        <th width="13%">简述</th>
+                        <th width="8%">发布时间</th>
                         <th width="11%">操作</th>
                     </tr>
                     <volist name="resource" id="r">
@@ -24,9 +25,10 @@
                             </td>
                             <td>{$r.title}</td>
                             <td>{$r.author}</td>
-                            <td class="resource-brief">{$r.summary}</td>
-                            <td><a href="__MODULE__/R/edit/id/{$r.resource_id}">修改</a>
-                                <a href="#"></a> <a href="__MODULE__/R/del/id/{$r.resource_id}">删除</a></td>
+                            <td>{$r.summary}</td>
+                            <td>{$r.publishtime}</td>
+                            <td><a href="__MODULE__/R/edit/id/{$r.id}">修改</a>
+                                <a href="#"></a> <a href="__MODULE__/R/del/id/{$r.id}">删除</a></td>
                         </tr>
                     </volist>
                 </table>

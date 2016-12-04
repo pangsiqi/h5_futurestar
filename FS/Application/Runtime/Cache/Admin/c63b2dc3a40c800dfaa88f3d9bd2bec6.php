@@ -86,27 +86,27 @@
                         <th width="5%">
                             <input type="checkbox" name="checkbox10" id="checkbox10">
                         </th>
+                        <th width="7%">教师号</th>
                         <th width="10%">姓名</th>
                         <th width="3%">性别</th>
-                        <th width="7%">教师号</th>
                         <th width="10%">班级</th>
                         <th width="7%">学科</th>
                         <th width="15%">地区</th>
                         <th width="12%">操作</th>
                     </tr>
-                    <?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i;?><tr>
+                    <?php if(is_array($teacher)): $i = 0; $__LIST__ = $teacher;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i;?><tr>
                             <td>
                                 <input type="checkbox" name="checkbox" id="checkbox">
                                 <label for="checkbox"></label>
                             </td>
-                            <td><?php echo ($t["name"]); ?></td>
+                            <td><?php echo ($t["id"]); ?></td>
+                            <td><?php echo ($t["realname"]); ?></td>
                             <td><?php echo ($t["sex"]); ?></td>
-                            <td><?php echo ($t["teacher_id"]); ?></td>
                             <td><?php echo ($t["grade"]); ?></td>
-                            <td><?php echo ($t['teacher']['subject']); ?></td>
-                            <td><?php echo ($t["location"]); ?></td>
-                            <td><a href="/FS/index.php/Admin/T/edit/id/<?php echo ($t["teacher_id"]); ?>">修改</a>
-                                <a href="#"></a> <a href="/FS/index.php/Admin/T/del/id/<?php echo ($t["teacher_id"]); ?>">删除</a></td>
+                            <td><?php echo ($t["subject"]); ?></td>
+                            <td><?php echo ($t["city"]); echo ($t["township"]); ?></td>
+                            <td><a href="/FS/index.php/Admin/T/edit/id/<?php echo ($t["id"]); ?>">修改</a>
+                                <a href="#"></a> <a href="/FS/index.php/Admin/T/del/id/<?php echo ($t["id"]); ?>">删除</a></td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                 </table>
             </div>

@@ -12,28 +12,28 @@
                         <th width="5%">
                             <input type="checkbox" name="checkbox10" id="checkbox10">
                         </th>
+                        <th width="7%">教师号</th>
                         <th width="10%">姓名</th>
                         <th width="3%">性别</th>
-                        <th width="7%">教师号</th>
                         <th width="10%">班级</th>
                         <th width="7%">学科</th>
                         <th width="15%">地区</th>
                         <th width="12%">操作</th>
                     </tr>
-                    <volist name="user" id="t">
+                    <volist name="teacher" id="t">
                         <tr>
                             <td>
                                 <input type="checkbox" name="checkbox" id="checkbox">
                                 <label for="checkbox"></label>
                             </td>
-                            <td>{$t.name}</td>
+                            <td>{$t.id}</td>
+                            <td>{$t.realname}</td>
                             <td>{$t.sex}</td>
-                            <td>{$t.teacher_id}</td>
                             <td>{$t.grade}</td>
-                            <td>{$t['teacher']['subject']}</td>
-                            <td>{$t.location}</td>
-                            <td><a href="__MODULE__/T/edit/id/{$t.teacher_id}">修改</a>
-                                <a href="#"></a> <a href="__MODULE__/T/del/id/{$t.teacher_id}">删除</a></td>
+                            <td>{$t.subject}</td>
+                            <td>{$t.city}{$t.township}</td>
+                            <td><a href="__MODULE__/T/edit/id/{$t.id}">修改</a>
+                                <a href="#"></a> <a href="__MODULE__/T/del/id/{$t.id}">删除</a></td>
                         </tr>
                     </volist>
                 </table>

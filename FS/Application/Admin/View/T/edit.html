@@ -8,45 +8,52 @@
             <h3 class="down">修改教师信息 <small>Teacher Edit</small></h3>
             <div class="list-group form">
                 <form enctype="multipart/form-data" method="post" class="form-horizontal" role="form" >
-                <input type="hidden" name="id" value="{$user[0].teacher_id}" />
+                <input type="hidden" name="id" value="{$teacher.id}" />
+                    <!-- <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">教师号</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="teacher_id" class="form-control" id="inputEmail3" value="{$teacher.id}">
+                        </div>
+                    </div> -->
                     <div class="list-group-item">
                         <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
                         <div class="col-sm-10">
-                            <input type="input" name="name" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].name}">
+                            <input type="input" name="name" class="form-control" id="inputEmail3" placeholder="" value="{$teacher.realname}">
                         </div>
                     </div>
-                    <div class="list-group-item">
-                        <label for="inputEmail3" class="col-sm-2 control-label">教师号</label>
-                        <div class="col-sm-10">
-                            <input type="input" name="teacher_id" class="form-control" id="inputEmail3" value="{$user[0].teacher_id}">
-                        </div>
-                    </div>
+                    
                     <div class="list-group-item">
                         <label for="inputEmail3" class="col-sm-2 control-label">班级</label>
                         <div class="col-sm-10">
-                            <input type="input" name="grade" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].grade}">
+                            <input type="input" name="grade" class="form-control" id="inputEmail3" placeholder="" value="{$teacher.grade}">
                         </div>
                     </div>
                     <div class="list-group-item">
                         <label for="inputEmail3" class="col-sm-2 control-label">学科</label>
                         <div class="col-sm-10">
-                            <input type="input" name="subject" class="form-control" id="inputEmail3" placeholder="" value="{$user[0]['teacher']['subject']}">
+                            <input type="input" name="subject" class="form-control" id="inputEmail3" placeholder="" value="{$teacher.subject}">
                         </div>
                     </div>
                     <div class="list-group-item">
-                        <label for="inputEmail3" class="col-sm-2 control-label">地区</label>
+                        <label for="inputEmail3" class="col-sm-2 control-label">市</label>
                         <div class="col-sm-10">
-                            <input type="input" name="location" class="form-control" id="inputEmail3" placeholder="" value="{$user[0].location}">
+                            <input type="input" name="city" class="form-control" id="inputEmail3" placeholder="" value="{$teacher.city}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">区</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="township" class="form-control" id="inputEmail3" placeholder="" value="{$teacher.township}">
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="col-sm-offset-2 col-sm-5">
                             <div class="row">
                                 <div class=" col-sm-5">
-                                    <button type="submit" class="btn btn-primary">修 改 教 师</button>
+                                    <input type="submit" class="btn btn-primary" value="修 改 教 师">
                                 </div>
                                 <div class=" col-sm-5">
-                                    <button type="submit" class="btn btn-warning">重 置 内 容</button>
+                                    <!-- <input type="reset" class="btn btn-warning" value="重 置 内 容"> -->
                                 </div>
                             </div>
                         </div>
