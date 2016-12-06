@@ -1,61 +1,47 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class StudentController extends Controller {
+class TeacherController extends Controller {
 	public function index(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function changeinform(){
+	public function assignment(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function chinese(){
+	public function checkhomework(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function classgarden(){
+	public function guestbook(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function classspace(){
+	public function myClass(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function english(){
+	public function personCenter(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function gift(){
+	public function resource(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function math(){
+	public function update(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function parentspace(){
+	public function upload(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function personcenter(){
+	public function workpaper(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function pk(){
-		layout(false); // 临时关闭当前模板的布局功能
-		$this->display();//加载当前函数的模板文件
-	}
-	public function studycontent(){
-		layout(false); // 临时关闭当前模板的布局功能
-		$this->display();//加载当前函数的模板文件
-	}
-	public function walktolisten(){
-		layout(false); // 临时关闭当前模板的布局功能
-		$this->display();//加载当前函数的模板文件
-	}
+
 }
-
-
-
 ?>

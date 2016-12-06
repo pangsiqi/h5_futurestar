@@ -1,0 +1,123 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>竞技场</title>
+    <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
+    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css"/>
+    <link href="/FS/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css"/>
+    <link href="/FS/Public/front/student/css/studycontent.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<!--导航栏部分-->
+<div class="col-md-12 col-lg-8" id="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="chinese.html">学习中心</a></li>
+        <li><a href="pk.html">竞技场</a></li>
+        <li><a href="classspace.html">班级天地</a></li>
+        <li><a href="parentspace.html">家长空间</a></li>
+        <li><a href="gift.html">奖品</a></li>
+        <li><a href="#"><img src="/FS/Public/front/student/images/email.png" /></a></li>
+        <li><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" />
+            <!-- <ul>
+                 <li><a href="#">个人信息</a></li>
+                 <li><a href="#">上传</a></li>
+                 <li><a href="#">退出</a></li>
+             </ul>-->
+        </li>
+    </ul>
+
+</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="row clearfix">
+                <div class="col-md-2 column">
+
+                </div>
+
+            </div>
+            <!--左侧内容-->
+            <div id="nav2">
+
+
+                <div id="chinese"><a href="#"></a></div>
+                <div  id="math"><a href="math.html"></a></div >
+                <div  id="english"><a href="english.html"></a></div >
+                <div  id="walk"><a href="walktolisten.html"></a></div >
+                <div  id="garden"><a href="classgarden.html"></a></div >
+
+            </div>
+            <!--右侧内容-->
+            <div class="row clearfix">
+                <div id="rightcontent">
+                    <div id="title"><ul><a href="#">竞技场</a></ul> </div>
+
+                    <div id="studycontent">
+                        <div id="video">
+                            <embed src="resource/shuxue1.swf" height="494" width="794" style="border-radius: 5px;"/>
+                            <!--/*控制播放和暂停*/-->
+
+                        </div>
+                        <HR width="100%" color=#fff SIZE=8 />
+
+
+
+                        <div id="play">
+                            <!--<img src="/FS/Public/front/student/images/play.png" />-->
+                        </div>
+                        <!--推荐内容-->
+
+                        <div id="other">
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/better_content.png" /></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="footer">
+    <ul>
+        <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
+        <div>
+            <li id="footerli">
+                <a href="#">后台管理</a>
+                <a href="#">关于我们</a>
+                <a href="#">各界声音</a>
+                <a href="#">加入我们</a>
+            </li></div>
+    </ul>
+
+</div>
+</body>
+</html>

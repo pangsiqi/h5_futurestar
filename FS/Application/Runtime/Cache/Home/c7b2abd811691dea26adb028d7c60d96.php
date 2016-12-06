@@ -69,7 +69,7 @@
                             </div>
                             <div class="c-text">
                                 <span class="login-icon icon-4"></span>
-                                <input type="text" placeholder="请输入密码" class="txt1 JS-teacherPassword JS-inputEvent" name="password">
+                                <input type="password" placeholder="请输入密码" class="txt1 JS-teacherPassword JS-inputEvent" name="password">
                                 <div class="errorTips"></div>
                             </div>
                             <div class="c-text">

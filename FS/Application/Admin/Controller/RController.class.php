@@ -49,11 +49,9 @@ class RController extends Controller {
     public function lists(){
         $resourceModel = D("resource");
         //页码
-        $count  = $resourceModel->count();    //计算总数
-        $Page   = new \Think\Page($count, 1);
-        $resources   = $resourceModel->limit($Page->firstRow. ',' . $Page->listRows)->order('id asc')->select();
-        $page = $Page->show();
-        $this->assign("page",$page);
+        
+        $resources   = $resourceModel->select();
+       
         $this->assign("resource",$resources);
         
         $this->show();

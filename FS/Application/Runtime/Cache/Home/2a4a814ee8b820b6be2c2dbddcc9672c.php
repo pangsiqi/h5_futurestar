@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="c-text c-text-res-stu">
                                     <span class="login-icon-res-stu icon-5"></span>
-                                    <input type="tel" placeholder="请输入真实姓名" class="txt1 JS-inputEvent JS-classInput" name="realname">
+                                    <input type="text" placeholder="请输入真实姓名" class="txt1 JS-inputEvent JS-classInput" name="realname">
                                 </div>
                                 <div class="c-text c-text-res-stu">
                                     <span class="login-icon-res-stu icon-1"></span>
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="c-text c-text-res-stu">
                                     <span class="login-icon-res-stu icon-4"></span>
-                                    <input type="tel" placeholder="请输入密码" class="txt1 JS-inputEvent JS-classInput" name="password">
+                                    <input type="password" placeholder="请输入密码" class="txt1 JS-inputEvent JS-classInput" name="password">
                                 </div>
                                 <input type="submit" name="sub" value="完成注册" class="login-btn login-btn-res-stu login-orange JS-getClassLIst">
                             </div>
