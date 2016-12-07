@@ -11,15 +11,100 @@ ul li {
     float: left;
 }
 
+body{
+    overflow-x:hidden;
+}
+
+/*导航*/
 #header {
     background-color: white;
     border: solid 1px RGB(234, 234, 234);
     height: 60px;
 }
 
+#logo{
+    margin-top:10px;
+    padding-left:120px;
+}
+
+#nav{
+    padding-left:40px;
+    margin-top:8px;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#new{
+    padding-left:5px;
+}
+
+#circle{
+    padding-left:3px;
+    margin-top:-7px;
+
+}
+
+#drop{
+    padding:0 0 0 3px;
+    margin:0 ;
+
+}
+
+#navbarDrop1{
+    width:100px;
+    border:solid 1px RGB(187,187,187); 
+    border-radius:4px;
+    color:black;
+    float:left;
+}
+
+#navbarDrop2{
+    padding:0 30px;
+    padding-right:50px;
+}
+
+#navbarDrop3{
+    min-width:0px;
+}
+
 #content {
     background-color: RGB(189, 235, 141);
     height: 1000px;
+}
+
+#avatar{
+    padding-top:20px;
+    padding-left:115px;
+}
+
+#tea_n{
+    font-weight:bold;
+    padding-top:24px;
+}
+
+.tea_n{
+    padding:0;
+    padding-top:10px;
+}
+
+#tea_m{
+    padding-left:12px;
+    padding:0;
+}
+
+#tea_c{
+    padding-left:70px;
+}
+
+#say{
+    color:white;
+    font-weight:bold;
+    padding-left:140px;
+    padding-top:25px;
 }
 
 #message1 {
@@ -29,21 +114,105 @@ ul li {
     margin-left: 120px;
 }
 
+.image{
+    margin-left:100px;
+    margin-top:30px;
+}
+
 .image li {
     padding-right: 15px;
 }
 
-
-/*footer*/
-
-#nav li {
-    float: left;
-    list-style-type: none;
-    padding-top: 10px;
+#pass{
+    padding-left:520px;
+    margin:0;
 }
+
 
 #pass li {
     padding-right: 25px;
+}
+
+.pass{
+    padding:0 0 0 3px;
+    margin:0;
+
+}
+
+#navbarDrop4{
+    width:100px;
+}
+
+#navbarDrop5{
+    width:100px;
+}
+
+.dropdown-toggle{
+    border:solid 1px RGB(187,187,187);
+    background-color:white; 
+    border-radius:4px;
+    color:black;
+    float:left;
+}
+
+.pass_p{
+    padding:0 15px;
+}
+
+.dropdown-menu{
+    min-width:0px;
+    width:100px
+}
+
+#pass_p{
+    width:80px;
+    text-align:center;
+    border:solid 1px gray;
+    border-radius:5px;
+    background-color:orange;
+    color:white;
+}
+
+#dia{
+   margin-left:120px;
+   margin-top:100px;
+}
+
+.dia{
+   margin-bottom:40px;
+}
+
+#dia_t{
+   color:white;
+   margin-top:10px;
+   padding:0;
+   font-weight:bold;
+}
+
+#dia_drop{
+    margin-left:30px;
+}
+
+#navbarDrop6{
+    margin-top:10px;
+    border:solid 1px RGB(187,187,187);
+    background-color:white; 
+    border-radius:4px;
+    color:black;
+    float:left;
+    width:100px;
+}
+
+#dia_p{
+    padding:0 25px;
+}
+
+#dia_s{
+    background-color: white; 
+    height:300px;
+    width:850px; 
+    border:solid 3px RGB(187,187,187); 
+    border-radius:10px;
 }
 
 .bs-example-popover .popover {
@@ -54,6 +223,10 @@ ul li {
     margin-left: 105px;
     margin-top: 20px;
     font-size: 10px;
+}
+
+#dia_pic{
+    padding-top:10px;
 }
 
 .pagination {
@@ -70,6 +243,8 @@ ul li {
     color: black;
 }
 
+
+/*尾部*/
 #footer {
     background-color: white;
     border: solid 1px RGB(234, 234, 234);
@@ -77,6 +252,14 @@ ul li {
     font-size: 12px;
     text-align: center;
     height: 70px;
+}
+
+#footer1{
+    padding-top:15px;
+}
+
+#footer2{
+    padding-left:45px;
 }
 
 .footer_nav li {

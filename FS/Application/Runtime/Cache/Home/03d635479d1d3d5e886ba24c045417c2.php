@@ -9,22 +9,23 @@
     <script src="/FS/Public/front/teacher/js/jquery.js"></script>
     <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:RGB(189,235,141); overflow-x:hidden">
+<body>
+<!--导航-->
 <div class="row clearfix" id="header">
-    <div class="col-md-4 column" style="margin-top:10px;padding-left:120px">
+    <div class="col-md-4 column" id="logo">
         <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
     </div>
     <div class="col-md-4 column">
     </div>
     <div class="col-md-4 column">
-        <ul id="nav"  style="padding-left:40px;margin-top:8px">
+        <ul id="nav">
             <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
-            <li style="padding-left:5px"><a href="guestbook.html">消息</a></li>
-            <li style="padding-left:3px;padding-top:2px"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
-            <li style="padding:0 0 0 3px;margin:0 ">
+            <li id="new"><a href="guestbook.html">消息</a></li>
+            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="drop">
             <li class="dropdown" >
-                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" style="width:100px;border:solid 1px RGB(187,187,187); border-radius:4px;color:black;float:left;"><span style="padding:0 30px;padding-right:50px">1</span><span class="caret" style=""></span></a>
-                <ul class="dropdown-menu" style="min-width:0px;">
+                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret" style=""></span></a>
+                <ul class="dropdown-menu" id="navbarDrop3">
                     <li><a href="personCenter.html" >个人资料</a></li>
                     <li><a href="update.html" >修改资料</a></li>
                     <li><a href="#" >退出</a></li>
@@ -34,44 +35,43 @@
         </ul>
     </div>
 </div>
-<div class="row clearfix" id="content" style="height:600px">
-    <div class="col-md-3 column" style="padding-left: 145px;padding-top:35px">
-        <div class="row clearfix" style="background-color: white; width:146px; height:110px;">
-            <div class="col-md-6 column" style="margin-top:2px; padding-top:15px">
+<div class="row clearfix" id="content">
+<!--内容导航-->
+    <div class="col-md-3 column" id="content_left1">
+        <div class="row clearfix" id="left1">
+            <div class="col-md-6 column" id="pic">
                 <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
             </div>
-            <div class="col-md-6 column" style="font-size:12px; margin-top:2px">
+            <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <p style="padding:15px 0 0 0;margin:0;float:left"><a href="personCenter.html">孙老师</a></p>
+                        <p id="tec"><a href="personCenter.html">孙老师</a></p>
                     </div>
                 </div>
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <a href="rank.html">
-                            <div class="progress" style="height:8px; width:16px; float:right;padding:0;margin:0;margin-top:5px">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                     <span class="sr-only">50%</span>
                                 </div>
                             </div>
-                            <p style="padding:0;margin:0">LVO</p>
-                        </a>
+                            <p id="lvo">LVO</p>
                     </div>
                 </div>
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <a href="#"><p style="padding:0;margin:0;float:left">鲜花:0</p></a>
+                        <a href="#"><p id="flower">鲜花:0</p></a>
                     </div>
                 </div>
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <input type="button" style="background-color:white; border:solid 1px gray; border-radius:8px" value="证">
+                        <input type="button" id="zheng" value="证">
                     </div>
                 </div>
             </div>
         </div>
         <div class="row clearfix">
-            <div class="col-md-12 column" style="padding:0">
+            <div class="col-md-12 column" id="list">
                 <div class="panel-group" id="panel-493390">
                     <ul class="list-group">
                         <li>
@@ -84,13 +84,13 @@
                         <li >
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-749900">英语作业<span class="glyphicon glyphicon-chevron-down" style="color:white;padding-top:4px;padding-left:16px"></span></a>
+                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-749900">英语作业<span class="glyphicon glyphicon-chevron-down" id="test"></span></a>
                                 </div>
                                 <div id="panel-element-749900" class="panel-collapse collapse">
-                                    <div class="panel-body" style="padding:0">
-                                        <ul class="homeworkList_e" style="padding:0">
-                                            <li class="list-group-item" style="margin-left:0"><a href="assignment.html">布置作业</a></li>
-                                            <li class="list-group-item" style="margin-left:0"><a href="#">作业情况</a></li>
+                                    <div class="panel-body">
+                                        <ul class="homeworkList_e">
+                                            <li class="list-group-item"><a href="assignment.html">布置作业</a></li>
+                                            <li class="list-group-item"><a href="workpaper.html">作业情况</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -120,34 +120,34 @@
             </div>
         </div>
     </div>
-    <div class="col-md-7 column" style="padding-left:20px">
+    <div class="col-md-7 column" class="content_r1">
             <div class="col-md-12 column" id="content_h1">
             <div class="row clearfix" >
-                <div class="col-md-12 column" style="background-color:RGB(156,204,101);height:45px;padding:0;margin:0">
-                    <h3 style="font-size:20px; padding-top:12px;padding-left:28px;margin:0">作业报告</h3>
+                <div class="col-md-12 column" id="h1">
+                    <h3 id="h1_t">作业报告</h3>
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-md-12 column"  style="padding-left:0;margin-bottom:30px">
-                    <h3 style="font-size:14px; padding-top:14px;padding-left:28px;margin:0">班级：中班1班</h3>
+                <div class="col-md-12 column"  id="h2">
+                    <h3 id="h2_t">班级：中班1班</h3>
                 </div>
             </div>
             </div>
             <div class="col-md-12 column" id="content_h2">
                 <div class="row clearfix" >
-                    <div class="col-md-12 column" style="background-color:RGB(156,204,101);height:45px;padding:0;margin:0">
-                        <h3 style="font-size:20px; padding-top:12px;padding-left:28px;margin:0">待检查</h3>
+                    <div class="col-md-12 column" id="h3">
+                        <h3 id="h3_c">待检查</h3>
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-md-12 column"  style="padding-left:0;margin-bottom:30px">
+                    <div class="col-md-12 column"  id="h4">
                        <ul id="check">
                            <li>内容：</li>
                            <li><a href="#">第一课</a></li>
                            <li>截止时间：</li>
                            <li><a href="#">2016年11月17日</a></li>
                            <li><a href="#">0/3</a></li>
-                           <a href="checkhomework.html"><input class="check" name="check" style="background-color:RGB(43,175,43); color:white; float:right;border-radius:8px;margin-top:12px; width:100px;height:30px;text-align:center" value="检查作业" /></a>
+                           <a href="checkhomework.html"><input class="check" name="check" value="检查作业" /></a>
                        </ul>
                     </div>
                 </div>
@@ -155,24 +155,25 @@
         </div>
     <div class="col-md-2 column"></div>
  </div>
+<!--尾部-->
 <div class="row clearfix" id="footer">
-        <div class="col-md-12 column" style="padding-top:15px">
-            <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    <div class="col-md-12 column" id="footer1">
+        <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-12 column">
+        <div class="col-md-3 column">
         </div>
-        <div class="col-md-12 column">
-            <div class="col-md-3 column">
-            </div>
-            <div class="col-md-5 column">
-                <ul class="footer_nav">
-                    <li style="padding-left:45px">后台管理</li>
-                    <li>关于我们</li>
-                    <li>各界声音</li>
-                    <li>加入我们</li>
-                </ul>
-            </div>
-            <div class="col-md-4 column">
-            </div>
+        <div class="col-md-5 column">
+            <ul class="footer_nav">
+                <li id="footer2">后台管理</li>
+                <li>关于我们</li>
+                <li>各界声音</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="col-md-4 column">
         </div>
     </div>
+</div>
 </body>
 </html>

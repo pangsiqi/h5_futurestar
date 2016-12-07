@@ -1,30 +1,32 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
+
 <head>
-    <title>作业报告</title>
+    <title>资源管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/workpaper.css">
-    <script src="__PUBLIC__/front/teacher/js/jquery.js"></script>
-    <script src="__PUBLIC__/front/teacher/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/FS/Public/front/teacher/css/resource.css">
+    <script src="/FS/Public/front/teacher/js/jquery.js"></script>
+    <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 <!--导航-->
 <div class="row clearfix" id="header">
     <div class="col-md-4 column" id="logo">
-        <img alt="35x35" src="__PUBLIC__/front/teacher/images/logo.png" />
+        <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
     </div>
     <div class="col-md-4 column">
     </div>
     <div class="col-md-4 column">
         <ul id="nav">
-            <li><a href="guestbook.html"><img src="__PUBLIC__/front/teacher/images/email.png" /></a></li>
+            <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
             <li id="new"><a href="guestbook.html">消息</a></li>
-            <li id="circle"><img src="__PUBLIC__/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
             <li id="drop">
             <li class="dropdown" >
-                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret"></span></a>
+                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret" style=""></span></a>
                 <ul class="dropdown-menu" id="navbarDrop3">
                     <li><a href="personCenter.html" >个人资料</a></li>
                     <li><a href="update.html" >修改资料</a></li>
@@ -35,12 +37,12 @@
         </ul>
     </div>
 </div>
-<div class="row clearfix" id="content">
+    <div class="row clearfix" id="content">
 <!--内容导航-->
     <div class="col-md-3 column" id="content_left1">
         <div class="row clearfix" id="left1">
             <div class="col-md-6 column" id="pic">
-                <img src="__PUBLIC__/front/teacher/images/1-2.png" class="img-rounded" />
+                <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
             </div>
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
@@ -120,41 +122,83 @@
             </div>
         </div>
     </div>
-    <div class="col-md-7 column" class="content_r1">
-            <div class="col-md-12 column" id="content_h1">
-            <div class="row clearfix" >
-                <div class="col-md-12 column" id="h1">
-                    <h3 id="h1_t">作业报告</h3>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-md-12 column"  id="h2">
-                    <h3 id="h2_t">班级：中班1班</h3>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-12 column" id="content_h2">
-                <div class="row clearfix" >
-                    <div class="col-md-12 column" id="h3">
-                        <h3 id="h3_c">待检查</h3>
+    <div class="col-md-7 column" id="right">
+            <div class="col-md-12 column" id="content_h">
+                <div class="row clearfix">
+                    <div class="col-md-12 column" id="right1">
+                        <a href="upload.html">
+                            <input id="update" value="上传" />
+                        </a>
+                        <a href="#"><h3 id="rec">学习资源</h3></a>
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-md-12 column"  id="h4">
-                       <ul id="check">
-                           <li>内容：</li>
-                           <li><a href="#">第一课</a></li>
-                           <li>截止时间：</li>
-                           <li><a href="#">2016年11月17日</a></li>
-                           <li><a href="#">0/3</a></li>
-                           <a href="checkhomework.html"><input class="check" name="check" value="检查作业" /></a>
-                       </ul>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">1.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
                     </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">2.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">3.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">4.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">5.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">6.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">7.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">8.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">9.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 column">
+                        <ul class="number">
+                            <li><a href="#">10.学习资源之数字</a></li>
+                            <li><a href="#" class="tea_name">孙老师</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    <div class="col-md-2 column"></div>
- </div>
+    </div>
+     <div class="col-md-2 column"></div>
+    </div>
 <!--尾部-->
 <div class="row clearfix" id="footer">
     <div class="col-md-12 column" id="footer1">
@@ -176,4 +220,5 @@
     </div>
 </div>
 </body>
+
 </html>

@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <title>布置作业</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/teacher/css/assginment.css">
-    <script src="__PUBLIC__/front/teacher/js/jquery.js"></script>
-    <script src="__PUBLIC__/front/teacher/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/FS/Public/front/teacher/css/assginment.css">
+    <script src="/FS/Public/front/teacher/js/jquery.js"></script>
+    <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--导航-->
 <div class="row clearfix" id="header">
     <div class="col-md-4 column" id="logo">
-        <img alt="35x35" src="__PUBLIC__/front/teacher/images/logo.png" />
+        <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
     </div>
     <div class="col-md-4 column">
     </div>
     <div class="col-md-4 column">
         <ul id="nav">
-            <li><a href="guestbook.html"><img src="__PUBLIC__/front/teacher/images/email.png" /></a></li>
+            <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
             <li id="new"><a href="guestbook.html">消息</a></li>
-            <li id="circle"><img src="__PUBLIC__/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
             <li id="drop">
             <li class="dropdown" >
                 <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret"></span></a>
@@ -40,7 +40,7 @@
     <div class="col-md-3 column" id="content_left1">
         <div class="row clearfix" id="left1">
             <div class="col-md-6 column" id="pic">
-                <img src="__PUBLIC__/front/teacher/images/1-2.png" class="img-rounded" />
+                <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
             </div>
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
