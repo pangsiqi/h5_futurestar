@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-    <title>作业报告</title>
+    <title>个人中心</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/workpaper.css">
-    <script src="__PUBLIC__/front/teacher/js/jquery.js"></script>
-    <script src="__PUBLIC__/front/teacher/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/FS/Public/front/teacher/css/personCenter.css">
+    <script src="/FS/Public/front/teacher/js/jquery.js"></script>
+    <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--导航-->
 <div class="row clearfix" id="header">
     <div class="col-md-4 column" id="logo">
-        <img alt="35x35" src="__PUBLIC__/front/teacher/images/logo.png" />
+        <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
     </div>
     <div class="col-md-4 column">
     </div>
     <div class="col-md-4 column">
         <ul id="nav">
-            <li><a href="guestbook.html"><img src="__PUBLIC__/front/teacher/images/email.png" /></a></li>
+            <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
             <li id="new"><a href="guestbook.html">消息</a></li>
-            <li id="circle"><img src="__PUBLIC__/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
             <li id="drop">
             <li class="dropdown" >
                 <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret"></span></a>
@@ -36,11 +36,11 @@
     </div>
 </div>
 <div class="row clearfix" id="content">
-<!--内容导航-->
+    <!--内容导航-->
     <div class="col-md-3 column" id="content_left1">
         <div class="row clearfix" id="left1">
             <div class="col-md-6 column" id="pic">
-                <img src="__PUBLIC__/front/teacher/images/1-2.png" class="img-rounded" />
+                <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
             </div>
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
@@ -120,41 +120,26 @@
             </div>
         </div>
     </div>
-    <div class="col-md-7 column" class="content_r1">
-            <div class="col-md-12 column" id="content_h1">
-            <div class="row clearfix" >
-                <div class="col-md-12 column" id="h1">
-                    <h3 id="h1_t">作业报告</h3>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-md-12 column"  id="h2">
-                    <h3 id="h2_t">班级：中班1班</h3>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-12 column" id="content_h2">
-                <div class="row clearfix" >
-                    <div class="col-md-12 column" id="h3">
-                        <h3 id="h3_c">待检查</h3>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-md-12 column"  id="h4">
-                       <ul id="check">
-                           <li>内容：</li>
-                           <li><a href="#">第一课</a></li>
-                           <li>截止时间：</li>
-                           <li><a href="#">2016年11月17日</a></li>
-                           <li><a href="#">0/3</a></li>
-                           <a href="checkhomework.html"><input class="check" name="check" value="检查作业" /></a>
-                       </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="col-md-7 column" id="content_right">
+        <div class="col-md-12 column" id="content_h">
+            <ol>
+                <li>
+                   <img id="pic_tea" src="/FS/Public/front/teacher/images/title.png" />
+                </li>
+                <li id="tea_name"><a href="#">孙老师</a></li>
+                <li>教工号：<a href="#">123456</a></li>
+                <li>金币：<a href="#">0</a></li>
+                <li>姓名：<a href="#">孙老师</a></li>
+                <li>性别：<a href="#">女</a></li>
+                <li>出生日期：<a href="#">1987年1月1日</a></li>
+                <li>学校：<a href="#">光明幼儿园</a></li>
+                <li>年级：<a href="#">小班</a></li>
+                <li class="mod"><a href="update.html"><input id="mod" value="修改资料" /></a></li>
+            </ol>
         </div>
+    </div>
     <div class="col-md-2 column"></div>
- </div>
+</div>
 <!--尾部-->
 <div class="row clearfix" id="footer">
     <div class="col-md-12 column" id="footer1">

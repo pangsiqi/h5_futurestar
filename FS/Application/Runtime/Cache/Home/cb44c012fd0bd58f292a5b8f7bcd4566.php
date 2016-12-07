@@ -9,49 +9,49 @@
     <script src="/FS/Public/front/teacher/js/jquery.js"></script>
     <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
-<body style="overflow-x:hidden">
-    <!--导航栏-->
+<body>
+<!--导航-->
 <div class="row clearfix" id="header">
-        <div class="col-md-4 column" style="margin-top:10px;padding-left:120px">
-            <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
-        </div>
-        <div class="col-md-4 column">
-        </div>
-        <div class="col-md-4 column">
-            <ul id="nav"  style="padding-left:40px;margin-top:8px">
-                <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
-                <li style="padding-left:5px"><a href="guestbook.html">消息</a></li>
-                <li style="padding-left:3px;padding-top:2px"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
-                <li style="padding:0 0 0 3px;margin:0 ">
-                <li class="dropdown" >
-                    <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" style="width:100px;border:solid 1px RGB(187,187,187); border-radius:4px;color:black;float:left;"><span style="padding:0 30px;padding-right:50px">1</span><span class="caret" style=""></span></a>
-                    <ul class="dropdown-menu" style="min-width:0px;">
-                        <li><a href="personCenter.html" >个人资料</a></li>
-                        <li><a href="update.html" >修改资料</a></li>
-                        <li><a href="#" >退出</a></li>
-                    </ul>
-                </li>
-                </li>
-            </ul>
-        </div>
+    <div class="col-md-4 column" id="logo">
+        <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
     </div>
+    <div class="col-md-4 column">
+    </div>
+    <div class="col-md-4 column">
+        <ul id="nav">
+            <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
+            <li id="new"><a href="guestbook.html">消息</a></li>
+            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="drop">
+            <li class="dropdown" >
+                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret"></span></a>
+                <ul class="dropdown-menu" id="navbarDrop3">
+                    <li><a href="personCenter.html" >个人资料</a></li>
+                    <li><a href="update.html" >修改资料</a></li>
+                    <li><a href="#" >退出</a></li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="row clearfix" id="content">
         <div class="col-md-12 column">
             <div class="row clearfix">
-                <div class="col-md-3 column" style="padding-top:20px;padding-left:115px;">
+                <div class="col-md-3 column" id="avatar">
                     <img alt="90x90"  src="/FS/Public/front/teacher/images/title.png" class="img-circle" />
                 </div>
                 <div class="col-md-9 column">
-                    <h3 style="font-weight:bold;padding-top:24px;">孙老师</h3>
-                    <ul style="padding:0;padding-top:10px;">
-                        <li style="padding-left:12px;padding:0"><a href="#">教工号：12345678</a></li>
-                        <li style="padding-left:70px"><a href="#">班级：中班1班</a></li>
+                    <h3 id="tea_n">孙老师</h3>
+                    <ul class="tea_n">
+                        <li id="tea_m"><a href="#">教工号：12345678</a></li>
+                        <li id="tea_c"><a href="#">班级：中班1班</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="col-md-12 column">
-                    <h4 style="color:white;font-weight:bold;padding-left:140px;padding-top:25px">有什么心里话要告诉他们呢？</h4>
+                    <h4 id="say">有什么心里话要告诉他们呢？</h4>
                     <div class="row clearfix">
                         <div class="col-md-12 column" >
                             <textarea id="message1" cols="110" rows="8"></textarea>
@@ -59,46 +59,46 @@
                     </div>
                     <div class="row clearfix" >
                         <div class="col-md-12 column">
-                            <ul class="image" style="margin-left:100px;margin-top:30px">
+                            <ul class="image">
                                 <li><a href="#"><img src="/FS/Public/front/teacher/images/face.png"/></a></li>
                                 <li><a href="#">表情</a></li>
                                 <li><a href="#"><img src="/FS/Public/front/teacher/images/png.png"/></a></li>
                                 <li><a href="#">图片</a></li>
                             </ul>
-                            <ul id="pass" style="padding-left:580px;margin:0">
+                            <ul id="pass">
                                 <li ><a href="#">发送给：</a></li>
-                                <li style="padding:0 0 0 3px;margin:0 ">
+                                <li class="pass">
                                 <li class="dropdown" >
-                                    <a href="#" id="navbarDrop2" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187);background-color:white; border-radius:4px;color:black;float:left;"><span style="padding:0 15px;">家长</span><span class="caret"></span></a>
-                                    <ul class="dropdown-menu" style="min-width:0px;width:70px">
-                                        <li><a href="#one" >***</a></li>
-                                        <li><a href="#two" >***</a></li>
-                                        <li><a href="#three" >***</a></li>
+                                    <a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown"><span class="pass_p">家长</span><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#one">***</a></li>
+                                        <li><a href="#two">***</a></li>
+                                        <li><a href="#three">***</a></li>
                                     </ul>
                                 </li>
                                 </li>
-                                <li style="padding:0 0 0 3px;margin:0 ">
+                                <li class="pass">
                                 <li class="dropdown" >
-                                    <a href="#" id="navbarDrop3" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187); border-radius:4px;color:black;float:left;background-color:white;"><span style="padding:0 15px;">学生</span><span class="caret"></span></a>
-                                    <ul class="dropdown-menu" style="min-width:0px;width:70px">
-                                        <li><a href="#one" >***</a></li>
-                                        <li><a href="#two" >***</a></li>
-                                        <li><a href="#three" >***</a></li>
+                                    <a href="#" id="navbarDrop5" class="dropdown-toggle" data-toggle="dropdown"><span class="pass_p">学生</span><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#one">***</a></li>
+                                        <li><a href="#two">***</a></li>
+                                        <li><a href="#three">***</a></li>
                                     </ul>
                                 </li>
                                 </li>
-                                <li><a href="#"><input style="width:80px;text-align:center;border:solid 1px gray;border-radius:5px;background-color:orange;color:white" value="发送" /></a></li>
+                                <li><a href="#"><input id="pass_p" value="发送" /></a></li>
                             </ul>
                         </div>
                         </div>
                     </div>
                 </div>
-            <div class="row clearfix" style="margin-left:120px;margin-top:100px">
-                <ul style="margin-bottom:40px">
-                    <li><h4 style="color:white;margin-top:10px;padding:0;font-weight:bold;">和别人的聊天记录全在这里啦</h4></li>
-                    <li class="dropdown" style="margin-left:30px">
-                        <a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:10px;border:solid 1px RGB(187,187,187);background-color:white; border-radius:4px;color:black;float:left;"><span style="padding:0 25px;">家长</span><span class="caret"></span></a>
-                        <ul class="dropdown-menu" style="min-width:0px;width:70px">
+            <div class="row clearfix" id="dia">
+                <ul class="dia">
+                    <li><h4 id="dia_t">和别人的聊天记录全在这里啦</h4></li>
+                    <li class="dropdown" id="dia_drop">
+                        <a href="#" id="navbarDrop6" class="dropdown-toggle" data-toggle="dropdown"><span id="dia_p">家长</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
                             <li><a href="#one" >***</a></li>
                             <li><a href="#two" >***</a></li>
                             <li><a href="#three" >***</a></li>
@@ -106,7 +106,7 @@
                     </li>
                     </li>
                 </ul>
-                <div class="col-md-12 column" style="background-color: white; height:300px;width:850px; border:solid 3px RGB(187,187,187); border-radius:10px">
+                <div class="col-md-12 column" id="dia_s">
                    <div class="chat1">
                     <div class="bs-example bs-example-popover">
                         <div class="popover right">
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <img style="padding-top:10px" alt="70x70" src="/FS/Public/front/teacher/images/1-3.png" />
+                    <img id="dia_pic" alt="70x70" src="/FS/Public/front/teacher/images/1-3.png" />
                    </div>
                 </div>
             </div>
@@ -142,26 +142,26 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--footer-->
+</div>
+<!--尾部-->
 <div class="row clearfix" id="footer">
-        <div class="col-md-12 column" style="padding-top:15px">
-            <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    <div class="col-md-12 column" id="footer1">
+        <p>Copyright @ 2011-2016 futurestar Corporation. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-12 column">
+        <div class="col-md-3 column">
         </div>
-        <div class="col-md-12 column">
-            <div class="col-md-3 column">
-            </div>
-            <div class="col-md-5 column">
-                <ul class="footer_nav">
-                    <li style="padding-left:45px">后台管理</li>
-                    <li>关于我们</li>
-                    <li>各界声音</li>
-                    <li>加入我们</li>
-                </ul>
-            </div>
-            <div class="col-md-4 column">
-            </div>
+        <div class="col-md-5 column">
+            <ul class="footer_nav">
+                <li id="footer2">后台管理</li>
+                <li>关于我们</li>
+                <li>各界声音</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="col-md-4 column">
         </div>
     </div>
+</div>
 </body>
 </html>
