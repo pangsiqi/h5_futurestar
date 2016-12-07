@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 html{ height:100%}
-body{ background: url(../images/bg.jpg) no-repeat center top; background-size:100% 100%}
+body{ background: url(../images/bg.jpg) no-repeat center top; background-size:100% 100%;overflow-x: hidden;}
 .qiqiu{ position:fixed; width:100px; height:200px;}
 .qiqiu div{ width:70px; height:65px; background:url(../images/730e0cf3d7ca7bcbbc1b79c0bf096b63f724a8f9.png) no-repeat center center; padding:15px 5px 0; text-align:center; margin:0 auto; background-size:100% auto;}
 .qiqiu img{ width:100%; height:auto; display:block;}

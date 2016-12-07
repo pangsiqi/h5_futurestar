@@ -2,6 +2,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class TeacherController extends Controller {
+	public function __construct(){
+		parent::__construct();
+		if(!isLogin()){
+			$this->error("请先登录",U("index/login"));
+		}
+	}
 	public function index(){
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件

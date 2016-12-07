@@ -7,19 +7,73 @@ class IndexController extends Controller {
         $this->show();
     }
     public function login(){
-    	$this->show();
+    	if(IS_POST){
+			$condition = array(
+					"tel" => I("post.tel"),
+					"password" => I("post.password")
+				);
+			session("tel",I("post.tel"));
+			session("password",I("post.password"));
+			$teacherModel = M('teacher');
+			$tearesult = $teacherModel->where($condition)->count();//得到数据条数
+			
+			if($tearesult > 0){
+				session("tel",I("post.tel"));//session赋值
+				$this->redirect("teacher/index");
+			}else{
+				$this->redirect("index/stulogin");
+			}
+		}
+		else{
+			$this->display();
+		}
     }
+    public function stulogin(){
+    	$studentModel = M('student');
+    	// $teacherModel = M('teacher');
+    	$condition = array(
+					"tel" => session("tel"),
+					"password" => session("password")
+				);
+		$stuResult = $studentModel->where($condition)->select();//得到数据条数
+		if($stuResult > 0){
+			cookie('teatel',$stuResult[0]['teatel']);
+			session("tel",I("post.tel"));//session赋值
+			$this->redirect("student/index");
+		}else{
+			$this->error("用户名或密码不正确",'',5);//第二个参数不写，返回上一页
+		}
+    }
+
     public function addStu(){
     	if(!IS_POST){
 			exit("bad request");
 		}
 		
 		$studentModel = D("student");
-		if(!$studentModel->create()){
+
+		//通过输入的教师手机号，获取教师的相关信息
+		$teacherModel = D("teacher");
+		cookie("teatel",I("post.teatel"));
+		$teatel = cookie("teatel");
+		$result = $teacherModel->where("tel=".$teatel)->select();
+
+		$data['sex']=I('post.sex');
+		$data['username']=I('post.realname');
+		$data['realname']=I('post.realname');
+		$data['tel']=I('post.tel');
+		$data['password']=I('post.password');
+		$data['teatel'] = $result[0]['tel'];
+		$data['grade']=$result[0]['grade'];
+		$data['school']=$result[0]['school'];
+		$data['location']=$result[0]['city'].$result[0]['township'];
+
+		if(!$studentModel->create($data)){
 			$this->error($studentModel->getError());
 		}
-		if($studentModel->add()){
-			$this->success("注册成功",U("index"));
+		if($studentModel->add($data)){
+			session("tel",I("post.tel"));//session赋值
+			$this->redirect("student/index");
 		}else{
 			$this->error("注册失败");
 		}
@@ -35,9 +89,9 @@ class IndexController extends Controller {
     	if(!IS_POST){
 			exit("bad request");
 		}
-		cookie("realname",I("post.realname"));
-		cookie("tel",I("post.tel"));
-		cookie("password",I("post.password"));
+		session("realname",I("post.realname"));
+		session("tel",I("post.tel"));
+		session("password",I("post.password"));
 		$this->redirect("index/resTeacherSelect");
     }
     public function resTeacherSelect(){
@@ -50,9 +104,9 @@ class IndexController extends Controller {
 		
 		$teacherModel = D("teacher");
 
-		$data['realname']=cookie('realname');
-		$data['tel']=cookie('tel');
-		$data['password']=cookie('password');
+		$data['realname']=session('realname');
+		$data['tel']=session('tel');
+		$data['password']=session('password');
 		$data['grade']=I("post.grade");
 		$data['subject']=I("post.subject");
 		$data['city']=I("post.city");
@@ -63,7 +117,7 @@ class IndexController extends Controller {
 			$this->error($teacherModel->getError());
 		}
 		if($teacherModel->add($data)){
-			$this->success("注册成功",U("index"));
+			$this->redirect("teacher/index");
 		}else{
 			$this->error("注册失败");
 		}

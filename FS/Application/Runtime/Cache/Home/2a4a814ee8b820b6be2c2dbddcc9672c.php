@@ -57,15 +57,18 @@
                         <form enctype="multipart/form-data" method="post" action="/FS/index.php/Home/Index/addStu">
                             <div class="pr-main pr-main-child js-registerTemplateType" data-type="student">
                                 <div class="main-inner">
-                                    <div class="main-title">请选择你所在的班级 : </div>
+                                    <!-- <div class="main-title">请选择你所在的班级 : </div>
+                                    <input type="hidden" name="grade" value="" class="grade-item"> -->
                                     <div class="main-class clearfloat">
-                                        <span class="click-select-code select-grade" title="一年级20班">一年级1班<input type="hidden" name="grade[]" value="" class="grade-item"></span>
-                                        <span class="click-select-code select-grade" title="一年级20班">一年级2班<input type="hidden" name="grade[]" value="" class="grade-item"></span>
+                                        <!-- <span class="click-select-code select-grade" title="小班">小班</span>
+                                        <span class="click-select-code select-grade" title="中班">中班</span>
+                                        <span class="click-select-code select-grade" title="大班">大班</span> -->
                                         <div style="clear:both; padding:15px 0 10px;">
                                             <p class="select-sex">请选择性别 : </p>
+                                            <input type="hidden" name="sex" value="" class="sex-item">
                                             <div class="select-sex">
-                                                <span class="click-select-code select-sex-item" data-gender="M">男<input type="hidden" name="sex[]" value="" class="sex-item"></span>
-                                                <span class="click-select-code select-sex-item" data-gender="F">女<input type="hidden" name="sex[]" value="" class="sex-item"></span>
+                                                <span class="click-select-code select-sex-item" data-gender="M">男</span>
+                                                <span class="click-select-code select-sex-item" data-gender="F">女</span>
                                             </div>
                                         </div>
                                     </div>
@@ -73,6 +76,10 @@
                                 <div class="c-text c-text-res-stu">
                                     <span class="login-icon-res-stu icon-5"></span>
                                     <input type="text" placeholder="请输入真实姓名" class="txt1 JS-inputEvent JS-classInput" name="realname">
+                                </div>
+                                <div class="c-text c-text-res-stu">
+                                    <span class="login-icon-res-stu icon-1"></span>
+                                    <input type="tel" placeholder="请输入老师手机号" class="txt1 JS-inputEvent JS-classInput" name="teatel">
                                 </div>
                                 <div class="c-text c-text-res-stu">
                                     <span class="login-icon-res-stu icon-1"></span>
@@ -112,7 +119,7 @@
                                         }
                                         $(this).addClass('active');
                                         var val = $(this).text();
-                                        $(this).find(".grade-item").attr('value', val);
+                                        $(".grade-item").attr('value', val);
                                     }
                                 }
                             }
@@ -127,11 +134,10 @@
                                         }
                                         $(this).addClass('active');
                                         var val = $(this).text();
-                                        $(this).find(".sex-item").attr('value', val);
+                                        $(".sex-item").attr('value', val);
                                     }
                                 }
                             }
-
                         });
                         </script>
                     </div>

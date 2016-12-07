@@ -44,102 +44,50 @@
                     <div class="row clearfix">
                         <div id="parenthead"><img src="__PUBLIC__/front/student/images/parenthead.png" class="img-circle" /></div>
                         <div id="name">
-                            <h1>李晓</h1> 学号：12345678&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>学校：某某某幼儿园</span>
+                            <h1>{$current.realname}</h1> 学号：{$current.id}&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span>学校：{$current.school}</span>
                         </div>
-                        <p>有什么心里话要告诉老师呢</p>
-                        <!--<div id="chat">-->
-                        <!--</div>-->
-                        <div id="send">
-                            <div id="seriesline">
-                                <textarea type="text" style="width:1020px;height:230px"></textarea>
-                            </div>
-                            <div id="left">
-                                <img src="__PUBLIC__/front/student/images/face.jpg" />&nbsp;&nbsp;表情<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="__PUBLIC__/front/student/images/pic.jpg" />&nbsp;&nbsp;图片</span>
-                            </div>
-                            <div id="mid">
-                                <div id="sendfor">
-                                    <li class="dropdown">发送给：<a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187);width:70px;background-color:white; border-radius:4px;color:black;float:right;margin-right:356px"><span style="padding:0 15px;">&nbsp;</span><span class="caret"></span></a>
-                                        <ul class="dropdown-menu" style="min-width:0px;">
-                                            <li>
-                                                <a href="#one"> </a>
-                                            </li>
-                                            <li><a href="#two">男</a></li>
-                                            <li><a href="#three">女</a></li>
-                                        </ul>
-                                        <!--按钮-->
+                        <p>与老师交流</p>
+                        <form method="post" action="__URL__/addMessage">
+                            <div id="send">
+                                <div id="seriesline">
+                                    <!-- <textarea type="text" style="width:1020px;height:230px"></textarea> -->
+                                    <div class="Input_text" contenteditable='true'></div>
+                                    <input type="hidden" name="message" class="message-content">
                                 </div>
+                                <div id="left">
+                                    <span class="imgBtn"><img src="__PUBLIC__/front/student/images/face.jpg" />&nbsp;&nbsp;表情</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="__PUBLIC__/front/student/images/pic.jpg" />&nbsp;&nbsp;图片</span><span class="right"><input type="submit" class="btn btn-warning send-btn" value="发送"></span>
+                                </div>
+                                <div class="faceDiv"> </div>
                             </div>
-                            <div id="right">
-                                <button type="button" class="btn btn-warning">发送</button>
-                            </div>
-                        </div>
+                        </form>
                         <div id="p2">
                             <p>和老师的聊天记录全在这里啦</p>
                         </div>
                         ·
                         <div id="message">
                             <div id="jp-container" class="jp-container">
-                                <div class="talk_recordboxme">
-                                    <div class="user"><img src="__PUBLIC__/front/student/images/15.jpg" /></div>
-                                    <div class="talk_recordtextbg">&nbsp;</div>
-                                    <div class="talk_recordtext">
-                                        <h3>你好，我是李晓同学的家长，想了解一下孩子在学校学习情况</h3>
-                                        <span class="talk_time">2016-12-01 15:06</span>
+                                <volist name="message" id="mr">
+                                    <div class="talk_recordboxme">
+                                        <div class="user"><img src="__PUBLIC__/front/student/images/15.jpg" /></div>
+                                        <div class="talk_recordtextbg">&nbsp;</div>
+                                        <div class="talk_recordtext">
+                                            <h3>{$mr.parentcontent}</h3>
+                                            <span class="talk_time"><?php $parenttime=$mr.parenttime; echo date("Y-m-d H:i:s",$parenttime)?></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="talk_recordbox">
-                                    <div class="user"><img src="__PUBLIC__/front/student/images/14.jpg" /></div>
-                                    <div class="talk_recordtextbg">&nbsp;</div>
-                                    <div class="talk_recordtext">
-                                        <h3>好的</h3>
-                                        <span class="talk_time">2016-12-01 15:06</span>
+                                    <div class="talk_recordbox">
+                                        <div class="user"><img src="__PUBLIC__/front/student/images/14.jpg" /></div>
+                                        <div class="talk_recordtextbg">&nbsp;</div>
+                                        <div class="talk_recordtext">
+                                            <h3>{$mr.teachercontent}</h3>
+                                            <span class="talk_time"><?php $teachertime=$mr.teachertime; echo date("Y-m-d H:i:s",$teachertime)?></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="talk_recordboxme">
-                                    <div class="user"><img src="__PUBLIC__/front/student/images/15.jpg" /></div>
-                                    <div class="talk_recordtextbg">&nbsp;</div>
-                                    <div class="talk_recordtext">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </h3>
-                                        <span class="talk_time">2016-12-01 15:06</span>
-                                    </div>
-                                </div>
-                                <div class="talk_recordbox">
-                                    <div class="user"><img src="__PUBLIC__/front/student/images/14.jpg" /></div>
-                                    <div class="talk_recordtextbg">&nbsp;</div>
-                                    <div class="talk_recordtext">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </h3>
-                                        <span class="talk_time">2016-12-01 15:06</span>
-                                    </div>
-                                </div>
+                                </volist>
                             </div>
-                            <!--<img src="__PUBLIC__/front/student/images/parenthead.png" class="img-circle"/>-->
-                            <!--<div id="chatwindow"><ul><li>聊天气泡</li></ul></div>-->
-                            <!-- <img src="__PUBLIC__/front/student/images/chatcontent.png" /> -->
-                            <div id="page">
-                                <ul class="pagination">
-                                    <li>
-                                        <a href="#">&gt;</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">&lt;</a>
-                                    </li>
-                                </ul>
+                            <div class="page">
+                                {$page}
                             </div>
                         </div>
                         <!--家长任务模块-->
@@ -172,6 +120,18 @@
             </div>
         </ul>
     </div>
+    <script type="text/javascript" src="__PUBLIC__/front/student/js/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/student/js/face.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".send-btn").click(function() {
+            var text = $(".Input_text").html();
+            console.log(text);
+            $(".message-content").val(text);
+        });
+
+    });
+    </script>
 </body>
 
 </html>

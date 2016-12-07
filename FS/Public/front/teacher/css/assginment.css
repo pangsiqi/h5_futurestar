@@ -153,18 +153,18 @@ body{
 }
 
 .list-group .panel-heading {
-    background-color: RGB(156, 204, 101);
+    background-color: RGB(156, 204, 101)!important;
 }
 
 .panel-heading {
-    list-style-type: none;
-    outline: RGB(124, 179, 66) dotted 2px;
-    font-size: 17px;
-    color: red;
-    text-align: center;
-    width: 143px;
-    height: 30px;
-    padding-top: 3px;
+    list-style-type: none!important;
+    outline: RGB(124, 179, 66) dotted 2px!important;
+    font-size: 17px!important;
+    color: red!important;
+    text-align: center!important;
+    width: 143px!important;
+    height: 30px!important;
+    padding-top: 3px!important;
 }
 
 #test{
