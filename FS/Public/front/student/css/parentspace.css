@@ -78,6 +78,44 @@ p {
     border-radius: 5px;
 }
 
+#seriesline .Input_text {
+    position: absolute;
+    left: 70px;
+    top: 390px;
+    width: 1020px;
+    height: 230px;
+    border: 1px rgb(38, 159, 167) solid;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.faceDiv {
+    width: 385px;
+    position: relative;
+    top: 7px;
+    left: 76px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 5px;
+    border-color: rgba(19, 105, 172, .75);
+    box-shadow: 0 0 3px rgba(19, 105, 192, .5);
+    -moz-box-shadow: 0 0 3px rgba(241, 39, 232, .5);
+    -webkit-box-shadow: 0 0 3px rgba(19, 105, 252, 3);
+}
+
+.faceDiv img {
+    width: 24px;
+    height: 24px;
+}
+
+#seriesline .Input_text:hover {
+    border: 1px rgb(38, 159, 167) solid;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    border-color: rgba(38, 159, 167, .75);
+    -webkit-box-shadow: 0 0 18px rgba(255, 255, 255, 2);
+    border-radius: 5px;
+}
+
 #left {
     margin-top: 650px;
     margin-left: 77px;
@@ -89,7 +127,17 @@ p {
 #mid {
     float: right;
     margin-top: -28px;
-    margin-right: -135px;
+    margin-right: 200px;
+}
+
+.right {
+    float: right;
+    margin-right: 130px;
+}
+
+#mid select {
+    border-radius: 30px;
+    padding: 5px;
 }
 
 button {
@@ -132,9 +180,11 @@ button {
     border-color: rgba(38, 159, 167, .75);
     -webkit-box-shadow: 0 0 18px rgba(255, 255, 255, 3);
 }
-#message img{
+
+#message img {
     border-radius: 50%;
 }
+
 .jp-container {
     width: 100%;
     height: 400px;
@@ -175,7 +225,7 @@ button {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: #b8d45c;
-    width: 300px;
+    width: auto;
     height: auto;
     display: block;
     padding: 5px;
@@ -233,7 +283,7 @@ button {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: #8DFA69;
-    width: 300px;
+    width: auto;
     height: auto;
     padding: 5px;
     color: #666;
@@ -270,10 +320,37 @@ button {
     display: block;
 }
 
-#page {
+.page {
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.page a,
+.page span {
+    padding: 15px;
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #20bdf0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.page a:hover {
+    background: #DDDDDD;
+}
+
+.page span {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #20bdf0;
+    border-color: #20bdf0;
+    cursor: default;
 }
 
 #spect p {

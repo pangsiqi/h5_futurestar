@@ -75,13 +75,12 @@
                                 <li style="padding-left:30px"><a href="#">孙老师</a></li>
                                 <li>学号：<a href="#">123456</a></li>
                                 <li>金币：<a href="#">0</a></li>
-                                <li>姓名：<a href="#"><input style="border-radius:5px;border:solid 1px RGB(187,187,187)" type="text"/></a></li>
-                                <li class="dropdown" >性别：<a href="#" id="navbarDrop4" class="dropdown-toggle" data-toggle="dropdown" style="border:solid 1px RGB(187,187,187);width:70px;background-color:white; border-radius:4px;color:black;float:right;margin-right:356px"><span style="padding:0 15px;">&nbsp;</span><span class="caret"></span></a>
-                                    <ul class="dropdown-menu" style="min-width:0px;">
-                                        <li><a href="#one" > </a></li>
-                                        <li><a href="#two" >男</a></li>
-                                        <li><a href="#three" >女</a></li>
-                                    </ul>
+                                <li>姓名：<input style="border-radius:5px;border:solid 1px RGB(187,187,187)" type="text"/></li>
+                                <li>性别：
+                                    <select name="sex" id="">
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
                                 </li>
                                 <li>出生日期：
                                     <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime" style="text-align:center;border-radius:5px;border:solid 1px RGB(187,187,187)">

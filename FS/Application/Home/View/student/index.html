@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="__PUBLIC__/front/student/css/bootstrap.min.css">
     <link href="__PUBLIC__/front/student/css/nav.css" rel="stylesheet" type="text/css" />
     <link href="__PUBLIC__/front/student/css/index1024.css" rel="stylesheet" type="text/css" />
-    <!--<link href="css/index.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="css/indexwrite.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="__PUBLIC__/front/student/css/index.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="__PUBLIC__/front/student/css/indexwrite.css" rel="stylesheet" type="text/css"/>-->
 </head>
 
 <body>
@@ -49,43 +49,29 @@
                         <li id="bangdan">榜单</li>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="name">
-                            <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李小明</li>
-                            <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王华</li>
-                            <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张丽丽</li>
+                            <volist name="stu" id="s">
+                                <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$s.realname} {$s.starnum}</li>
+                            </volist>
                         </ul>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="owner">
-                            <li>我的学号：<a href="#">123456</a></li>
-                            <li>我的星星：<a href="#">0</a></li>
+                            <li>我的学号：<a href="#">{$current.id}</a></li>
+                            <li>我的星星：<a href="#">{$current.starnum}</a></li>
                         </ul>
                     </div>
                     <!--右侧课程-->
                     <div class="col-md-8 column">
                         <div class="row clearfix" id="right_course">
-                            <div>
-                                <ul>
-                                    <li><img src="__PUBLIC__/front/student/images/course.jpg" /></li>
-                                    <li>
-                                        <a href="studycontent.html"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><img src="__PUBLIC__/front/student/images/course.jpg" /></li>
-                                    <li>
-                                        <a href="studycontent.html"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><img src="__PUBLIC__/front/student/images/course.jpg" /></li>
-                                    <li>
-                                        <a href="studycontent.html"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <volist name="resource" id="r">
+                                <div>
+                                    <ul>
+                                        <li><img src="{$r.path}" width="118px" height="142px" /></li>
+                                        <li>
+                                            <a href="__URL__/studycontent/id/{$r.idH}"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </volist>
                         </div>
                         <!--我最棒部分-->
                         <div class="row clearfix">
@@ -98,19 +84,19 @@
                             </div>
                         </div>
                         <div id="classsky">
-                            <a href="classspace.html"><img src="__PUBLIC__/front/student/images/classsky.png" /></a>
+                            <a href="__URL__/classspace.html"><img src="__PUBLIC__/front/student/images/classsky.png" /></a>
                         </div>
                         <div id="parentspace">
-                            <a href="parentspace.html"><img src="__PUBLIC__/front/student/images/parentspace.png" /></a>
+                            <a href="__URL__/parentspace.html"><img src="__PUBLIC__/front/student/images/parentspace.png" /></a>
                         </div>
                         <div id="pk">
-                            <a href="pk.html"><img src="__PUBLIC__/front/student/images/pk.png" /></a>
+                            <a href="__URL__/pk.html"><img src="__PUBLIC__/front/student/images/pk.png" /></a>
                         </div>
                         <div id="studycenter">
-                            <a href="studycenter.html"><img src="__PUBLIC__/front/student/images/studycenter.png" /></a>
+                            <a href="__URL__/studycenter.html"><img src="__PUBLIC__/front/student/images/studycenter.png" /></a>
                         </div>
                         <div id="gift">
-                            <a href="gift.html"><img src="__PUBLIC__/front/student/images/gift.png" /></a>
+                            <a href="__URL__/gift.html"><img src="__PUBLIC__/front/student/images/gift.png" /></a>
                         </div>
                     </div>
                 </div>

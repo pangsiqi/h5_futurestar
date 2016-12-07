@@ -68,8 +68,8 @@
                                     <li>学校：<a href="#">光明幼儿园</a></li>
                                     <li>年级：<a href="#">小班</a></li>
                                     <li>
-                                        <a href="#">
-                                            <input style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px" value="修改资料" />
+                                        <a href="/FS/index.php/Home/Student/changeinform.html">
+                                        <button style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px"/>修改资料</button>
                                         </a>
                                     </li>
                                 </ol>
@@ -98,7 +98,7 @@
             <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
             <div>
                 <li id="footerli">
-                    <a href="#">后台管理</a>
+                    <a href="/FS/index.php/admin">后台管理</a>
                     <a href="#">关于我们</a>
                     <a href="#">各界声音</a>
                     <a href="#">加入我们</a>
