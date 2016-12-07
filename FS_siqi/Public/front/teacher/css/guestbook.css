@@ -1,0 +1,86 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+}
+
+#header {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    height: 60px;
+}
+
+#content {
+    background-color: RGB(189, 235, 141);
+    height: 1000px;
+}
+
+#message1 {
+    background-color: white;
+    border: solid 5px RGB(43, 175, 43);
+    border-radius: 10px;
+    margin-left: 120px;
+}
+
+.image li {
+    padding-right: 15px;
+}
+
+
+/*footer*/
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#pass li {
+    padding-right: 25px;
+}
+
+.bs-example-popover .popover {
+    background-color: RGB(141, 250, 105);
+    display: block;
+    float: right;
+    width: 240px;
+    margin-left: 105px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.pagination {
+    float: right;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.pagination li {
+    font-size: 20px;
+}
+
+.pagination li a:link {
+    color: black;
+}
+
+#footer {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+}
+
+.footer_nav li {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+}

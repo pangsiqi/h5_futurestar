@@ -1,0 +1,130 @@
+
+body{
+    width: 100%;
+    background:url(../images/studycenter_ground.png) no-repeat;
+}
+
+
+#studycontent{
+    position:absolute;
+    left:570px;
+    top:30px;
+}
+#studycontent li{
+    list-style-type: none;
+
+}
+#studycontent button{
+    float: right;
+    position:absolute;
+    left:570px;
+    top:20px;
+}
+#leftcontent{
+    margin-top: 80px;
+    margin-left:71px;
+}
+
+#leftcontent ul li{
+    list-style-type: none;
+    padding-top: 26px;
+
+}
+
+#leftcontent ul li a{
+    color:black;
+    font-size:20px;
+    text-align: center;
+}
+#leftcontent a:hover{
+    color:white;
+    text-decoration: none;
+}
+#rightcontent{
+    background: white;
+    border-radius: 20px;
+    width:770px;
+    height:445px;
+    position: absolute;
+    right:100px;
+    top:85px;
+}
+#title{
+    background:rgb(217,117,54);
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:720px;
+    height:60px;
+}
+
+#title ul{
+    margin-left:2px;
+    margin-top:19px;
+}
+#title a{
+    color: white;
+    font-size:18px;
+
+    font-family:"幼圆";
+}
+#title a:hover{
+    color:yellow;
+    text-decoration: none;
+}
+#rightcontent p{
+    position:absolute;
+    left:45px;
+    top: 115px;;
+    font-size: 16px;
+}
+#studycontent{
+    border:1px solid #bbbbbb;
+    width:674px;
+    height:320px;
+    position:absolute;
+    left:45px;
+    top:105px;
+    border-radius:10px;
+
+
+}
+
+span{
+    text-align: right;                    ;
+}
+ol{
+    counter-reset:sectioncounter;
+    margin-top: 10px;
+
+}
+ol li{
+    padding-top: 8px;
+    color:black;
+}
+ol li:before {
+    content:counter(sectioncounter) "、";
+    counter-increment:sectioncounter;
+    color:black;
+}
+
+
+
+
+ .footer ul{
+     margin-top:700px;
+     margin-left:330px;
+     margin-bottom: 20px;
+ }
+.footer ul li{
+    list-style-type:none;
+    margin-top:17px;
+    color:#7d7a7d;
+
+}
+#footerli a{
+    padding-left:30px;
+    margin-left:5px;
+    color:#7d7a7d;
+}
+

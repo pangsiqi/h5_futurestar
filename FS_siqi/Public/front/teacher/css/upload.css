@@ -1,0 +1,38 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.item ul li a {
+    color: white;
+}
+
+#header {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    height: 60px;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#footer {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+}
+
+.footer_nav li {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+}

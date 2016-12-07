@@ -1,0 +1,45 @@
+
+body{
+    width: 100%;
+    background:url(../images/list_ground.png) no-repeat;
+}
+
+li{
+    list-style-type:none;
+    float:right;
+    color:white;
+}
+
+
+p{
+    text-align: center;
+    font-size: 54px;
+    font-weight:bold;
+    margin-top: 300px;
+    color:white;
+}
+
+
+
+
+
+ .footer{
+
+     margin-top:500px;
+     margin-right:360px;
+     buttom:80px;
+
+ }
+.footer ul li{
+    list-style-type:none;
+    margin-top:17px;
+    color:#7d7a7d;
+    text-align: center;
+
+}
+#footerli a{
+    padding-left:30px;
+    margin-right:5px;
+    color:#7d7a7d;
+}
+
