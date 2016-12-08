@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>随身听</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css"/>
-    <link href="/FS/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/chinese1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/chinese.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
 
 </head>
 <body>
@@ -59,14 +61,16 @@
                     <div id="studycontent">
                         <div id="1">
                             <div class="col-md-2 column">
-                                <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
+                                <div style=" width: 150px;margin-top: 18px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
                             </div>
                             <div class="col-md-8 column" style="margin-left: 100px;">
                                 <ul>
                                     <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
+                                    
 
                                     <li>课程描述：<?php echo ($course["details"]); ?></li>
+                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
+                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
                                     <li>完成情况：未收听</li>
                                     <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始学习</button></a></li>
 
@@ -81,9 +85,10 @@
                             <div class="col-md-8 column" style="margin-left: 100px;">
                                 <ul>
                                     <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
+                                    
 
                                     <li>课程描述：<?php echo ($course["details"]); ?></li>
+                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
                                     <li>完成情况：未收听</li>
                                     <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始学习</button></a></li>
 
@@ -98,9 +103,10 @@
                             <div class="col-md-8 column" style="margin-left: 100px;">
                                 <ul>
                                     <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
+                                    
 
                                     <li>课程描述：<?php echo ($course["details"]); ?></li>
+                                    <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
                                     <li>完成情况：未收听</li>
                                     <li style="float: right; margin-top:-51px;margin-right: 11px;"><a href="studycontent.html"><button type="button" class="btn btn-info">开始学习</button></a></li>
 

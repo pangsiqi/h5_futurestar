@@ -6,13 +6,19 @@
     <meta charset="UTF-8">
     <title>语文印象</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="/FS/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="/FS/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css" /> -->
+
+    <!--新添加-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/chinese1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/chinese.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
 </head>
 
 <body>
     <!--导航栏部分-->
-    <div class="col-md-12 col-lg-8" id="nav">
+    <div class="col-md-8" id="nav">
         <ul>
             <li><a href="/FS/index.php/Home/Student/index.html">首页</a></li>
             <li><a href="/FS/index.php/Home/Student/chinese.html">学习中心</a></li>
@@ -58,7 +64,7 @@
                             <div id="studycontent">
                                 <div id="1">
                                     <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
+                                        <div style=" width: 150px;margin-top: 20px; margin-left: 50px;  border-radius: 10px;"><img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
                                     </div>
                                     <div class="col-md-8 column" style="margin-left: 100px;">
                                         <ul>

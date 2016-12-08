@@ -68,7 +68,7 @@ body{
 }
 #studycontent{
     border:1px solid #bbbbbb;
-    width:849px;
+    width:860px;
     height:860px;
     position:absolute;
     left:45px;
@@ -111,7 +111,10 @@ body{
     color:green;
 }
 
-
+#1 img{
+    
+    border:2px rgb(44,183,192) solid;
+}
 
 /*footer*/
 .footer{

@@ -13,13 +13,13 @@ li {
 #parenthead {
     float: left;
     position: absolute;
-    left: 52px;
+    left: 97px;
     top: 142px;
 }
 
 #name {
     position: absolute;
-    left: 172px;
+    left: 230px;
     top: 150px;
     font-size: 12px;
 }
@@ -34,14 +34,14 @@ p {
     color: white;
     font-weight: bold;
     position: absolute;
-    left: 52px;
+    left: 97px;
     top: 285px;
 }
 
 #p2 p {
     position: absolute;
-    left: 52px;
-    top: 532px;
+    left: 97px;
+    top: 610px;
 }
 
 #chat {
@@ -64,7 +64,7 @@ p {
 
 #seriesline textarea {
     position: absolute;
-    left: 52px;
+    left: 70px;
     top: 312px;
     border: 1px rgb(38, 159, 167) solid;
     border-radius: 5px;
@@ -82,14 +82,35 @@ p {
     border-radius: 5px;
 }
 
+#seriesline .Input_text {
+    position: absolute;
+    left: 95px;
+    top: 317px;
+    width: 767px;
+    height: 230px;
+    border: 1px rgb(38, 159, 167) solid;
+    border-radius: 5px;
+    background: #fff;
+}
+#seriesline .Input_text:hover {
+    border: 1px rgb(38, 159, 167) solid;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    border-color: rgba(38, 159, 167, .75);
+    -webkit-box-shadow: 0 0 18px rgba(255, 255, 255, 2);
+    border-radius: 5px;
+}
+
+
 #left {
-    margin-top: 487px;
-    margin-left: 57px;
+    margin-top: 557px;
+    margin-left: 78px;
     font-size: 12px;
     /*border:1px rgb(230,130,137) solid;*/
     /*border-radius: 5px;*/
 }
-
+.right{
+    padding-left: 580px;
+}
 #mid {
     float: right;
     margin-top: -21px;
@@ -103,15 +124,16 @@ button {
 
 #write p {
     position: absolute;
-    left: 525px;
-    top: 990px;
+    left: 584px;
+    top: 1063px;
     color: black;
 }
 
 #write img {
     position: absolute;
-    left: 570px;
-    top: 1035px;
+    left: 620px;
+    top: 1115px;
+    height: 160px;
 }
 
 #chatwindow {
@@ -129,8 +151,8 @@ button {
     height:400px;
     background: white;
     position: absolute;
-    left: 52px;
-    top: 562px;
+    left: 97px;
+    top: 643px;
     border-radius: 5px;
     -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
     border-color: rgba(38, 159, 167, .75);
@@ -283,18 +305,18 @@ button {
 #spect p {
     color: white;
     position: absolute;
-    left: 70px;
-    top: 988px;
+    left: 97px;
+    top: 1062px;
 }
 
 #spect p img {
     padding-top: 52px;
     width:75%;
     height:75%;
-    position:absolute;
-    left:170px;
-    top:1035px;
-    z-index: 15;
+    /*position:absolute;*/
+    /*left:170px;*/
+    /*top:1035px;*/
+    /*z-index: 15;*/
 }
 
 .footer {
