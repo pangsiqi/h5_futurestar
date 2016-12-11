@@ -59,17 +59,17 @@
                                     <li>
                                         <img style="padding-left:20px" src="/FS/Public/front/student/images/headpicbig.jpg" />
                                     </li>
-                                    <li style="padding-left:30px"><a href="#">孙老师</a></li>
-                                    <li>学号：<a href="#">123456</a></li>
-                                    <li>金币：<a href="#">0</a></li>
-                                    <li>姓名：<a href="#">李小明</a></li>
-                                    <li>性别：<a href="#">女</a></li>
-                                    <li>出生日期：<a href="#">2011年1月1日</a></li>
-                                    <li>学校：<a href="#">光明幼儿园</a></li>
-                                    <li>年级：<a href="#">小班</a></li>
+                                    <li style="padding-left:30px"><?php echo ($user["realname"]); ?></li>
+                                    <li>学号：<?php echo ($user["id"]); ?></li>
+                                    <li>金币：<?php echo ($user["starnum"]); ?></li>
+                                    <li>姓名：<?php echo ($user["realname"]); ?></li>
+                                    <li>性别：<?php echo ($user["sex"]); ?></li>
+                                    <li>出生日期：<?php echo ($user["birthday"]); ?></li>
+                                    <li>学校：<?php echo ($user["school"]); ?></li>
+                                    <li>年级：<?php echo ($user["grade"]); ?></li>
                                     <li>
                                         <a href="/FS/index.php/Home/Student/changeinform.html">
-                                        <button style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px"/>修改资料</button>
+                                        <button style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px">修改资料</button>
                                         </a>
                                     </li>
                                 </ol>

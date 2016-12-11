@@ -6,16 +6,17 @@
     <meta charset="UTF-8">
     <title>学生部分首页</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="/FS/Public/front/student/css/index1024.css" rel="stylesheet" type="text/css" />
-    <!--<link href="/FS/Public/front/student/css/index.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="/FS/Public/front/student/css/indexwrite.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/index1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/indexwrite.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
+    
 </head>
 
 <body>
     <!--导航栏-->
     <!--导航栏部分-->
-    <div class="col-md-12 column" id="nav">
+    <div class="col-md-8 column" id="nav">
         <ul>
             <li><a href="/FS/index.php/Home/Student/index.html">首页</a></li>
             <li><a href="/FS/index.php/Home/Student/chinese.html">学习中心</a></li>
@@ -26,7 +27,7 @@
             <li id="email">
                 <a href="parentspace.html"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li id="person"><a href="personcenter.html" /> <img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li id="person"><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
             </li>
             <!-- <ul>
              <li><a href="#">个人信息</a></li>
@@ -62,8 +63,8 @@
                         <div class="row clearfix" id="right_course">
                             <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?><div>
                                     <ul>
-                                        <li><img src="<?php echo ($r["path"]); ?>" width="118px" height="142px" /></li>
-                                        <li>
+                                        <li class="resource-img"><img src="<?php echo ($r["path"]); ?>" " /></li>
+                                        <li class="start-img">
                                             <a href="/FS/index.php/Home/Student/studycontent/id/<?php echo ($r["idH"]); ?>"><img src="/FS/Public/front/student/images/start_study.png" /></a>
                                         </li>
                                     </ul>
@@ -71,11 +72,11 @@
                         </div>
                         <!--我最棒部分-->
                         <div class="row clearfix">
-                            <div>
-                                <ul style="margin-top:160px;margin-left:85px">
+                            <div id="ibest">
+                                <ul>
                                     <li style=" border-color:blue;"><img src="/FS/Public/front/student/images/1.jpg" style=" float: left; padding-right:18px" class="img-rounded" /></li>
                                     <li><img src="/FS/Public/front/student/images/2.jpg" class="img-rounded" style="float: left; padding-right:18px" /></li>
-                                    <li><img src="/FS/Public/front/student/images/3.jpg" class="img-rounded" /></li>
+                                    <li id="img3"><img src="/FS/Public/front/student/images/3.jpg" class="img-rounded" /></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,7 +90,7 @@
                             <a href="/FS/index.php/Home/Student/pk.html"><img src="/FS/Public/front/student/images/pk.png" /></a>
                         </div>
                         <div id="studycenter">
-                            <a href="/FS/index.php/Home/Student/studycenter.html"><img src="/FS/Public/front/student/images/studycenter.png" /></a>
+                            <a href="/FS/index.php/Home/Student/studycontent.html"><img src="/FS/Public/front/student/images/studycenter.png" /></a>
                         </div>
                         <div id="gift">
                             <a href="/FS/index.php/Home/Student/gift.html"><img src="/FS/Public/front/student/images/gift.png" /></a>

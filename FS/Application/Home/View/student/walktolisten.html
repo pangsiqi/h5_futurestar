@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <title>随身听</title>
     <link rel="stylesheet" href="__PUBLIC__/front/student/css/bootstrap.min.css">
-    <link href="__PUBLIC__/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="__PUBLIC__/front/student/css/chinese.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/chinese1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/chinese.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/nav.css" />
 </head>
 
 <body>
@@ -23,7 +25,7 @@
             <li>
                 <a href="#"><img src="__PUBLIC__/front/student/images/email.png" /></a>
             </li>
-            <li><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" />
+            <li><a href="__URL__/studycontent"><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -41,9 +43,9 @@
                 </div>
                 <!--左侧内容-->
                 <div id="nav2">
-                    <div id="chinese"><a href="__URL__/chinese.html">语文印象</a></div>
-                    <div id="math"><a href="__URL__/math.html">数学印象</a></div>
-                    <div id="english"><a href="__URL__/english.html">英语印象</a></div>
+                    <div id="chinese"><a href="__URL__/chinese/id/1">语文印象</a></div>
+                    <div id="math"><a href="__URL__/chinese/id/2">数学印象</a></div>
+                    <div id="english"><a href="__URL__/chinese/id/3">英语印象</a></div>
                     <div id="walk"><a href="__URL__/walktolisten.html">随身听</a></div>
                     <div id="garden"><a href="__URL__/classgarden.html">课外乐园</a></div>
                 </div>
@@ -52,7 +54,7 @@
                     <div id="rightcontent">
                         <div id="title">
                             <ul>
-                                <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/">随身听</a>
+                                <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/">{$course.subject}</a>
                             </ul>
                         </div>
                         <div id="studycontent">
@@ -62,9 +64,9 @@
                                 </div>
                                 <div class="col-md-8 column" style="margin-left: 100px;">
                                     <ul>
-                                        <li>课程内容：<a href="#">第一单元&nbsp;看图识字音频</a></li>
-                                        <li>上传时间：2016年11月4日</li>
-                                        <li>课程描述：这个音频主要讲的是课程，课程的内容是内容内容内容内容内容内容内容内容内容内容内容内容</li>
+                                        <li>课程内容：<a href="#">{$course.title}</a></li>
+                                        <li>课程描述：{$course.details}</li>
+                                        <li>上传时间：{$course.starttime|substr=0,10}</li>
                                         <li>完成情况：未收听</li>
                                         <li style="float: right; margin-top:-51px;margin-right: 11px;">
                                             <a href="studycontent.html">
@@ -81,9 +83,9 @@
                                 </div>
                                 <div class="col-md-8 column" style="margin-left: 100px;">
                                     <ul>
-                                        <li>课程内容：<a href="#">第二单元&nbsp;看图识字音频</a></li>
-                                        <li>上传时间：2016年11月4日</li>
-                                        <li>课程描述：这个音频主要讲的是课程，课程的内容是内容内容内容内容内容内容内容内容内容内容内容内容</li>
+                                        <li>课程内容：<a href="#">{$course.title}</a></li>
+                                        <li>课程描述：{$course.details}</li>
+                                        <li>上传时间：{$course.starttime|substr=0,10}</li>
                                         <li>完成情况：未收听</li>
                                         <li style="float: right; margin-top:-51px;margin-right: 11px;">
                                             <a href="studycontent.html">
@@ -100,9 +102,9 @@
                                 </div>
                                 <div class="col-md-8 column" style="margin-left: 100px;">
                                     <ul>
-                                        <li>课程内容：<a href="#">第三单元&nbsp;看图识字音频</a></li>
-                                        <li>上传时间：2016年11月4日</li>
-                                        <li>课程描述：这门课程主要讲的是课程，课程的内容是内容内容内容内容内容内容内容内容内容内容内容内容</li>
+                                        <li>课程内容：<a href="#">{$course.title}</a></li>
+                                        <li>课程描述：{$course.details}</li>
+                                        <li>上传时间：{$course.starttime|substr=0,10}</li>
                                         <li>完成情况：未收听</li>
                                         <li style="float: right; margin-top:-51px;margin-right: 11px;">
                                             <a href="studycontent.html">
@@ -119,9 +121,9 @@
                                 </div>
                                 <div class="col-md-8 column" style="margin-left: 100px;">
                                     <ul>
-                                        <li>课程内容：<a href="#">第三单元&nbsp;看图识字音频</a></li>
-                                        <li>上传时间：2016年11月4日</li>
-                                        <li>课程描述：这门课程主要讲的是课程，课程的内容是内容内容内容内容内容内容内容内容内容内容内容内容</li>
+                                        <li>课程内容：<a href="#">{$course.title}</a></li>
+                                        <li>课程描述：{$course.details}</li>
+                                        <li>上传时间：{$course.starttime|substr=0,10}</li>
                                         <li>完成情况：未收听</li>
                                         <li style="float: right; margin-top:-51px;margin-right: 11px;">
                                             <a href="studycontent.html">

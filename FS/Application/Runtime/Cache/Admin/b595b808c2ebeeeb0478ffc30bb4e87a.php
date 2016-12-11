@@ -67,7 +67,7 @@
                 </ul>
                 <h3 aria-selected="true" aria-expanded="true"><a href="#"><span class="glyphicon glyphicon-file"></span>资源管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
                 <ul>
-                    <li><a href="/FS/index.php/Admin/R/edit.html">修改资源</a></li>
+                    <li><a href="/FS/index.php/Admin/R/add.html">添加资源</a></li>
                     <li><a href="/FS/index.php/Admin/R/lists.html">列表资源</a></li>
                 </ul>
             </div>
@@ -86,10 +86,10 @@
                                 <h5>教师列表<span>2014-06-22</span></h5>
                                 <p>用于查看教师信息，包括姓名、教师号、班级、学科，并且可以对教师信息进行修改、删除</p>
                             </div>
-                            <button type="button" class="btn btn-primary pull-right">点击进入
+                            <button type="button" class="btn btn-primary pull-right" onclick="window.location.href='/FS/index.php/Admin/T/lists'">点击进入
                                 <span class="glyphicon glyphicon-circle-arrow-right"></span>
                             </button>
-                            <span class="info">已经存在：<span class="red">8249</span>条</span>
+                            <span class="info">已经存在：<span class="red"><?php echo ($tc); ?></span>条</span>
                         </div>
                     </div>
                 </div>
@@ -101,10 +101,10 @@
                                 <h5>资源列表<span>2014-06-22</span></h5>
                                 <p>用于查看资源信息，包括资源名称、封面、发布人、添加时间、简述，并且可以对资源进行修改、删除</p>
                             </div>
-                            <button type="button" class="btn btn-primary pull-right">点击进入
+                            <button type="button" class="btn btn-primary pull-right" onclick="window.location.href='/FS/index.php/Admin/R/lists'">点击进入
                                 <span class="glyphicon glyphicon-circle-arrow-right"></span>
                             </button>
-                            <span class="info">已经存在：<span class="red">8249</span>条</span>
+                            <span class="info">已经存在：<span class="red"><?php echo ($rc); ?></span>条</span>
                         </div>
                     </div>
                 </div>

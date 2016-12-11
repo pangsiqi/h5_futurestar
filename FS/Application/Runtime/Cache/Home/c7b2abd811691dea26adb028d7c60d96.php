@@ -70,9 +70,8 @@
                             <div class="c-text">
                                 <span class="login-icon icon-4"></span>
                                 <input type="password" placeholder="请输入密码" class="txt1 JS-teacherPassword JS-inputEvent" name="password">
-                                <div class="errorTips"></div>
                             </div>
-                            <div class="c-text">
+                            <!-- <div class="c-text">
                                 <span class="login-icon icon-3"></span>
                                 <input type="text" placeholder="请输入短信验证码" class="txt2 JS-teacherSmsCode JS-inputEvent" name="telcode">
                                 <span class="code codeBg login-blue JS-getCheckCode" >获取验证码</span>
@@ -83,7 +82,7 @@
                                 <input type="text" placeholder="请输入右侧数字" class="txt2 JS-teacherCaptcha JS-inputEvent" id="captchaInputLogin" name="yzcode">
                                 <span id="captchaImageLogin" class="code" >1234</span>
                                 <div class="errorTips"></div>
-                            </div>
+                            </div> -->
                             <!-- <a href="res-teacher-select.html" class="login-btn login-blue JS-teacherVerMobile">注册老师账号</a> -->
                             <input type="submit" value="注册老师账号" class="login-btn login-blue JS-teacherVerMobile" name="sub">
                         </form>
@@ -104,6 +103,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="/FS/Public/front/js/Check.js"></script>
 </body>
 
 </html>

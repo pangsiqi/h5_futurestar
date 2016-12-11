@@ -1,35 +1,63 @@
 body {
     width: 100%;
-    background: url(../images/bg.png) no-repeat;
-    overflow-x: hidden;
+    background: url(../images/bg1024.png) no-repeat;
+}
+
+#name {
+    margin-left: 37px;
 }
 
 #name li {
-    padding-top: 30px;
-    padding-left: 60px;
+    padding-top: 7px;
+    padding-left: 45px;
+}
+
+#owner {
+    padding-left: 77px;
+    padding-top: 0px;
 }
 
 #owner li {
-    padding-top: 8px;
-    padding-left: 60px;
+    padding-top: 6px;
+    padding-left: 45px;
 }
 
 #bangdan {
     font-weight: bold;
     color: white;
-    font-size: 22px;
-    margin-top: 100px;
-    margin-left: 153px;
+    font-size: 16px;
+    margin-top: 75px;
+    margin-left: 165px;
+}
+
+hr {
+    margin-left: 80px;
+}
+
+#left1024 {
+    margin-left: 0px;
+}
+
+element.style {
+    overflow-x: hidden;
 }
 
 #right_course {
     margin-left: 78px;
     text-align: center;
 }
+.resource-img img{
+    width: 100px;
+    height: 110px;
+}
+.start-img img{
+    width: 82px;
+    height: 58px;
+}
 
 #right_course ul {
-    margin-top: 115px;
-    margin-left: 10px;
+    margin-top: 80px;
+    margin-left: -7px;
     float: left;
 }
 
@@ -37,46 +65,62 @@ body {
     padding-left: 0px;
 }
 
+#ibest ul {
+    margin-top: 116px;
+    margin-left: 60px;
+}
+
+#ibest img {
+    width: 145px;
+    height: 145px;
+}
+
+#img3 img {
+    width: 124px;
+    height: 145px;
+}
+
 #classsky {
     position: absolute;
-    right: 18px;
-    top: 1600px;
+    right: 1px;
+    top: 1195px;
 }
 
 #gift {
     position: absolute;
-    top: 1640px;
-    right: 780px;
+    top: 1227px;
+    right: 597px;
 }
 
 #pk {
     position: absolute;
-    top: 1120px;
-    right: 800px;
+    top: 830px;
+    right: 615px;
 }
 
 #parentspace {
     position: absolute;
-    top: 1395px;
-    right: 700px;
+    top: 1033px;
+    right: 548px;
 }
 
 #studycenter {
     position: absolute;
-    top: 1200px;
-    right: 170px;
+    top: 880px;
+    right: 117px;
 }
 
+.footerimg {}
 
 .footer {
-    background: url(../images/footer.png) no-repeat;
+    background: url(../images/footer1024.png) no-repeat;
     /*margin-top: auto;*/
     height: 120px;
 }
 
 .footer ul {
     width: 467px;
-    margin: 1081px auto 0 auto;
+    margin: 807px auto 0 auto;
     padding-top: 20px;
 }
 

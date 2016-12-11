@@ -2,6 +2,7 @@
 body{
     width: 100%;
     background:url(../images/class_ground.png) no-repeat;
+    overflow-x: hidden;
 }
 
 li{

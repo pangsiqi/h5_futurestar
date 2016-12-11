@@ -1,107 +1,101 @@
-
-body{
+body {
     width: 100%;
-    background:url(../images/bg.png) no-repeat;
+    background: url(../images/bg.png) no-repeat;
 }
 
-
-#name li{
-    padding-top:30px;
-    padding-left:60px;
+#name li {
+    padding-top: 30px;
+    padding-left: 60px;
 }
 
+#owner li {
+    padding-top: 8px;
+    padding-left: 60px;
+}
 
+#bangdan {
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-left: 153px;
+}
 
+#right_course {
+    margin-left: 78px;
+    text-align: center;
+}
 
-
-
-
-  #owner li{
-      padding-top:8px;
-      padding-left:60px;
-  }
-
-  #bangdan{
-      font-weight:bold;
-      color:white;
-      font-size:22px;
-      margin-top:100px;
-      margin-left:153px;
-  }
-
-
-
-
-
-  #right_course{
-      margin-left:78px;
-      text-align:center;
-  }
-#right_course ul{
-    margin-top:115px;
-
-    margin-left:10px;
+#right_course ul {
+    margin-top: 115px;
+    margin-left: 10px;
     float: left;
 }
-#right_course ul li{
-    padding-left:0px;
+.resource-img img{
+  width: 130px;
+  height: 160px;
+}
+#right_course ul li {
+    padding-left: 0px;
 }
 
-
-
-
-
-
-  #classsky{
-      position:absolute;
-      right:18px;
-      top:1600px;
-  }
-#gift{
-    position:absolute;
-    top:1640px;
-    right:780px;
+#ibest ul {
+    margin-top: 144px;
+    margin-left: 70px;
 }
-#pk{
-    position:absolute;
-    top:1120px;
-    right:800px;
-}
-#parentspace{
+
+#classsky {
     position: absolute;
-    top:1395px;
-    right:700px;
+    right: 18px;
+    top: 1600px;
 }
-#studycenter{
+
+#gift {
     position: absolute;
-    top:1200px;
-    right:170px;
+    top: 1640px;
+    right: 780px;
 }
 
-
-.footerimg{
-
-
+#pk {
+    position: absolute;
+    top: 1120px;
+    right: 800px;
 }
-.footer{
-    background:url(../images/footer.png) no-repeat;
+
+#parentspace {
+    position: absolute;
+    top: 1395px;
+    right: 700px;
+}
+
+#studycenter {
+    position: absolute;
+    top: 1200px;
+    right: 170px;
+}
+
+.footerimg {}
+
+.footer {
+    background: url(../images/footer.png) no-repeat;
     /*margin-top: auto;*/
     height: 120px;
 }
- .footer ul{
-     width: 467px;
-     margin: 1081px auto 0 auto;
-     padding-top:20px;
- }
-.footer ul li{
-    list-style-type:none;
-    margin-top:17px;
-    color:#7d7a7d;
 
-}
-#footerli a{
-    padding-left:30px;
-    margin-left:5px;
-    color:#7d7a7d;
+.footer ul {
+    width: 467px;
+    margin: 1081px auto 0 auto;
+    padding-top: 20px;
 }
 
+.footer ul li {
+    list-style-type: none;
+    margin-top: 17px;
+    color: #7d7a7d;
+}
+
+#footerli a {
+    padding-left: 30px;
+    margin-left: 5px;
+    color: #7d7a7d;
+}

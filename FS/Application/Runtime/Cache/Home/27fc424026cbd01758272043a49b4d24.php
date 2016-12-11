@@ -19,16 +19,16 @@
     </div>
     <div class="col-md-4 column">
         <ul id="nav">
-            <li><a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
-            <li id="new"><a href="guestbook.html">消息</a></li>
+            <li><a href="/FS/index.php/Home/Teacher/guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
+            <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
             <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
             <li id="drop">
             <li class="dropdown" >
-                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret" style=""></span></a>
+                <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2"><?php echo ($tea["realname"]); ?></span><span class="caret"></span></a>
                 <ul class="dropdown-menu" id="navbarDrop3">
-                    <li><a href="personCenter.html" >个人资料</a></li>
-                    <li><a href="update.html" >修改资料</a></li>
-                    <li><a href="#" >退出</a></li>
+                    <li><a href="/FS/index.php/Home/Teacher/personCenter.html" >个人资料</a></li>
+                    <li><a href="/FS/index.php/Home/Teacher/update.html" >修改资料</a></li>
+                    <li><a href="/FS/index.php/Home/Teacher/logout" >退出</a></li>
                 </ul>
             </li>
             </li>
@@ -45,7 +45,7 @@
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <p id="tec"><a href="personCenter.html">孙老师</a></p>
+                        <p id="tec"><a href="/FS/index.php/Home/Teacher/personCenter.html"><?php echo ($tea["realname"]); ?></a></p>
                     </div>
                 </div>
                 <div class="row clearfix">
@@ -77,7 +77,7 @@
                         <li>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="index.html">首页</a></a>
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/index.html">首页</a></a>
                                 </div>
                             </div>
                         </li>
@@ -89,8 +89,8 @@
                                 <div id="panel-element-749900" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="homeworkList_e">
-                                            <li class="list-group-item"><a href="assignment.html">布置作业</a></li>
-                                            <li class="list-group-item"><a href="workpaper.html">作业情况</a></li>
+                                            <li class="list-group-item"><a href="/FS/index.php/Home/Teacher/assignment.html">布置作业</a></li>
+                                            <li class="list-group-item"><a href="/FS/index.php/Home/Teacher/workpaper.html">作业情况</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -99,19 +99,19 @@
                         <li>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="myClass.html">我的班级</a></a>
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/myClass.html">我的班级</a></a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="resource.html">资源箱</a></a>
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/resource.html">资源箱</a></a>
                                 </div>
                             </div></li><li>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="guestbook.html">留言板</a></a>
+                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/guestbook.html">留言板</a></a>
                             </div>
                         </div>
                     </li>
