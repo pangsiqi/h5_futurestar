@@ -43,7 +43,7 @@ li{
 
 #other{
     position:absolute;
-    top:600px;
+    top:592px;
     left:10px;
 }
 #other div{
@@ -51,10 +51,30 @@ li{
     margin-left: 27px;
 }
 
+#studycontent{
+    border: 1px solid #bbbbbb;
+    width: 860px;
+    height: 775px;
+    position: absolute;
+    left: 45px;
+    top: 95px;
+    border-radius: 5px;
+}
+#rightcontent{
+    background: white;
+    border-radius: 10px;
+    width: 950px;
+    height: 905px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
 
-
-
-
+.shipin{
+    height:494;
+    width:794;
+    border-radius: 5px;
+}
 
 
 
@@ -80,7 +100,7 @@ p{
 }
 .footer ul{
     width: 467px;
-    margin: 1281px auto 0 auto;
+    margin: 1140px auto 0 auto;
     padding-top:20px;
 }
 .footer ul li{
