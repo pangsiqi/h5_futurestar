@@ -6,9 +6,16 @@
     <meta charset="UTF-8">
     <title>语文印象</title>
     <link rel="stylesheet" href="/FS_siqi/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS_siqi/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="/FS_siqi/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css" />
-    <link href="/FS_siqi/Public/front/student/css/personinfo.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="/FS_siqi/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="/FS_siqi/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css" /> -->
+
+    <!--新添加-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/chinese1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/chinese.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/personinfo1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/personinfo.css" />
 </head>
 
 <body>
@@ -56,37 +63,25 @@
                         <div id="studycontent">
                             <div class="col-md-12 column" id="content_h">
                                 <ol>
-                                    <li>
-                                        <img style="padding-left:20px" src="/FS_siqi/Public/front/student/images/headpicbig.jpg" />
+                                    <li style="padding-left:20px">
+                                        <img class="userthumb" src="<?php echo ($user["thumb"]); ?>" alt="头像" title="<?php echo ($user["realname"]); ?>" />
                                     </li>
-                                    <li style="padding-left:30px"><a href="#">孙老师</a></li>
-                                    <li>学号：<a href="#">123456</a></li>
-                                    <li>金币：<a href="#">0</a></li>
-                                    <li>姓名：<a href="#">李小明</a></li>
-                                    <li>性别：<a href="#">女</a></li>
-                                    <li>出生日期：<a href="#">2011年1月1日</a></li>
-                                    <li>学校：<a href="#">光明幼儿园</a></li>
-                                    <li>年级：<a href="#">小班</a></li>
+                                    <li style="padding-left:30px"><?php echo ($user["realname"]); ?></li>
+                                    <li>学号：<?php echo ($user["id"]); ?></li>
+                                    <li>金币：<?php echo ($user["starnum"]); ?></li>
+                                    <li>姓名：<?php echo ($user["realname"]); ?></li>
+                                    <li>性别：<?php echo ($user["sex"]); ?></li>
+                                    <li>出生日期：<?php echo ($user["birthday"]); ?></li>
+                                    <li>学校：<?php echo ($user["school"]); ?></li>
+                                    <li>年级：<?php echo ($user["grade"]); ?></li>
                                     <li>
-                                        <a href="#">
-                                            <input style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px" value="修改资料" />
+                                        <a href="/FS_siqi/index.php/Home/Student/changeinform.html">
+                                            <button style="background-color:white;border-radius:5px;border:solid 1px RGB(187,187,187);text-align:center;height:40px">修改资料</button>
                                         </a>
                                     </li>
                                 </ol>
                             </div>
                         </div>
-                        <style>
-                        #studycontent ol {
-                            margin-top: 25px;
-                            margin-left: 300px;
-                        }
-                        
-                        #studycontent li {
-                            color: black;
-                            padding-top: 25px;
-                            font-size: 16px;
-                        }
-                        </style>
                     </div>
                 </div>
             </div>

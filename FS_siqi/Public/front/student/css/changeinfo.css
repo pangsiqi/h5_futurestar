@@ -1,12 +1,12 @@
 
 body{
     width: 100%;
-    background:url(../images/studycenter_ground.png) no-repeat;
+    /*background:url(../images/studycenter_ground.png) no-repeat;*/
 }
 
 
 
-#leftcontent{
+/*#leftcontent{
     margin-top: 80px;
     margin-left:71px;
 }
@@ -68,5 +68,32 @@ body{
     padding-left:30px;
     margin-left:5px;
     color:#7d7a7d;
+}*/
+.userthumb{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.userthumb{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 90px;
+}
+
+#studycontent ol {
+    margin-top: 25px;
+    margin-left: 238px;
+    }
+                                        
+#studycontent li {
+    color: black;
+    padding-top: 25px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.btn {
+    margin-left: 50px;
 }
 
