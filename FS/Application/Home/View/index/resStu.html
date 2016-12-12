@@ -10,7 +10,7 @@
                 <div class="lop-content contentMar">
                     <div class="lop-right lop-right-res-stu">
                         <form enctype="multipart/form-data" method="post" action="__URL__/addStu">
-                            <div class="pr-main pr-main-child js-registerTemplateType" data-type="student">
+                            <div class="JS-defaultMode pr-main-child js-registerTemplateType" data-type="student">
                                 <div class="main-inner">
                                     <!-- <div class="main-title">请选择你所在的班级 : </div>
                                     <input type="hidden" name="grade" value="" class="grade-item"> -->
@@ -28,21 +28,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="c-text c-text-res-stu">
-                                    <span class="login-icon-res-stu icon-5"></span>
-                                    <input type="text" placeholder="请输入真实姓名" class="txt1 JS-inputEvent JS-classInput" name="realname">
+                                <div class="c-text">
+                                    <span class="login-icon icon-5"></span>
+                                    <input type="text" placeholder="请输入真实姓名" class="txt1 JS-inputEvent JS-nameInput" name="realname">
+                                    <div class="errorTips"></div>
                                 </div>
-                                <div class="c-text c-text-res-stu">
-                                    <span class="login-icon-res-stu icon-1"></span>
-                                    <input type="tel" placeholder="请输入老师手机号" class="txt1 JS-inputEvent JS-classInput" name="teatel">
+                                <div class="c-text">
+                                    <span class="login-icon icon-1"></span>
+                                    <input type="tel" placeholder="请输入老师手机号" class="txt1 JS-inputEvent JS-teatelInput" name="teatel">
+                                    <div class="errorTips"></div>
                                 </div>
-                                <div class="c-text c-text-res-stu">
-                                    <span class="login-icon-res-stu icon-1"></span>
-                                    <input type="tel" placeholder="请输入家长手机号" class="txt1 JS-inputEvent JS-classInput" name="tel">
+                                <div class="c-text">
+                                    <span class="login-icon icon-1"></span>
+                                    <input type="tel" placeholder="请输入家长手机号" class="txt1 JS-inputEvent JS-parenttelInput" name="tel">
+                                    <div class="errorTips"></div>
                                 </div>
-                                <div class="c-text c-text-res-stu">
-                                    <span class="login-icon-res-stu icon-4"></span>
-                                    <input type="password" placeholder="请输入密码" class="txt1 JS-inputEvent JS-classInput" name="password">
+                                <div class="c-text">
+                                    <span class="login-icon icon-4"></span>
+                                    <input type="password" placeholder="请输入密码" class="txt1 JS-inputEvent JS-pwdInput" name="password">
                                 </div>
                                 <input type="submit" name="sub" value="完成注册" class="login-btn login-btn-res-stu login-orange JS-getClassLIst">
                             </div>
@@ -59,47 +62,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <script type="text/javascript">
-                        $(document).ready(function() {
-                            gradeSwitch();
-                            sexSwitch();
-
-                            function gradeSwitch() {
-                                var gradeItem = $(".select-grade");
-                                for (var i = 0; i < gradeItem.length; i++) {
-                                    gradeItem[i].onclick = function() {
-                                        for (var j = 0; j < gradeItem.length; j++) {
-                                            $(gradeItem[j]).find(".grade-item").attr('value', '');
-                                            gradeItem[j].className = '';
-                                        }
-                                        $(this).addClass('active');
-                                        var val = $(this).text();
-                                        $(".grade-item").attr('value', val);
-                                    }
-                                }
-                            }
-
-                            function sexSwitch() {
-                                var sexItem = $(".select-sex-item");
-                                for (var i = 0; i < sexItem.length; i++) {
-                                    sexItem[i].onclick = function() {
-                                        for (var j = 0; j < sexItem.length; j++) {
-                                            $(sexItem[j]).find(".sex-item").attr('value', '');
-                                            sexItem[j].className = '';
-                                        }
-                                        $(this).addClass('active');
-                                        var val = $(this).text();
-                                        $(".sex-item").attr('value', val);
-                                    }
-                                }
-                            }
-                        });
-                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="__PUBLIC__/front/js/Check.js"></script>
 </body>
 
 </html>

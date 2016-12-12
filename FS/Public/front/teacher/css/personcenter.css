@@ -63,8 +63,8 @@ body{
 }
 
 #navbarDrop2{
-    padding:0 30px;
-    padding-right:50px;
+    // padding:0 30px;
+    padding-right:20px;
 }
 
 #navbarDrop3{
@@ -227,7 +227,7 @@ body{
 }
 
 #mod{
-    background-color:white;
+    background-color:#bdeb8d;
     border-radius:5px;
     border:solid 1px RGB(187,187,187);
     text-align:center;

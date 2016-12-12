@@ -9,6 +9,17 @@ class IndexController extends Controller {
 		}
     }
     public function index(){
+    	$teacher = M("teacher");
+		$resources = M("resource");
+		
+		
+		$teacherCount = $teacher->count();
+		$resourcesCount = $resources->count();
+		
+		
+		$this->assign("tc",$teacherCount);
+		$this->assign("rc",$resourcesCount);
+		
         $this->show();
     }
 }

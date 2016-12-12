@@ -1,6 +1,7 @@
 body {
     width: 100%;
     background: url(../images/list_ground.png) no-repeat;
+    overflow-x: hidden;
 }
 
 li {

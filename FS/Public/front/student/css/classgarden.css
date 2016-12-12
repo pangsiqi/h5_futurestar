@@ -1,159 +1,162 @@
-
-body{
+body {
     width: 100%;
-    background:url(../images/studycenter_ground.png) no-repeat;
+    background: url(../images/studycenter_ground.png) no-repeat;
+    overflow-x: hidden;
 }
 
-
-
-
-#studycontent{
-    position:absolute;
-    left:570px;
-    top:30px;
-
+#studycontent {
+    position: absolute;
+    left: 570px;
+    top: 30px;
 }
-#studycontent li{
+
+#studycontent li {
     list-style-type: none;
+}
 
-}
-#studycontent button{
+#studycontent button {
     float: right;
-    position:absolute;
-    left:570px;
-    top:20px;
+    position: absolute;
+    left: 570px;
+    top: 20px;
 }
-#leftcontent{
+
+#leftcontent {
     margin-top: 80px;
-    margin-left:71px;
+    margin-left: 71px;
 }
-#leftcontent a:hover{
-    color:white;
+
+#leftcontent a:hover {
+    color: white;
     text-decoration: none;
 }
-#leftcontent ul li{
+
+#leftcontent ul li {
     list-style-type: none;
     padding-top: 26px;
-
 }
 
-#leftcontent ul li a{
-    color:black;
-    font-size:20px;
+#leftcontent ul li a {
+    color: black;
+    font-size: 20px;
     text-align: center;
 }
-#rightcontent{
 
+#rightcontent {
     border-radius: 10px;
-    width:770px;
-    height:445px;
+    width: 770px;
+    height: 445px;
     position: absolute;
-    right:80px;
-    top:85px;
+    right: 80px;
+    top: 85px;
 }
 
-
-#title ul{
-    margin-left:2px;
-    margin-top:19px;
+#title ul {
+    margin-left: 2px;
+    margin-top: 19px;
 }
-#title a{
+
+#title a {
     color: white;
-    font-size:18px;
-
-    font-family:"幼圆";
+    font-size: 18px;
+    font-family: "幼圆";
 }
-#title a:hover{
-    color:yellow;
+
+#title a:hover {
+    color: yellow;
     text-decoration: none;
 }
-#rightcontent p{
-    position:absolute;
-    left:45px;
-    top: 115px;;
+
+#rightcontent p {
+    position: absolute;
+    left: 45px;
+    top: 115px;
+    ;
     font-size: 16px;
 }
-#studycontent{
-    border:1px solid #bbbbbb;
-    width:674px;
-    height:120px;
-    position:absolute;
-    left:45px;
-    top:165px;
-    border-radius:10px;
 
-
+#studycontent {
+    border: 1px solid #bbbbbb;
+    width: 674px;
+    height: 120px;
+    position: absolute;
+    left: 45px;
+    top: 165px;
+    border-radius: 10px;
 }
-#left1{
+
+#left1 {
     background-color: white;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 10px;
 }
-#rightcontent ul{
-    padding-top: 10px;
 
+#rightcontent ul {
+    padding-top: 10px;
 }
-#rightcontent ul li{
+
+#rightcontent ul li {
     padding-bottom: 5px;
     list-style-type: none;
-    color:black;
+    color: black;
 }
-#left2{
+
+#left2 {
     background-color: white;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-#left3{
-    background-color: white;
-    width:300px;
-    height:200px;
-    border-radius: 10px;
 
-}
-#right1{
+#left3 {
     background-color: white;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#right1 {
+    background-color: white;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 10px;
 }
-#right2{
+
+#right2 {
     background-color: white;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-#right3{
+
+#right3 {
     background-color: white;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
-
 }
 
-
-
-
- .footer ul{
-     margin-top:700px;
-     margin-left:330px;
-     margin-bottom: 10px;
- }
-.footer ul li{
-    list-style-type:none;
-    margin-top:17px;
-    color:#7d7a7d;
-
+.footer ul {
+    margin-top: 700px;
+    margin-left: 330px;
+    margin-bottom: 10px;
 }
-#footerli a{
-    padding-left:30px;
-    margin-left:5px;
-    color:#7d7a7d;
+
+.footer ul li {
+    list-style-type: none;
+    margin-top: 17px;
+    color: #7d7a7d;
+}
+
+#footerli a {
+    padding-left: 30px;
+    margin-left: 5px;
+    color: #7d7a7d;
 }

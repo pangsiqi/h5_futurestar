@@ -2,6 +2,7 @@
 body{
     width: 100%;
     background:url(../images/studycenter_ground.png) no-repeat;
+    overflow-x: hidden;
 }
 
 
