@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>班级天地</title>
-    <link href="/FS_siqi/Public/front/student/css/classspace.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="/FS_siqi/Public/front/student/css/classspace.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="/FS_siqi/Public/front/student/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/FS_siqi/Public/front/student/css/nav.css">
-    <link href="/FS_siqi/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="/FS_siqi/Public/front/student/css/nav.css"> -->
+    <!-- <link href="/FS_siqi/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" /> -->
+    <!--新添加-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/classspace1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/classspace.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/nav.css" />
     <script type="text/javascript" src="/FS_siqi/Public/front/student/js/jquery.js"></script>
     <script type="text/javascript" src="/FS_siqi/Public/front/student/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!--导航栏部分-->
-    <div class="col-md-12 col-lg-8" id="nav">
+    <div class="col-md-8" id="nav">
         <ul>
             <li><a href="/FS_siqi/index.php/Home/Student/index.html">首页</a></li>
             <li><a href="/FS_siqi/index.php/Home/Student/chinese.html">学习中心</a></li>
@@ -68,7 +73,7 @@
                                 <HR width="100%" color=#bbbbbb SIZE=8 />
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收到礼物</p>
                                 <HR width="100%" color=#bbbbbb SIZE=8 />
-                                <div>
+                                <div id="giftpic">
                                     <div class="col-md-4 column">
                                         <img src="/FS_siqi/Public/front/student/images/smallgift.png" />
                                         <a href="#" style="padding-left: 45px">0</a>
@@ -86,27 +91,27 @@
                                 <div style="text-align: center">
                                     <div class="col-md-4 column">
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                     </div>
                                     <div class="col-md-4 column">
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                     </div>
                                     <div class="col-md-4 column">
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                         <img src="/FS_siqi/Public/front/student/images/headpicbig.jpg">
-                                        <a href="#" style="padding-left: 45px">0</a>
+                                        <a href="#">0</a>
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +229,11 @@
                     </div>
                 </div>
                 <!--页脚-->
-                <div class="footer">
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
                     <ul>
                         <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
                         <div>
@@ -237,9 +246,6 @@
                         </div>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

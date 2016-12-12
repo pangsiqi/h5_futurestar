@@ -12,14 +12,14 @@
 <!--导航栏部分-->
 <div class="col-md-12 col-lg-8" id="nav">
     <ul>
-        <li><a href="/FS/index.php/Home/Student/index.html">首页</a></li>
-        <li><a href="/FS/index.php/Home/Student/chinese.html">学习中心</a></li>
-        <li><a href="/FS/index.php/Home/Student/pk.html">竞技场</a></li>
-        <li><a href="/FS/index.php/Home/Student/classspace.html">班级天地</a></li>
-        <li><a href="/FS/index.php/Home/Student/parentspace.html">家长空间</a></li>
-        <li><a href="/FS/index.php/Home/Student/gift.html">奖品</a></li>
-        <li><a href="#"><img src="/FS/Public/front/student/images/email.png" /></a></li>
-        <li><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" />
+        <li><a href="/FS_siqi/index.php/Home/Student/index.html">首页</a></li>
+        <li><a href="/FS_siqi/index.php/Home/Student/chinese.html">学习中心</a></li>
+        <li><a href="/FS_siqi/index.php/Home/Student/pk.html">竞技场</a></li>
+        <li><a href="/FS_siqi/index.php/Home/Student/classspace.html">班级天地</a></li>
+        <li><a href="/FS_siqi/index.php/Home/Student/parentspace.html">家长空间</a></li>
+        <li><a href="/FS_siqi/index.php/Home/Student/gift.html">奖品</a></li>
+        <li><a href="#"><img src="/FS_siqi/Public/front/student/images/email.png" /></a></li>
+        <li><img src="/FS_siqi/Public/front/student/images/headpic.jpg" class="img-circle" />
             <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -47,7 +47,7 @@
                 <ul>
                     <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
                     <li id="footerli">
-                        <a href="/FS/index.php/admin">后台管理</a>
+                        <a href="/FS_siqi/index.php/admin">后台管理</a>
                         <a href="#">关于我们</a>
                         <a href="#">各界声音</a>
                         <a href="#">加入我们</a>
