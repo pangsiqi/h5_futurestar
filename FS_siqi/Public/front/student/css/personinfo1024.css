@@ -1,0 +1,31 @@
+/*personinform*/
+
+body{
+    width: 100%;
+
+}
+.userthumb{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+#studycontent ol {
+    margin-top: 25px;
+	margin-left: 200px;
+    }
+				                        
+#studycontent li {
+    color: black;
+    padding-top: 25px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
