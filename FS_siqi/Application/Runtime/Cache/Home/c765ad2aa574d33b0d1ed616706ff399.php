@@ -73,7 +73,7 @@
                                 <HR width="100%" color=#bbbbbb SIZE=8 />
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收到礼物</p>
                                 <HR width="100%" color=#bbbbbb SIZE=8 />
-                                <div id="giftpic">
+                                <div id="gitpic">
                                     <div class="col-md-4 column">
                                         <img src="/FS_siqi/Public/front/student/images/smallgift.png" />
                                         <a href="#" style="padding-left: 45px">0</a>
@@ -214,14 +214,129 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tab2">
-                                        <p>
-                                            Howdy, I'm in Section 2.
-                                        </p>
+                                        <div class="comment">
+                                            <div class="comment-header clearfix row">
+                                                <div class="comment-face col-md-2 col-lg-2"><img src="/FS_siqi/Public/front/student/images/headpicbig.jpg" class="img-responsive"></div>
+                                                <div class="comment-detail col-md-10  col-lg-10 ">
+                                                    <div class="detail-header">
+                                                        <div class="detail-info"><span><?php echo ($message["username"]); ?></span></div>
+                                                        <div class="detail-from">
+                                                            <span class="from-time"><?php echo (substr($message["time"],0,10)); ?></span> 来自
+                                                            <span class="from-text">fs.com</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-text">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="<?php echo ($message["path"]); ?>" class="img-responsive" alt="" width="100%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <ul class="clearfix comment-footer-ul">
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-header clearfix row">
+                                                <div class="comment-face  col-md-2 col-lg-2"><img src="/FS_siqi/Public/front/student/images/headpicbig.jpg" class="img-responsive"></div>
+                                                <div class="comment-detail col-md-10 col-sm-10 col-lg-10 col-xs-10">
+                                                    <div class="detail-info"><span><?php echo ($message["username"]); ?></span></div>
+                                                    <div class="detail-from">
+                                                        <span class="from-time"><?php echo (substr($message["time"],0,10)); ?></span> 来自
+                                                        <span class="from-text">www.baidu.com</span>
+                                                    </div>
+                                                    <div class="detail-text">
+                                                        <p><?php echo ($message["message"]); ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <ul class="clearfix comment-footer-ul">
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane" id="tab3">
-                                        <p>
-                                            Howdy, I'm in Section 3.
-                                        </p>
+                                        
+                                        <div class="comment">
+                                            <div class="comment-header clearfix row">
+                                                <div class="comment-face  col-md-2 col-lg-2"><img src="/FS_siqi/Public/front/student/images/headpicbig.jpg" class="img-responsive"></div>
+                                                <div class="comment-detail col-md-10 col-sm-10 col-lg-10 col-xs-10">
+                                                    <div class="detail-info"><span><?php echo ($message["username"]); ?></span></div>
+                                                    <div class="detail-from">
+                                                        <span class="from-time"><?php echo (substr($message["time"],0,10)); ?></span> 来自
+                                                        <span class="from-text">www.baidu.com</span>
+                                                    </div>
+                                                    <div class="detail-text">
+                                                        <p><?php echo ($message["message"]); ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <ul class="clearfix comment-footer-ul">
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-header clearfix row">
+                                                <div class="comment-face col-md-2 col-lg-2"><img src="/FS_siqi/Public/front/student/images/headpicbig.jpg" class="img-responsive"></div>
+                                                <div class="comment-detail col-md-10  col-lg-10 ">
+                                                    <div class="detail-header">
+                                                        <div class="detail-info"><span><?php echo ($message["username"]); ?></span></div>
+                                                        <div class="detail-from">
+                                                            <span class="from-time"><?php echo (substr($message["time"],0,10)); ?></span> 来自
+                                                            <span class="from-text">fs.com</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-text">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="/FS_siqi/Public/front/student/images/class_ground.png" class="img-responsive" alt="" width="100%;"></div>
+                                                                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4"><img src="<?php echo ($message["path"]); ?>" class="img-responsive" alt="" width="100%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-footer">
+                                                <ul class="clearfix comment-footer-ul">
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-star"></i> 收藏</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-comment"></i> 评论</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-send"></i> 转发</span></a></li>
+                                                    <li><a href="#"><span class="pos"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

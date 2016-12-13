@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/indexwrite.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS_siqi/Public/front/student/css/nav1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS_siqi/Public/front/student/css/nav.css" />
+    <script type="text/javascript" href="/FS_siqi/Public/front/student/js/jquery.js"></script>
+    
 </head>
 <body>
 <!--导航栏-->
@@ -118,8 +120,12 @@
 
         </div>
     </div>
+   
+    <!--飘动气球-->
+<img src="/FS_siqi/Public/front/student/images/qiu.png" name="picture"
+style="position: absolute; top: 270px; left: 30px; position:fixed; z-index:10" BORDER="0">
 
-
+</a> 
     <!--<div class="yun1 yun"> </div>-->
     <!--<div class="yun2 yun"> </div>-->
         <div class="yun3 yun"> </div>
@@ -141,6 +147,62 @@
 
 </div>
 </div>
+ <script LANGUAGE="JavaScript">
+ setTimeout("moveLR('picture',100,1)",100);
+step = 0;
+obj = new Image();
+    // anim(462,482,1);
+function anim(xp,xk,smer)
+{
+    obj.style.left = x;
+    x += step*smer;
+// console.log(x);
+    if (x>=(xk+xp)/2) {
+        if (smer == 1) step--;
+        else step++;
+    }else {
+        if (smer == 1) step++;
+        else step--;
+    }
+    if (x >= xk) {
+    x = xk;
+    smer = -1;
+    }
+    if (x <= xp) {
+    x = xp;
+    smer = 1;
+    }
+    setTimeout('anim('+xp+','+xk+','+smer+')', 100);
+}
+function moveLR(objID,movingarea_width,c)
+{
+if (navigator.appName=="Netscape") window_width = window.innerWidth;
+else window_width = document.body.offsetWidth;
+obj = document.images[objID]; 
+image_width = obj.width;
+x1 = obj.style.left;
+
+x = Number(x1.substring(0,x1.length-2)); 
+if (c == 0) {
+    if (movingarea_width == 0) {
+    right_margin = window_width - image_width;
+    anim(x,right_margin,1);
+    }else {
+        right_margin = x + movingarea_width - image_width; 
+        if (movingarea_width < x + image_width) window.alert("No space for moving!");
+        else anim(x,right_margin,1);
+    }
+}else {
+    if (movingarea_width == 0) right_margin = window_width - image_width;
+    else {
+        x = Math.round((window_width-movingarea_width)/2);
+        right_margin = Math.round((window_width+movingarea_width)/2)-image_width;
+        console.log(right_margin);
+    }
+    anim(x,right_margin,5);
+} 
+} 
+</script>
 </body>
 
 
