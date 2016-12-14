@@ -1,0 +1,138 @@
+
+body{
+    width: 100%;
+    background:url(../images/list_ground.png) no-repeat;
+}
+
+
+
+
+#studycontent li{
+    list-style-type: none;
+    padding-bottom: 15px;
+
+}
+
+#studycontent ul{
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+
+#leftcontent ul li a{
+    color:black;
+    font-size:20px;
+    text-align: center;
+}
+#leftcontent a:hover{
+    color:white;
+    text-decoration: none;
+}
+#rightcontent{
+    background: white;
+    border-radius: 10px;
+    width:950px;
+    height:980px;
+    position: absolute;
+    right:100px;
+    top:150px;
+}
+#title{
+    background:rgb(38,159,167);
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:950px;
+    height:60px;
+    border-radius: 10px 10px 0 0;
+}
+#title ul{
+    margin-left:2px;
+    margin-top:19px;
+}
+#title a{
+    color: white;
+    font-size:14px;
+
+    font-family:"宋体";
+}
+#title a:hover{
+    color:yellow;
+    text-decoration: none;
+}
+#rightcontent p{
+    position:absolute;
+    left:45px;
+    top: 115px;;
+    font-size: 16px;
+}
+#studycontent{
+    border:1px solid #bbbbbb;
+    width:860px;
+    height:860px;
+    position:absolute;
+    left:45px;
+    top:95px;
+    border-radius:5px;
+
+
+}
+#studycontent ul li{
+    color:black;
+    font-size:12px;
+}
+/*二级菜单设置*/
+
+ #chinese{
+     margin-left: 250px;
+     margin-top:80px;
+ }
+#math{
+    margin-left: 490px;
+    margin-top:-28px;
+}
+#english{
+    margin-left: 700px;
+    margin-top:-58px;
+}
+#walk{
+    margin-left: 865px;
+    margin-top:27px;
+}
+#garden{
+    margin-left: 960px;
+    margin-top:-70px;
+
+}
+#nav2 a:hover{
+    color:yellow;
+}
+#studycontent a{
+    color:green;
+}
+
+
+
+/*footer*/
+.footer{
+    background:url(../images/footer.png) no-repeat;
+    /*margin-top: auto;*/
+    height: 120px;
+}
+.footer ul{
+    width: 42%;
+    margin: 1081px auto 0 auto;
+    padding-top:20px;
+}
+.footer ul li{
+    list-style-type:none;
+    margin-top:17px;
+    color:#7d7a7d;
+
+}
+#footerli a{
+    padding-left:30px;
+    margin-left:5px;
+    color:#7d7a7d;
+}
+

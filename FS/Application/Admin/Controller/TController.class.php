@@ -13,7 +13,7 @@ class TController extends Controller {
   		$teacherModel = D("teacher");
 		//页码
 		$count  = $teacherModel->count();    //计算总数
-		$Page   = new \Think\Page($count, 2);
+		$Page   = new \Think\Page($count, 4);
 		$teachers   = $teacherModel->limit($Page->firstRow. ',' . $Page->listRows)->order('id asc')->select();
 		$page = $Page->show();
 		$this->assign("page",$page);

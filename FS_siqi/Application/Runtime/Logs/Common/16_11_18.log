@@ -1,0 +1,102 @@
+[ 2016-11-18T20:49:57+08:00 ] 127.0.0.1 /FS/index.php/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+ERR: 无法加载模块:Css
+
+[ 2016-11-18T20:49:57+08:00 ] 127.0.0.1 /FS/index.php/css/mystyle.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+ERR: 无法加载模块:Css
+
+[ 2016-11-18T20:49:57+08:00 ] 127.0.0.1 /FS/index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+ERR: 无法加载模块:Js
+
+[ 2016-11-18T20:49:57+08:00 ] 127.0.0.1 /FS/index.php/css/jquery-ui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载模块:Css
+
+[ 2016-11-18T20:49:57+08:00 ] 127.0.0.1 /FS/index.php/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+ERR: 无法加载模块:Js
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/js/jquery-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Js
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/images/main1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/images/main2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Js
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/images/main2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:49:58+08:00 ] 127.0.0.1 /FS/index.php/js/jquery-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Js
+
+[ 2016-11-18T20:51:03+08:00 ] 127.0.0.1 /FS/index.php/images/main1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:51:03+08:00 ] 127.0.0.1 /FS/index.php/images/main2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:51:04+08:00 ] 127.0.0.1 /FS/index.php/images/main2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T20:51:04+08:00 ] 127.0.0.1 /FS/index.php/images/main1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载模块:Images
+
+[ 2016-11-18T21:03:04+08:00 ] 127.0.0.1 /FS/index.php/teacher_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Teacher_add
+
+[ 2016-11-18T21:03:58+08:00 ] 127.0.0.1 /FS/index.php/teacher_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Teacher_add
+

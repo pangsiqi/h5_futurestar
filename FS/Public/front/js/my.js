@@ -1,9 +1,9 @@
 (function($) {
 	$(document).ready(function() {
 
-		$(".login").one('click', modalLogin);
-		$(".register").one('click', modalResStu);
-		$("#index_login_username").on('blur', judgeNull);
+		// $(".login").one('click', modalLogin);
+		// $(".register").one('click', modalResStu);
+		// $("#index_login_username").on('blur', judgeNull);
 		$("#index_login_password").on('blur', judgeNull);
 		// $(".JS-teacherMobile").on("blur", checkPhone);
 		//首页点击登录和学生注册
@@ -28,14 +28,14 @@
 		// 	}
 		// }
 		// 手机号码的验证
-		function checkPhonePattern() {
-			var phone = $('.JS-inputEvent').val();
-			if (!(/^1[34578]\d{9}$/.test(phone))) {
-				console.log($(this).next('.errorTips'));
-				$(this).next('.errorTips').text("请输入正确的手机号");
-			}
+		// function checkPhonePattern() {
+		// 	var phone = $('.JS-inputEvent').val();
+		// 	if (!(/^1[34578]\d{9}$/.test(phone))) {
+		// 		console.log($(this).next('.errorTips'));
+		// 		$(this).next('.errorTips').text("请输入正确的手机号");
+		// 	}
 
-		}
+		// }
 
 		function modalResStu() {
 			$("#modal-overlay").empty();
@@ -50,13 +50,11 @@
 		// 	e1.style.visibility = (e1.style.visibility == "visible") ? "hidden" : "visible";
 		// }
 
-		//判断用户名和密码是否为空
+		//判断密码是否为空
 		function judgeNull() {
 			var oText = $(this).val();
 			if (oText == '') {
-				$(this).next().css('display', 'block');
-			} else {
-				$(this).next().css('display', 'none');
+				$(this).next("#telErrorTips").html("请输入密码");
 			}
 		}
 		//表单验证

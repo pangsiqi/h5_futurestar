@@ -227,6 +227,7 @@ button {
     background-color: #b8d45c;
     width: auto;
     height: auto;
+    max-width: 630px;
     display: block;
     padding: 5px;
     float: left;
@@ -284,6 +285,7 @@ button {
     border-radius: 5px;
     background-color: #8DFA69;
     width: auto;
+    max-width: 630px;
     height: auto;
     padding: 5px;
     color: #666;

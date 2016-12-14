@@ -11,25 +11,60 @@ ul li {
     float: left;
 }
 
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
 }
 
+.page {
+    position: absolute;
+    top: 290px;
+    right: -100px;
+}
+
+.page a,
+.page span {
+    padding: 15px;
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #20bdf0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.page a:hover {
+    background: #DDDDDD;
+}
+
+.page span {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #20bdf0;
+    border-color: #20bdf0;
+    cursor: default;
+}
+
+
 /*导航*/
+
 #header {
     background-color: white;
     border: solid 1px RGB(234, 234, 234);
     height: 60px;
 }
 
-#logo{
-    margin-top:10px;
-    padding-left:120px;
+#logo {
+    margin-top: 10px;
+    padding-left: 120px;
 }
 
-#nav{
-    padding-left:40px;
-    margin-top:8px;
+#nav {
+    padding-left: 40px;
+    margin-top: 8px;
 }
 
 #nav li {
@@ -38,73 +73,77 @@ body{
     padding-top: 10px;
 }
 
-#new{
-    padding-left:5px;
+#new {
+    padding-left: 5px;
 }
 
-#circle{
-    padding-left:3px;
-    margin-top:-7px;
-
+#circle {
+    padding-left: 3px;
+    margin-top: -7px;
 }
 
-#drop{
-    padding:0 0 0 3px;
-    margin:0 ;
-
+#drop {
+    padding: 0 0 0 3px;
+    margin: 0;
 }
 
-#navbarDrop1{
-    width:100px;
-    border:solid 1px RGB(187,187,187); 
-    border-radius:4px;
-    color:black;
-    float:left;
+#navbarDrop1 {
+    width: 100px;
+    border: solid 1px RGB(187, 187, 187);
+    border-radius: 4px;
+    color: black;
+    float: left;
 }
 
-#navbarDrop2{
-    padding:0 30px;
-    padding-right:50px;
+#navbarDrop2 {
+    // padding:0 30px;
+    padding-right: 20px;
 }
 
-#navbarDrop3{
-    min-width:0px;
+#navbarDrop3 {
+    min-width: 0px;
 }
 
 #content {
     background-color: RGB(189, 235, 141);
-    height: 1000px;
+    height: 830px;
 }
 
-#avatar{
-    padding-top:20px;
-    padding-left:115px;
+.content-main {
+    width: 1100px;
+    position: relative;
+    left: 13%;
 }
 
-#tea_n{
-    font-weight:bold;
-    padding-top:24px;
+#avatar {
+    padding-top: 20px;
+    padding-left: 115px;
 }
 
-.tea_n{
-    padding:0;
-    padding-top:10px;
+#tea_n {
+    font-weight: bold;
+    padding-top: 24px;
 }
 
-#tea_m{
-    padding-left:12px;
-    padding:0;
+.tea_n {
+    padding: 0;
+    padding-top: 10px;
 }
 
-#tea_c{
-    padding-left:70px;
+#tea_m {
+    padding-left: 12px;
+    padding: 0;
 }
 
-#say{
-    color:white;
-    font-weight:bold;
-    padding-left:140px;
-    padding-top:25px;
+#tea_c {
+    padding-left: 70px;
+}
+
+#say {
+    color: white;
+    font-weight: bold;
+    padding-left: 140px;
+    padding-top: 25px;
 }
 
 #message1 {
@@ -112,107 +151,271 @@ body{
     border: solid 5px RGB(43, 175, 43);
     border-radius: 10px;
     margin-left: 120px;
+    height: 200px;
+    width: 840px;
 }
 
-.image{
-    margin-left:100px;
-    margin-top:30px;
+.image {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.faceDiv {
+    width: 385px;
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 5px;
+    border-color: rgba(19, 105, 172, .75);
+    box-shadow: 0 0 3px rgba(19, 105, 192, .5);
+    -moz-box-shadow: 0 0 3px rgba(241, 39, 232, .5);
+    -webkit-box-shadow: 0 0 3px rgba(19, 105, 252, 3);
+}
+
+.faceDiv img {
+    width: 24px;
+    height: 24px;
+}
+
+.jp-container {
+    width: 100%;
+    // height: 400px;
+    position: relative;
+    background-color: transparent;
+    float: left;
+}
+
+.jp-container .talk_recordbox {
+    min-height: 80px;
+    color: #afafaf;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.jp-container .talk_recordbox:first-child {
+    border-top: none;
+}
+
+.jp-container .talk_recordbox:last-child {
+    border-bottom: none;
+}
+
+.jp-container .talk_recordbox .talk_recordtextbg {
+    float: left;
+    width: 10px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/talk_recordtext.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.jp-container .talk_recordbox .talk_recordtext {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #b8d45c;
+    width: auto;
+    height: auto;
+    max-width: 630px;
+    display: block;
+    padding: 5px;
+    float: left;
+    color: #333333;
+}
+
+.jp-container .talk_recordbox h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.jp-container .talk_recordbox .user {
+    float: left;
+    display: inline;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+/*自己发言样式*/
+
+.jp-container .talk_recordboxme {
+    display: block;
+    min-height: 80px;
+    color: #afafaf;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.jp-container .talk_recordboxme .talk_recordtextbg {
+    float: right;
+    width: 10px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/talk_recordtextme.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.jp-container .talk_recordboxme .talk_recordtext {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #8DFA69;
+    width: auto;
+    max-width: 630px;
+    height: auto;
+    padding: 5px;
+    color: #666;
+    font-size: 12px;
+    float: right;
+}
+
+.jp-container .talk_recordboxme h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #333333;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.jp-container .talk_recordboxme .user {
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: inline;
+}
+
+.talk_time {
+    color: #666;
+    text-align: right;
+    display: block;
 }
 
 .image li {
     padding-right: 15px;
 }
 
-#pass{
-    padding-left:520px;
-    margin:0;
+#pass {
+    position: absolute;
+    top: 30px;
+    right: -30%;
 }
-
 
 #pass li {
     padding-right: 25px;
 }
 
-.pass{
-    padding:0 0 0 3px;
-    margin:0;
-
+.pass {
+    padding: 0 0 0 3px;
+    margin: 0;
 }
 
-#navbarDrop4{
-    width:100px;
+#navbarDrop4 {
+    width: 100px;
 }
 
-#navbarDrop5{
-    width:100px;
+#navbarDrop5 {
+    width: 100px;
 }
 
-.dropdown-toggle{
-    border:solid 1px RGB(187,187,187);
-    background-color:white; 
-    border-radius:4px;
-    color:black;
-    float:left;
+.dropdown-toggle {
+    border: solid 1px RGB(187, 187, 187);
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    float: left;
 }
 
-.pass_p{
-    padding:0 15px;
+.pass_p {
+    padding: 0 15px;
 }
 
-.dropdown-menu{
-    min-width:0px;
-    width:100px
+.dropdown-menu {
+    min-width: 0px;
+    width: 100px
 }
 
-#pass_p{
-    width:80px;
-    text-align:center;
-    border:solid 1px gray;
-    border-radius:5px;
-    background-color:orange;
-    color:white;
+#pass_p {
+    width: 80px;
+    text-align: center;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    padding: 5px;
 }
 
-#dia{
-   margin-left:120px;
-   margin-top:100px;
+#dia {
+    position: absolute;
+    left: 150px;
+    // margin-left: 120px;
+    // margin-top: 100px;
 }
 
-.dia{
-   margin-bottom:40px;
+#dia select {
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-#dia_t{
-   color:white;
-   margin-top:10px;
-   padding:0;
-   font-weight:bold;
+#dia_t {
+    color: white;
+    margin-top: 10px;
+    padding: 0;
+    font-weight: bold;
 }
 
-#dia_drop{
-    margin-left:30px;
+#dia_drop {
+    margin-left: 30px;
 }
 
-#navbarDrop6{
-    margin-top:10px;
-    border:solid 1px RGB(187,187,187);
-    background-color:white; 
-    border-radius:4px;
-    color:black;
-    float:left;
-    width:100px;
+#navbarDrop6 {
+    margin-top: 10px;
+    border: solid 1px RGB(187, 187, 187);
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    float: left;
+    width: 100px;
 }
 
-#dia_p{
-    padding:0 25px;
+#dia_p {
+    padding: 0 25px;
 }
 
-#dia_s{
-    background-color: white; 
-    height:300px;
-    width:850px; 
-    border:solid 3px RGB(187,187,187); 
-    border-radius:10px;
+#dia_s {
+    background-color: white;
+    height: 300px;
+    width: 850px;
+    border: solid 3px RGB(187, 187, 187);
+    border-radius: 10px;
 }
 
 .bs-example-popover .popover {
@@ -225,14 +428,14 @@ body{
     font-size: 10px;
 }
 
-#dia_pic{
-    padding-top:10px;
+#dia_pic {
+    padding-top: 10px;
 }
 
 .pagination {
-    float: right;
-    padding-right: 150px;
-    padding-top: 20px;
+    position: absolute;
+    top: 265px;
+    right: -16%;
 }
 
 .pagination li {
@@ -245,21 +448,27 @@ body{
 
 
 /*尾部*/
+
 #footer {
     background-color: white;
-    border: solid 1px RGB(234, 234, 234);
+    // border: solid 1px RGB(234, 234, 234);
     color: gray;
     font-size: 12px;
     text-align: center;
     height: 70px;
+    margin-top: 20px;
 }
 
-#footer1{
-    padding-top:15px;
+#footer1 {
+    padding-top: 15px;
 }
 
-#footer2{
-    padding-left:45px;
+#footer2 {
+    padding-left: 45px;
+}
+
+.footer_nav {
+    margin-left: 120px;
 }
 
 .footer_nav li {

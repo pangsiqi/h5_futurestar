@@ -45,7 +45,7 @@
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
                     <div class="col-md-12 column">
-                        <p id="tec"><a href="personCenter.html">孙老师</a></p>
+                        <p id="tec"><a href="personCenter.html"><?php echo ($tea["realname"]); ?></a></p>
                     </div>
                 </div>
                 <div class="row clearfix">
@@ -126,15 +126,15 @@
                 <li>
                    <img id="pic_tea" src="/FS/Public/front/teacher/images/title.png" />
                 </li>
-                <li id="tea_name"><a href="#">孙老师</a></li>
-                <li>教工号：<a href="#">123456</a></li>
-                <li>金币：<a href="#">0</a></li>
-                <li>姓名：<a href="#">孙老师</a></li>
-                <li>性别：<a href="#">女</a></li>
-                <li>出生日期：<a href="#">1987年1月1日</a></li>
-                <li>学校：<a href="#">光明幼儿园</a></li>
-                <li>年级：<a href="#">小班</a></li>
-                <li class="mod"><a href="update.html"><input id="mod" value="修改资料" /></a></li>
+                <li id="tea_name"><?php echo ($tea["realname"]); ?></li>
+                <li>教工号：<?php echo ($tea["id"]); ?></li>
+                <!-- <li>金币：0</li> -->
+                <li>姓名：<?php echo ($tea["realname"]); ?></li>
+                <li>性别：<?php echo ($tea["sex"]); ?></li>
+                <!-- <li>出生日期：<?php echo ($tea["id"]); ?></li> -->
+                <li>学校：<?php echo ($tea["school"]); ?></li>
+                <li>年级：<?php echo ($tea["grade"]); ?></li>
+                <li class="mod"><a href="/FS/index.php/Home/Teacher/update"><button class="" id="mod">修改资料</button></a></li>
             </ol>
         </div>
     </div>

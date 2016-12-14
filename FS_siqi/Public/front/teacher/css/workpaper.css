@@ -1,0 +1,305 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+body{
+       overflow-x:hidden;
+}
+
+.item ul li a {
+    color: white;
+}
+
+#header {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    height: 60px;
+}
+
+/*导航*/
+#logo{
+    margin-top:10px;
+    padding-left:120px;
+}
+
+#nav{
+    padding-left:40px;
+    margin-top:8px;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#new{
+    padding-left:5px;
+}
+
+#circle{
+    padding-left:3px;
+    margin-top:-7px;
+
+}
+
+#drop{
+    padding:0 0 0 3px;
+    margin:0 ;
+
+}
+
+#navbarDrop1{
+    width:100px;
+    border:solid 1px RGB(187,187,187); 
+    border-radius:4px;
+    color:black;
+    float:left;
+}
+
+#navbarDrop2{
+    padding:0 30px;
+    padding-right:50px;
+}
+
+#navbarDrop3{
+    min-width:0px;
+}
+
+#content{
+    background-color:RGB(189,235,141);
+    height:520px;
+}
+
+/*老师信息*/
+
+#content_left1{
+    padding-left: 145px;
+    padding-top:35px;
+}
+
+#left1{
+    background-color: white; 
+    width:146px; 
+    height:110px;
+}
+
+#pic{
+    margin-top:2px; 
+    padding-top:15px;
+}
+
+#left2{
+    font-size:12px; 
+    margin-top:2px;
+}
+
+#tec{
+    padding:15px 0 0 0;
+    margin:0;
+    float:left;
+}
+
+.progress{
+    height:8px; 
+    width:16px; 
+    float:right;
+    padding:0;
+    margin:0;
+    margin-top:5px;
+}
+
+.progress-bar{
+    width: 50%;
+}
+
+#lvo{
+    padding:0;
+    margin:0;
+}
+
+#flower{
+    padding:0;
+    margin:0;
+    float:left;
+}
+
+#zheng{
+    background-color:white; 
+    border:solid 1px gray; 
+    border-radius:8px;
+}
+
+/*手风琴*/
+#list{
+    padding:0;
+}
+
+.list-group li {
+    list-style-type: none;
+    width: 143px;
+    font-size: 16px;
+}
+
+.list-group li a:link {
+    color: white;
+}
+
+.list-group li a:visited {
+    color: white;
+}
+
+.list-group .panel-heading {
+    background-color: RGB(156, 204, 101);
+}
+
+.panel-heading {
+    list-style-type: none;
+    outline: RGB(124, 179, 66) dotted 2px;
+    font-size: 17px;
+    color: red;
+    text-align: center;
+    width: 143px;
+    height: 30px;
+    padding-top: 3px;
+}
+
+#test{
+    color:white;
+    padding-top:4px;
+    padding-left:16px;
+}
+
+.panel-body{
+    padding:0;
+}
+
+.homeworkList_e{
+    padding-left:0;
+}
+
+.homeworkList_e li {
+    list-style-type: none;
+    background-color: RGB(43, 175, 43);
+    outline: RGB(124, 179, 66) dotted 2px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.list-group-item{
+    margin-left:0;
+}
+
+/*内容右侧*/
+.content_r1{
+    padding-left:20px;
+}
+
+#content_h1 {
+    background-color: white;
+    border: solid 1px RGB(187, 187, 187);
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+#h1{
+    background-color:RGB(156,204,101);
+    height:45px;
+    padding:0;
+    margin:0;
+}
+
+#h1_t{
+    font-size:20px; 
+    padding-top:12px;
+    padding-left:28px;
+    margin:0;
+}
+
+#h2{
+    padding-left:0;
+    margin-bottom:30px;
+}
+
+#h2_t{
+    font-size:14px; 
+    padding-top:14px;
+    padding-left:28px;
+    margin:0;
+}
+
+#content_h2 {
+    background-color: white;
+    border: solid 1px RGB(187, 187, 187);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#h3{
+    background-color:RGB(156,204,101);
+    height:45px;
+    padding:0;
+    margin:0;
+}
+
+#h3_c{
+    font-size:20px; 
+    padding-top:12px;
+    padding-left:28px;
+    margin:0;
+}
+
+#h4{
+    padding-left:0;
+    margin-bottom:30px;
+}
+
+#check li {
+    list-style-type: none;
+    float: left;
+    padding-top: 15px;
+}
+
+#check li a {
+    padding-right: 40px;
+}
+
+.check{
+    background-color:RGB(43,175,43); 
+    color:white; 
+    float:right;
+    border-radius:8px;
+    margin-top:12px; 
+    width:100px;
+    height:30px;
+    text-align:center;
+}
+
+/*footer部分*/
+#footer {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+}
+
+#footer1{
+    padding-top:15px;
+}
+
+#footer2{
+    padding-left:45px;
+}
+
+.footer_nav li {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+}

@@ -16,7 +16,6 @@ class IndexController extends Controller {
 			session("password",I("post.password"));
 			$teacherModel = M('teacher');
 			$tearesult = $teacherModel->where($condition)->count();//得到数据条数
-			
 			if($tearesult > 0){
 				session("tel",I("post.tel"));//session赋值
 				$this->redirect("teacher/index");
@@ -30,16 +29,16 @@ class IndexController extends Controller {
     }
     public function stulogin(){
     	$studentModel = M('student');
-    	// $teacherModel = M('teacher');
     	$condition = array(
 					"tel" => session("tel"),
 					"password" => session("password")
 				);
 		$stuResult = $studentModel->where($condition)->select();//得到数据条数
-		if($stuResult > 0){
+		if(count($stuResult) > 0){
 			cookie('teatel',$stuResult[0]['teatel']);
 			session("tel",I("post.tel"));//session赋值
 			$this->redirect("student/index");
+			// $this->success("dd",U("student/index"));
 		}else{
 			$this->error("用户名或密码不正确",'',5);//第二个参数不写，返回上一页
 		}
@@ -56,7 +55,7 @@ class IndexController extends Controller {
 		$teacherModel = D("teacher");
 		cookie("teatel",I("post.teatel"));
 		$teatel = cookie("teatel");
-		$result = $teacherModel->where("tel=".$teatel)->select();
+		$result = $teacherModel->where("tel='$teatel'")->select();
 
 		$data['sex']=I('post.sex');
 		$data['username']=I('post.realname');

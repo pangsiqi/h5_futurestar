@@ -24,7 +24,7 @@
             <li>
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" />
+            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>

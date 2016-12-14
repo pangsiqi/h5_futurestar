@@ -67,7 +67,7 @@
                 </ul>
                 <h3 aria-selected="true" aria-expanded="true"><a href="#"><span class="glyphicon glyphicon-file"></span>资源管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
                 <ul>
-                    <li><a href="/FS/index.php/Admin/R/edit.html">修改资源</a></li>
+                    <li><a href="/FS/index.php/Admin/R/add.html">添加资源</a></li>
                     <li><a href="/FS/index.php/Admin/R/lists.html">列表资源</a></li>
                 </ul>
             </div>
@@ -75,8 +75,8 @@
         
         <div class="col-md-10 col-md-offset-2 ">
             <ol class="breadcrumb">
-                <li><a href="main.html">首页</a></li>
-                <li><a href="#">资源管理</a></li>
+                <li><a href="/FS/index.php/Admin/index">首页</a></li>
+                <li><a href="/FS/index.php/Admin/R/lists">资源管理</a></li>
                 <li class="active">资源列表</li>
             </ol>
             <div class="table-responsive">

@@ -6,16 +6,17 @@
     <meta charset="UTF-8">
     <title>学生部分首页</title>
     <link rel="stylesheet" href="__PUBLIC__/front/student/css/bootstrap.min.css">
-    <link href="__PUBLIC__/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="__PUBLIC__/front/student/css/index1024.css" rel="stylesheet" type="text/css" />
-    <!--<link href="__PUBLIC__/front/student/css/index.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="__PUBLIC__/front/student/css/indexwrite.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/index1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/indexwrite.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/nav.css" />
+    
 </head>
 
 <body>
     <!--导航栏-->
     <!--导航栏部分-->
-    <div class="col-md-12 column" id="nav">
+    <div class="col-md-8 column" id="nav">
         <ul>
             <li><a href="__URL__/index.html">首页</a></li>
             <li><a href="__URL__/chinese.html">学习中心</a></li>
@@ -26,7 +27,7 @@
             <li id="email">
                 <a href="parentspace.html"><img src="__PUBLIC__/front/student/images/email.png" /></a>
             </li>
-            <li id="person"><a href="personcenter.html" /> <img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li id="person"><a href="__URL__/personcenter"><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
             </li>
             <!-- <ul>
              <li><a href="#">个人信息</a></li>
@@ -65,8 +66,8 @@
                             <volist name="resource" id="r">
                                 <div>
                                     <ul>
-                                        <li><img src="{$r.path}" width="118px" height="142px" /></li>
-                                        <li>
+                                        <li class="resource-img"><img src="{$r.path}" " /></li>
+                                        <li class="start-img">
                                             <a href="__URL__/studycontent/id/{$r.idH}"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
                                         </li>
                                     </ul>
@@ -75,11 +76,11 @@
                         </div>
                         <!--我最棒部分-->
                         <div class="row clearfix">
-                            <div>
-                                <ul style="margin-top:160px;margin-left:85px">
+                            <div id="ibest">
+                                <ul>
                                     <li style=" border-color:blue;"><img src="__PUBLIC__/front/student/images/1.jpg" style=" float: left; padding-right:18px" class="img-rounded" /></li>
                                     <li><img src="__PUBLIC__/front/student/images/2.jpg" class="img-rounded" style="float: left; padding-right:18px" /></li>
-                                    <li><img src="__PUBLIC__/front/student/images/3.jpg" class="img-rounded" /></li>
+                                    <li id="img3"><img src="__PUBLIC__/front/student/images/3.jpg" class="img-rounded" /></li>
                                 </ul>
                             </div>
                         </div>
@@ -93,7 +94,7 @@
                             <a href="__URL__/pk.html"><img src="__PUBLIC__/front/student/images/pk.png" /></a>
                         </div>
                         <div id="studycenter">
-                            <a href="__URL__/studycenter.html"><img src="__PUBLIC__/front/student/images/studycenter.png" /></a>
+                            <a href="__URL__/studycontent.html"><img src="__PUBLIC__/front/student/images/studycenter.png" /></a>
                         </div>
                         <div id="gift">
                             <a href="__URL__/gift.html"><img src="__PUBLIC__/front/student/images/gift.png" /></a>
