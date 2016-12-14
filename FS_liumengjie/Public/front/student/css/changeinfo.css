@@ -1,0 +1,77 @@
+
+body{
+    width: 100%;
+    background:url(../images/studycenter_ground.png) no-repeat;
+    overflow-x: hidden;
+}
+.userthumb{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+
+#leftcontent{
+    margin-top: 80px;
+    margin-left:71px;
+}
+
+#leftcontent ul li{
+    list-style-type: none;
+    padding-top: 26px;
+
+}
+
+#leftcontent ul li a{
+    color:black;
+    font-size:20px;
+    text-align: center;
+}
+#leftcontent a:hover{
+    color:white;
+    text-decoration: none;
+}
+#rightcontent{
+    background: white;
+    border-radius: 10px;
+    width:770px;
+    height:645px;
+    position: absolute;
+    right:100px;
+    top:100px;
+}
+
+
+
+#rightcontent ul{
+    margin-top: 30px;
+
+}
+#rightcontent ul li{
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 25px;
+    color:black;
+}
+
+
+
+
+ .footer ul{
+     margin-top:900px;
+     margin-left:330px;
+     margin-bottom: 20px;
+ }
+.footer ul li{
+    list-style-type:none;
+    margin-top:17px;
+    color:#7d7a7d;
+
+}
+#footerli a{
+    padding-left:30px;
+    margin-left:5px;
+    color:#7d7a7d;
+}
+
