@@ -1,0 +1,816 @@
+[ 2016-12-08T09:11:46+08:00 ] 127.0.0.1 /FS/index.php/Admin/T/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `teacher` ORDER BY id asc LIMIT 0,2   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\TController.class.php on line 22 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-12-08T09:11:51+08:00 ] 127.0.0.1 /FS/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0052s ]
+ERR: 1146:Table 'teenedu.resoures' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resoures`
+ERR: 1146:Table 'teenedu.resoures' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resoures`
+
+[ 2016-12-08T09:12:05+08:00 ] 127.0.0.1 /FS/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0074s ]
+ERR: 1146:Table 'teenedu.resoure' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resoure`
+ERR: 1146:Table 'teenedu.resoure' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resoure`
+
+[ 2016-12-08T09:12:37+08:00 ] 127.0.0.1 /FS/index.php/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\IndexController.class.php on line 23 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-12-08T09:12:41+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-12-08T09:12:45+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,2   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 77 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-12-08T09:13:08+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-12-08T09:13:50+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+ERR: 1146:Table 'teenedu.resources' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resources`
+ERR: 1146:Table 'teenedu.resources' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `resources`
+
+[ 2016-12-08T09:14:02+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `resource` (`title`,`author`,`summary`) VALUES ('基本发音练习','李小明','基本发音练习') [ RunTime:0.0901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2016-12-08T09:14:03+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,2   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 77 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-12-08T09:14:30+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 77 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-12-08T09:14:40+08:00 ] 127.0.0.1 /FS/index.php/Admin/T/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `teacher` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\TController.class.php on line 22 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2016-12-08T09:16:39+08:00 ] 127.0.0.1 /FS/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\IndexController.class.php on line 23 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-12-08T09:16:43+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-12-08T09:18:31+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-12-08T09:18:35+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-08T09:18:58+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 92 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-12-08T09:20:05+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 93 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-12-08T09:21:07+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/edit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `resource` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 80 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-12-08T09:21:13+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/edit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `resource` SET `title`='基本发音练习',`path`='/FS/Public/uploads/2016-12-08/5848b589c07c0.jpg',`author`='李小明',`publishTime`='2016-12-08  09:21',`summary`='基本发音练习' WHERE `id` = '5' [ RunTime:0.0711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2016-12-08T09:21:15+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 93 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-12-08T09:21:20+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/del/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0053s ]
+SQL: DELETE FROM `resource` WHERE `id` = 4 [ RunTime:0.0899s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-12-08T09:21:21+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 93 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-12-08T09:21:24+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 93 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-12-08T09:21:26+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2016-12-08T09:22:07+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `resource` (`title`,`author`,`summary`) VALUES ('巧算','王小明','巧算数学') [ RunTime:0.0751s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002858s ]
+
+[ 2016-12-08T09:22:08+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 93 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2016-12-08T09:23:33+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-12-08T09:23:40+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-12-08T09:24:31+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-12-08T09:24:37+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2016-12-08T09:24:45+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-12-08T09:25:16+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-12-08T09:25:36+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `resource` (`title`,`author`,`publishTime`,`summary`) VALUES ('俺的沙发','阿萨德','2016-12-08  09:24','&amp;nbsp;阿迪') [ RunTime:0.1045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001951s ]
+
+[ 2016-12-08T09:25:37+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 91 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-12-08T09:26:10+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: resource E:\WebServer\wwwroot\FS\Application\Runtime\Cache\Admin\c8c926f92ca2b23790a3a9b795e1fa30.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2016-12-08T09:26:19+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-12-08T09:26:58+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-12-08T09:27:11+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-12-08T09:27:23+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/doAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined index: validate E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `resource` (`title`,`path`,`author`,`publishTime`,`summary`) VALUES ('敖德萨','/FS/Public/uploads/2016-12-08/5848b6fb9bb6f.jpg','啊十大','2016-12-08  09:26','&amp;nbsp;敖德萨去问我去') [ RunTime:0.1248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-12-08T09:27:25+08:00 ] 127.0.0.1 /FS/index.php/Admin/R/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `resource` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `resource` ORDER BY id asc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\WebServer\wwwroot\FS\Application\Admin\Controller\RController.class.php on line 91 and defined E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\WebServer\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+

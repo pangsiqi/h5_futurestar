@@ -1,0 +1,111 @@
+
+body{
+    width: 100%;
+    background:url(../images/list_ground1024.png) no-repeat;
+    overflow-x: hidden;
+}
+
+li{
+    list-style-type:none;
+    float:right;
+    color:white;
+}
+
+#leadword{
+    position: absolute;
+    top:133px;
+    left:200px;
+}
+#play{
+    /*background: url(../images/videopic.jpg) no-repeat;*/
+    width:1000px;
+    height:600px;
+    position:absolute;
+    left:25px;
+    top:25px;
+    border-radius: 10px 10px 10px 10px;
+}
+#play img{
+    margin-left: 35%;
+    margin-top:20%;
+}
+/*推荐内容*/
+
+
+ #video{
+    width: 612px;
+    height: 373px;
+    border: 3px rgb(38,159,167) solid;
+    margin: 3% 3%;
+    border-radius: 10px;
+ }
+
+#other{
+        position: absolute;
+    top: 438px;
+    left: 27px;
+}
+#other div{
+    float:right;
+    margin-left: -5px;
+}
+
+
+#other img{
+    width:75%;
+}
+
+
+
+
+
+p{
+    font-size:20px;
+}
+
+#title ul{
+    margin-left:-8px;
+    margin-top:13px;
+}
+#title a{
+    color: white;
+    font-size:12px;
+
+    font-family:"幼圆";
+}
+
+#studycontent{
+    height: 574px;
+}
+#rightcontent{
+    height:668px;
+    z-index: 1;
+}
+
+.shipin{
+    height: 367px;
+    width: 606px;
+    border-radius: 5px;
+}
+
+.footer{
+    background:url(../images/footer.png) no-repeat;
+    /*margin-top: auto;*/
+    height: 120px;
+}
+.footer ul{
+    width: 467px;
+    margin: 813px auto 0 auto;
+    padding-top:20px;
+}
+.footer ul li{
+    list-style-type:none;
+    margin-top:17px;
+    color:#7d7a7d;
+
+}
+#footerli a{
+    padding-left:30px;
+    margin-left:5px;
+    color:#7d7a7d;
+}

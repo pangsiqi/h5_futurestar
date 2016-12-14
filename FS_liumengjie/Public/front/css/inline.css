@@ -1,0 +1,61 @@
+/* 右侧导航 */
+#fullPage-nav { _display: none; font-size: 12px;}
+#fullPage-nav li { width: 90px; height: 21px; margin: 10px 0 0; vertical-align: middle;}
+#fullPage-nav li a { float: right; width: 21px; height: 21px; color: #8F9DA4; text-decoration: none; text-align: right; background: url(../img/dot.png) 5px 5px no-repeat;}
+#fullPage-nav li .active { background-position: 0 bottom;}
+#fullPage-nav span { display: none;}
+.fullPage-tooltip { float: left; top: 0; margin-right: 5px; font: 12px "Microsoft Yahei"; color: #8F9DA4; line-height: 21px;}
+
+.section { position: relative; overflow: hidden;}
+.section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.section .bg img { display: block; width: 100%; height: 100%;}
+// banner1 开始
+
+// style="position: fixed;left: 65%;top: 150px;width: 370px;height:350px;display: block;background: #fff;opacity: 0.9; border-radius: 20px;"
+.bg21 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 250px; margin-left: -608px; margin-bottom: 40px; background: url(../img/bg21.png) 0 0 no-repeat; transition: all 1s;  opacity: 0; margin-left: -1108px;}
+.bg22 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 299px; margin-left: -280px; margin-bottom: 70px; background: url(../img/bg22.png) right 0 no-repeat; transition: all 1s; opacity: 0; margin-left: 320px;}
+.section strong { position: absolute; left: 85%; top: 15%; z-index: 10; width: 512px; height: 45px; margin-left: -256px; font-size: 24px; font-weight: 500; color: #748A9E; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.section h3 { position: absolute; left: 75%; top: 15%; z-index: 10; width: 512px; height: 45px; margin-left: -256px; margin-top: 60px; text-indent: -9999px; background-repeat: no-repeat; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.p1 { position: absolute; left: 75%; top: 15%; width: 510px; margin-left: -255px; margin-top: 130px; font-size: 16px; color: #727F8C; opacity: 0; transition: all 1s;}
+
+.section2 h3 { background-image: url(../img/t2.png);}
+.section3 h3 { background-image: url(../img/t3.png);}
+.section4 h3 { background-image: url(../img/t4.png);}
+
+.bg31 { position: absolute; left: 50%; bottom: 0; width: 892px; height: 472px; margin-left: -396px; margin-bottom: 80px; background-image: url(../img/bg31.png); opacity: 0; transition: all 1s;}
+.bg32 { position: absolute; left: 65%; bottom: 0; width: 892px; height: 472px; margin-left: -396px; background: url(../img/bg32.png) 470px bottom no-repeat; opacity: 0; transition: all 1s;}
+.p3 { position: absolute; width: 430px; left: 95%; top: 15%; margin-top: 200px; margin-left: -100%; font-size: 16px; color: #FFFDE1; opacity: 0; transition: all 1s;}
+
+.bg41 { position: absolute; bottom: -372px; width: 100%; height: 372px; background: url(../img/bg41.png) 50% 0 no-repeat; transition: all 1s;}
+.bg43 { position: absolute; bottom: -449px; width: 100%; height: 449px; margin-bottom: -130px; background: url(../img/bg43.png) 50% 0 no-repeat; transition: all 1s;}
+
+/* CSS3过度及动画 */
+.active strong, .active h3 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s;}
+.active .p1 { opacity: 1; transition-delay: 1.7s;}
+
+// .active .login-register{opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s; }
+.active .banner1-title{font-size: 25px;padding-bottom: 40px;padding-top:40px;text-align: center; color: #575757; }
+
+.active .bg21 { opacity: 1; margin-left: -608px; transition-delay: 0.7s;}
+.active .bg22 { margin-left: -280px; opacity: 1; transition-delay: 0.7s;}
+
+.active .p3 { margin-left: -480px; opacity: 1; transition-delay: 0.7s;}
+.active .bg31, .active .bg32 { opacity: 1; transition-delay: 1s;}
+
+.active .bg41 { bottom: 15%; transition-delay: 0.7s;}
+.active .bg43 { bottom: 15%; transition-delay: 0.9s;}
+
+/* for lt ie 10 */
+.ltie10 strong, .ltie10 h3 { opacity: 1; transform:scale(1, 1); transition-delay: 0.7s;}
+.ltie10 .p1 { opacity: 1; transition-delay: 1.7s;}
+
+.ltie10 .p11 { opacity: 1; transition-duration: 1s; transition-delay: 2s;}
+
+.ltie10 .bg21 { opacity: 1; margin-left: -608px; transition-delay: 0.7s;}
+.ltie10 .bg22 { margin-left: -280px; opacity: 1; transition-delay: 0.7s;}
+
+.ltie10 .p3 { margin-left: -480px; opacity: 1; transition-delay: 0.7s;}
+.ltie10 .bg31, .ltie10 .bg32 { opacity: 1; transition-delay: 1s;}
+
+.ltie10 .bg41 { bottom: 15%; transition-delay: 0.7s;}
+.ltie10 .bg43 { bottom: 15%; transition-delay: 0.9s;}
