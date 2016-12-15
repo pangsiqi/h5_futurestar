@@ -5,7 +5,7 @@ class StudentController extends Controller {
 	public function __construct(){
 		parent::__construct();
 		if(!isStuLogin()){
-			$this->error("请先登录",U("index/login"));
+			$this->redirect("index/login");
 		}
 	}
 	public function index(){
@@ -29,32 +29,61 @@ class StudentController extends Controller {
 	}
 	public function changeinform(){
 		if (IS_POST) {
-    		$model = M("student");
+    		$studentModel = M("student");
 
-    		if($model->create()){
-    			$result = $model->save($data);
-				if($result !== false){
-					$this->success("修改成功", U("student/personcenter"));
-				}else{
-					$this->error($model->getError());
-				}
-    		}
+    		if(!$studentModel->create()){
+	            $this->error($studentModel->getError());
+	        }
+	        $upload = new \Think\Upload();// 实例化上传类
+	        $upload->maxSize  = 3145728 ;// 设置附件上传大小
+	        $upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+	        $upload->rootPath = './Public';
+	        $upload->savePath =  '/uploads/student';// 设置附件上传目录    
+	        $uploadPic = $upload->upload(); 
+	        if(!$uploadPic) {// 上传错误提示错误信息
+	            $this->error($upload->getError());
+	        }else{
+	        	$id = I("post.id");
+	        	$data['realname'] = I("post.realname");
+	        	$data['username'] = I("post.realname");
+	            $data['thumb'] = __ROOT__.'/Public'.$uploadPic['thumb']['savepath'].$uploadPic['thumb']['savename'];
+	            $data['birthday'] = I("post.birthday");
+	            if($studentModel->where("id='$id'")->save($data)){
+	                $this->success("修改成功",U("student/personcenter"));
+	            }else{
+	                $this->error("修改失败");
+	            }
+	        }
     	}
     	else {
+    		$studentModel = M("student");
+    		//获取我的信息
+			$tel = session('tel');
+			$currentUser = $studentModel->where("tel=".$tel)->select();
+			$this->assign("current",$currentUser[0]);
+			
     		$studentInfo = D("student")->where("tel=".session('tel'))->select();
     		$this->assign("student", $studentInfo[0]);
     		layout(false); // 临时关闭当前模板的布局功能
 			$this->display();//加载当前函数的模板文件
     	}
-		
 	}
 	public function chinese($id=''){
 		$id = isset($_GET['id']) ? intval($_GET['id']) : '';//获取网址链接id
 		if($id !== ''){
 			$homeworkModel = M("homework");//获取表homework
-			$homeworkResult = $homeworkModel->where("subjectid=".$id)->find();//.为连接符
-			$this->assign('course',$homeworkResult);//赋值
+			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=".$id)->select();//.为连接符
+			$homeworkSubject = $homeworkModel->where("subjectid=".$id)->select();
+			$this->assign("subject",$homeworkSubject[0]);
+			$this->assign('courses',$homeworkResult);//赋值
 		}
+		
+		//获取我的信息
+		$studentModel = M("student");
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
@@ -64,19 +93,37 @@ class StudentController extends Controller {
 		$homeworkResult = $homeworkModel->where("subjectid=5")->find();//.为连接符
 		$this->assign('course',$homeworkResult);//赋值
 
+		$studentModel = M("student");
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
 	public function classspace(){
+		$studentModel = M('student');
 		$classspaceModel =  M("classspace");//获取表classspace
 		$classspaceResult = $classspaceModel->where("messageid")->find();
 		$this->assign('message',$classspaceResult);//赋值
+		
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
 
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
 	
 	public function gift(){
+		$studentModel = M("student");
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
@@ -97,8 +144,8 @@ class StudentController extends Controller {
 		$stuId = $currentUser[0]['id'];
 
 		$count  = $messageModel->count();    //计算总数
-        $Page   = new \Think\Page($count, 3);
-		$messageResult = $messageModel->limit($Page->firstRow. ',' . $Page->listRows)->where("student_id=".$stuId)->order("parenttime asc")->select();
+        $Page   = new \Think\Page($count, 2);
+		$messageResult = $messageModel->limit($Page->firstRow. ',' . $Page->listRows)->where("student_id=".$stuId)->order("parenttime desc")->select();
         $page = $Page->show();
 		// dump($messageResult);exit;
         $this->assign("page",$page);
@@ -138,12 +185,22 @@ class StudentController extends Controller {
 		$studentModel = M("student");
 		$studentResult = $studentModel->where("tel=".session("tel"))->select();
 		// dump($studentResult);exit;
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
 		$this->assign("user",$studentResult[0]);
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
 
 	public function pk(){
+		$studentModel = M("student");
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
@@ -152,6 +209,12 @@ class StudentController extends Controller {
 		$this->display();//加载当前函数的模板文件
 	}
 	public function walktolisten(){
+		$studentModel = M("student");
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
 		$homeworkModel = M("homework");//获取表homework
 		$homeworkResult = $homeworkModel->where("subjectid=4")->find();//.为连接符
 		$this->assign('course',$homeworkResult);//赋值

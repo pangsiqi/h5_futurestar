@@ -23,7 +23,7 @@
             <li>
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>

@@ -3,6 +3,7 @@
 body {
     width: 100%;
     background: url(../images/list_ground.png) no-repeat;
+    overflow-x: hidden;
 }
 
 li {
@@ -72,11 +73,12 @@ li {
     position: absolute;
     right: 100px;
     top: 150px;
+    z-index: 1;
 }
 
 .shipin {
-    height: 494;
-    width: 794;
+    height: 494px;
+    width: 794px;
     border-radius: 5px;
 }
 

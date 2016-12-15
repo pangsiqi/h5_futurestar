@@ -4,11 +4,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>语文印象</title>
+    <title>修改信息</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="/FS/Public/front/student/css/chinese.css" rel="stylesheet" type="text/css" />
-    <link href="/FS/Public/front/student/css/personinfo.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/chinese1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/chinese.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/changeinfo1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/changeinfo.css" />
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap-datetimepicker.min.css">
     <script src="/FS/Public/front/student/js/jquery.js"></script>
     <script src="/FS/Public/front/student/js/bootstrap.min.js"></script>
@@ -30,7 +33,7 @@
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
             <li>
-                <a href="/FS/index.php/Home/Student/studycontent"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+                <a href="/FS/index.php/Home/Student/studycontent"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -69,12 +72,13 @@
                             </ul>
                         </div>
                         <div id="studycontent">
-                            <form method="post">
-                            <input type="hidden" name="id" value="<?php echo ($student["id"]); ?>">
+                            <form method="post" enctype="multipart/form-data">
+                                <input type="hidden" name="id" value="<?php echo ($student["id"]); ?>">
                                 <div class="col-md-12 column" id="content_h">
                                     <ol>
-                                        <li>
-                                            <img style="padding-left:20px" src="/FS/Public/front/student/images/headpicbig.jpg" />
+                                        <li style="padding-left:20px">
+                                            <img class="userthumb" title="<?php echo ($student["realname"]); ?>" alt="头像" src="<?php echo ($student["thumb"]); ?>" onclick="upfile.click()" />
+                                            <input type="file" name="thumb" id="upfile" onchange="uploadFile()" style="visibility: hidden; position: absolute;">
                                         </li>
                                         <li style="padding-left:30px"><?php echo ($student["realname"]); ?></li>
                                         <li>学号：<?php echo ($student["id"]); ?></li>
@@ -95,32 +99,16 @@
                                         <li>学校：<?php echo ($student["school"]); ?></li>
                                         <li>年级：<?php echo ($student["grade"]); ?></li>
                                         <li style="padding-left:30px">
-                                            <input type="submit"  class="btn btn-info btn-lg" value="保存资料">
-                                            <!-- <a href="/FS/index.php/Home/Student/addInfo">
-                                                <button type="button" class="btn btn-info btn-lg">保存资料</button>
-                                            </a> -->
+                                            <input type="submit" class="btn btn-info btn-lg" value="保存资料">
                                         </li>
                                     </ol>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <style>
-                    #studycontent ol {
-                        margin-top: 25px;
-                        margin-left: 300px;
-                    }
-                    
-                    #studycontent li {
-                        color: black;
-                        padding-top: 25px;
-                        font-size: 16px;
-                    }
-                    </style>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!--页脚-->
     <div class="footer">

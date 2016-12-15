@@ -30,7 +30,7 @@
             <li>
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle"/></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -56,10 +56,10 @@
                             <div id="video">
                                 <!-- <embed src="/FS/Public/front/student/resource/shuxue1.swf" height="494" width="794" style="border-radius: 5px;" /> -->
                                 <!--/*控制播放和暂停*/-->
-                                <embed src="/FS/Public/front/student/resource/shuxue1.swf"  class="shipin" />
+                                <embed src="/FS/Public/front/student/resource/~68.swf"  class="shipin" style="z-index: 1" />
                             </div>
                             <HR width="100%" color=#fff SIZE=8 />
-                            <div id="play">
+                            <div id="play" style="z-index: -1">
                                 <!--<img src="/FS/Public/front/student/images/play.png" />-->
                             </div>
                             <!--推荐内容-->

@@ -197,7 +197,7 @@ body{
     background-color: RGB(242, 242, 242);
     border: solid 1px RGB(187, 187, 187);
     border-radius: 10px;
-    height: 300px;
+    height: auto;
     margin-top: 35px;
     margin-left: 45px;
 }

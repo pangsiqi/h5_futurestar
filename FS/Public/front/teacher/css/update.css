@@ -11,6 +11,12 @@ body {
     overflow-x: hidden;
 }
 
+.userthumb{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 35px;
+}
 .item ul li a {
     color: white;
 }

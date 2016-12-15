@@ -1,0 +1,44 @@
+
+        <div class="col-md-10 col-md-offset-2 ">
+            <ol class="breadcrumb">
+                <li><a href="__MODULE__/index">首页</a></li>
+                <li><a href="__MODULE__/R/lists">作业管理</a></li>
+                <li class="active">作业列表</li>
+            </ol>
+            <div class="table-responsive">
+                <h3>作业管理列表 <small>Subject List</small></h3>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table  table-striped table-hover ">
+                    <tr>
+                        <th width="4%">
+                            <input type="checkbox" name="checkbox10" id="checkbox10">
+                        </th>
+                        <th width="10%">作业名称</th>
+                        <th width="8%">发布人</th>
+                        <th width="13%">简述</th>
+                        <th width="8%">发布时间</th>
+                        <th width="11%">操作</th>
+                    </tr>
+                    <volist name="subject" id="s">
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                            </td>
+                            <td>{$s.title}</td>
+                            <td>{$s.publisher}</td>
+                            <td>{$s.summary}</td>
+                            <td>{$s.publishtime}</td>
+                            <td><a href="__MODULE__/S/edit/id/{$s.id}">修改</a>
+                                <a href="#"></a> <a href="__MODULE__/S/del/id/{$s.id}">删除</a></td>
+                        </tr>
+                    </volist>
+                </table>
+            </div>
+            <div class="input-group pull-left form">
+                <button type="submit" class="btn btn-danger "> 删 除</button>
+            </div>
+            <ul class="pagination pull-right">
+            <div class="page">{$page}</div>
+            </ul>
+        </div>
+    </div>
+    

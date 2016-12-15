@@ -30,7 +30,7 @@
         <div class="global-nav-container clearfloat">
             <ul class="nav js-global-actions" role="navigation" id="global-actions">
                 <li id="global-nav-home" class="home">
-                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="index.html">
+                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="/FS/index.php/Home/Index/index.html">
                         <span><img src="/FS/Public/front/img/header-logo.png"></span>
                     </a>
                 </li>
@@ -56,7 +56,7 @@
     </div>
     <div class="body-footer">
         <ul class="clearfloat">
-            <li class="footerli"><a href="#">后台管理</a></li>
+            <li class="footerli"><a href="/FS/index.php/admin/">后台管理</a></li>
             <li class="footerli"><a href="#">关于我们</a></li>
             <li class="footerli"><a href="#">各界声音</a></li>
             <li class="footerli"><a href="#">加入我们</a></li>

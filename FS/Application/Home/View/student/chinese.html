@@ -26,7 +26,7 @@
             <li>
                 <a href="#"><img src="__PUBLIC__/front/student/images/email.png" /></a>
             </li>
-            <li><a href="__URL__/personcenter"><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="__URL__/personcenter"><img src="{$current.thumb}" class="nav-img img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -55,10 +55,11 @@
                         <div class="col-md-8" id="rightcontent">
                             <div id="title">
                                 <ul>
-                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$course.subject}</a>
+                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$subject.subject}</a>
                                 </ul>
                             </div>
                             <div id="studycontent">
+                            <volist name="courses" id="course">
                                 <div id="1">
                                     <div class="col-md-2 column">
                                         <div style=" width: 150px;margin-top: 20px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="__PUBLIC__/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
@@ -66,12 +67,12 @@
                                     <div class="col-md-8 column" style="margin-left: 100px;">
                                         <ul>
                                             <li>课程内容：<a href="#">{$course.title}</a></li>
-                                            <li>课程描述：{$course.details}</li>
+                                            <li>课程描述：{$course.detail}</li>
                                             <li>开始时间：{$course.starttime|substr=0,10}</li>
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
@@ -79,45 +80,8 @@
                                     </div>
                                 </div>
                                 <HR width="100%" color=#987cb9 SIZE=8 />
-                                <div id="2">
-                                    <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="__PUBLIC__/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
-                                    </div>
-                                    <div class="col-md-8 column" style="margin-left: 100px;">
-                                        <ul>
-                                            <li>课程内容：<a href="#">{$course.title}</a></li>
-                                            <li>课程描述：{$course.details}</li>
-                                            <li>开始时间：{$course.starttime|substr=0,10}</li>
-                                            <li>截止时间：{$course.endtime|substr=0,10}</li>
-                                            <li>完成情况：未完成</li>
-                                            <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
-                                                    <button type="button" class="btn btn-info">开始作业</button>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <HR width="100%" color=#987cb9 SIZE=8 />
-                                <div id="3">
-                                    <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="__PUBLIC__/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
-                                    </div>
-                                    <div class="col-md-8 column" style="margin-left: 100px;">
-                                        <ul>
-                                            <li>课程内容：<a href="#">{$course.title}</a></li>
-                                            <li>课程描述：{$course.details}</li>
-                                            <li>开始时间：{$course.starttime|substr=0,10}</li>
-                                            <li>截止时间：{$course.endtime|substr=0,10}</li>
-                                            <li>完成情况：未完成</li>
-                                            <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
-                                                    <button type="button" class="btn btn-info">开始作业</button>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            </volist>
+                                
                             </div>
                         </div>
                         <div class="col-md-2"></div>

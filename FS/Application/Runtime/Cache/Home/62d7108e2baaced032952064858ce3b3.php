@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/FS/Public/front/teacher/css/assginment.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/teacher/css/assignment1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/teacher/css/assignment.css" />
     <script src="/FS/Public/front/teacher/js/jquery.js"></script>
     <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
@@ -25,7 +26,7 @@
                     <a href="/FS/index.php/Home/Teacher/guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a>
                 </li>
                 <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
-                <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
+                <li id="circle"><img src="<?php echo ($tea["thumb"]); ?>" width="40px" height="40px" class="img-circle" /></li>
                 <li id="drop">
                     <li class="dropdown">
                         <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2"><?php echo ($tea["realname"]); ?></span><span class="caret"></span></a>
@@ -44,7 +45,7 @@
         <div class="col-md-3 column" id="content_left1">
             <div class="row clearfix" id="left1">
                 <div class="col-md-6 column" id="pic">
-                    <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
+                    <img src="<?php echo ($tea["thumb"]); ?>" width="70px" height="70px" class="img-rounded" />
                 </div>
                 <div class="col-md-6 column" id="left2">
                     <div class="row clearfix">
@@ -157,107 +158,31 @@
                             <div class="tab-pane active" id="panel-706814">
                                 <div class="row clearfix">
                                     <h3 class="course">第一课</h3>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="basicstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的数字学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <?php if(is_array($subject)): $i = 0; $__LIST__ = $subject;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><div class="col-md-6 column">
+                                            <div class="basicstudy">
+                                                <ul class="study">
+                                                    <li class="subject"><?php echo ($s["title"]); ?></li>
+                                                    <a href="/FS/index.php/Home/Teacher/addSubject/id/<?php echo ($s["id"]); ?>">
+                                                        <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
                             </div>
                             <div class="tab-pane" id="panel-804335">
                                 <div class="row clearfix">
                                     <h3 class="course">第一课</h3>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 column">
-                                        <div class="expendstudy">
-                                            <ul class="study">
-                                                <li class="subject">基础的扩展学习</li>
-                                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?><div class="col-md-6 column">
+                                            <div class="basicstudy">
+                                                <ul class="study">
+                                                    <li class="subject"><?php echo ($r["title"]); ?></li>
+                                                    <a href="/FS/index.php/Home/Teacher/addResource/id/<?php echo ($r["id"]); ?>">
+                                                        <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
                             </div>
                         </div>

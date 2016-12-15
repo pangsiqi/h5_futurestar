@@ -70,6 +70,11 @@
                     <li><a href="/FS/index.php/Admin/R/add.html">添加资源</a></li>
                     <li><a href="/FS/index.php/Admin/R/lists.html">列表资源</a></li>
                 </ul>
+                <h3 aria-selected="true" aria-expanded="true"><a href="#"><span class="glyphicon glyphicon-file"></span>作业管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+                <ul>
+                    <li><a href="/FS/index.php/Admin/S/add.html">添加作业</a></li>
+                    <li><a href="/FS/index.php/Admin/S/lists.html">列表作业</a></li>
+                </ul>
             </div>
         </div>
         
@@ -83,7 +88,7 @@
                         <div class="panel-body">
                             <img src="/FS/Public/end/images/main1.gif" width="63" height="63" class="pull-left img1">
                             <div class=" nr">
-                                <h5>教师列表<span>2014-06-22</span></h5>
+                                <h5>教师列表</h5>
                                 <p>用于查看教师信息，包括姓名、教师号、班级、学科，并且可以对教师信息进行修改、删除</p>
                             </div>
                             <button type="button" class="btn btn-primary pull-right" onclick="window.location.href='/FS/index.php/Admin/T/lists'">点击进入
@@ -98,13 +103,28 @@
                         <div class="panel-body">
                             <img src="/FS/Public/end/images/main2.gif" width="63" height="63" class="pull-left img1">
                             <div class=" nr">
-                                <h5>资源列表<span>2014-06-22</span></h5>
+                                <h5>资源列表</h5>
                                 <p>用于查看资源信息，包括资源名称、封面、发布人、添加时间、简述，并且可以对资源进行修改、删除</p>
                             </div>
                             <button type="button" class="btn btn-primary pull-right" onclick="window.location.href='/FS/index.php/Admin/R/lists'">点击进入
                                 <span class="glyphicon glyphicon-circle-arrow-right"></span>
                             </button>
                             <span class="info">已经存在：<span class="red"><?php echo ($rc); ?></span>条</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="/FS/Public/end/images/main2.gif" width="63" height="63" class="pull-left img1">
+                            <div class=" nr">
+                                <h5>作业列表</h5>
+                                <p>用于查看作业信息，包括作业名称、封面、发布人、添加时间、简述，并且可以对作业进行修改、删除</p>
+                            </div>
+                            <button type="button" class="btn btn-primary pull-right" onclick="window.location.href='/FS/index.php/Admin/S/lists'">点击进入
+                                <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                            </button>
+                            <span class="info">已经存在：<span class="red"><?php echo ($sc); ?></span>条</span>
                         </div>
                     </div>
                 </div>

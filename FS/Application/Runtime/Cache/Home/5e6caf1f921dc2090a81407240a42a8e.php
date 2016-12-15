@@ -27,7 +27,7 @@
             <li id="email">
                 <a href="parentspace.html"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li id="person"><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li id="person"><a href="/FS/index.php/Home/Student/personcenter"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle"/></a>
             </li>
             <!-- <ul>
              <li><a href="#">个人信息</a></li>

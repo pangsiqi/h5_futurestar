@@ -1,6 +1,7 @@
 body {
     width: 100%;
     background: url(../images/bg.png) no-repeat;
+    overflow-x: hidden;
 }
 
 #name li {

@@ -70,6 +70,11 @@
                     <li><a href="/FS/index.php/Admin/R/add.html">添加资源</a></li>
                     <li><a href="/FS/index.php/Admin/R/lists.html">列表资源</a></li>
                 </ul>
+                <h3 aria-selected="true" aria-expanded="true"><a href="#"><span class="glyphicon glyphicon-file"></span>作业管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+                <ul>
+                    <li><a href="/FS/index.php/Admin/S/add.html">添加作业</a></li>
+                    <li><a href="/FS/index.php/Admin/S/lists.html">列表作业</a></li>
+                </ul>
             </div>
         </div>
         
