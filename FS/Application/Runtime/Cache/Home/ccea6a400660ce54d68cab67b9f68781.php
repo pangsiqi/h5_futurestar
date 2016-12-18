@@ -30,7 +30,7 @@
         <div class="global-nav-container clearfloat">
             <ul class="nav js-global-actions" role="navigation" id="global-actions">
                 <li id="global-nav-home" class="home">
-                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="index.html">
+                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="/FS/index.php/Home/Index/index.html">
                         <span><img src="/FS/Public/front/img/header-logo.png"></span>
                     </a>
                 </li>

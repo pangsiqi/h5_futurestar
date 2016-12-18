@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/FS/Public/front/teacher/css/resource.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/teacher/css/resource1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/teacher/css/resource.css" />
     <script src="/FS/Public/front/teacher/js/jquery.js"></script>
     <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
 </head>
@@ -23,7 +24,7 @@
         <ul id="nav">
             <li><a href="/FS/index.php/Home/Teacher/guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a></li>
             <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
-            <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
+            <li id="circle"><img src="<?php echo ($tea["thumb"]); ?>" width="40px" height="40px" class="img-circle" /></li>
             <li id="drop">
             <li class="dropdown" >
                 <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2"><?php echo ($tea["realname"]); ?></span><span class="caret"></span></a>
@@ -42,7 +43,7 @@
     <div class="col-md-3 column" id="content_left1">
         <div class="row clearfix" id="left1">
             <div class="col-md-6 column" id="pic">
-                <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
+                <img src="<?php echo ($tea["thumb"]); ?>" width="70px" height="70px" class="img-rounded" />
             </div>
             <div class="col-md-6 column" id="left2">
                 <div class="row clearfix">
@@ -126,20 +127,20 @@
             <div class="col-md-12 column" id="content_h">
                 <div class="row clearfix">
                     <div class="col-md-12 column" id="right1">
-                        <a href="upload.html">
-                            <input id="update" value="上传" />
+                        <a href="/FS/index.php/Home/Teacher/upload.html">
+                        <button id="update">上传</button>
                         </a>
-                        <a href="#"><h3 id="rec">学习资源</h3></a>
+                        <h3 id="rec">学习资源</h3>
                     </div>
                 </div>
-                <div class="row clearfix">
-                 <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row">
+                <div class="row clearfix resource-left">
+                 <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row resource-top">
                     <div class="col-md-12 column">
                         <div class="row clearfix">
-                           <div class="col-md-4 column">
+                           <div class="col-md-8 column">
                              <?php echo ($data["title"]); ?>
                            </div>
-                           <div class="col-md-8 column">
+                           <div class="col-md-4 column">
                            <?php echo ($data["author"]); ?>
                            </div>
                         </div>

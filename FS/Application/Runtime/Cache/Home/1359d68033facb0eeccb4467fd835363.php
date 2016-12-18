@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/FS/Public/front/teacher/css/update.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/teacher/css/update1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/teacher/css/update.css" />
     <link rel="stylesheet" href="/FS/Public/front/teacher/css/bootstrap-datetimepicker.min.css">
     <script src="/FS/Public/front/teacher/js/jquery.js"></script>
     <script src="/FS/Public/front/teacher/js/bootstrap.min.js"></script>
@@ -28,14 +29,14 @@
                     <a href="/FS/index.php/Home/Teacher/guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a>
                 </li>
                 <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
-                <li id="circle"><img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" /></li>
+                <li id="circle"><img src="<?php echo ($tea["thumb"]); ?>" width="40px" height="40px" class="img-circle" /></li>
                 <li id="drop">
                     <li class="dropdown">
-                        <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">1</span><span class="caret"></span></a>
+                        <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2"><?php echo ($tea["realname"]); ?></span><span class="caret"></span></a>
                         <ul class="dropdown-menu" id="navbarDrop3">
                             <li><a href="/FS/index.php/Home/Teacher/personCenter.html">个人资料</a></li>
                             <li><a href="/FS/index.php/Home/Teacher/update.html">修改资料</a></li>
-                            <li><a href="#">退出</a></li>
+                            <li><a href="/FS/index.php/Home/Teacher/logout">退出</a></li>
                         </ul>
                     </li>
                 </li>
@@ -47,12 +48,12 @@
         <div class="col-md-3 column" id="content_left1">
             <div class="row clearfix" id="left1">
                 <div class="col-md-6 column" id="pic">
-                    <img src="/FS/Public/front/teacher/images/1-2.png" class="img-rounded" />
+                    <img src="<?php echo ($tea["thumb"]); ?>" width="70px" height="70px" class="img-rounded" />
                 </div>
                 <div class="col-md-6 column" id="left2">
                     <div class="row clearfix">
                         <div class="col-md-12 column">
-                            <p id="tec"><a href="personCenter.html"><?php echo ($tea["realname"]); ?></a></p>
+                            <p id="tec"><a href="/FS/index.php/Home/Teacher/personCenter.html"><?php echo ($tea["realname"]); ?></a></p>
                         </div>
                     </div>
                     <div class="row clearfix">
@@ -86,7 +87,7 @@
                             <li>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="index.html">首页</a></a>
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/index.html">首页</a></a>
                                     </div>
                                 </div>
                             </li>
@@ -98,8 +99,8 @@
                                     <div id="panel-element-749900" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="homeworkList_e">
-                                                <li class="list-group-item"><a href="assignment.html">布置作业</a></li>
-                                                <li class="list-group-item"><a href="workpaper.html">作业情况</a></li>
+                                                <li class="list-group-item"><a href="/FS/index.php/Home/Teacher/assignment.html">布置作业</a></li>
+                                                <li class="list-group-item"><a href="/FS/index.php/Home/Teacher/workpaper.html">作业情况</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -108,14 +109,14 @@
                             <li>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="myClass.html">我的班级</a></a>
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/myClass.html">我的班级</a></a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="resource.html">资源箱</a></a>
+                                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-493390" href="#panel-element-682792"><a href="/FS/index.php/Home/Teacher/resource.html">资源箱</a></a>
                                     </div>
                                 </div>
                             </li>
@@ -134,14 +135,14 @@
         <!--内容右侧-->
         <div class="col-md-7 column" id="right">
             <div class="col-md-12 column" id="content_h">
-                <form method="post" action="">
-                <input type="hidden" name="id" value="<?php echo ($tea["id"]); ?>">
+                <form method="post" action="" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo ($tea["id"]); ?>">
                     <ol>
                         <li>
-                            <img id="tea_pic" src="/FS/Public/front/teacher/images/title.png" />
+                            <img class="userthumb" title="<?php echo ($tea["realname"]); ?>" alt="头像" src="<?php echo ($tea["thumb"]); ?>" onclick="upfile.click()" />
+                            <input type="file" name="thumb" id="upfile" onchange="uploadFile()" style="visibility: hidden; position: absolute;">
                         </li>
                         <li>教工号：<?php echo ($tea["id"]); ?></li>
-                        <!-- <li>金币：0</li> -->
                         <li>姓名：&nbsp;
                             <input id="tea_name2" type="text" name="realname" value="<?php echo ($tea["realname"]); ?>" />
                         </li>

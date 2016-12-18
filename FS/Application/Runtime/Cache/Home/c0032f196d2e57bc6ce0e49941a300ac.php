@@ -6,8 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>家长空间</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
-    <link href="/FS/Public/front/student/css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="/FS/Public/front/student/css/parentspace.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/parentspace1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/parentspace.css" />
+    
 </head>
 
 <body>
@@ -23,7 +26,7 @@
             <li>
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle"/></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -42,7 +45,7 @@
                 <!--内容部分-->
                 <div class="container">
                     <div class="row clearfix">
-                        <div id="parenthead"><img src="/FS/Public/front/student/images/parenthead.png" class="img-circle" /></div>
+                        <div id="parenthead"><img src="<?php echo ($current["thumb"]); ?>" class="parentspace-user-thumb img-circle"/></div>
                         <div id="name">
                             <h1><?php echo ($current["realname"]); ?></h1> 学号：<?php echo ($current["id"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span>学校：<?php echo ($current["school"]); ?></span>
@@ -56,7 +59,9 @@
                                     <input type="hidden" name="message" class="message-content">
                                 </div>
                                 <div id="left">
-                                    <span class="imgBtn"><img src="/FS/Public/front/student/images/face.jpg" />&nbsp;&nbsp;表情</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/FS/Public/front/student/images/pic.jpg" />&nbsp;&nbsp;图片</span><span class="right"><input type="submit" class="btn btn-warning send-btn" value="发送"></span>
+                                    <span class="imgBtn"><img src="/FS/Public/front/student/images/face.jpg" />&nbsp;&nbsp;表情</span>
+                                    <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/FS/Public/front/student/images/pic.jpg" />&nbsp;&nbsp;图片</span> -->
+                                    <span class="right"><input type="submit" class="btn btn-warning send-btn" value="发送"></span>
                                 </div>
                                 <div class="faceDiv"> </div>
                             </div>
@@ -68,7 +73,7 @@
                         <div id="message">
                             <div id="jp-container" class="jp-container">
                                 <?php if(is_array($message)): $i = 0; $__LIST__ = $message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mr): $mod = ($i % 2 );++$i;?><div class="talk_recordboxme">
-                                        <div class="user"><img src="/FS/Public/front/student/images/15.jpg" /></div>
+                                        <div class="user"><img src="<?php echo ($current["thumb"]); ?>"/></div>
                                         <div class="talk_recordtextbg">&nbsp;</div>
                                         <div class="talk_recordtext">
                                             <h3><?php echo ($mr["parentcontent"]); ?></h3>

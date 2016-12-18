@@ -1,6 +1,7 @@
 body {
     width: 100%;
     background: url(../images/bg1024.png) no-repeat;
+    overflow-x: hidden;
 }
 
 #name {
@@ -49,6 +50,10 @@ element.style {
 .resource-img img{
     width: 100px;
     height: 110px;
+}
+.resource-img embed{
+    width: 100px!important;
+    height: 110px!important;
 }
 .start-img img{
     width: 82px;

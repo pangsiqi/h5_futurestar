@@ -40,7 +40,7 @@ class IndexController extends Controller {
 			$this->redirect("student/index");
 			// $this->success("dd",U("student/index"));
 		}else{
-			$this->error("用户名或密码不正确",'',5);//第二个参数不写，返回上一页
+			$this->error("用户名或密码不正确",'',1);//第二个参数不写，返回上一页
 		}
     }
 

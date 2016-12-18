@@ -26,7 +26,7 @@
             <li>
                 <a href="#"><img src="/FS/Public/front/student/images/email.png" /></a>
             </li>
-            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="/FS/Public/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="/FS/index.php/Home/Student/personcenter"><img src="<?php echo ($current["thumb"]); ?>" class="nav-img img-circle" /></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -46,7 +46,7 @@
                         <div id="chinese"><a href="/FS/index.php/Home/Student/chinese/id/1">语文印象</a></div>
                         <div id="math"><a href="/FS/index.php/Home/Student/chinese/id/2">数学印象</a></div>
                         <div id="english"><a href="/FS/index.php/Home/Student/chinese/id/3">英语印象</a></div>
-                        <div id="walk"><a href="/FS/index.php/Home/Student/chinese.html">随身听</a></div>
+                        <div id="walk"><a href="/FS/index.php/Home/Student/walkolisten.html">随身听</a></div>
                         <div id="garden"><a href="/FS/index.php/Home/Student/classgarden.html">课外乐园</a></div>
                     </div>
                     <!--右侧内容-->
@@ -55,69 +55,31 @@
                         <div class="col-md-8" id="rightcontent">
                             <div id="title">
                                 <ul>
-                                    <a href="/FS/index.php/Home/Student/index.html">首页</a> / <a href="/FS/index.php/Home/Student/chinese.html">学习中心</a> / <a href="/FS/index.php/Home/Student/#"><?php echo ($course["subject"]); ?></a>
+                                    <a href="/FS/index.php/Home/Student/index.html">首页</a> / <a href="/FS/index.php/Home/Student/chinese.html">学习中心</a> / <a href="/FS/index.php/Home/Student/#"><?php echo ($subject["subject"]); ?></a>
                                 </ul>
                             </div>
                             <div id="studycontent">
-                                <div id="1">
+                            <?php if(is_array($courses)): $i = 0; $__LIST__ = $courses;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$course): $mod = ($i % 2 );++$i;?><div id="1">
                                     <div class="col-md-2 column">
                                         <div style=" width: 150px;margin-top: 20px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
                                     </div>
                                     <div class="col-md-8 column" style="margin-left: 100px;">
                                         <ul>
                                             <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                            <li>课程描述：<?php echo ($course["details"]); ?></li>
+                                            <li>课程描述：<?php echo ($course["detail"]); ?></li>
                                             <li>开始时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
                                             <li>截止时间：<?php echo (substr($course["endtime"],0,10)); ?></li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="/FS/index.php/Home/Student/studycontent/id/<?php echo ($course["homeworkid"]); ?>">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <HR width="100%" color=#987cb9 SIZE=8 />
-                                <div id="2">
-                                    <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
-                                    </div>
-                                    <div class="col-md-8 column" style="margin-left: 100px;">
-                                        <ul>
-                                            <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                            <li>课程描述：<?php echo ($course["details"]); ?></li>
-                                            <li>开始时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                            <li>截止时间：<?php echo (substr($course["endtime"],0,10)); ?></li>
-                                            <li>完成情况：未完成</li>
-                                            <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
-                                                    <button type="button" class="btn btn-info">开始作业</button>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <HR width="100%" color=#987cb9 SIZE=8 />
-                                <div id="3">
-                                    <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
-                                    </div>
-                                    <div class="col-md-8 column" style="margin-left: 100px;">
-                                        <ul>
-                                            <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                            <li>课程描述：<?php echo ($course["details"]); ?></li>
-                                            <li>开始时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                            <li>截止时间：<?php echo (substr($course["endtime"],0,10)); ?></li>
-                                            <li>完成情况：未完成</li>
-                                            <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
-                                                    <button type="button" class="btn btn-info">开始作业</button>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <HR width="100%" color=#987cb9 SIZE=8 /><?php endforeach; endif; else: echo "" ;endif; ?>
+                                
                             </div>
                         </div>
                         <div class="col-md-2"></div>

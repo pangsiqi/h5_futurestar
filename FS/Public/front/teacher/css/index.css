@@ -10,7 +10,15 @@ body {
     background-color: RGB(189, 235, 141);
     overflow-x: hidden;
 }
-
+.finishstu-thumb{
+    width: 55px;
+    height: 55px;
+}
+.finishstu-p{
+    font-size: 12px!important;
+    width: 55px;
+    margin: 3px 10px 10px 10px;
+}
 .item ul li a {
     color: white;
 }
@@ -201,7 +209,7 @@ body {
 /*今日任务*/
 
 #right1 {
-    height: 1200px;
+    height: 730px;
     padding-left: 30px;
 }
 
@@ -254,9 +262,19 @@ body {
 }
 
 #task2_p {
+    background: url(../images/1-4.png) no-repeat;
     padding-left: 30px;
+    width: 498px;
+    height: 121px;
 }
 
+#tel {
+    font-size: 24px;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
 #task_t3 {
     color: red;
     margin-top: 10px;
@@ -278,6 +296,8 @@ body {
     margin-top: 20px!important;
     font-size: 10px!important;
 }
+
+
 
 #task3_p {
     padding-top: 10px;
@@ -352,7 +372,9 @@ body {
 #footer2 {
     padding-left: 45px;
 }
-
+.footer_nav{
+    margin-left: 115px;
+}
 .footer_nav li {
     list-style-type: none;
     float: left;

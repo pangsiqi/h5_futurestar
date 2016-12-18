@@ -30,7 +30,7 @@
             <li>
                 <a href="#"><img src="__PUBLIC__/front/student/images/email.png" /></a>
             </li>
-            <li><a href="__URL__/personcenter"><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li><a href="__URL__/personcenter"><img src="{$current.thumb}" class="nav-img img-circle"/></a>
                 <!-- <ul>
                  <li><a href="#">个人信息</a></li>
                  <li><a href="#">上传</a></li>
@@ -56,18 +56,25 @@
                             <div id="video">
                                 <!-- <embed src="__PUBLIC__/front/student/resource/shuxue1.swf" height="494" width="794" style="border-radius: 5px;" /> -->
                                 <!--/*控制播放和暂停*/-->
-                                <embed src="__PUBLIC__/front/student/resource/shuxue1.swf"  class="shipin" />
+                                <embed src="{$resource.path}"  class="shipin"/>
                             </div>
                             <HR width="100%" color=#fff SIZE=8 />
-                            <div id="play">
-                                <!--<img src="__PUBLIC__/front/student/images/play.png" />-->
-                            </div>
+                           <!--  <div id="play" style="z-index: -1">
+                                <img src="__PUBLIC__/front/student/images/play.png" />
+                            </div> -->
                             <!--推荐内容-->
                             <div id="other">
                                 <div>
                                     <a href="#"><img src="__PUBLIC__/front/student/images/better_content.png" /></a>
                                 </div>
-                                <div>
+                                <volist name="resources" id="ress">
+                                    <div>
+                                        <!-- <a href="__MODULE__/teacher/pk/id/{$ress.id}"> -->
+                                        <embed src="{$ress.path}" /><br / >  
+                                        <a href='__MODULE__/student/pk/id/{$ress.id}' class="other-a"></a>  
+                                    </div>
+                                </volist>
+                                <!-- <div>
                                     <a href="#"><img src="__PUBLIC__/front/student/images/course.jpg" /></a>
                                 </div>
                                 <div>
@@ -78,10 +85,7 @@
                                 </div>
                                 <div>
                                     <a href="#"><img src="__PUBLIC__/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="__PUBLIC__/front/student/images/course.jpg" /></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

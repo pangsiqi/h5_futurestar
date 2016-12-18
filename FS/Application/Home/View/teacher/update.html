@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/update.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/teacher/css/update1024.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/teacher/css/update.css" />
     <link rel="stylesheet" href="__PUBLIC__/front/teacher/css/bootstrap-datetimepicker.min.css">
     <script src="__PUBLIC__/front/teacher/js/jquery.js"></script>
     <script src="__PUBLIC__/front/teacher/js/bootstrap.min.js"></script>
@@ -28,7 +29,7 @@
                     <a href="__URL__/guestbook.html"><img src="__PUBLIC__/front/teacher/images/email.png" /></a>
                 </li>
                 <li id="new"><a href="__URL__/guestbook.html">消息</a></li>
-                <li id="circle"><img src="__PUBLIC__/front/teacher/images/circle.png" class="img-circle" /></li>
+                <li id="circle"><img src="{$tea.thumb}" width="40px" height="40px" class="img-circle" /></li>
                 <li id="drop">
                     <li class="dropdown">
                         <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2">{$tea.realname}</span><span class="caret"></span></a>
@@ -47,7 +48,7 @@
         <div class="col-md-3 column" id="content_left1">
             <div class="row clearfix" id="left1">
                 <div class="col-md-6 column" id="pic">
-                    <img src="__PUBLIC__/front/teacher/images/1-2.png" class="img-rounded" />
+                    <img src="{$tea.thumb}" width="70px" height="70px" class="img-rounded" />
                 </div>
                 <div class="col-md-6 column" id="left2">
                     <div class="row clearfix">
@@ -134,14 +135,14 @@
         <!--内容右侧-->
         <div class="col-md-7 column" id="right">
             <div class="col-md-12 column" id="content_h">
-                <form method="post" action="">
-                <input type="hidden" name="id" value="{$tea.id}">
+                <form method="post" action="" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{$tea.id}">
                     <ol>
                         <li>
-                            <img id="tea_pic" src="__PUBLIC__/front/teacher/images/title.png" />
+                            <img class="userthumb" title="{$tea.realname}" alt="头像" src="{$tea.thumb}" onclick="upfile.click()" />
+                            <input type="file" name="thumb" id="upfile" onchange="uploadFile()" style="visibility: hidden; position: absolute;">
                         </li>
                         <li>教工号：{$tea.id}</li>
-                        <!-- <li>金币：0</li> -->
                         <li>姓名：&nbsp;
                             <input id="tea_name2" type="text" name="realname" value="{$tea.realname}" />
                         </li>

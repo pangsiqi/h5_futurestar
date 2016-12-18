@@ -1,144 +1,160 @@
-
-body{
+body {
     width: 100%;
-    background:url(../images/class_ground.png) no-repeat;
-    overflow-x: hidden;
+    background: url(../images/class_ground.png) no-repeat;
 }
 
-li{
-    list-style-type:none;
-    float:right;
-    color:white;
+li {
+    list-style-type: none;
+    float: right;
+    color: white;
 }
-
-
-
-#left{
-    position:absolute;
+.current-user-thumb{
+    margin-top: 37px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+#left {
+    position: absolute;
     left: 50px;
-    top:300px;
+    top: 300px;
 }
-#top{
-    margin-top:-10px;
-    margin-left:10px;
-    background-color:white;
-    width:320px;
-    height:500px;
-    border-radius:5px;
+
+#top {
+    margin-top: -10px;
+    margin-left: 10px;
+    background-color: white;
+    width: 320px;
+    height: 418px;
+    border-radius: 5px;
 }
-#top ul{
-    padding-top:12px;
-    margin-left:10px;
-    width:60px;
+
+#top ul {
+    padding-top: 12px;
+    margin-left: 10px;
+    width: 60px;
 }
-#top ul li{
+
+#top ul li {
     /*paddding-left:30px;*/
     /*position:absolute;*/
 }
-#top ul li p{
-    margin:0px;
-}
-#buttom{
-    margin-top:10px;
-    margin-left:10px;
-    background-color:white;
-    width:320px;
-    height:400px;
-    border-radius:5px;
-}
-#buttom p{
-    margin-left:25px;
+
+#top ul li p {
+    margin: 0px;
 }
 
-#right{
-    position:absolute;
+#buttom {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    width: 320px;
+    height: 370px;
+    border-radius: 5px;
+}
+
+#buttom p {
+    margin-left: 25px;
+}
+
+#right {
+    position: absolute;
     left: 540px;
-    top:350px;
+    top: 350px;
 }
-#nav-tab{
-    margin-top:10px;
-    margin-left:-115px;
-    width:80%;
 
+#nav-tab {
+    margin-top: -30px;
+    margin-left: -115px;
+    width: 80%;
 }
-#nav-tab li{
+
+#nav-tab li {
     background-color: white;
     border-radius: 5px 5px 0 0;
 }
-#nav-tab li:hover{
-    background-color: rgb(38,159,167);
+
+#nav-tab li:hover {
+    background-color: rgb(38, 159, 167);
 }
 
-#nav-tab a:hover{
+#nav-tab a:hover {
     /*color:rgb(38,159,167);*/
 }
-#nav-tab a:visited{
+
+#nav-tab a:visited {
     /*color:rgb(38,159,167);*/
 }
-#nav-tab .nav-active{
-    background: #26b7d5!important;
+
+#nav-tab .nav-active {
+    // background: #26b7d5!important;
 }
-#nav-tab .nav-active a{
-    color:yellow!important;
+
+#nav-tab .nav-active a {
+    color: #ff8d00!important;
 }
-#tab1{
-    position:absolute;
-    left:-100px;
-    top:50px;
-    background-color:white;
-    width:640px;
-    height:864px;
+
+#tab1 {
+    position: absolute;
+    left: -100px;
+    top: 11px;
+    background-color: white;
+    width: 640px;
+    height: 795px;
     border-radius: 0 5px 5px 5px;
 }
 
-#tab2{
-    position:absolute;
-    left:-100px;
-    top:50px;
-    background-color:white;
-    width:640px;
-    height:864px;
+#tab2 {
+    position: absolute;
+    left: -100px;
+    top: 11px;
+    background-color: white;
+    width: 640px;
+    height: 795px;
     border-radius: 0 5px 5px 5px;
 }
-#tab3{
-    position:absolute;
-    left:-100px;
-    top:50px;
-    background-color:white;
-    width:640px;
-    height:864px;
+
+#tab3 {
+    position: absolute;
+    left: -100px;
+    top: 11px;
+    background-color: white;
+    width: 640px;
+    height: 795px;
     border-radius: 0 5px 5px 5px;
 }
-p{
+
+p {
     padding-top: 20px;
     margin-left: 40px;
 }
 
 
+/*footer*/
 
-
- .footer{
-     position:absolute;
-     top:1364px;
-     right:360px;
-     buttom:30px;
-
- }
-.footer ul li{
-    list-style-type:none;
-    margin-top:17px;
-
-    color:#7d7a7d;
-
-}
-#footerli a{
-    padding-left:30px;
-    margin-right:5px;
-    color:#7d7a7d;
+.footer {
+    background: url(../images/footer.png) no-repeat;
+    /*margin-top: auto;*/
+    height: 120px;
 }
 
+.footer ul {
+    width: 42%;
+    margin: 1180px auto 0 auto;
+    padding-top: 20px;
+}
 
+.footer ul li {
+    list-style-type: none;
+    margin-top: 17px;
+    color: #7d7a7d;
+}
 
+#footerli a {
+    padding-left: 30px;
+    margin-left: 5px;
+    color: #7d7a7d;
+}
 
 ul,
 li {
@@ -169,7 +185,7 @@ a {
 }
 
 .comment-detail {
-    width: 86%;
+    width: 83%;
     margin-top: 10px;
 }
 
@@ -215,5 +231,3 @@ a {
     margin: 0 auto;
     display: block;
 }
-
-

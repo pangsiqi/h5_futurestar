@@ -27,7 +27,7 @@
             <li id="email">
                 <a href="parentspace.html"><img src="__PUBLIC__/front/student/images/email.png" /></a>
             </li>
-            <li id="person"><a href="__URL__/personcenter"><img src="__PUBLIC__/front/student/images/headpic.jpg" class="img-circle" /></a>
+            <li id="person"><a href="__URL__/personcenter"><img src="{$current.thumb}" class="nav-img img-circle"/></a>
             </li>
             <!-- <ul>
              <li><a href="#">个人信息</a></li>
@@ -63,12 +63,12 @@
                     <!--右侧课程-->
                     <div class="col-md-8 column">
                         <div class="row clearfix" id="right_course">
-                            <volist name="resource" id="r">
+                            <volist name="homework" id="r">
                                 <div>
                                     <ul>
-                                        <li class="resource-img"><img src="{$r.path}" " /></li>
+                                        <li class="resource-img"><embed src="{$r.path}"></li>
                                         <li class="start-img">
-                                            <a href="__URL__/studycontent/id/{$r.idH}"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
+                                            <a href="__URL__/studycontent/id/{$r.homeworkid}"><img src="__PUBLIC__/front/student/images/start_study.png" /></a>
                                         </li>
                                     </ul>
                                 </div>

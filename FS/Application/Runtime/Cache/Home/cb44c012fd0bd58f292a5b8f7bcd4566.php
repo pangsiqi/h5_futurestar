@@ -16,7 +16,7 @@
     <!--导航-->
     <div class="row clearfix" id="header">
         <div class="col-md-4 column" id="logo">
-            <img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" />
+            <a href="/FS/index.php/Home/Teacher/index"><img alt="35x35" src="/FS/Public/front/teacher/images/logo.png" /></a>
         </div>
         <div class="col-md-4 column">
         </div>
@@ -27,7 +27,7 @@
                 </li>
                 <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
                 <li id="circle">
-                    <img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" />
+                    <img src="<?php echo ($tea["thumb"]); ?>" class="img-circle" width="40px" height="40px" />
                 </li>
                 <li id="drop">
                     <li class="dropdown">
@@ -47,7 +47,7 @@
             <div class="col-md-12 column content-main">
                 <div class="row clearfix">
                     <div class="col-md-3 column" id="avatar">
-                        <img alt="90x90" src="/FS/Public/front/teacher/images/title.png" class="img-circle" />
+                        <img alt="90x90" src="<?php echo ($tea["thumb"]); ?>" class="img-circle" width="90px" height="90px" />
                     </div>
                     <div class="col-md-9 column">
                         <h3 id="tea_n"><?php echo ($tea["realname"]); ?></h3>
@@ -74,11 +74,6 @@
                                         <li>
                                             <img src="/FS/Public/front/teacher/images/face.png" />表情
                                         </li>
-                                        <!-- <li>表情</li> -->
-                                        <!-- <li>
-                                    <a href="#"><img src="/FS/Public/front/teacher/images/png.png" /></a>
-                                </li>
-                                <li><a href="#">图片</a></li> -->
                                     </ul>
                                     <div class="faceDiv"></div>
                                     <ul id="pass">
@@ -116,22 +111,14 @@
                             <li>
                                 <h4 id="dia_t">和家长的聊天记录全在这里啦</h4>
                             </li>
-                            <select name="realname" id="selcetStu">
+                            <select name="realname" id="selectStu">
                                 <option value="请选择学生">学生</option>
                                 <?php if(is_array($student)): $i = 0; $__LIST__ = $student;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$stu): $mod = ($i % 2 );++$i;?><option value="<?php echo ($stu["realname"]); ?>"><?php echo ($stu["realname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                             </select>
-                            <!-- <li class="dropdown" id="dia_drop">
-                                <a href="#" id="navbarDrop6" class="dropdown-toggle" data-toggle="dropdown"><span id="dia_p">家长</span><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#one">***</a></li>
-                                    <li><a href="#two">***</a></li>
-                                    <li><a href="#three">***</a></li>
-                                </ul>
-                            </li> -->
                         </ul>
                         <div class="col-md-12 column" id="dia_s">
                             <div id="jp-container" class="jp-container">
-                                <?php if(is_array($message)): $i = 0; $__LIST__ = $message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mr): $mod = ($i % 2 );++$i;?><div class="talk_recordboxme">
+                                <!-- <?php if(is_array($message)): $i = 0; $__LIST__ = $message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mr): $mod = ($i % 2 );++$i;?><div class="talk_recordboxme">
                                         <div class="user"><img src="/FS/Public/front/student/images/15.jpg" /></div>
                                         <div class="talk_recordtextbg">&nbsp;</div>
                                         <div class="talk_recordtext">
@@ -146,7 +133,7 @@
                                             <h3><?php echo ($mr["parentcontent"]); ?></h3>
                                             <span class="talk_time"><?php $teachertime=$mr.teachertime; echo date("Y-m-d H:i:s",$teachertime)?></span>
                                         </div>
-                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </div><?php endforeach; endif; else: echo "" ;endif; ?> -->
                             </div>
                         </div>
                     </div>
@@ -154,8 +141,7 @@
             </div>
             <div class="row clearfix">
                 <div class="col-md-9 column">
-                        <?php echo ($page); ?>
-                    </div>
+                    <?php echo ($page); ?>
                 </div>
             </div>
         </div>
@@ -186,26 +172,72 @@
     jQuery(document).ready(function($) {
         $(".send-btn").click(function() {
             var text = $(".Input_text").html();
-            console.log(text);
             $(".message-content").val(text);
         });
-        $("#selcetStu").change(function() {
+        $("#selectStu").change(function() {
+            var stuName = $("#selectStu").find("option:selected").val();
+            var data = {
+                stuName: stuName
+            }
             $.ajax({
-                url: '/FS/index.php/Home/teacher/stuMessage',
+                url: 'http://localhost:8080/FS/index.php/Home/Teacher/showMessage',
                 type: 'post',
-                dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-                data: {param1: 'value1'},
-            })
-            .done(function() {
-                console.log("success");
-            })
-            .fail(function() {
-                console.log("error");
-            })
-            .always(function() {
-                console.log("complete");
+                data: data,
+                success: function(data) {
+                    console.log(JSON.parse(data));
+                    var message = JSON.parse(data);
+                    for (var i in message) {
+                        var o_container = $("#jp-container");
+                        var o_talkme = $("<div class='talk_recordboxme'></div>");
+                        var o_talkstu = $("<div class='talk_recordbox'></div>");
+
+                        var o_user = $("<div class='user'></div>");
+                        var o_userThumb = $("<img src='' />");
+                        var o_talkbg = $("<div class='talk_recordtextbg'></div>");
+                        var o_talktext = $("<div class='talk_recordtext'></div>");
+                        var o_content_h3 = $("<h3></h3>");
+                        var o_content_span = $("<span class='talk_time'></span>");
+
+                        var o_user_stu = $("<div class='user'></div>");
+                        var o_userThumb_stu = $("<img src='' />");
+                        var o_talkbg_stu = $("<div class='talk_recordtextbg'>&nbsp;</div>");
+                        var o_talktext_stu = $("<div class='talk_recordtext'></div>");
+                        var o_content_h3_stu = $("<h3></h3>");
+                        var o_content_span_stu = $("<span class='talk_time'></span>");
+                        
+                        o_container.append(o_talkme);
+                        o_container.append(o_talkstu);
+                        // 教师
+                        o_talkme.append(o_user);
+                        o_talkme.append(o_talkbg);
+                        o_talkbg.html("&nbsp;");
+                        o_talkme.append(o_talktext);
+                        o_talktext.append(o_content_h3);
+                        o_content_h3.html(message[i]['teachercontent'])
+                        o_talktext.append(o_content_span);
+                        o_user.append(o_userThumb);
+                        // 学生
+                        o_talkstu.append(o_user_stu);
+                        o_talkstu.append(o_talkbg_stu);
+                        o_talkbg_stu.html("&nbsp;");
+                        
+                        o_talkstu.append(o_talktext_stu);
+                        o_talktext_stu.append(o_content_h3_stu);
+                        o_content_h3_stu.html(message[i]['parentcontent'])
+                        o_talktext_stu.append(o_content_span_stu);
+                        o_user_stu.append(o_userThumb_stu);
+
+
+                        console.log(message[i]);
+                    }
+
+
+                },
+                error: function() {
+                    alert("请选择学生");
+                    // console.log(data);
+                }
             });
-            
         });
     });
     </script>

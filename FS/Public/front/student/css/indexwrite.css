@@ -1,6 +1,7 @@
 body {
     width: 100%;
     background: url(../images/bg.png) no-repeat;
+    overflow-x: hidden;
 }
 
 #name li {
@@ -34,6 +35,10 @@ body {
 .resource-img img{
   width: 130px;
   height: 160px;
+}
+.resource-img embed{
+  width: 130px!important;
+  height: 160px!important;
 }
 #right_course ul li {
     padding-left: 0px;
