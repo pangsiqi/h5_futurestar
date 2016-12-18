@@ -58,7 +58,7 @@
                         <div class="col-md-8" id="rightcontent">
                             <div id="title">
                                 <ul>
-                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$course.subject}</a>
+                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$subject.subject}</a>
                                 </ul>
                             </div>
                             <div id="studycontent">
@@ -74,7 +74,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
@@ -94,7 +94,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
@@ -114,7 +114,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
