@@ -56,18 +56,23 @@
                             <div id="video">
                                 <!-- <embed src="/FS/Public/front/student/resource/shuxue1.swf" height="494" width="794" style="border-radius: 5px;" /> -->
                                 <!--/*控制播放和暂停*/-->
-                                <embed src="/FS/Public/front/student/resource/~68.swf"  class="shipin" style="z-index: 1" />
+                                <embed src="<?php echo ($resource["path"]); ?>"  class="shipin"/>
                             </div>
                             <HR width="100%" color=#fff SIZE=8 />
-                            <div id="play" style="z-index: -1">
-                                <!--<img src="/FS/Public/front/student/images/play.png" />-->
-                            </div>
+                           <!--  <div id="play" style="z-index: -1">
+                                <img src="/FS/Public/front/student/images/play.png" />
+                            </div> -->
                             <!--推荐内容-->
                             <div id="other">
                                 <div>
                                     <a href="#"><img src="/FS/Public/front/student/images/better_content.png" /></a>
                                 </div>
-                                <div>
+                                <?php if(is_array($resources)): $i = 0; $__LIST__ = $resources;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ress): $mod = ($i % 2 );++$i;?><div>
+                                        <!-- <a href="/FS/index.php/Home/teacher/pk/id/<?php echo ($ress["id"]); ?>"> -->
+                                        <embed src="<?php echo ($ress["path"]); ?>" /><br / >  
+                                        <a href='/FS/index.php/Home/student/pk/id/<?php echo ($ress["id"]); ?>' class="other-a"></a>  
+                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <!-- <div>
                                     <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
                                 </div>
                                 <div>
@@ -78,10 +83,7 @@
                                 </div>
                                 <div>
                                     <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

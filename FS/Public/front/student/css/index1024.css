@@ -51,6 +51,10 @@ element.style {
     width: 100px;
     height: 110px;
 }
+.resource-img embed{
+    width: 100px!important;
+    height: 110px!important;
+}
 .start-img img{
     width: 82px;
     height: 58px;

@@ -46,7 +46,7 @@
                         <div id="chinese"><a href="/FS/index.php/Home/Student/chinese/id/1">语文印象</a></div>
                         <div id="math"><a href="/FS/index.php/Home/Student/chinese/id/2">数学印象</a></div>
                         <div id="english"><a href="/FS/index.php/Home/Student/chinese/id/3">英语印象</a></div>
-                        <div id="walk"><a href="/FS/index.php/Home/Student/chinese.html">随身听</a></div>
+                        <div id="walk"><a href="/FS/index.php/Home/Student/walkolisten.html">随身听</a></div>
                         <div id="garden"><a href="/FS/index.php/Home/Student/classgarden.html">课外乐园</a></div>
                     </div>
                     <!--右侧内容-->

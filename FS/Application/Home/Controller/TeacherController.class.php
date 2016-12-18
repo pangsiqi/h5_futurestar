@@ -299,7 +299,7 @@ class TeacherController extends Controller {
 	        $upload->maxSize  = 3145728 ;// 设置附件上传大小
 	        $upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
 	        $upload->rootPath = './Public';
-	        $upload->savePath =  '/uploads/teacher';// 设置附件上传目录    
+	        $upload->savePath =  '/uploads/';// 设置附件上传目录    
 	        $uploadPic = $upload->upload(); 
 	        if(!$uploadPic) {// 上传错误提示错误信息
 	            $this->error($upload->getError());

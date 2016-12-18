@@ -52,40 +52,29 @@
                         </div>
                         <div id="studycontent">
                             <div id="video">
-                                <object type="application/x-shockwave-flash" data="/FS/Public/front/student/resource/shuxue4.swf" width="100%" height="100%" bgcolor="#000000" id="video-box" name="video-box" class="jwswf swfPrev-beforeswfanchor0 swfNext-afterswfanchor0" tabindex="0" play="false">
+                                <object type="application/x-shockwave-flash" data="<?php echo ($homework["path"]); ?>" width="100%" height="100%" bgcolor="#000000" id="video-box" name="video-box" class="jwswf swfPrev-beforeswfanchor0 swfNext-afterswfanchor0" tabindex="0" play="false">
                                     <param name="allowfullscreen" value="true">
                                     <param name="allowscriptaccess" value="always">
                                     <param name="seamlesstabbing" value="true">
                                     <param name="wmode" value="opaque">
                                     <param name="play" value="false">
-                                    <embed src="/FS/Public/front/student/resource/shuxue4.swf" height="100%" width="100%" play="false" style="border-radius: 5px;" />
+                                    <embed src="<?php echo ($homework["path"]); ?>" height="100%" width="100%" play="false" style="border-radius: 5px;" />
                                 </object>
                                 <!--/*控制播放和暂停*/-->
                             </div>
                             <HR width="100%" color=#fff SIZE=8 />
-                            <div id="play">
-                                <!-- <img src="/FS/Public/front/student/images/play.png" /> -->
-                            </div>
+                           <!--  <div id="play">
+                                <img src="/FS/Public/front/student/images/play.png" />
+                            </div> -->
                             <!--推荐内容-->
                             <div id="other">
                                 <div>
                                     <a href="#"><img src="/FS/Public/front/student/images/better_content.png" /></a>
                                 </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="/FS/Public/front/student/images/course.jpg" /></a>
-                                </div>
+                                <?php if(is_array($homeworks)): $i = 0; $__LIST__ = $homeworks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$works): $mod = ($i % 2 );++$i;?><div>
+                                        <embed src="<?php echo ($works["path"]); ?>" />
+                                        <a href="/FS/index.php/Home/student/studycontent/id/<?php echo ($works["homeworkid"]); ?>" class="other-a"></a>
+                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
                             </div>
                         </div>
                     </div>
@@ -96,7 +85,7 @@
     <!--页脚-->
     <div class="footer">
         <ul>
-            <li>Copyright © 2011-2016 futurestar Corporation. All Rights Reserved.</li>
+            <li>Copyright © 2016 futurestar Corporation. All Rights Reserved.</li>
             <div>
                 <li id="footerli">
                     <a href="/FS/index.php/admin">后台管理</a>

@@ -8,7 +8,41 @@ li{
     list-style-type:none;
     color:white;
 }
+.page {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.page a,
+.page span {
+    padding: 15px;
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #20bdf0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.page a:hover {
+    background: #DDDDDD;
+}
+
+.page span {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #20bdf0;
+    border-color: #20bdf0;
+    cursor: default;
+}
+
 #nav{
+    height: 48px;
     background: url(../images/nav1024.png) no-repeat;
     margin-left:262px;
     margin-top:6px;

@@ -61,11 +61,11 @@
                     <!--右侧课程-->
                     <div class="col-md-8 column">
                         <div class="row clearfix" id="right_course">
-                            <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?><div>
+                            <?php if(is_array($homework)): $i = 0; $__LIST__ = $homework;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?><div>
                                     <ul>
-                                        <li class="resource-img"><img src="<?php echo ($r["path"]); ?>" " /></li>
+                                        <li class="resource-img"><embed src="<?php echo ($r["path"]); ?>"></li>
                                         <li class="start-img">
-                                            <a href="/FS/index.php/Home/Student/studycontent/id/<?php echo ($r["idH"]); ?>"><img src="/FS/Public/front/student/images/start_study.png" /></a>
+                                            <a href="/FS/index.php/Home/Student/studycontent/id/<?php echo ($r["homeworkid"]); ?>"><img src="/FS/Public/front/student/images/start_study.png" /></a>
                                         </li>
                                     </ul>
                                 </div><?php endforeach; endif; else: echo "" ;endif; ?>

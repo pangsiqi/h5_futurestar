@@ -54,7 +54,22 @@ li {
     float: right;
     margin-left: 27px;
 }
-
+#other div embed{
+    width: 118px;
+    height: 142px;
+}
+#other .other-a{
+    display: block;
+    width: 118px;
+    height: 142px;
+    position: absolute;
+    margin-top: -147px;
+    z-index: 999;
+    background: #000;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
 #studycontent {
     border: 1px solid #bbbbbb;
     width: 860px;

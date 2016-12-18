@@ -54,88 +54,30 @@
                     <div id="rightcontent">
                         <div id="title">
                             <ul>
-                                <a href="/FS/index.php/Home/Student/index.html">首页</a> / <a href="/FS/index.php/Home/Student/chinese.html">学习中心</a> / <a href="/FS/index.php/Home/Student/pk.html"><?php echo ($course["subject"]); ?></a>
+                                <a href="/FS/index.php/Home/Student/index.html">首页</a> / <a href="/FS/index.php/Home/Student/chinese.html">学习中心</a> / <a href="/FS/index.php/Home/Student/pk.html"><?php echo ($res["subject"]); ?></a>
                             </ul>
                         </div>
                         <div id="studycontent">
-                            <div id="1">
+                        <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$res): $mod = ($i % 2 );++$i;?><div id="1">
                                 <div class="col-md-2 column">
                                     <div style=" width: 150px;margin-top: 18px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
                                 </div>
                                 <div class="col-md-8 column" style="margin-left: 100px;">
                                     <ul>
-                                        <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                        <li>课程描述：<?php echo ($course["detail"]); ?></li>
-                                        <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>截止时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>完成情况：未收听</li>
-                                        <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                            <a href="/FS/index.php/Home/Student/studycontent.html">
+                                        <li>课程内容：<a href="#"><?php echo ($res["title"]); ?></a></li>
+                                        <li>课程描述：<?php echo ($res["summary"]); ?></li>
+                                        <li>上传时间：<?php echo (substr($res["publishtime"],0,10)); ?></li>
+                                        <!-- <li>截止时间：<?php echo (substr($res["starttime"],0,10)); ?></li> -->
+                                        <!-- <li>完成情况：未收听</li> -->
+                                        <li style="float: right; margin-top:35px;margin-right: 11px;">
+                                            <a href="/FS/index.php/Home/Student/pk/id/<?php echo ($res["id"]); ?>">
                                                 <button type="button" class="btn btn-info">开始学习</button>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <HR width="100%" color=#987cb9 SIZE=8 />
-                            <div id="2">
-                                <div class="col-md-2 column">
-                                    <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
-                                </div>
-                                <div class="col-md-8 column" style="margin-left: 100px;">
-                                    <ul>
-                                        <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                        <li>课程描述：<?php echo ($course["details"]); ?></li>
-                                        <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>截止时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>完成情况：未收听</li>
-                                        <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                            <a href="/FS/index.php/Home/Student/studycontent.html">
-                                                <button type="button" class="btn btn-info">开始学习</button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <HR width="100%" color=#987cb9 SIZE=8 />
-                            <div id="3">
-                                <div class="col-md-2 column">
-                                    <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
-                                </div>
-                                <div class="col-md-8 column" style="margin-left: 100px;">
-                                    <ul>
-                                        <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                        <li>课程描述：<?php echo ($course["details"]); ?></li>
-                                        <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>截止时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>完成情况：未收听</li>
-                                        <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                            <a href="/FS/index.php/Home/Student/studycontent.html">
-                                                <button type="button" class="btn btn-info">开始学习</button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <HR width="100%" color=#987cb9 SIZE=8 />
-                            <div id="4">
-                                <div class="col-md-2 column">
-                                    <div style=" width: 150px;margin-top: 15px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
-                                </div>
-                                <div class="col-md-8 column" style="margin-left: 100px;">
-                                    <ul>
-                                        <li>课程内容：<a href="#"><?php echo ($course["title"]); ?></a></li>
-                                        <li>上传时间：<?php echo (substr($course["starttime"],0,10)); ?></li>
-                                        <li>课程描述：<?php echo ($course["details"]); ?></li>
-                                        <li>完成情况：未收听</li>
-                                        <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                            <a href="/FS/index.php/Home/Student/studycontent.html">
-                                                <button type="button" class="btn btn-info">开始学习</button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <HR width="100%" color=#987cb9 SIZE=8 /><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>

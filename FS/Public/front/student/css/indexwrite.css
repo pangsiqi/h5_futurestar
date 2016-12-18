@@ -36,6 +36,10 @@ body {
   width: 130px;
   height: 160px;
 }
+.resource-img embed{
+  width: 130px!important;
+  height: 160px!important;
+}
 #right_course ul li {
     padding-left: 0px;
 }

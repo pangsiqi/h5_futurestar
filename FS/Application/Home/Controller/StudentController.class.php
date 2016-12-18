@@ -20,9 +20,9 @@ class StudentController extends Controller {
 		$this->assign("current",$currentUser[0]);
 
 		// 获取学习资源
-		$resourceModel = M("resource");
-		$resources = $resourceModel->limit("3")->order("id asc")->select();
-		$this->assign("resource",$resources);
+		$homeworkModel = M("homework");
+		$homeworks = $homeworkModel->limit("3")->order("homeworkid desc")->select();
+		$this->assign("homework",$homeworks);
 
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
@@ -38,7 +38,7 @@ class StudentController extends Controller {
 	        $upload->maxSize  = 3145728 ;// 设置附件上传大小
 	        $upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
 	        $upload->rootPath = './Public';
-	        $upload->savePath =  '/uploads/student';// 设置附件上传目录    
+	        $upload->savePath =  '/uploads/';// 设置附件上传目录    
 	        $uploadPic = $upload->upload(); 
 	        if(!$uploadPic) {// 上传错误提示错误信息
 	            $this->error($upload->getError());
@@ -64,40 +64,47 @@ class StudentController extends Controller {
 			
     		$studentInfo = D("student")->where("tel=".session('tel'))->select();
     		$this->assign("student", $studentInfo[0]);
+    		
     		layout(false); // 临时关闭当前模板的布局功能
 			$this->display();//加载当前函数的模板文件
     	}
 	}
 	public function chinese($id=''){
-		$id = isset($_GET['id']) ? intval($_GET['id']) : '';//获取网址链接id
-		if($id !== ''){
-			$homeworkModel = M("homework");//获取表homework
-			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=".$id)->select();//.为连接符
-			$homeworkSubject = $homeworkModel->where("subjectid=".$id)->select();
-			$this->assign("subject",$homeworkSubject[0]);
-			$this->assign('courses',$homeworkResult);//赋值
-		}
-		
 		//获取我的信息
 		$studentModel = M("student");
 		$tel = session('tel');
 		$currentUser = $studentModel->where("tel=".$tel)->select();
 		$this->assign("current",$currentUser[0]);
+
+		$id = isset($_GET['id']) ? intval($_GET['id']) : '';//获取网址链接id
+		$homeworkModel = M("homework");//获取表homework
+		if($id !== ''){
+			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=".$id)->order("homeworkid desc")->select();//.为连接符
+			$homeworkSubject = $homeworkModel->where("subjectid=".$id)->select();
+			$this->assign("subject",$homeworkSubject[0]);
+			$this->assign('courses',$homeworkResult);//赋值
+		}else{
+			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=1")->select();//.为连接符
+			$homeworkSubject = $homeworkModel->where("subjectid=1")->select();
+			$this->assign("subject",$homeworkSubject[0]);
+			$this->assign('courses',$homeworkResult);//赋值
+		}
+		
 
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
 
 	public function classgarden(){
-		$homeworkModel = M("homework");//获取表homework
-		$homeworkResult = $homeworkModel->where("subjectid=5")->find();//.为连接符
-		$this->assign('course',$homeworkResult);//赋值
-
 		$studentModel = M("student");
 		//获取我的信息
 		$tel = session('tel');
 		$currentUser = $studentModel->where("tel=".$tel)->select();
 		$this->assign("current",$currentUser[0]);
+
+		$resourceModel = M("resource");//获取表resource
+		$resourceResult = $resourceModel->limit("3")->order("id desc")->select();//.为连接符
+		$this->assign('resource',$resourceResult);//赋值
 
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
@@ -195,16 +202,46 @@ class StudentController extends Controller {
 		$this->display();//加载当前函数的模板文件
 	}
 
-	public function pk(){
+	public function pk($id=""){
 		$studentModel = M("student");
 		//获取我的信息
 		$tel = session('tel');
 		$currentUser = $studentModel->where("tel=".$tel)->select();
 		$this->assign("current",$currentUser[0]);
+		// 获取当前id的内容
+		$id = I("get.id");
+		if($id==''){
+			$resourceModel = M("resource");
+			$resourceResult = $resourceModel->limit("1")->order("id desc")->select();
+			$this->assign("resource",$resourceResult[0]);	
+		}else{
+			$resourceModel = M("resource");
+			$resourceResult = $resourceModel->where("id='$id'")->select();
+			$this->assign("resource",$resourceResult[0]);
+		}
+		
+		// 获取推荐内容
+		$resourcesResult = $resourceModel->limit("5")->order("id desc")->select();
+		$this->assign("resources",$resourcesResult);
+
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
-	public function studycontent(){
+	public function studycontent($id=""){
+		$studentModel = M("student");
+		//获取我的信息
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+		//获取当前id的内容
+		$id = I("get.id");
+		$homeworkModel = M("homework");
+		$homeworkResult = $homeworkModel->where("homeworkid='$id'")->select();
+		$this->assign("homework",$homeworkResult[0]);
+		// 获取推荐内容
+		$homeworksResult = $homeworkModel->limit("5")->order("homeworkid desc")->select();
+		$this->assign("homeworks",$homeworksResult);
+
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
 	}
