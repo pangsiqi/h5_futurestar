@@ -1,0 +1,67 @@
+* { margin: 0; padding: 0;}
+body { font: 16px/1.8 "Microsoft Yahei",verdana;}
+ul,li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+img {
+    max-width: 100%;
+    border: 0px;
+}
+select:focus,select:active,select:hover{
+  outline:none;
+}
+// 清除点击input框时出现的蓝色边框
+input｛outline:none;｝
+// 给浮动元素的父级元素添加class="clearfloat"
+.clearfloat{
+	zoom: 1;
+}
+.clearfloat:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.fl-l{
+	float: left;
+}
+.fl-r{
+	float: right;
+}
+/* 页脚 */
+.body-footer {
+	position: absolute;
+    bottom: 10px;
+    right: 88px;
+    width: 409px;
+}
+.body-footer ul{
+	width: 240px;
+	margin: 0 auto;
+}
+.footerli{
+	float: left;
+}
+.footerli a {
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+.body-footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}

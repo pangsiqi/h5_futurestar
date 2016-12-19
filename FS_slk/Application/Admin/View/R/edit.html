@@ -1,0 +1,58 @@
+
+        <div class="col-md-10 col-md-offset-2 ">
+            <ol class="breadcrumb">
+                <li><a href="__MODULE__/index">首页</a></li>
+                <li><a href="__MODULE__/R/lists">资源管理</a></li>
+                <li class="active">修改资源信息</li>
+            </ol>
+            <h3 class="down">修改资源信息<small>Resource Edit</small></h3>
+            <div class="list-group form">
+                <form enctype="multipart/form-data" class="form-horizontal" role="form" method="post">
+                <input type="hidden" name="id" value="{$resource.id}" />
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">资源名称</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="title" class="form-control" id="inputEmail3" placeholder="" value="{$resource.title}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">资源封面</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="path" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">发布人</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="author" class="form-control" id="inputEmail3" placeholder="" value="{$resource.author}">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">添加时间</label>
+                        <div class="col-sm-10">
+                            <input type="input" name="publishtime" class="form-control" id="inputEmail3" value="<?php echo date('Y-m-d  H:i');?>">
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <label for="inputEmail3" class="col-sm-2 control-label">摘要</label>
+                        <div class="col-sm-10">
+                            <textarea id="editor_id" name="summary" style="width:90%;height:300px;">
+                                {$resource.summary}</textarea>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <div class="row">
+                                <div class=" col-sm-5">
+                                    <input type="submit" class="btn btn-primary" value="修 改 资 源">
+                                </div>
+                                <div class=" col-sm-5">
+                                    <!-- <input type="reset" class="btn btn-warning" value="重 置 内 容"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   

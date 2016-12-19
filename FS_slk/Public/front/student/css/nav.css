@@ -1,0 +1,76 @@
+a{
+    font-family: "微软雅黑";
+}
+li{
+    list-style-type:none;
+    color:white;
+}
+.page {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.page a,
+.page span {
+    padding: 15px;
+    border: 1px solid red;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #20bdf0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.page a:hover {
+    background: #DDDDDD;
+}
+
+.page span {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #20bdf0;
+    border-color: #20bdf0;
+    cursor: default;
+}
+#nav{
+    height: 57px;
+    background: url(../images/nav.png) no-repeat;
+    margin-left: 350px;
+    margin-top:9px;
+}
+#nav ul{
+    margin-top:21px;
+    margin-left:0px;
+}
+
+.nav-img{
+    width: 25px!important;
+    height: 25px!important;
+}
+#nav ul li{
+    float:left;
+    list-style-type:none;
+    padding-left:35px;
+
+    color:white;
+}
+#nav ul li a{
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    text-decoration: none;
+'
+}
+#nav ul li a:hover{
+    color:yellow;  '
+}
+
+#email img{
+    padding-left: 70px;
+    padding-top: -2px;
+}

@@ -1,0 +1,382 @@
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    background-color: RGB(189, 235, 141);
+    overflow-x: hidden;
+}
+.finishstu-thumb{
+    width: 55px;
+    height: 55px;
+}
+.finishstu-p{
+    font-size: 12px!important;
+    width: 55px;
+    margin: 3px 10px 10px 10px;
+}
+.item ul li a {
+    color: white;
+}
+
+#header {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    height: 60px;
+}
+
+
+/*导航*/
+
+#logo {
+    margin-top: 10px;
+    padding-left: 120px;
+}
+
+#nav {
+    padding-left: 40px;
+    margin-top: 8px;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#new {
+    padding-left: 5px;
+}
+
+#circle {
+    padding-left: 3px;
+    margin-top: -7px;
+}
+
+#drop {
+    padding: 0 0 0 3px;
+    margin: 0;
+}
+
+#navbarDrop1 {
+    width: 100px;
+    border: solid 1px RGB(187, 187, 187);
+    border-radius: 4px;
+    color: black;
+    float: left;
+}
+
+#navbarDrop2 {
+    // padding: 0 30px;
+    padding-right: 20px;
+}
+
+#navbarDrop3 {
+    min-width: 0px;
+}
+
+#content {
+    border: solid 1px RGB(234, 234, 234);
+}
+
+
+/*老师信息*/
+
+#content_left1 {
+    padding-left: 145px;
+    padding-top: 35px;
+}
+
+#left1 {
+    background-color: white;
+    width: 146px;
+    height: 110px;
+}
+
+#pic {
+    margin-top: 2px;
+    padding-top: 15px;
+}
+
+#left2 {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+#tec {
+    padding: 15px 0 0 0;
+    margin: 0;
+    float: left;
+}
+
+.progress {
+    height: 8px!important;
+    width: 16px!important;
+    float: right!important;
+    padding: 0!important;
+    margin: 0!important;
+    margin-top: 5px!important;
+}
+
+.progress-bar {
+    width: 50%!important;
+}
+
+#lvo {
+    padding: 0;
+    margin: 0;
+}
+
+#flower {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#zheng {
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 8px;
+}
+
+
+/*手风琴*/
+
+#list {
+    padding: 0;
+}
+
+.list-group li {
+    list-style-type: none;
+    width: 143px;
+    font-size: 16px;
+}
+
+.list-group li a:link {
+    color: white;
+}
+
+.list-group li a:visited {
+    color: white;
+}
+
+.list-group .panel-heading {
+    background-color: RGB(156, 204, 101)!important;
+}
+
+.panel-heading {
+    list-style-type: none!important;
+    outline: RGB(124, 179, 66) dotted 2px!important;
+    font-size: 17px!important;
+    color: red!important;
+    text-align: center!important;
+    width: 143px!important;
+    height: 30px!important;
+    padding-top: 3px!important;
+}
+
+#test {
+    color: white;
+    padding-top: 4px;
+    padding-left: 16px;
+}
+
+.panel-body {
+    padding: 0!important;
+}
+
+.homeworkList_e {
+    padding-left: 0;
+}
+
+.homeworkList_e li {
+    list-style-type: none;
+    background-color: RGB(43, 175, 43);
+    outline: RGB(124, 179, 66) dotted 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.list-group-item {
+    margin-left: 0;
+}
+
+
+/*今日任务*/
+
+#right1 {
+    height: 730px;
+    padding-left: 30px;
+}
+
+#task {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#task1 {
+    background-color: white;
+    height: 200px;
+    border: solid 5px RGB(43, 175, 43);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.task_t {
+    padding-left: 15px;
+}
+
+#task1_n {
+    list-style-type: none;
+    padding-left: 12px;
+}
+
+.task1_s {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+#task1_s {
+    padding-left: 20px;
+}
+
+#task1_b {
+    background: RGB(156, 204, 101);
+    olor: white;
+    margin-left: 30px;
+    padding: 4px 20px 4px 20px;
+    font-size: 10px;
+    border-radius: 8px;
+    border: solid 1px gray;
+}
+
+#task2 {
+    background-color: white;
+    height: 200px;
+    border: solid 5px RGB(43, 175, 43);
+    border-radius: 10px;
+}
+
+#task2_p {
+    background: url(../images/1-4.png) no-repeat;
+    padding-left: 30px;
+    width: 498px;
+    height: 121px;
+}
+
+#tel {
+    font-size: 24px;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+#task_t3 {
+    color: red;
+    margin-top: 10px;
+}
+
+#dynamic {
+    background-color: white;
+    height: 200px;
+    border: solid 3px RGB(187, 187, 187);
+    border-radius: 10px;
+}
+
+.bs-example-popover .popover {
+    background-color: RGB(141, 250, 105)!important;
+    display: block!important;
+    float: right!important;
+    width: 240px!important;
+    margin-left: 105px!important;
+    margin-top: 20px!important;
+    font-size: 10px!important;
+}
+
+
+
+#task3_p {
+    padding-top: 10px;
+}
+
+#task4_t {
+    color: #46b8da;
+    margin-top: 10px;
+}
+
+#task4 {
+    background-color: white;
+    height: 200px;
+    border: solid 3px RGB(187, 187, 187);
+    border-radius: 10px;
+}
+
+.task4_t {
+    color: #46b8da;
+    font-size: 15px;
+    padding: 20px 0 20px 5px;
+}
+
+#task4_b {
+    background-color: RGB(43, 175, 43);
+    color: white;
+    float: right;
+    margin-right: 25px;
+}
+
+#te {
+    color: red;
+}
+
+#zy {
+    color: orange;
+}
+
+
+/*完成作业*/
+
+#homework {
+    background-color: RGB(214, 214, 214);
+    border-radius: 20px;
+    border: solid 1px gray;
+    width: 160px;
+    height: 450px;
+    padding-right: 50px;
+    margin: 50px 30px 0 15px;
+}
+
+#acc_h {
+    padding: 35px 0 0 15px;
+}
+
+
+/*尾部*/
+
+#footer {
+    background-color: white;
+    border: solid 1px RGB(234, 234, 234);
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+}
+
+#footer1 {
+    padding-top: 15px;
+}
+
+#footer2 {
+    padding-left: 45px;
+}
+.footer_nav{
+    margin-left: 115px;
+}
+.footer_nav li {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+}

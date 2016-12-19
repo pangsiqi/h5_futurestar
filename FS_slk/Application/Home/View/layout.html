@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>未来之星-我们与你一起成长</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/css/bgstretcher.css">
+    <script type="text/javascript" src="__PUBLIC__/front/js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/my.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/respond.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/js/bgstretcher.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#body').bgStretcher({
+            images: ['__PUBLIC__/front/img/banner6.jpg', '__PUBLIC__/front/img/banner9.jpg', '__PUBLIC__/front/img/banner11.jpg', '__PUBLIC__/front/img/banner7.jpg'],
+            imageWidth: 1024,
+            imageHeight: 500,
+            transitionEffect: 'fade',
+            nextSlideDelay:'8000'
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="global-nav-inner">
+        <div class="global-nav-container clearfloat">
+            <ul class="nav js-global-actions" role="navigation" id="global-actions">
+                <li id="global-nav-home" class="home">
+                    <a class="js-nav js-tooltip js-dynamic-tooltip" href="__URL__/index.html">
+                        <span><img src="__PUBLIC__/front/img/header-logo.png"></span>
+                    </a>
+                </li>
+                <li id="global-nav-about" class="about">
+                    <a class="js-tooltip js-dynamic-tooltip" href="/about" target="_blank">
+                        <span class="text">关于我们</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="body"></div>
+    {__CONTENT__}
