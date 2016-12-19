@@ -11,7 +11,7 @@ class StudentController extends Controller {
 	public function index(){
 		//获取榜单信息
 		$studentModel = M("student");
-		$student = $studentModel->limit("3")->order("starnum desc")->select();
+		$student = $studentModel->limit("5")->order("starnum desc")->select();
 		$this->assign("stu",$student);
 
 		//获取我的信息
@@ -49,7 +49,7 @@ class StudentController extends Controller {
 	            $data['thumb'] = __ROOT__.'/Public'.$uploadPic['thumb']['savepath'].$uploadPic['thumb']['savename'];
 	            $data['birthday'] = I("post.birthday");
 	            if($studentModel->where("id='$id'")->save($data)){
-	                $this->success("修改成功",U("student/personcenter"));
+	                $this->redirect("student/personcenter");
 	            }else{
 	                $this->error("修改失败");
 	            }

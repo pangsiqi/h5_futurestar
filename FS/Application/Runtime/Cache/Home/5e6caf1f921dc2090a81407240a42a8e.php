@@ -50,7 +50,7 @@
                         <li id="bangdan">榜单</li>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="name">
-                            <?php if(is_array($stu)): $i = 0; $__LIST__ = $stu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><li><img src="/FS/Public/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($s["realname"]); ?> <?php echo ($s["starnum"]); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <?php if(is_array($stu)): $i = 0; $__LIST__ = $stu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><li><img src="/FS/Public/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="realname"><?php echo ($s["realname"]); ?></span> <?php echo ($s["starnum"]); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="owner">

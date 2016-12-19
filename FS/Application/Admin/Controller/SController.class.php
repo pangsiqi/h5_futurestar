@@ -5,7 +5,7 @@ class SController extends Controller {
 	public function __construct(){
     	parent::__construct();
 		if(!isLogin()){
-			$this->error("请先登录",U("A/login"));
+			$this->redirect("A/login");
 		}
     }
 
@@ -37,7 +37,7 @@ class SController extends Controller {
             $data['publishTime'] = I("post.publishTime");
             $data['summary'] = I("post.summary");
             if($subjectModel->add($data)){
-                $this->success("添加成功",U("lists"));
+                $this->redirect("S/lists"));
             }else{
                 $this->error("添加失败");
             }
@@ -78,7 +78,7 @@ class SController extends Controller {
                     $data['summary'] = I("post.summary");
                     $result = $model->where("id='$id'")->save($data);
                     if($result !== false){
-                        $this->success("修改成功", U("S/lists"));
+                        $this->redirect("S/lists");
                     }else{
                         $this->error($model->getError());
                     }
@@ -100,7 +100,7 @@ class SController extends Controller {
             exit("bad param!");
         }
         if(M("subject")->delete($id)){
-            $this->success("删除成功！");
+            $this->redirect("S/lists");
         }
     }
 

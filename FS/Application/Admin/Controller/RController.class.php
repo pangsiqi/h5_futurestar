@@ -5,7 +5,7 @@ class RController extends Controller {
 	public function __construct(){
     	parent::__construct();
 		if(!isLogin()){
-			$this->error("请先登录",U("A/login"));
+			$this->redirect("A/login");
 		}
     }
 
@@ -33,7 +33,7 @@ class RController extends Controller {
             $data['publishTime'] = I("post.publishTime");
             $data['summary'] = I("post.summary");
             if($resourcesModel->add($data)){
-                $this->success("添加成功",U("lists"));
+                $this->redirect("R/lists");
             }else{
                 $this->error("添加失败");
             }
@@ -62,7 +62,7 @@ class RController extends Controller {
                     
                     $result = $model->filter('strip_tags')->save($data);
                     if($result !== false){
-                        $this->success("修改成功", U("R/lists"));
+                        $this->redirect("R/lists");
                     }else{
                         $this->error($model->getError());
                     }
@@ -96,7 +96,7 @@ class RController extends Controller {
             exit("bad param!");
         }
         if(M("resource")->delete($id)){
-            $this->success("删除成功！");
+            $this->redirect("R/lists");
         }
     }
 }

@@ -5,10 +5,12 @@ body {
 }
 
 #name li {
-    padding-top: 30px;
     padding-left: 60px;
 }
-
+#name .realname{
+    width: 60px;
+    display: inline-block;
+}
 #owner li {
     padding-top: 8px;
     padding-left: 60px;

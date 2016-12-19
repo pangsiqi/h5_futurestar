@@ -23,19 +23,19 @@
         <div class="col-md-4 column">
             <ul id="nav">
                 <li>
-                    <a href="guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a>
+                    <a href="/FS/index.php/Home/Teacher/guestbook.html"><img src="/FS/Public/front/teacher/images/email.png" /></a>
                 </li>
-                <li id="new"><a href="guestbook.html">消息</a></li>
+                <li id="new"><a href="/FS/index.php/Home/Teacher/guestbook.html">消息</a></li>
                 <li id="circle">
-                    <img src="/FS/Public/front/teacher/images/circle.png" class="img-circle" />
+                    <img src="<?php echo ($tea["thumb"]); ?>" width="40px" height="40px" class="img-circle" />
                 </li>
                 <li id="drop">
                     <li class="dropdown">
                         <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown"><span id="navbarDrop2"><?php echo ($tea["realname"]); ?></span><span class="caret"></span></a>
                         <ul class="dropdown-menu" id="navbarDrop3">
-                            <li><a href="personCenter.html">个人资料</a></li>
-                            <li><a href="update.html">修改资料</a></li>
-                            <li><a href="#">退出</a></li>
+                            <li><a href="/FS/index.php/Home/Teacher/personCenter.html">个人资料</a></li>
+                            <li><a href="/FS/index.php/Home/Teacher/update.html">修改资料</a></li>
+                            <li><a href="/FS/index.php/Home/Teacher/logout">退出</a></li>
                         </ul>
                     </li>
                 </li>
@@ -47,7 +47,7 @@
             <div class="col-md-12 column content-main">
                 <div class="row clearfix">
                     <div class="col-md-3 column" id="avatar">
-                        <img alt="90x90" src="/FS/Public/front/teacher/images/title.png" class="img-circle" />
+                        <img alt="90x90" src="<?php echo ($tea["thumb"]); ?>" width="90px" height="90px" class="img-circle" />
                     </div>
                     <div class="col-md-9 column">
                         <h3 id="tea_n"><?php echo ($tea["realname"]); ?></h3>

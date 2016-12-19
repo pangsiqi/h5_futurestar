@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> 
+<?php if (!defined('THINK_PATH')) exit();?>
 <!doctype html>
 <html>
 
@@ -36,28 +36,14 @@
                     <form role="form" method="post" action="">
                         <div class="input-group">
                             <span class="input-group-addon">用户名：</span>
-                            <input type="text" class="form-control" name="username" placeholder="">
+                            <input type="text" class="form-control input-username" name="username" placeholder="">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon">密<img src="/FS/Public/end/images/em.png" width="12" height="20">码：</span>
-                            <input type="password" class="form-control" name="password" placeholder="">
+                            <input type="password" class="form-control input-password" name="password" placeholder="">
                         </div>
-                       <!--  <div class="row yz">
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <span class="input-group-addon">验证码：</span>
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-md-3"><img src="/FS/Public/end/images/yzm.gif" width="78" height="30" class="yzm"></div>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> 记住密码
-                            </label>
-                        </div> -->
                         <div class="input-group">
-                            <button type="submit" class="btn btn-bg "> &nbsp;&nbsp;登&nbsp;&nbsp;录&nbsp;&nbsp;</button>
+                            <button type="submit" class="btn btn-bg submit-btn"> &nbsp;&nbsp;登&nbsp;&nbsp;录&nbsp;&nbsp;</button>
                         </div>
                     </form>
                 </div>
@@ -65,6 +51,23 @@
         </div>
         <div class="col-md-4"></div>
     </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("submit-btn").click(function() {
+            var data = {
+                "username": $(".input-username").val(),
+                "password": $(".input-password").val()
+            };
+            console.log(data);
+            exit;
+            $.post('http://localhost:8080/FS/index.php/Admin/A/login', data, function(res, status) {
+                if (res == "none") {
+                    
+                }
+            });
+        })
+    });
+    </script>
 </body>
 
 </html>

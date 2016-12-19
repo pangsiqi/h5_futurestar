@@ -9,13 +9,16 @@ body {
 }
 
 #name li {
-    padding-top: 7px;
-    padding-left: 45px;
+    margin-top: -10px;
+    padding-left: 37px;
 }
-
+#name .realname{
+    width: 60px;
+    display: inline-block;
+}
 #owner {
-    padding-left: 77px;
-    padding-top: 0px;
+    padding-left: 70px;
+    margin-top: -12px;
 }
 
 #owner li {

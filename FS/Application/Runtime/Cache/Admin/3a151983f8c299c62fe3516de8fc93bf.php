@@ -18,7 +18,7 @@ body{ background: url(/FS/Public/end/images/login_bg.jpg);  font-family: '微软
 <body>
 <div class="system-message">
 <?php if(isset($message)) {?>
-<h1>:)</h1>
+<!-- <h1>:)</h1> -->
 <p class="success"><?php echo($message); ?></p>
 <?php }else{?>
 <!-- <h1>:(</h1> -->

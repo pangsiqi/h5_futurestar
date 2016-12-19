@@ -133,7 +133,7 @@
         <div class="col-md-7 column" id="content_h">
             <div class="row clearfix">
                 <div class="col-md-12 column" id="right1">
-                    <h4 id="title">一年级20班 2016年11月17日作业报告</h4>
+                    <h4 id="title"><?php echo ($tea["grade"]); ?> <?php echo (substr($homework["starttime"],0,10)); ?>作业报告</h4>
                 </div>
             </div>
             <div class="row clearfix">
