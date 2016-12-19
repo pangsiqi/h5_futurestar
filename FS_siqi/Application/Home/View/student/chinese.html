@@ -49,7 +49,7 @@
                         <div id="chinese"><a href="__URL__/chinese/id/1">语文印象</a></div>
                         <div id="math"><a href="__URL__/chinese/id/2">数学印象</a></div>
                         <div id="english"><a href="__URL__/chinese/id/3">英语印象</a></div>
-                        <div id="walk"><a href="__URL__/chinese.html">随身听</a></div>
+                        <div id="walk"><a href="__URL__/walktolisten.html">随身听</a></div>
                         <div id="garden"><a href="__URL__/classgarden.html">课外乐园</a></div>
                     </div>
                     <!--右侧内容-->
@@ -58,7 +58,7 @@
                         <div class="col-md-8" id="rightcontent">
                             <div id="title">
                                 <ul>
-                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$course.subject}</a>
+                                    <a href="__URL__/index.html">首页</a> / <a href="__URL__/chinese.html">学习中心</a> / <a href="__URL__/#">{$subject.subject}</a>
                                 </ul>
                             </div>
                             <div id="studycontent">
@@ -74,7 +74,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
@@ -94,7 +94,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
@@ -114,7 +114,7 @@
                                             <li>截止时间：{$course.endtime|substr=0,10}</li>
                                             <li>完成情况：未完成</li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
-                                                <a href="studycontent.html">
+                                                <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
