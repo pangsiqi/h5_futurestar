@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>学生部分首页</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/student/css/index.css" />
     <link rel="stylesheet" href="__PUBLIC__/front/student/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/index1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/indexwrite.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/student/css/nav1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/student/css/nav.css" />
-    
+    <script type="text/javascript" src="__PUBLIC__/front/student/js/jquery.js"></script>
+
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <div class="col-md-8 column" id="nav">
         <ul>
             <li><a href="__URL__/index.html">首页</a></li>
-            <li><a href="__URL__/chinese.html">学习中心</a></li>
+            <li><a href="__URL__/studycenter.html">学习中心</a></li>
             <li><a href="__URL__/pk.html">竞技场</a></li>
             <li><a href="__URL__/classspace.html">班级天地</a></li>
             <li><a href="__URL__/parentspace.html">家长空间</a></li>
@@ -51,7 +53,7 @@
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="name">
                             <volist name="stu" id="s">
-                                <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$s.realname} {$s.starnum}</li>
+                                <li><img src="__PUBLIC__/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="realname">{$s.realname}</span> {$s.starnum}</li>
                             </volist>
                         </ul>
                         <HR width="70%" color=#987cb9 SIZE=8 />
@@ -87,6 +89,54 @@
                         <div id="classsky">
                             <a href="__URL__/classspace.html"><img src="__PUBLIC__/front/student/images/classsky.png" /></a>
                         </div>
+                        <script>
+                        // 班级天地
+                        $(document).ready(function(){
+                            $("#classsky img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/classskyy.png");
+                                });
+                                $("#classsky img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/classsky.png");
+                                });
+                            
+                        // 家长空间
+                            $("#parentspace img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/parentspacey.png");
+                                });
+                                $("#parentspace img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/parentspace.png");
+                                });
+                        // 竞技场
+                            $("#pk img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/pky.png");
+                                });
+                                $("#pk img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/pk.png");
+                                });
+                            
+                        // 学习中心
+                            $("#studycenter img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/studycentery.png");
+                                });
+                                $("#studycenter img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/studycenter.png");
+                                });
+                            
+                        // 奖品
+                            $("#gift img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/gifty.png");
+                                });
+                                $("#gift img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/gift.png");
+                                });
+                            
+                        });
+                        </script>
                         <div id="parentspace">
                             <a href="__URL__/parentspace.html"><img src="__PUBLIC__/front/student/images/parentspace.png" /></a>
                         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>随身听</title>
+    <title>课外乐园</title>
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/chinese1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/chinese.css" />
@@ -58,23 +58,25 @@
                             </ul>
                         </div>
                         <div id="studycontent">
-                        <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$res): $mod = ($i % 2 );++$i;?><div id="1">
-                                <div class="col-md-2 column">
-                                    <div style=" width: 150px;margin-top: 18px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="/FS/Public/front/student/images/garden_book.jpg" style="border-radius: 10px;" /></div>
+                        <?php if(is_array($resource)): $i = 0; $__LIST__ = $resource;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$res): $mod = ($i % 2 );++$i;?><div>
+                                <div id="images"><!-- <img src="/FS/Public/front/student/images/list_book.jpg" style="border-radius: 10px;" /> --></div>
                                 </div>
-                                <div class="col-md-8 column" style="margin-left: 100px;">
+                                <div class="col-md-9 column" id="content">
                                     <ul>
-                                        <li>课程内容：<a href="#"><?php echo ($res["title"]); ?></a></li>
-                                        <li>课程描述：<?php echo ($res["summary"]); ?></li>
-                                        <li>上传时间：<?php echo (substr($res["publishtime"],0,10)); ?></li>
-                                        <!-- <li>截止时间：<?php echo (substr($res["starttime"],0,10)); ?></li> -->
-                                        <!-- <li>完成情况：未收听</li> -->
-                                        <li style="float: right; margin-top:35px;margin-right: 11px;">
-                                            <a href="/FS/index.php/Home/Student/pk/id/<?php echo ($res["id"]); ?>">
-                                                <button type="button" class="btn btn-info">开始学习</button>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            <li><h4>课程内容：<?php echo ($course["title"]); ?></h4></li>
+                                            <HR width="100%" color=#987cb9 SIZE=8 />
+                                            <li>课程描述：<?php echo ($course["detail"]); ?></li>
+                                            
+                                            <li><a href="#">开始时间：<?php echo (substr($course["starttime"],0,10)); ?></a></li>
+                                            <li><a href="#">截止时间：<?php echo (substr($course["endtime"],0,10)); ?></a></li>
+                                            
+                                            <li>完成情况：未完成&nbsp<span class="glyphicon glyphicon-remove"></span></li>
+                                            <li style="float: right; margin-top:-51px;margin-right: 11px;">
+                                                <a href="/FS/index.php/Home/Student/studycontent/id/<?php echo ($course["homeworkid"]); ?>">
+                                                    <button type="button" class="btn btn-info">开始作业</button>
+                                                </a>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
                             <HR width="100%" color=#987cb9 SIZE=8 /><?php endforeach; endif; else: echo "" ;endif; ?>

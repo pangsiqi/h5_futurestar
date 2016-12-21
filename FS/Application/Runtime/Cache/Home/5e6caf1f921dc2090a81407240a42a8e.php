@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>学生部分首页</title>
+    <link rel="stylesheet" type="text/css" href="/FS/Public/front/student/css/index.css" />
     <link rel="stylesheet" href="/FS/Public/front/student/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/index1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/indexwrite.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="/FS/Public/front/student/css/nav1024.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="/FS/Public/front/student/css/nav.css" />
-    
+    <script type="text/javascript" src="/FS/Public/front/student/js/jquery.js"></script>
+
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <div class="col-md-8 column" id="nav">
         <ul>
             <li><a href="/FS/index.php/Home/Student/index.html">首页</a></li>
-            <li><a href="/FS/index.php/Home/Student/chinese.html">学习中心</a></li>
+            <li><a href="/FS/index.php/Home/Student/studycenter.html">学习中心</a></li>
             <li><a href="/FS/index.php/Home/Student/pk.html">竞技场</a></li>
             <li><a href="/FS/index.php/Home/Student/classspace.html">班级天地</a></li>
             <li><a href="/FS/index.php/Home/Student/parentspace.html">家长空间</a></li>
@@ -50,7 +52,7 @@
                         <li id="bangdan">榜单</li>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="name">
-                            <?php if(is_array($stu)): $i = 0; $__LIST__ = $stu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><li><img src="/FS/Public/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($s["realname"]); ?> <?php echo ($s["starnum"]); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <?php if(is_array($stu)): $i = 0; $__LIST__ = $stu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><li><img src="/FS/Public/front/student/images/hands.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="realname"><?php echo ($s["realname"]); ?></span> <?php echo ($s["starnum"]); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
                         </ul>
                         <HR width="70%" color=#987cb9 SIZE=8 />
                         <ul id="owner">
@@ -83,6 +85,54 @@
                         <div id="classsky">
                             <a href="/FS/index.php/Home/Student/classspace.html"><img src="/FS/Public/front/student/images/classsky.png" /></a>
                         </div>
+                        <script>
+                        // 班级天地
+                        $(document).ready(function(){
+                            $("#classsky img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/classskyy.png");
+                                });
+                                $("#classsky img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/classsky.png");
+                                });
+                            
+                        // 家长空间
+                            $("#parentspace img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/parentspacey.png");
+                                });
+                                $("#parentspace img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/parentspace.png");
+                                });
+                        // 竞技场
+                            $("#pk img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/pky.png");
+                                });
+                                $("#pk img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/pk.png");
+                                });
+                            
+                        // 学习中心
+                            $("#studycenter img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/studycentery.png");
+                                });
+                                $("#studycenter img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/studycenter.png");
+                                });
+                            
+                        // 奖品
+                            $("#gift img").mouseover(function () {
+                                    
+                                    $(this).attr("src","/FS/Public/front/student/images/gifty.png");
+                                });
+                                $("#gift img").mouseleave(function () {
+                                    $(this).attr("src","/FS/Public/front/student/images/gift.png");
+                                });
+                            
+                        });
+                        </script>
                         <div id="parentspace">
                             <a href="/FS/index.php/Home/Student/parentspace.html"><img src="/FS/Public/front/student/images/parentspace.png" /></a>
                         </div>

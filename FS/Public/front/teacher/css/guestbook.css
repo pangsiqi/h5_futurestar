@@ -250,6 +250,20 @@ body {
     text-align: center;
 }
 
+.jp-container .talk_recordbox .user img{
+    float: left;
+    display: inline;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
 
 /*自己发言样式*/
 

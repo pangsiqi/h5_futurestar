@@ -9,10 +9,23 @@ li {
     color: white;
 }
 .current-user-thumb{
-    margin-top: 37px;
-    margin-left: 30px;
-    width: 100px;
-    height: 100px;
+    margin-top: 34px;
+    margin-left: 19px;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+h1{
+    font-size:16px;
+    padding-right: 9px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+h2{
+    font-size: 13px;
+    padding-right: 33px;
+    margin-top: -7px;
+    /*font-weight: bold;*/
 }
 #left {
     position: absolute;
@@ -22,10 +35,10 @@ li {
 
 #top {
     margin-top: -10px;
-    margin-left: 10px;
+    margin-left: 35px;
     background-color: white;
     width: 320px;
-    height: 418px;
+    height: 455px;
     border-radius: 5px;
 }
 
@@ -43,10 +56,30 @@ li {
 #top ul li p {
     margin: 0px;
 }
-
+#person{
+    z-index:100px;
+}
+#person ul{
+    text-align: left;
+}
+#person ul li{
+    color:black;
+    text-align: left;
+    padding-top: 7px;
+    font-size:18px;
+}
+#giftpic{
+    margin-left: 17px;
+}
+#giftpic img{
+    width:50%;
+}
+#giftpic a{
+    padding-right: 10px;
+}
 #buttom {
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 35px;
     background-color: white;
     width: 320px;
     height: 370px;
@@ -56,7 +89,9 @@ li {
 #buttom p {
     margin-left: 25px;
 }
-
+#buttom_img{
+    margin-left:10px;
+}
 #right {
     position: absolute;
     left: 540px;
@@ -64,7 +99,7 @@ li {
 }
 
 #nav-tab {
-    margin-top: -30px;
+    margin-top: -60px;
     margin-left: -115px;
     width: 80%;
 }
@@ -97,7 +132,7 @@ li {
 #tab1 {
     position: absolute;
     left: -100px;
-    top: 11px;
+    top: -19px;
     background-color: white;
     width: 640px;
     height: 795px;
@@ -107,7 +142,7 @@ li {
 #tab2 {
     position: absolute;
     left: -100px;
-    top: 11px;
+    top: -19px;
     background-color: white;
     width: 640px;
     height: 795px;
@@ -117,7 +152,7 @@ li {
 #tab3 {
     position: absolute;
     left: -100px;
-    top: 11px;
+    top: -19px;
     background-color: white;
     width: 640px;
     height: 795px;

@@ -123,7 +123,7 @@ class TeacherController extends Controller {
         if($homeworkModel->add($data)){
 			$this->redirect("teacher/assignment");
 		}else{
-			$this->error("添加失败",1);
+			$this->redirect("teacher/assignment");
 		}
 	}
 	public function addResource(){
@@ -156,7 +156,7 @@ class TeacherController extends Controller {
         if($homeworkModel->add($data)){
 			$this->redirect("teacher/assignment");
 		}else{
-			$this->error("添加失败",1);
+			$this->redirect("teacher/assignment");
 		}
 	}
 
@@ -165,6 +165,11 @@ class TeacherController extends Controller {
 		$teacherModel = M('teacher');
 		$teacherResult = $teacherModel->where("tel='$tel'")->select();
 		$this->assign('tea',$teacherResult[0]);
+
+		$teaid = $teacherResult[0]['id'];
+		$homeworkModel = M('homework');
+		$homeworkResult = $homeworkModel->where("teacher_id='$teaid'")->select();
+		$this->assign('homework',$homeworkResult[0]);
 
 		$studentModel = M("student");
     	$studentResult = $studentModel->limit("7")->where("teatel='$tel'")->select();
@@ -191,10 +196,6 @@ class TeacherController extends Controller {
 	}
 	public function showMessage(){
 		$stuName = I("post.stuName");
-		// echo $stuName;exit;
-		// if($stuName=="请选择学生"){
-		// 	echo "请选择学生";
-		// }
 		// 获取学生id
 		$studentModel = M('student');
 		$studentResult = $studentModel->where("realname='$stuName'")->select();
@@ -205,7 +206,7 @@ class TeacherController extends Controller {
 
 		$count  = $messageModel->count();    //计算总数
         $Page   = new \Think\Page($count, 1);
-		$messageResult = $messageModel->limit($Page->firstRow. ',' . $Page->listRows)->where("student_id='$stuId'")->order("parenttime asc")->select();
+		$messageResult = $messageModel->join()->limit($Page->firstRow. ',' . $Page->listRows)->where("student_id='$stuId'")->order("parenttime asc")->select();
         $page = $Page->show();
         // dump($messageResult);exit;
         $jsonData = json_encode($messageResult);
@@ -216,38 +217,21 @@ class TeacherController extends Controller {
         $this->assign("message",$messageResult);
 	}
 
-	// public function stuMessage(){
-	// 	// 获取学生id
-	// 	$studentModel = M('student');
-	// 	$studentResult = $studentModel->where("realname='$stuName'")->select();
-	// 	$stuId = $studentResult[0]['id'];
-	// 	// 获取老师与该学生的消息记录
-	// 	$messageModel = M('messageBoard');
-
-	// 	$count  = $messageModel->count();    //计算总数
- //        $Page   = new \Think\Page($count, 1);
-	// 	$messageResult = $messageModel->limit($Page->firstRow. ',' . $Page->listRows)->where("student_id='$stuId'")->order("parenttime asc")->select();
- //        $page = $Page->show();
-	// 	dump($messageResult[0]);exit;
-	// 	$this->assign("page",$page);
-	// 	$this->assign("message",$messageResult);
-	// }
-
 	public function addMessage(){
-		if(!IS_POST){
-			exit("bad request");
-		}
-		$stuName = I("post.realname");
-		if($stuName =="请选择学生"){
-			echo "<script>";
-			echo "alert('请选择接收消息的学生！')";
-			echo "</script>";
-		}
+		// if(!IS_POST){
+		// 	exit("bad request");
+		// }
+		// $stuName = I("post.realname");
+		// if($stuName =="请选择学生"){
+		// 	echo "<script>";
+		// 	echo "alert('请选择接收消息的学生！')";
+		// 	echo "</script>";
+		// }
 		
-		// 获取学生id
-		$studentModel = M('student');
-		$studentResult = $studentModel->where("realname='$stuName'")->select();
-		$stuId = $studentResult[0]['id'];
+		// // 获取学生id
+		// $studentModel = M('student');
+		// $studentResult = $studentModel->where("realname='$stuName'")->select();
+		// $stuId = $studentResult[0]['id'];
 
 		layout(false); // 临时关闭当前模板的布局功能
 		$this->display();//加载当前函数的模板文件
@@ -313,7 +297,7 @@ class TeacherController extends Controller {
 	            if($teacherModel->where("id='$id'")->save($data)){
 	                $this->redirect("teacher/personCenter");
 	            }else{
-	                $this->error("修改失败");
+	                $this->redirect("teacher/personCenter");
 	            }
 	        }
     	}
@@ -361,7 +345,7 @@ class TeacherController extends Controller {
             if($resourcesModel->add($data)){
                 $this->redirect("teacher/resource");
             }else{
-                $this->error("添加失败");
+                $this->redirect("teacher/resource");
             }
         }
     }

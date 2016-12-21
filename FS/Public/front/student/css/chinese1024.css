@@ -3,7 +3,15 @@ body {
     background: url(../images/list_ground1024.png) no-repeat;
     overflow-x: hidden;
 }
-
+a:hover{
+    text-decoration: none;
+}
+hr{
+    margin-top: -14px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
 #studycontent li {
     list-style-type: none;
     padding-bottom: 15px;
@@ -69,7 +77,20 @@ body {
     ;
     font-size: 16px;
 }
+#images{
+    background: url(../images/list_book.jpg) no-repeat;
+    width: 150px;
+    height: 178px;
+    margin-top: 24px;
+    margin-left: 9px;
+    border: 2px rgb(44,183,192) solid;
+    border-radius: 10px;
 
+}
+#content ul{
+    margin-left: 45px;
+    width: 488px;
+}
 #studycontent {
     border: 1px solid #bbbbbb;
     width: 651px;

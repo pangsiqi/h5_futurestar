@@ -8,10 +8,35 @@ class StudentController extends Controller {
 			$this->redirect("index/login");
 		}
 	}
+	public function studycenter($id=''){
+		//获取我的信息
+		$studentModel = M("student");
+		$tel = session('tel');
+		$currentUser = $studentModel->where("tel=".$tel)->select();
+		$this->assign("current",$currentUser[0]);
+
+		$id = isset($_GET['id']) ? intval($_GET['id']) : '';//获取网址链接id
+		$homeworkModel = M("homework");//获取表homework
+		if($id !== ''){
+			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=".$id)->order("homeworkid desc")->select();//.为连接符
+			$homeworkSubject = $homeworkModel->where("subjectid=".$id)->select();
+			$this->assign("subject",$homeworkSubject[0]);
+			$this->assign('courses',$homeworkResult);//赋值
+		}else{
+			$homeworkResult = $homeworkModel->limit("3")->where("subjectid=1")->select();//.为连接符
+			$homeworkSubject = $homeworkModel->where("subjectid=1")->select();
+			$this->assign("subject",$homeworkSubject[0]);
+			$this->assign('courses',$homeworkResult);//赋值
+		}
+		
+
+		layout(false); // 临时关闭当前模板的布局功能
+		$this->display();//加载当前函数的模板文件
+	}
 	public function index(){
 		//获取榜单信息
 		$studentModel = M("student");
-		$student = $studentModel->limit("3")->order("starnum desc")->select();
+		$student = $studentModel->limit("5")->order("starnum desc")->select();
 		$this->assign("stu",$student);
 
 		//获取我的信息
@@ -49,7 +74,7 @@ class StudentController extends Controller {
 	            $data['thumb'] = __ROOT__.'/Public'.$uploadPic['thumb']['savepath'].$uploadPic['thumb']['savename'];
 	            $data['birthday'] = I("post.birthday");
 	            if($studentModel->where("id='$id'")->save($data)){
-	                $this->success("修改成功",U("student/personcenter"));
+	                $this->redirect("student/personcenter");
 	            }else{
 	                $this->error("修改失败");
 	            }

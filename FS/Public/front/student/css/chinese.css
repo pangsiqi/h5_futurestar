@@ -5,9 +5,16 @@ body{
     overflow-x: hidden;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
-
-
+hr{
+    margin-top: -14px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
 #studycontent li{
     list-style-type: none;
     padding-bottom: 15px;
@@ -68,6 +75,21 @@ body{
     top: 115px;;
     font-size: 16px;
 }
+
+#images{
+    background: url(../images/list_book.jpg) no-repeat;
+    width: 150px;
+    height: 178px;
+    margin-top: 24px;
+    margin-left: 11px;
+    border: 2px rgb(44,183,192) solid;
+    border-radius: 10px;
+
+}
+#content ul{
+    margin-left: 14px;
+    width: 678px;
+}
 #studycontent{
     border:1px solid #bbbbbb;
     width:849px;
@@ -90,19 +112,19 @@ body{
      margin-top:80px;
  }
 #math{
-    margin-left: 490px;
+    margin-left: 500px;
     margin-top:-28px;
 }
 #english{
-    margin-left: 700px;
+    margin-left: 710px;
     margin-top:-58px;
 }
 #walk{
-    margin-left: 865px;
-    margin-top:27px;
+    margin-left: 879px;
+    margin-top:41px;
 }
 #garden{
-    margin-left: 960px;
+    margin-left: 967px;
     margin-top:-70px;
 
 }

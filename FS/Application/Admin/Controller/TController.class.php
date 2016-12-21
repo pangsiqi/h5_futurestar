@@ -5,7 +5,7 @@ class TController extends Controller {
 	public function __construct(){
     	parent::__construct();
 		if(!isLogin()){
-			$this->error("请先登录",U("A/login"));
+			$this->redirect("A/login");
 		}
     }
     
@@ -28,7 +28,7 @@ class TController extends Controller {
     		if($model->create()){
     			$result = $model->filter('strip_tags')->save($data);
 				if($result !== false){
-					$this->success("修改成功", U("T/lists"));
+					$this->redirect("T/lists");
 				}else{
 					$this->error($model->getError());
 				}
@@ -50,7 +50,7 @@ class TController extends Controller {
 			exit("bad param!");
 		}
 		if(M("teacher")->delete($id)){
-			$this->success("删除成功！");
+			$this->redirect("T/lists");
 		}
     }
 }

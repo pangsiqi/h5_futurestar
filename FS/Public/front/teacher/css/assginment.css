@@ -6,11 +6,6 @@ a:visited {
     color: black;
 }
 
-body{
-    background-color:RGB(189,235,141);
-    overflow-x:hidden;
-}
-
 .item ul li a {
     color: white;
 }
@@ -20,123 +15,7 @@ body{
     border: solid 1px RGB(234, 234, 234);
     height: 60px;
 }
-
-/*导航*/
-#logo{
-    margin-top:10px;
-    padding-left:120px;
-}
-
-#nav{
-    padding-left:40px;
-    margin-top:8px;
-}
-
-#nav li {
-    float: left;
-    list-style-type: none;
-    padding-top: 10px;
-}
-
-#new{
-    padding-left:5px;
-}
-
-#circle{
-    padding-left:3px;
-    margin-top:-7px;
-
-}
-
-#drop{
-    padding:0 0 0 3px;
-    margin:0 ;
-
-}
-
-#navbarDrop1{
-    width:100px;
-    border:solid 1px RGB(187,187,187); 
-    border-radius:4px;
-    color:black;
-    float:left;
-}
-
-#navbarDrop2{
-    // padding:0 30px;
-    padding-right:20px;
-}
-
-#navbarDrop3{
-    min-width:0px;
-}
-
-/*老师信息*/
-#content{
-    height:600px;
-}
-
-#content_left1{
-    padding-left: 145px;
-    padding-top:35px;
-}
-
-#left1{
-    background-color: white; 
-    width:146px; 
-    height:110px;
-}
-
-#pic{
-    margin-top:2px; 
-    padding-top:15px;
-}
-
-#left2{
-    font-size:12px; 
-    margin-top:2px;
-}
-
-#tec{
-    padding:15px 0 0 0;
-    margin:0;
-    float:left;
-}
-
-.progress{
-    height:8px; 
-    width:16px; 
-    float:right;
-    padding:0;
-    margin:0;
-    margin-top:5px;
-}
-
-.progress-bar{
-    width: 50%;
-}
-
-#lvo{
-    padding:0;
-    margin:0;
-}
-
-#flower{
-    padding:0;
-    margin:0;
-    float:left;
-}
-
-#zheng{
-    background-color:white; 
-    border:solid 1px gray; 
-    border-radius:8px;
-}
-
 /*手风琴*/
-#list{
-    padding:0;
-}
 
 .list-group li {
     list-style-type: none;
@@ -167,34 +46,20 @@ body{
     padding-top: 3px;
 }
 
-#test{
-    color:white;
-    padding-top:4px;
-    padding-left:16px;
-}
-
-.panel-body{
-    padding:0;
-}
-
-.homeworkList_e{
-    padding-left:0;
-}
-
 .homeworkList_e li {
     list-style-type: none;
     background-color: RGB(43, 175, 43);
     outline: RGB(124, 179, 66) dotted 2px;
     margin: 0;
     text-align: center;
-    
 }
 
-.list-group-item{
-    margin-left:0;
+#nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 10px;
 }
 
-/*内容右侧*/
 #content_h {
     background-color: white;
     border: solid 1px RGB(187, 187, 187);
@@ -204,80 +69,15 @@ body{
     margin-left: 35px;
 }
 
-#right1{
-    background-color:RGB(156,204,101);
-    height:45px;
-    padding:0;
-    margin:0;
-}
-
-#title{
-    font-size:20px; 
-    padding-top:12px;
-    padding-left:28px;
-    margin:0;
-}
-
-#right2{
-    padding-left:0;
-}
-
-#myclass{
-    font-size:14px; 
-    padding-top:14px;
-    padding-left:28px;
-    margin:0;
-    margin-bottom:15px;
-}
-
 #star li {
     list-style-type: none;
     float: left;
     text-align: center;
 }
 
-#basic{
-    color:RGB(139,195,74);
-    padding:0;
-    margin:0;
-}
-
-#expend{
-    color:RGB(255,87,34);
-}
-
-.course{
-    font-size:14px; 
-    padding-top:24px;
-    padding-left:28px;
-    margin:0;
-}
-
-.basicstudy{
-    padding-top:20px;
-    padding-left:0;
-    margin:0;
-    font-size:12px;
-}
-
-.expendstudy{
-    padding-top:20px;
-    padding-left:0;
-    margin:0;
-    font-size:12px;
-}
-
-.study{
-     padding-left:26px;
-}
-
 .study li {
     list-style-type: none;
     float: left;
-}
-
-.subject{
-    padding-top:6px;
 }
 
 .plus {
@@ -288,11 +88,6 @@ body{
     margin-left: 60px;
 }
 
-.glyphicon{
-    color:white;
-}
-
-/*尾部*/
 #footer {
     background-color: white;
     border: solid 1px RGB(234, 234, 234);
@@ -300,14 +95,6 @@ body{
     font-size: 12px;
     text-align: center;
     height: 70px;
-}
-
-#footer1{
-    padding-top:15px;
-}
-
-#footer2{
-    padding-left:45px;
 }
 
 .footer_nav li {

@@ -46,7 +46,7 @@
                         <div id="chinese"><a href="__URL__/chinese/id/1">语文印象</a></div>
                         <div id="math"><a href="__URL__/chinese/id/2">数学印象</a></div>
                         <div id="english"><a href="__URL__/chinese/id/3">英语印象</a></div>
-                        <div id="walk"><a href="__URL__/walkolisten.html">随身听</a></div>
+                        <div id="walk"><a href="__URL__/walktolisten.html">随身听</a></div>
                         <div id="garden"><a href="__URL__/classgarden.html">课外乐园</a></div>
                     </div>
                     <!--右侧内容-->
@@ -60,26 +60,31 @@
                             </div>
                             <div id="studycontent">
                             <volist name="courses" id="course">
-                                <div id="1">
+                                <div>
                                     <div class="col-md-2 column">
-                                        <div style=" width: 150px;margin-top: 20px; margin-left: 50px; border:2px rgb(44,183,192) solid; border-radius: 10px;"><img src="__PUBLIC__/front/student/images/list_book.jpg" style="border-radius: 10px;" /></div>
+                                        <div id="images"><!-- <img src="__PUBLIC__/front/student/images/list_book.jpg" style="border-radius: 10px;" /> --></div>
                                     </div>
-                                    <div class="col-md-8 column" style="margin-left: 100px;">
+                                    <div class="col-md-9 column" id="content">
                                         <ul>
-                                            <li>课程内容：<a href="#">{$course.title}</a></li>
+                                            <li><h4>课程内容：{$course.title}</h4></li>
+                                            <HR width="100%" color=#987cb9 SIZE=8 />
                                             <li>课程描述：{$course.detail}</li>
-                                            <li>开始时间：{$course.starttime|substr=0,10}</li>
-                                            <li>截止时间：{$course.endtime|substr=0,10}</li>
-                                            <li>完成情况：未完成</li>
+                                            
+                                            <li><a href="#">开始时间：{$course.starttime|substr=0,10}</a></li>
+                                            <li><a href="#">截止时间：{$course.endtime|substr=0,10}</a></li>
+                                            
+                                            <li>完成情况：未完成&nbsp<span class="glyphicon glyphicon-remove"></span></li>
                                             <li style="float: right; margin-top:-51px;margin-right: 11px;">
                                                 <a href="__URL__/studycontent/id/{$course.homeworkid}">
                                                     <button type="button" class="btn btn-info">开始作业</button>
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
+
+                                    </div><HR width="100%" color=#987cb9 SIZE=8 style="margin-top: 5px;margin-bottom: 0px;" />
                                 </div>
-                                <HR width="100%" color=#987cb9 SIZE=8 />
+                                
+
                             </volist>
                                 
                             </div>
