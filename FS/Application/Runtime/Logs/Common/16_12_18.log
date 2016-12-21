@@ -1,0 +1,12 @@
+[ 2016-12-18T12:52:39+08:00 ] 127.0.0.1 /FS/index.php/A/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+ERR: 无法加载模块:A
+
+[ 2016-12-18T14:13:10+08:00 ] 127.0.0.1 /FS/index.php/%E2%80%98%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:‘’
+

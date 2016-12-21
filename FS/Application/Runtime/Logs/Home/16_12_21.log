@@ -1,0 +1,406 @@
+[ 2016-12-21T08:16:35+08:00 ] 127.0.0.1 /FS/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in D:\wwwroot\FS\Application\Home\Controller\IndexController.class.php on line 7 and defined D:\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content D:\wwwroot\FS\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-12-21T08:16:38+08:00 ] 127.0.0.1 /FS/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-12-21T08:16:49+08:00 ] 127.0.0.1 /FS/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` WHERE `tel` = '13811111111' AND `password` = '' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-12-21T08:16:49+08:00 ] 127.0.0.1 /FS/index.php/Home/index/stulogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `student` WHERE `tel` = '13811111111' AND `password` = null  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-12-21T08:16:50+08:00 ] 127.0.0.1 /FS/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-12-21T08:17:00+08:00 ] 127.0.0.1 /FS/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` WHERE `tel` = '13811111111' AND `password` = '111' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-12-21T08:17:00+08:00 ] 127.0.0.1 /FS/index.php/Home/index/stulogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `student` WHERE `tel` = '13811111111' AND `password` = '111'  [ RunTime:0.0011s ]
+
+[ 2016-12-21T08:17:00+08:00 ] 127.0.0.1 /FS/index.php/Home/student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `student` ORDER BY starnum desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `homework` ORDER BY homeworkid desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-12-21T08:17:44+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/studycenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=1 ) LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-12-21T08:20:25+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/classspace.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `classspace` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `classspace` WHERE ( messageid ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-12-21T08:20:42+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/parentspace.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `teacher` WHERE ( tel=13866666666 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `message_board` [ RunTime:0.0369s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `message_board` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `message_board` WHERE ( student_id=2016011101 ) ORDER BY parenttime desc LIMIT 0,2   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Use of undefined constant parenttime - assumed 'parenttime' D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 80 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 80 行.
+NOTIC: [8] Use of undefined constant teachertime - assumed 'teachertime' D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 88 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 88 行.
+NOTIC: [8] Use of undefined constant parenttime - assumed 'parenttime' D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 80 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 80 行.
+NOTIC: [8] Use of undefined constant teachertime - assumed 'teachertime' D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 88 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\wwwroot\FS\Application\Runtime\Cache\Home\c0032f196d2e57bc6ce0e49941a300ac.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-12-21T08:20:58+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/gift.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-12-21T10:08:13+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/classspace.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `classspace` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `classspace` WHERE ( messageid ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2016-12-21T10:09:23+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/chinese.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=1 ) LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-12-21T10:09:32+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/chinese/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=2 ) ORDER BY homeworkid desc LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-12-21T10:09:35+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/chinese/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=3 ) ORDER BY homeworkid desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=3 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2016-12-21T10:10:19+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/walktolisten.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `homework` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `homework` WHERE ( subjectid=4 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: courses D:\wwwroot\FS\Application\Runtime\Cache\Home\07d3b15a3a634d3e439c9217c23e487a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-12-21T10:10:21+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/classgarden.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `student` WHERE ( tel=13811111111 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: res D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 57 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 66 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 68 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 70 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 71 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 75 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 66 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 68 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 70 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 71 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 75 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 66 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 68 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 70 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 71 行.
+NOTIC: [8] Undefined variable: course D:\wwwroot\FS\Application\Runtime\Cache\Home\5a590c5ba4946cf20d9d2d974cd5eaf9.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002967s ]
+
