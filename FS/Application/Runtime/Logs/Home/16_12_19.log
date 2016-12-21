@@ -1086,6 +1086,7 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
 
+<<<<<<< HEAD
 [ 2016-12-19T17:05:08+08:00 ] 127.0.0.1 /FS/index.php/Home/Student/index.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
@@ -1955,3 +1956,5 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
 
+=======
+>>>>>>> 55276631e57de7ebe2414c2d828370a243faab9e

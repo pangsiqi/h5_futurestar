@@ -1,0 +1,12 @@
+[ 2016-12-04T16:28:38+08:00 ] 127.0.0.1 /FS/index.php/FS/index.php/Home/index/resTeacherSelect.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载模块:FS
+
+[ 2016-12-04T16:29:00+08:00 ] 127.0.0.1 /FS/index.php/FS/index.php/Home/index/resTeacherSelect.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:FS
+

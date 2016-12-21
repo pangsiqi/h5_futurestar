@@ -1,0 +1,171 @@
+body {
+    width: 100%;
+    background: url(../images/list_ground1024.png) no-repeat;
+    overflow-x: hidden;
+}
+
+#studycontent li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+#studycontent ul {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+#leftcontent ul li a {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+#leftcontent a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#rightcontent {
+    background: white;
+    border-radius: 10px;
+    width: 712px;
+    height: 813px;
+    position: absolute;
+    right: 121px;
+    top: 111px;
+    z-index: 1;
+}
+
+#title {
+    background: rgb(38, 159, 167);
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    width: 714px;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+}
+
+#title ul {
+    margin-left: -9px;
+    margin-top: 13px;
+}
+
+#title a {
+    color: white;
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+#title a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+#rightcontent p {
+    position: absolute;
+    left: 45px;
+    top: 115px;
+    ;
+    font-size: 16px;
+}
+
+#studycontent {
+    border: 1px solid #bbbbbb;
+    width: 651px;
+    /*height: 860px;*/
+    position: absolute;
+    left: 32px;
+    top: 70px;
+    border-radius: 5px;
+}
+
+#studycontent ul li {
+    color: black;
+    font-size: 12px;
+}
+
+
+/*二级菜单设置*/
+
+#chinese {
+    margin-left: 237px;
+    margin-top: 54px;
+}
+
+#chinese a {
+    font-size: 12px;
+}
+
+#math {
+    margin-left: 427px;
+    margin-top: -28px;
+}
+
+#math a {
+    font-size: 12px;
+}
+
+#english {
+    margin-left: 588px;
+    margin-top: -51px;
+}
+
+#english a {
+    font-size: 12px;
+}
+
+#walk {
+    margin-left: 713px;
+    margin-top: 27px;
+}
+
+#walk a {
+    font-size: 12px;
+}
+
+#garden {
+    margin-left: 778px;
+    margin-top: -57px;
+}
+
+#garden a {
+    font-size: 12px;
+}
+
+#nav2 a:hover {
+    color: yellow;
+}
+
+#studycontent a {
+    color: green;
+}
+
+
+/*footer*/
+
+.footer {
+    background: url(../images/footer.png) no-repeat;
+    /*margin-top: auto;*/
+    height: 120px;
+}
+
+.footer ul {
+    width: 42%;
+    margin: 907px auto 0 auto;
+    padding-top: 38px;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-top: 17px;
+    color: #7d7a7d;
+    font-size: 12px;
+}
+
+#footerli a {
+    padding-left: 30px;
+    margin-left: 5px;
+    color: #7d7a7d;
+    font-size: 12px;
+}
