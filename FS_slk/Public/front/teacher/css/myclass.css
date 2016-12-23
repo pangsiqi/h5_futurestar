@@ -240,6 +240,8 @@ body{
 .picture{
     padding-top:25px;
     padding-left:16px;
+    width: 110px;
+    height: 110px;
 }
 
 
@@ -257,7 +259,7 @@ body{
 }
 
 #footer2{
-    padding-left:45px;
+    padding-left:160px;
 }
 
 .footer_nav li {

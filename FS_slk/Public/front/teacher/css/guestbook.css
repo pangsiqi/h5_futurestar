@@ -262,6 +262,7 @@ body {
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+    border-radius: 50%;
 }
 
 
@@ -322,6 +323,20 @@ body {
     line-height: 20px;
     text-align: center;
     display: inline;
+}
+.jp-container .talk_recordboxme .user img{
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: inline;
+    border-radius: 50%;
 }
 
 .talk_time {
@@ -426,7 +441,7 @@ body {
 
 #dia_s {
     background-color: white;
-    height: 300px;
+    height: 327px;
     width: 850px;
     border: solid 3px RGB(187, 187, 187);
     border-radius: 10px;

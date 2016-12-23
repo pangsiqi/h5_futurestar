@@ -237,13 +237,15 @@ body{
 
 .name{
     text-align:center;
+    padding-right: 20px;
 }
 
 .picture{
     padding-top:25px;
     padding-left:16px;
+    width:110px;
+    height:110px;
 }
-
 
 /*尾部*/
 #footer {
@@ -253,6 +255,7 @@ body{
     font-size: 12px;
     text-align: center;
     height: 70px;
+    margin-top: 20px;
 }
 
 #footer1 {

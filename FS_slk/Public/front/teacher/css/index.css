@@ -221,7 +221,7 @@ body {
 #task1 {
     background-color: white;
     height: 200px;
-    border: solid 5px RGB(43, 175, 43);
+    border: solid 2px RGB(43, 175, 43);
     border-radius: 10px;
     margin-bottom: 8px;
 }
@@ -257,7 +257,7 @@ body {
 #task2 {
     background-color: white;
     height: 200px;
-    border: solid 5px RGB(43, 175, 43);
+    border: solid 2px RGB(43, 175, 43);
     border-radius: 10px;
 }
 

@@ -144,7 +144,7 @@ body {
     border-radius: 10px;
     margin-left: 120px;
     height: 200px;
-    width: 840px;
+    width: 755px;
 }
 
 .image {
@@ -241,6 +241,20 @@ body {
     line-height: 20px;
     text-align: center;
 }
+.jp-container .talk_recordbox .user img{
+    float: left;
+    display: inline;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
 
 
 /*自己发言样式*/
@@ -301,6 +315,20 @@ body {
     text-align: center;
     display: inline;
 }
+.jp-container .talk_recordboxme .user img{
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: inline;
+    border-radius: 50%;
+}
 
 .talk_time {
     color: #666;
@@ -315,7 +343,7 @@ body {
 #pass {
     position: absolute;
     top: 30px;
-    right: -25%;
+    right: -35%;
 }
 
 #pass li {
@@ -403,8 +431,8 @@ body {
 
 #dia_s {
     background-color: white;
-    height: 300px;
-    width: 850px;
+    height: 330px;
+    width: 755px;
     border: solid 3px RGB(187, 187, 187);
     border-radius: 10px;
 }
